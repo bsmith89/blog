@@ -12,8 +12,8 @@ This is mostly a test post and a chance to get some real content on my
 brand-new blog.
 
 Inspired by
-[C. Titus Brown](http://ivory.idyll.org/blog/advice-to-graduate-students.html)
-'s tireless pressure to make more graduate student clones of himself—and the
+[C. Titus Brown](http://ivory.idyll.org/blog/advice-to-graduate-students.html)'s
+tireless pressure to make more graduate student clones of himself—and the
 fact that a pretty damn good domain name was still available—I started this
 website/blog over the weekend.
 
