@@ -2,8 +2,7 @@ Title: Even pathogens hate a cheater
 Date: 2013-06-19 12:00
 Tags: microbiology, cheaters, evolution, pathogens
 Slug: the-enemy-of-my-enemy
-Summary: In which I comment on a recent article with big implications
-         for evolutionary medicine.
+
 
 _I would like to apologize for the long delay since my last post.  The excuse
 (I keep telling myself) is that, having already written too many computational

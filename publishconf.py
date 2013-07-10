@@ -14,7 +14,9 @@ SITEURL = 'http://blog.byronjsmith.com'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/category/%s.atom.xml'
+TAG_FEED_ATOM = 'feeds/tag/%s.atom.xml'
+TRANSLATION_FEED_ATOM = 'feeds/translation/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 

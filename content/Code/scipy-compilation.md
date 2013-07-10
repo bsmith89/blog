@@ -2,8 +2,6 @@ Title: Compiling SciPy on RHEL6
 Date: 2013-05-20 12:00
 Tags: python, hpc, software, scipy, linux
 Slug: scipy-on-rhel
-Summary: I finally managed to compile SciPy on the compute cluster at UMich.
-         It was hard enough that I thought I would share with the world.
 
 
 Within the past two years I've discovered something interesting about myself

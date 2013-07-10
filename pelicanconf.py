@@ -14,7 +14,8 @@ DEFAULT_LANG = u'en'
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+TAG_FEED_ATOM = None
+TRANSLATION_DEEF_ATOM = None
 
 # Blogroll
 LINKS =  (('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
@@ -23,7 +24,7 @@ LINKS =  (('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/ByronJSmith'),
-          ('linkedin', 'http://www.linkedin.com/profile/view?id=76273001')
+          ('linkedin', 'https://linkedin.com/profile/view?id=76273001')
           )
 
 #TWITTER_USERNAME = 'byronjsmith'
@@ -34,9 +35,14 @@ DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
 
 FILES_TO_COPY = (('extra/favicon.ico', 'favicon.ico'),
                  )
 
 THEME = 'blog-theme'
+
+# Use mathjax?
+MATHJAX = True
+
+SUMMARY_MAX_LENGTH = 200
