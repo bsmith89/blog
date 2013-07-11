@@ -35,7 +35,7 @@ DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 FILES_TO_COPY = (('extra/favicon.ico', 'favicon.ico'),
                  )
@@ -45,4 +45,4 @@ THEME = 'blog-theme'
 # Use mathjax?
 MATHJAX = True
 
-SUMMARY_MAX_LENGTH = 200
+SUMMARY_MAX_LENGTH = 150
