@@ -39,7 +39,7 @@ reproducible pipelines, one tool I have never come to terms with is
 GNU `make`.  While it's not quite mainstream for bioinformaticians and
 other computational folk, `make`
 [promises](http://archive.nodalpoint.org/2007/03/18/a_pipeline_is_a_makefile)
-to tie all those *`NIX` style
+to tie all those \*`NIX` style
 scripts together seamlessly and with built-in
 parallelization, selective re-running, and more, all under a declarative
 language syntax.  I say 'promises' because, for me, it never did any of those
