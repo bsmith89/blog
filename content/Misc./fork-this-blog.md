@@ -1,7 +1,6 @@
 Title: You, Too, Can Host This Website
 Date: 2013-07-13 17:00
 Tags: open-source, meta, pelican, website, blog
-Slug: fork-this-blog
 
 
 Loyal readers of this blog (of which I am sure there are exactly zero)

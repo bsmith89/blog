@@ -1,7 +1,6 @@
 Title: About
 Date: 2013-05-06 19:00
 Category: Misc.
-Slug: about
 Author: Byron J. Smith
 
 I am an Ecology and Evolutionary Biology graduate student at the University

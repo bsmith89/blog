@@ -15,7 +15,7 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TAG_FEED_ATOM = None
-TRANSLATION_DEEF_ATOM = None
+TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS =  (('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
@@ -42,7 +42,9 @@ FILES_TO_COPY = (('extra/favicon.ico', 'favicon.ico'),
 
 THEME = 'blog-theme'
 
-# Use mathjax?
 MATHJAX = True
 
 SUMMARY_MAX_LENGTH = 150
+
+# Extract metadata from the filename
+FILENAME_METADATA = '(?P<slug>.*)'

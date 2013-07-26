@@ -1,7 +1,6 @@
 Title: Hello World!
 Date: 2013-05-05 22:00
 Tags: meta, pelican, website, hosting, blog
-Slug: initial-commit
 
 
 Hi.
