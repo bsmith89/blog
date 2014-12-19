@@ -17,7 +17,7 @@ When I'm particularly into it (which is always), I'll also compile the python
 distribution itself.  I've had several opportunities to indulge this pasttime,
 most recently in setting up my research pipeline on the
 [Flux](http://cac.engin.umich.edu/resources/systems/flux)
-high-performance comute cluster at The University of Michigan.
+high-performance compute cluster at The University of Michigan.
 
 Installing `NumPy` is usually no trouble at all, but for some reason
 (if you know, please tell me), `SciPy` has _always_ given me a
