@@ -4,3 +4,4 @@ output/
 *.pid
 Makefile
 develop_server.sh
+env/

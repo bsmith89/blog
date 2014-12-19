@@ -37,8 +37,8 @@ DEFAULT_ORPHANS = 5
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-FILES_TO_COPY = (('extra/favicon.ico', 'favicon.ico'),
-                 )
+STATIC_PATHS = ['extra/favicon.ico']
+EXTRA_PATH_METADATA = {'extra/favicon.ico': {'path': 'favicon.ico'}}
 
 THEME = 'blog-theme'
 
