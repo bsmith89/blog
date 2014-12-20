@@ -9,8 +9,9 @@ import os
 import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
+from privateconf import *
 
-SITEURL = 'http://blog.byronjsmith.com'
+# SITEURL in ./privateconf.py
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -20,5 +21,5 @@ TRANSLATION_FEED_ATOM = 'feeds/translation/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-DISQUS_SITENAME = "byronjsmithblog"
-GOOGLE_ANALYTICS = "UA-40659359-1"
+# DISQUS_SITENAME in ./privateconf.py
+# GOOGLE_ANALYTICS in ./privateconf.py

@@ -6,3 +6,4 @@ cache/
 Makefile
 develop_server.sh
 env/
+privateconf.py
