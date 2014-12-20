@@ -1,0 +1,6 @@
+[submodule "theme"]
+	path = theme
+	url = https://github.com/bsmith89/blog-theme
+[submodule "plugins"]
+	path = plugins
+	url = https://github.com/getpelican/pelican-plugins

@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from glob import glob
 
 AUTHOR = u'Byron J. Smith'
 SITENAME = u'Deep Ecology'
 SITESUBTITLE = u'A blog of the new microbiology.'
 SITEURL = u'http://blog.byronjsmith.com'
+
+# Extract metadata from the filename
+FILENAME_METADATA = '(?P<slug>.*)'
 
 TIMEZONE = 'US/Eastern'
 
@@ -37,14 +41,18 @@ DEFAULT_ORPHANS = 5
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-STATIC_PATHS = ['extra/favicon.ico']
+STATIC_PATHS = ['images', 'extra']
 EXTRA_PATH_METADATA = {'extra/favicon.ico': {'path': 'favicon.ico'}}
 
-THEME = 'blog-theme'
+THEME = 'theme/'
+PLUGIN_PATHS = glob("plugins/*/")
+PLUGINS=[]
+
+# Cached content is also recompiled.
+# Good for testing plugin changes.
+LOAD_CONTENT_CACHE = False
 
 MATHJAX = True
 
 SUMMARY_MAX_LENGTH = 150
 
-# Extract metadata from the filename
-FILENAME_METADATA = '(?P<slug>.*)'

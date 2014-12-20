@@ -20,7 +20,5 @@ TRANSLATION_FEED_ATOM = 'feeds/translation/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
-
 DISQUS_SITENAME = "byronjsmithblog"
 GOOGLE_ANALYTICS = "UA-40659359-1"
