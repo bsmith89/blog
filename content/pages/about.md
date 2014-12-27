@@ -17,7 +17,7 @@ Author: Byron J. Smith
 
   I intend to write about all of these things at some point or another.
   For more information about how and why I put this blog together check out my
-  [first post](../initial-commit.html).
+  [first post](./initial-commit.html).
 
   You can reach me at
   <a itemprop="email" href=mailto:me@byronjsmith.com>me@byronjsmith.com</a>.
