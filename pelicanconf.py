@@ -49,8 +49,12 @@ RELATIVE_URLS = True
 
 # TODO: Consider moving pages to subdirectories based on category.
 
-STATIC_PATHS = ['images', 'extra', 'files']
-EXTRA_PATH_METADATA = {'extra/favicon.ico': {'path': 'favicon.ico'}}
+STATIC_PATHS = ['static/images', 'static/files']
+EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': 'favicon.ico'}}
+
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+
 
 THEME = 'theme/'
 PLUGIN_PATHS = glob("plugins/*/")
