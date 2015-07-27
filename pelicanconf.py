@@ -82,7 +82,7 @@ LOAD_CONTENT_CACHE = False
 
 PLUGINS.append('pandoc_reader')
 PANDOC_FILES = ['md']
-PANDOC_ARGS = ['-F', './pygments-filter/pygments']
+PANDOC_ARGS = ['-F', 'pandoc-pygments-filter']
 
 MATHJAX = True
 

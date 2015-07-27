@@ -1,9 +1,6 @@
 [submodule "theme"]
 	path = theme
 	url = https://github.com/bsmith89/blog-theme
-[submodule "pygments-filter"]
-	path = pygments-filter
-	url = https://gist.github.com/fizruk/6620756
 [submodule "plugins/pandoc_reader"]
 	path = plugins/pandoc_reader
 	url = git@github.com:bsmith89/pelican-pandoc-reader.git
