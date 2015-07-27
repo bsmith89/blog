@@ -1,7 +1,8 @@
-Title: PyMake I: Another GNU Make Clone
+---
+Title: 'PyMake I: Another GNU Make Clone'
 Date: 2013-05-07 19:00
 Tags: python, software, development, make, pipelines, bioinformatics
-
+...
 
 _This is the first of two posts about my program
 [PyMake](http://github.com/bsmith89/pymake/).  I'll post the link to Part II

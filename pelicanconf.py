@@ -3,10 +3,10 @@
 from __future__ import unicode_literals
 from glob import glob
 
-AUTHOR = u'Byron J. Smith'
-SITENAME = u'Deep Ecology'
-SITESUBTITLE = u'A blog of the new microbiology.'
-SITEURL = u'http://blog.byronjsmith.com'
+AUTHOR = "Byron J. Smith"
+SITENAME = "Deep Ecology"
+SITESUBTITLE = "A blog of the new microbiology."
+SITEURL = "http://blog.byronjsmith.com"
 
 # GOOGLE_ANALYTICS = "GOOGLE_ANALYTICS_TEST"
 # DISQUS_SITENAME = "DISQUS_TEST"
@@ -16,7 +16,7 @@ FILENAME_METADATA = '(?P<slug>.*)'
 
 TIMEZONE = 'US/Eastern'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 DEFAULT_DATE = 'fs'
 
 # Feed generation is usually not desired when developing
@@ -49,18 +49,19 @@ RELATIVE_URLS = True
 
 # TODO: Consider moving pages to subdirectories based on category.
 
-STATIC_PATHS = ['static/images', 'static/files']
-EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': 'favicon.ico'}}
+STATIC_PATHS = ['static/',]
+EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': './favicon.ico'}}
 
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
 
 THEME = 'theme/'
-PLUGIN_PATHS = glob("plugins/*/")
+PLUGIN_PATHS = ['plugins/']
 PLUGINS=[]
 
-PLUGINS.append('sitemap')
+PLUGIN_PATHS.append('./plugins/extended_sitemap')
+PLUGINS.append('extended_sitemap')
 SITEMAP = {
         'format': 'xml',
         'priorities': {
@@ -77,7 +78,11 @@ SITEMAP = {
 
 ## Cached content is also recompiled.
 ## Good for testing plugin changes.
-# LOAD_CONTENT_CACHE = False
+LOAD_CONTENT_CACHE = False
+
+PLUGINS.append('pandoc_reader')
+PANDOC_FILES = ['md']
+PANDOC_ARGS = ['-F', './pygments-filter/pygments']
 
 MATHJAX = True
 

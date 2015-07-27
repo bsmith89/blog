@@ -1,6 +1,8 @@
+---
 Title: Do Bacterial Species Exist?
 Date: 2013-08-06 18:30
 Tags: microbiology, species, semantics, rant
+...
 
 
 Any of my friends or colleagues who have had the "pleasure" of talking about

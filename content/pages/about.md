@@ -1,7 +1,9 @@
+---
 Title: About
 Date: 2013-05-06 19:00
 Category: Misc.
 Author: Byron J. Smith
+...
 
 <span itemscope itemtype="http://data-vocabulary.org/Person">
   I am a <span itemprop="jobTitle">graduate student</span> in

@@ -1,6 +1,8 @@
+---
 Title: Compiling SciPy on RHEL6
 Date: 2013-05-20 12:00
 Tags: python, hpc, software, scipy, linux
+...
 
 
 Within the past two years I've discovered something interesting about myself
