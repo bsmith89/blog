@@ -5,5 +5,5 @@ cache/
 *.pid
 Makefile
 develop_server.sh
-env/
+venv/
 privateconf.py
