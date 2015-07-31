@@ -6,15 +6,21 @@ Author: Byron J. Smith
 ...
 
 <span itemscope itemtype="http://data-vocabulary.org/Person">
-  I am a <span itemprop="jobTitle">graduate student</span> in
-  <span itemprop="affiliation" itemscope itemtype="http://data-vocabulary.org/Organization">
-    <span itemprop="department">Ecology and Evolutionary Biology</span> at the
-    <span itemprop="name">University of Michigan</span>,
-  </span>
-  interested in
-  <span>microbiology, microbial ecology, mathematical ecology,
-  bioinformatics, metagenomics, software development, technology,
-  python</span>...
+  Hi! I'm
+  <span itemprop="name">Byron</span>, a
+  <span itemprop="role">graduate student</span> in
+  <span itemprop="affiliation" itemscope
+        itemtype="http://data-vocabulary.org/Organization">
+    <span itemprop="name">
+      the Department of Ecology and Evolutionary Biology at the University of
+      Michigan
+    </span>
+  </span>, interested in
+  <span>
+    microbiology, microbial ecology, mathematical ecology,
+    bioinformatics, metagenomics, software development, technology,
+    python
+  </span>...
   Basically I'm your generic guy-with-a-blog.
 
   I intend to write about all of these things at some point or another.
