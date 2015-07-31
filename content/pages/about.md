@@ -13,14 +13,11 @@ Author: Byron J. Smith
         itemtype="http://data-vocabulary.org/Organization">
     <span itemprop="name">
       the Department of Ecology and Evolutionary Biology at the University of
-      Michigan
-    </span>
-  </span>, interested in
+      Michigan</span></span>, interested in
   <span>
     microbiology, microbial ecology, mathematical ecology,
     bioinformatics, metagenomics, software development, technology,
-    python
-  </span>...
+    python</span>...
   Basically I'm your generic guy-with-a-blog.
 
   I intend to write about all of these things at some point or another.
