@@ -1,31 +1,25 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 from glob import glob
 
+# Site settings {{{1
 AUTHOR = "Byron J. Smith"
 SITENAME = "Deep Ecology"
 SITESUBTITLE = "A blog of the new microbiology."
 SITEURL = "http://blog.byronjsmith.com"
 
-# GOOGLE_ANALYTICS = "GOOGLE_ANALYTICS_TEST"
-# DISQUS_SITENAME = "DISQUS_TEST"
-
-# Extract metadata from the filename
-SLUGIFY_SOURCE = 'basename'
-FILENAME_METADATA = '(?P<slug>.*)'
-
 TIMEZONE = 'US/Eastern'
 DEFAULT_LANG = 'en'
-DEFAULT_DATE_FORMAT = '%a %-d %B %Y'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TAG_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+THEME = 'theme/'
 
-# Blogroll
+# Social settings {{{1
+TWITTER_USERNAME = 'byronjsmith'
+GITHUB_URL = 'https://github.com/bsmith89'
+GITHUB_POSITION = 'right'
+
+
+# Blogroll {{{2
 LINKS =  (('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
           ('The Endeavor', 'http://www.johndcook.com/blog/'),
           )
@@ -35,29 +29,49 @@ SOCIAL = (('twitter', 'https://twitter.com/ByronJSmith'),
           ('linkedin', 'https://linkedin.com/profile/view?id=76273001')
           )
 
-#TWITTER_USERNAME = 'byronjsmith'
-GITHUB_URL = 'https://github.com/bsmith89'
-GITHUB_POSITION = 'right'
+# Template settings {{{1
+DEFAULT_DATE_FORMAT= '%a %-d %B %Y'
+MODIFIED_DATE_FORMAT = '%Y-%m-%d %H:%M'
 
+# Pagination settings {{{2
 DEFAULT_PAGINATION = 10
 DEFAULT_ORPHANS = 5
+SUMMARY_MAX_LENGTH = 150
 
-# Document-relative URLs when developing.
-# This must be set to False for publishing.
-# See publishconf.py
-RELATIVE_URLS = True
 
-# TODO: Consider moving pages to subdirectories based on category.
-
+# Content/Organizational settings {{{1
 STATIC_PATHS = ['static/',]
 EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': './favicon.ico'}}
 
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 
+# Extract metadata from the filename
+SLUGIFY_SOURCE = 'basename'
+FILENAME_METADATA = '(?P<slug>.*)'
 
-THEME = 'theme/'
-PLUGIN_PATHS = ['plugins/']
+# Feed settings
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TAG_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+
+# Development settings {{{1
+
+# Document-relative URLs when developing.
+# This must be set to False for publishing.
+# See publishconf.py
+RELATIVE_URLS = True
+
+# Cached content is also recompiled.
+# Good for testing plugin changes.
+LOAD_CONTENT_CACHE = False
+
+# Extras {{{1
+MATHJAX = True
+
+# Plugins {{{2
+PLUGIN_PATHS = ['./plugins']
 PLUGINS=[]
 
 PLUGIN_PATHS.append('./plugins/extended_sitemap')
@@ -76,15 +90,6 @@ SITEMAP = {
             },
         }
 
-## Cached content is also recompiled.
-## Good for testing plugin changes.
-LOAD_CONTENT_CACHE = False
-
 PLUGINS.append('pandoc_reader')
 PANDOC_FILES = ['md']
 PANDOC_ARGS = ['-F', 'pandoc-pygments-filter']
-
-MATHJAX = True
-
-SUMMARY_MAX_LENGTH = 150
-
