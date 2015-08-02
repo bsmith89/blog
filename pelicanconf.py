@@ -12,12 +12,12 @@ SITEURL = "http://blog.byronjsmith.com"
 # DISQUS_SITENAME = "DISQUS_TEST"
 
 # Extract metadata from the filename
+SLUGIFY_SOURCE = 'basename'
 FILENAME_METADATA = '(?P<slug>.*)'
 
 TIMEZONE = 'US/Eastern'
-
 DEFAULT_LANG = 'en'
-DEFAULT_DATE = 'fs'
+DEFAULT_DATE_FORMAT = '%a %-d %B %Y'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
