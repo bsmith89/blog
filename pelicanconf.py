@@ -30,8 +30,10 @@ SOCIAL = (('twitter', 'https://twitter.com/ByronJSmith'),
           )
 
 # Template settings {{{1
-DEFAULT_DATE_FORMAT= '%a %-d %B %Y'
-MODIFIED_DATE_FORMAT = '%Y-%m-%d %H:%M'
+DEFAULT_DATE_FORMAT= '%A, %B %-d, %Y'
+MODIFIED_DATE_FORMAT = '%B %-d, %Y, %H:%M'
+
+DEFAULT_CATEGORY = "Misc."
 
 # Pagination settings {{{2
 DEFAULT_PAGINATION = 10
