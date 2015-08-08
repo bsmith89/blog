@@ -2,39 +2,63 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>linux - Deep Ecology</title>
-	<link rel="stylesheet" type="text/css" href="../theme/css/main.css" />
+<!-- #feeds -->
+<link href="http://blog.byronjsmith.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
+<link href="http://blog.byronjsmith.com/feeds/tag/linux.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Tags Atom Feed" />
+<!-- /#feeds -->
+
+	<link rel="stylesheet" type="text/css" href="http://blog.byronjsmith.com/theme/css/main.css" />
+<!-- #google-analytics-script -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40659359-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- /#google-analytics-script -->
+
 </head>
 
 <body id="main">
 <!-- #github-ribbon -->
 <a href="https://github.com/bsmith89">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+<img style="position: absolute; top: 0; right: 0; border: 0;"
+     src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+     alt="Fork me on GitHub"
+     id="gh-ribbon" />
 </a>
 <!-- /#github-ribbon -->
 
 	<div id="all-text">
 		<header id="main-banner" class="banner">
-		<h1 id="blog-title" class="title"><a href="../">
+		<h1 id="blog-title" class="title"><a href="http://blog.byronjsmith.com/">
 			Deep Ecology
 			<span id="blog-subtitle" class="subtitle">
 				A blog of the new microbiology.
 			</span>
 		</a></h1>
 		<nav><ul>
-			<li><a  href="../about.html"
+			<li><a  href="http://blog.byronjsmith.com/about.html"
 >
 				About
 			</a></li>
-			<li><a  href="../category/code.html"
+			<li><a  href="http://blog.byronjsmith.com/category/code.html"
 >
 				Code
 			</a></li>
-			<li><a  href="../category/microbiology.html"
+			<li><a  href="http://blog.byronjsmith.com/category/microbiology.html"
 >
 				Microbiology
 			</a></li>
-			<li><a  href="../category/misc.html"
+			<li><a  href="http://blog.byronjsmith.com/category/misc.html"
 >
 				Misc.
 			</a></li>
@@ -49,7 +73,7 @@ Articles tagged <em>linux</em>
 	<ol id="entry-list">
 		<li><article class="entry">
 			<header><h2 class="title">
-				<a  href="../scipy-on-rhel.html"
+				<a  href="http://blog.byronjsmith.com/scipy-on-rhel.html"
 					rel="bookmark"
 					title="Permalink to 'Compiling SciPy on RHEL6'">
 					Compiling SciPy on RHEL6
@@ -60,7 +84,7 @@ Articles tagged <em>linux</em>
 	<span class="info-tag">published:</span>
 	<span class="info-value" itemprop="datePublished">
 		<abbr title="2013-05-20 12:00:00-04:00">
-			Mon 20 May 2013
+			Monday, May 20, 2013
 		</abbr>
 	</span>
 </div>
@@ -70,7 +94,7 @@ Articles tagged <em>linux</em>
 <div class="category">
 	<span class="info-tag">category:</span>
 	<span class="info-value" itemprop="articleSection">
-		<a href="../category/code.html">
+		<a href="http://blog.byronjsmith.com/category/code.html">
 			Code
 		</a>
 	</span>
@@ -79,7 +103,7 @@ Articles tagged <em>linux</em>
 <div class="tags">
 	<span class="info-tag">tags:</span>
 	<span class="info-value" itemprop="keywords">
-		<a href="../tag/python.html">python</a>, 		<a href="../tag/hpc.html">hpc</a>, 		<a href="../tag/software.html">software</a>, 		<a href="../tag/scipy.html">scipy</a>, 		<a href="../tag/linux.html">linux</a>	</span>
+		<a href="http://blog.byronjsmith.com/tag/python.html">python</a>, 		<a href="http://blog.byronjsmith.com/tag/hpc.html">hpc</a>, 		<a href="http://blog.byronjsmith.com/tag/software.html">software</a>, 		<a href="http://blog.byronjsmith.com/tag/scipy.html">scipy</a>, 		<a href="http://blog.byronjsmith.com/tag/linux.html">linux</a>	</span>
 </div><!-- /.tags -->
 			</footer><!-- /.info -->
 			<div class="content">
@@ -87,7 +111,7 @@ Articles tagged <em>linux</em>
 <p>Usually this entails installing the usual suspects (<code>NumPy</code>, <code>Pandas</code>, <code>IPython</code>, <code>matplotlib</code>, etc.) in a python <a href="http://www.virtualenv.org/en/latest/">virtual environment</a>. When I'm particularly into it (which is always), I'll also compile the python distribution itself. I've had several opportunities to indulge this pasttime, most recently in setting up my research pipeline on the <a href="http://cac.engin.umich.edu/resources/systems/flux">Flux</a> high-performance compute cluster at The University of Michigan.</p>
 <p>Installing <code>NumPy</code> is usually no trouble at all, but for some reason (if you know, please tell me), <code>SciPy</code> has <em>always</em> given me a &quot;BlasNotFoundError&quot; when installing on the Red ...</p>
 				<div class="read-more">
-					<a href="../scipy-on-rhel.html">
+					<a href="http://blog.byronjsmith.com/scipy-on-rhel.html">
 						...More
 					</a>
 				</div>
@@ -112,6 +136,11 @@ Articles tagged <em>linux</em>
 				<div class="social">
 					<h2>social</h2>
 					<ul>
+						<li><a  href="http://blog.byronjsmith.com/feeds/all.atom.xml"
+								type="application/atom+xml"
+								rel="alternate">
+							atom feed
+						</a></li>
 						<li><a href="https://twitter.com/ByronJSmith">twitter</a></li>
 						<li><a href="https://linkedin.com/profile/view?id=76273001">linkedin</a></li>
 					</ul>
