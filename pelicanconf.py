@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
+
 from glob import glob
+import os
+import sys
+sys.path.append(os.curdir)
+from privateconf import *
 
 # Site settings {{{1
 AUTHOR = "Byron J. Smith"
@@ -20,14 +25,14 @@ GITHUB_POSITION = 'right'
 
 
 # Blogroll {{{2
-LINKS =  (('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
+LINKS =  [('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
           ('The Endeavor', 'http://www.johndcook.com/blog/'),
-          )
+         ]
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/ByronJSmith'),
-          ('linkedin', 'https://linkedin.com/profile/view?id=76273001')
-          )
+SOCIAL = [('twitter', 'https://twitter.com/ByronJSmith'),
+          ('linkedin', 'https://linkedin.com/profile/view?id=76273001'),
+         ]
 
 # Template settings {{{1
 DEFAULT_DATE_FORMAT= '%A, %B %-d, %Y'

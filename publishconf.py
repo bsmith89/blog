@@ -6,9 +6,12 @@ import os
 import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
-from privateconf import *
 
-# SITEURL in ./privateconf.py
+
+SITEURL = "http://blog.byronjsmith.com"
+DISQUS_SITENAME = "byronjsmithblog"
+GOOGLE_ANALYTICS = "UA-40659359-1"
+
 RELATIVE_URLS = False
 
 # TODO: Do I really want atom feeds?
