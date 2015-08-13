@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deep Ecology</title>
+<!-- #feeds -->
+<link href="http://bsmith89.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
+<link href="http://bsmith89.github.io/blog/feeds/category/code.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
+<!-- /#feeds -->
+
+	<link rel="stylesheet" type="text/css" href="http://bsmith89.github.io/blog/theme/css/main.css" />
+<!-- #google-analytics-script -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40659359-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- /#google-analytics-script -->
+
+</head>
+
+<body id="main">
+<!-- #github-ribbon -->
+<a href="https://github.com/bsmith89">
+<img style="position: absolute; top: 0; right: 0; border: 0;"
+     src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+     alt="Fork me on GitHub"
+     id="gh-ribbon" />
+</a>
+<!-- /#github-ribbon -->
+
+	<div id="all-text">
+		<header id="main-banner" class="banner">
+		<h1 id="blog-title" class="title"><a href="http://bsmith89.github.io/blog/">
+			Deep Ecology
+			<span id="blog-subtitle" class="subtitle">
+				A blog of the new microbiology.
+			</span>
+		</a></h1>
+		<nav><ul>
+			<li><a  href="http://bsmith89.github.io/blog/about.html"
+>
+				About
+			</a></li>
+			<li><a  href="http://bsmith89.github.io/blog/category/code.html"
+					class="active"
+>
+				Code
+			</a></li>
+			<li><a  href="http://bsmith89.github.io/blog/category/microbiology.html"
+>
+				Microbiology
+			</a></li>
+			<li><a  href="http://bsmith89.github.io/blog/category/misc.html"
+>
+				Misc.
+			</a></li>
+		</ul></nav>
+		</header><!-- /#banner -->
+
+		<div id="content">
+<article itemscope itemtype="http://schema.org/BlogPosting">
+	<header>
+		<h1 id="main-title" itemprop="headline">
+			<a  href="http://bsmith89.github.io/blog/swc-python-lesson.html" rel="bookmark"
+				title="Permalink to First Time Teaching Python to Novices">
+				First Time Teaching Python to Novices
+			</a>
+		</h1>
+	
+	</header>
+	<footer class="info">
+<div class="published">
+	<span class="info-tag">published:</span>
+	<span class="info-value" itemprop="datePublished">
+		<abbr title="2015-08-11 04:00:00-04:00">
+			Tuesday, August 11, 2015
+		</abbr>
+	</span>
+</div>
+
+
+
+<div class="category">
+	<span class="info-tag">category:</span>
+	<span class="info-value" itemprop="articleSection">
+		<a href="http://bsmith89.github.io/blog/category/code.html">
+			Code
+		</a>
+	</span>
+</div>
+
+<div class="tags">
+	<span class="info-tag">tags:</span>
+	<span class="info-value" itemprop="keywords">
+		<a href="http://bsmith89.github.io/blog/tag/software-carpentry.html">software-carpentry</a>, 		<a href="http://bsmith89.github.io/blog/tag/teaching.html">teaching</a>, 		<a href="http://bsmith89.github.io/blog/tag/programming.html">programming</a>, 		<a href="http://bsmith89.github.io/blog/tag/mistakes.html">mistakes</a>, 		<a href="http://bsmith89.github.io/blog/tag/python.html">python</a>	</span>
+</div><!-- /.tags -->
+	</footer><!-- /.info -->
+	<div class="content" itemprop="articleBody">
+		<p>This July I co-instructed with <a href="https://impactstory.org/JenniferShelton">Jennifer Shelton</a> a Software Carpentry <a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/">workshop</a> at Stanford University, targeted to researchers with genomic or evolutionary datasets. Jennifer taught the shell (BASH) and version control with Git, while I taught the general programming language Python. I've been aware of the <a href="http://software-carpentry.org/">organization</a>, which teaches software development and computational methods to scientists, since going to a workshop in 2012. Since then I've served as a helper at one workshop (troubleshooting individual learner's problems and helping catch them up with the rest of the class), and gone through the &quot;accelerated&quot;, two day, instructor training at Michigan State University. After the Stanford workshop, I took part in new-instructor debriefing on August 4th, during which I mentioned that I had to greatly pare down the community-written lesson plan, <a href="http://swcarpentry.github.io/python-novice-inflammation/">python-novice-inflammation</a>, to fit into the two half-day session we allotted it.</p>
+<p>Karin and Tiffany, who were running the debriefing, asked me to send a note to the mentorship email list about which parts I removed and which I kept in. I thought I'd also take the opportunity to comment on the material at large: what worked for me and what didn't. What started as an email quickly ballooned into this blog post.</p>
+<p>To be explicit, I was teaching from the state of the repository at the time of the workshop<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> .</p>
+<p>With this as my first workshop<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>, I (incorrectly) thought I could teach all of the topics straight through. By the time it became apparent that this wasn't going to work, adapting the first day's material had to be done on the fly. After that experience, and before the following afternoon, I prepared a subset of the remaining material that I thought I could cover I'm now relying on my (somewhat traumatic) memory of the first session, and that outline I put together for the second day to write this summary.</p>
+<p>My plan going in was to split <a href="http://swcarpentry.github.io/python-novice-inflammation/index.html#topics">the material</a> after Topic 6, getting learners up to writing functions on the first day, so that we could discuss debugging and best-practices, and transition from the Jupyter notebook to shell scripts, the next day. Based on my co-instructors recommendation, I did not have learners do all of the challenge questions for each topic, but instead picked just one or two that I thought would be most useful.</p>
+<p>I found myself wishing (especially for Topic 1: &quot;Analyzing Patient Data&quot;) that some of the easier questions were integrated into the lesson itself, instead of all at the bottom. Learners should have had more chances to problem-solve early, instead of listening to me for the entirety of each topic before getting their feet wet.</p>
+<h2 id="motivating-python">Motivating Python</h2>
+<p>For that <a href="http://swcarpentry.github.io/python-novice-inflammation/01-numpy.html">first topic</a> I did cover everything, but wish I hadn't, since it was mostly focused on array operations and the specifics of working with NumPy (e.g. operations along axes). I appreciated that we were showing the learners powerful library features to motivate the later work, but I didn't feel like it was great for this workshop's &quot;genomics&quot; audience. Maybe these initial motivating sections should be targeted the same way the capstone projects are. It was also too long relative to the other sections, in my opinion.</p>
+<p>It <em>was</em> very good, however, for introducing some python specifics, especially things that learners coming from other languages like R or Mathematica might not know (e.g. 0-indexing, slices, that variable assignment happens when each line is executed, etc.). It gave learners a chance to be surprised by their misconceptions and ask questions. We should do more of that.</p>
+<p>It would have been helpful for the lesson to have pre-built explanations for 0-indexing and right-exclusive slicing, since these were the hard parts and I'm not happy with the explanations I initially used.</p>
+<p>I found the nature of the made-up data (maximum values smooth and minimum values as a step-function along the first axis) distracting. I also didn't know what they were supposed to represent (beyond inflammation over time), so the &quot;actually doing science&quot; part of the motivation was a bit lost. Is there a reason we use these data?</p>
+<h2 id="python-basics-lists-loops-conditionals-etc.">Python basics: lists, loops, conditionals, etc.</h2>
+<p><a href="http://swcarpentry.github.io/python-novice-inflammation/02-loop.html">Topics 2</a> and <a href="http://swcarpentry.github.io/python-novice-inflammation/03-lists.html">3</a>, &quot;Repeating Actions with Loops&quot; and &quot;Storing Multiple Values in Lists&quot; respectively, were good and short. I didn't feel like I had to cut anything out. However, for-loop syntax was not explicitly covered early in the lesson plan. It wasn't until I realized I had gotten ahead of myself that we talked about loop variables, iterables<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>, and the indented code-block.</p>
+<p>I also thought the segue from Topic 1 to 2 was a bit weak. This was a theme throughout, mixing the inflammation data with much simpler stuff (e.g. looping over short strings and lists). I realize we want to keep the motivation going, but, as a first-time instructor, I found it to be distracting, and didn't know which I should be emphasizing to the learners.</p>
+<p>I also picked the wrong challenge question from Topic 1 (reverse <code>'Newton'</code> using a loop), since we hadn't covered <code>range</code>, <code>append</code>ing to lists, <code>''.join</code>, etc. What novice audience is that question appropriate for? Maybe the solution is simple and I'm just confused...</p>
+<p>The material for <a href="http://swcarpentry.github.io/python-novice-inflammation/04-files.html">topic 4</a>, &quot;Analyzing Data from Multiple Files&quot; worked well overall. The only mistake I remember was copy-pasting the big chunk of code from the lesson (looping over files and drawing sets of plots) instead of typing it out. I figured since most of the code was library calls, learners wouldn't get anything out of me taking the time to type all of it. That may have been true, but it meant the learners weren't executing the code at the same time as me, which interrupted the flow of the lesson.</p>
+<p><a href="http://swcarpentry.github.io/python-novice-inflammation/05-cond.html">Topic 5</a>, &quot;Making Choice&quot; (if-statements), was where things got hairy. I panicked a bit and went mostly off the lesson plan. It did not go well. When I tried to find something in the lesson to get me back on track, I wished there was more explicit discussion of syntax and booleans. I was able to review the topic the next day, which I think got any lost learners mostly caught up.</p>
+<p>As you can imagine, at this point we were nearing the end of the first day. I did manage to show the learners the syntax for defining and using functions, but I covered <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">topic 6</a>, &quot;Creating Functions&quot;, in its entirety at the start of the next session.</p>
+<h2 id="learning-my-lesson">Learning my lesson</h2>
+<p>After the harrowing experience with conditionals on the first day, I took the time to write out a personalized lesson outline for the next day with learning objectives, steps in explaining difficult concepts, and pre-picked understanding/challenge questions. The exercise of writing an outline of learning objectives before the class was very helpful, and something I intend to repeat before future workshops.</p>
+<p>If I remember correctly<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>, the second day I started once again with functions, and largely based the lesson on the material in <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">the topic</a>. The temperature conversion formulas were an effective motivator for this lesson. I wonder if simple examples, like this one, can replace the more complex (and, admittedly, more impressive) inflammation tutorial to demonstrate the value of Python for scientists. I also integrated material from the <a href="http://swcarpentry.github.io/python-novice-inflammation/07-errors.html">topic on errors and exceptions</a>: tracebacks, syntax errors, etc. In this combined topic I did not use the <code>import errors_01</code> example. It was unclear to me why the lesson plan, as written, uses a black-box script like <code>errors_01.py</code>, and not something more explicit, like an index or attribute error, to dissect the traceback. I think the explicit approach worked well for the learners in this workshop. Since we were covering functions anyway, it wasn't hard to get a multi-level traceback. Syntax errors also combined nicely with learning function definition syntax.</p>
+<figure>
+<img src="http://bsmith89.github.io/blog/static/images/swc-stanford-byron.jpg" alt="The author dissecting an attribute error." /><figcaption>The author dissecting an attribute error.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></figcaption>
+</figure>
+<p>Somewhere in the process of talking about functions we got sidetracked with <code>open()</code>. I was surprised to see that the lesson plans have only limited discussion of file objects, only really dealing with them in the section on <code>IOErrors</code>. I think learners appreciated a chance to see how the array data they had used the day before were saved as a CSV, and how they could access the data directly. It also gave us a chance to show that other objects besides lists and strings can serve as iterators in for-loops.</p>
+<p>I liked how the topic 6 <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html#defining-defaults">lesson plan</a> used the library function <code>numpy.loadtxt()</code> to talk about default arguments and the <code>help()</code> built-in. I jumped back and forth between examining that function and implementing the same things (keywords, documentation) in a <code>center()</code> function we were building. The realized lesson was very similar to the repository's lesson plan, but a little more integrated with errors and exceptions.</p>
+<p>I had the learners implement <code>rescale()</code> as a challenge question. We then worked together as a class to add lower and upper bounds. This was a much more difficult task than I expected (even just deriving the correct formula), and served nicely to demonstrate defensive programming and debugging. While we touched on many of the concepts in <a href="http://swcarpentry.github.io/python-novice-inflammation/08-defensive.html">topics 8</a> and <a href="http://swcarpentry.github.io/python-novice-inflammation/09-debugging.html">9</a>, these ideas, defensive programming and debugging, were spread throughout, and I did not walk through either as an atomic lesson.</p>
+<p>My ultimate goal on the second day was to write a program to calculate the mean inflammation of each subject in the example files and then transform the program into a command-line script that would operate as a UNIX-style filter. I remember Greg Wilson teaching Python scripting (along with BASH and SQL) that way during my first workshop (as a <em>learner</em>!) at MSU in May 2012<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>. This <a href="http://swcarpentry.github.io/python-novice-inflammation/10-cmdline.html">last topic</a> seemed like a worthwhile mini-capstone, since it would reintroduce ideas from the BASH lesson the day before, and we could version-control our work with git. While we managed to run our code as a script (rather than a cell in the Jupyter notebook), the transition was a little rough around the edges, and we didn't have time to add <code>sys.argv</code> or <code>sys.stdin</code>.</p>
+<h2 id="take-aways">Take-aways</h2>
+<p>The second day of Python was much smoother than the first, and, while we did not get to all of the material, I was satisfied with what we did cover. It's quite remarkable that learners can go all the way from indexing into lists to defensive programming and unit tests in just a few hours. I'm not convinced that we got them far enough to jump right into using Python for their own work, but I hope it was a good kick-start towards that goal. I'm amazed some novice workshops only allocate a half-day session to the programming language (be it Python, R, or Matlab), although a quick survey of <a href="http://software-carpentry.org/workshops/index.html#future">upcoming workshops</a> suggests that almost <em>all</em> of them do in fact use two sessions. Is this the recommended approach (and if so where is it documented) or have many instructors all independently come to the same conclusion?</p>
+<p>Even so, there's still more material in python-novice-inflammation than can be covered in two sessions. I'm under the impression that the repository is sort of <em>meant</em> to be like that: way too big, so that instructors can pick and choose the parts that are most salient for their audience. This seems like a good idea, but it was not sufficiently communicated to me as a first-time instructor, and, while many of the difficulties I had could have been solved with more comprehensive preparation, having a &quot;default&quot; subset would have been helpful.</p>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://github.com/swcarpentry/python-novice-inflammation/tree/76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a"><code>76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a</code></a>: still the HEAD as of this writing.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>and being insufficiently prepared<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Actually, we talked about getting values from lists and how strings are like lists, rather than about iterables in general.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Despite the fact that I have those notes, I actually don't remember the details of that day's lesson as well. I wonder if there's some weird metamemory thing going on e.g. <a href="http://www.sciencemag.org/content/333/6043/776.abstract">this</a> (unfortunately paywalled).<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>Photo credit: Amy Hodge (<a href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a>)<a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p>The site for this historic event can still be found <a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/">here</a>.<a href="#fnref6">↩</a></p></li>
+</ol>
+</section>
+
+	</div><!-- /.content -->
+    
+</article>
+
+<div id="comments">
+	<h2>Comments</h2>
+	<div id="disqus_thread"></div>
+</div><!-- /#comments -->
+		</div><!-- /#content -->
+
+		<footer id="bottom">
+			<div id="extras">
+				<div class="blogroll">
+					<h2>blogroll</h2>
+					<ul>
+						<li><a href="http://ivory.idyll.org/blog/">Living in an Ivory Basement</a></li>
+						<li><a href="http://www.johndcook.com/blog/">The Endeavor</a></li>
+						<li><a href="http://blog.byronjsmith.com">(The real site)</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<h2>social</h2>
+					<ul>
+						<li><a  href="http://bsmith89.github.io/blog/feeds/all.atom.xml"
+								type="application/atom+xml"
+								rel="alternate">
+							atom feed
+						</a></li>
+						<li><a href="https://twitter.com/ByronJSmith">twitter</a></li>
+						<li><a href="https://linkedin.com/profile/view?id=76273001">linkedin</a></li>
+					</ul>
+				</div>
+			</div><!-- /#extras -->
+
+			<div id="info">
+				<p id="powered-by">
+					Proudly powered by <a href="http://getpelican.com">Pelican</a>,
+					which takes great advantage of
+					<a href="http://python.org">Python</a>
+				</p>
+				<p id="designed-by">
+					This theme was originally created for
+					<a href="http://blog.byronjsmith.com">blog.byronjsmith.com</a>
+				</p>
+			</div>
+		</footer><!-- #bottom -->
+	</div> <!-- /#all-text -->
+<!-- #mathjax-scripts -->
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": {
+  styles: {
+  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  },
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+  });
+  MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+  var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+  });
+  MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+  var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!-- /#mathjax-scripts -->
+
+<!-- #disqus-script -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'byronjsmithblog'; // required: replace example with your forum shortname
+    var disqus_identifier = 'swc-python-lesson.html';
+    var disqus_title = 'First Time Teaching Python to Novices';
+    var disqus_url = 'http://bsmith89.github.io/blog/swc-python-lesson.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- /#disqus-script -->
+</body>
+</html>
