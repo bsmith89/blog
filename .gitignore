@@ -3,7 +3,6 @@ output/
 cache/
 *.pyc
 *.pid
-Makefile
 develop_server.sh
 venv/
 privateconf.py
