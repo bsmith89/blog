@@ -2,7 +2,6 @@
 title: First Time Teaching Python to Novices
 date: 2015-08-11 4:00
 tags: software-carpentry, teaching, programming, mistakes, python
-status: draft
 ...
 
 This July I co-instructed with [Jennifer Shelton][shelton]
@@ -45,24 +44,25 @@ the workshop[^repo-state] .
 
 [commit]: https://github.com/swcarpentry/python-novice-inflammation/tree/76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a
 
-Due to the workshop being my first[^unprepared], I thought
-I could get away with teaching all of the topics straight through.
-Much of my adaptation of the first day's material was done on the fly.
-Before the following afternoon,
-I prepared a subset of the second day's material.
-I'm relying on my (somewhat traumatic) memory of the first session,
-and the outline I wrote-out before the second day.
+With this as my first workshop[^unprepared], I (incorrectly) thought
+I could teach all of the topics straight through.
+By the time it became apparent that this wasn't going to work,
+adapting the first day's material had to be done on the fly.
+After that experience, and
+before the following afternoon,
+I prepared a subset of the remaining material that I thought I could cover
+I'm now relying on my (somewhat traumatic) memory of the first session,
+and that outline I put together for the second day to write this summary.
 
-[^unprepared]: and not sufficiently preparing
+[^unprepared]: and being insufficiently prepared
 
 My plan going in was to split [the material][python-topics] after Topic 6,
 getting learners up to writing functions on the first day,
-so that we could discuss debugging and best-practices the next,
-and transition from the Jupyter notebook to shell scripts.
+so that we could discuss debugging and best-practices,
+and transition from the Jupyter notebook to shell scripts, the next day.
 Based on my co-instructors recommendation,
 I did not have learners do all of the challenge questions for each topic,
-but instead picked just one
-(and sometimes a second if I thought it would be useful).
+but instead picked just one or two that I thought would be most useful.
 
 [python-topics]: http://swcarpentry.github.io/python-novice-inflammation/index.html#topics
 
@@ -70,7 +70,7 @@ I found myself wishing (especially for Topic 1: "Analyzing Patient Data") that
 some of the easier questions were integrated into the lesson itself, instead of
 all at the bottom.
 Learners should have had more chances to problem-solve early, instead of
-listening to me for the entirety of each topic before getting there feet wet.
+listening to me for the entirety of each topic before getting their feet wet.
 
 ## Motivating Python ##
 
@@ -87,8 +87,8 @@ It was also too long relative to the other sections, in my opinion.
 [topic-1]: http://swcarpentry.github.io/python-novice-inflammation/01-numpy.html
 
 It _was_ very good, however, for introducing some python specifics, especially
-things which learners coming from other languages like R or Mathematica might
-not know (e.g. 0-indexing, slices, that variable assignment happens when that
+things that learners coming from other languages like R or Mathematica might
+not know (e.g. 0-indexing, slices, that variable assignment happens when each
 line is executed, etc.).
 It gave learners a chance to be surprised by their misconceptions and ask
 questions.
@@ -107,7 +107,8 @@ Is there a reason we use these data?
 
 ## Python basics: lists, loops, conditionals, etc. ##
 
-[Topics 2][topic-2] and [3][topic-3] were good and short.
+[Topics 2][topic-2] and [3][topic-3], "Repeating Actions with Loops" and
+"Storing Multiple Values in Lists" respectively, were good and short.
 I didn't feel like I had to cut anything out.
 However, for-loop syntax was not explicitly covered early in the lesson plan.
 It wasn't until I realized I had gotten ahead of myself that we talked about
@@ -134,29 +135,34 @@ using a loop), since we hadn't covered `range`, `append`ing to lists,
 What novice audience is that question appropriate for?
 Maybe the solution is simple and I'm just confused...
 
-The material for [topic 4][topic-4] worked well overall.
+The material for [topic 4][topic-4], "Analyzing Data from Multiple Files"
+worked well overall.
 The only mistake I remember was copy-pasting the big chunk of code from the
 lesson (looping over files and drawing sets of plots) instead of typing it out.
-I figured since most of the code was library calls, that learners wouldn't get
+I figured since most of the code was library calls, learners wouldn't get
 anything out of me taking the time to type all of it.
-That may be true, but it meant the learners weren't executing the code at the
+That may have been true, but it meant the learners weren't executing the code
+at the
 same time as me, which interrupted the flow of the lesson.
 
 [topic-4]: http://swcarpentry.github.io/python-novice-inflammation/04-files.html
 
-[Topic 5][topic-5] on if-statements was where things got hairy.
+[Topic 5][topic-5], "Making Choice" (if-statements), was where things got
+hairy.
 I panicked a bit and went mostly off the lesson plan.
 It did not go well.
 When I tried to find something in the lesson to get me back on track,
-I wish there had been more explicit discussion of syntax and booleans.
-I was able to review this topic the next day, which I think got lost learners
+I wished there was more explicit discussion of syntax and booleans.
+I was able to review the topic the next day, which I think got any lost
+learners
 mostly caught up.
 
 [topic-5]: http://swcarpentry.github.io/python-novice-inflammation/05-cond.html
 
 As you can imagine, at this point we were nearing the end of the first day.
 I did manage to show the learners the syntax for defining and using functions,
-but I re-did that [topic (6)][topic-6] entirely at the start of the next
+but I covered [topic 6][topic-6], "Creating Functions", in its entirety at the
+start of the next
 session.
 
 [topic-6]: http://swcarpentry.github.io/python-novice-inflammation/06-func.html
@@ -194,7 +200,7 @@ Syntax errors also combined nicely with learning function definition syntax.
 
 [^metamemory]: Despite the fact that I have those notes, I actually don't
     remember the details of that day's lesson as well.
-    I wonder if that's some weird metamemory thing
+    I wonder if there's some weird metamemory thing going on
     e.g. [this][google-memory] (unfortunately paywalled).
 
 [google-memory]: http://www.sciencemag.org/content/333/6043/776.abstract
@@ -217,7 +223,7 @@ I was surprised to see that the lesson plans have only limited discussion of
 file objects, only really dealing with them in the section on `IOErrors`.
 I think learners appreciated a chance to see how the array data they had used
 the day before were saved as a CSV,
-and how they could access that data directly.
+and how they could access the data directly.
 It also gave us a chance to show that other objects besides lists and strings
 can serve as iterators in for-loops.
 
@@ -239,8 +245,8 @@ This was a much more difficult task than I expected
 and served nicely to demonstrate defensive programming and debugging.
 While we touched on many of the concepts in [topics 8][topic-8] and
 [9][topic-9],
-these ideas were spread throughout,
-and I did not walk through either as their own lesson.
+these ideas, defensive programming and debugging, were spread throughout,
+and I did not walk through either as an atomic lesson.
 
 [topic-8]: http://swcarpentry.github.io/python-novice-inflammation/08-defensive.html
 
@@ -248,12 +254,12 @@ and I did not walk through either as their own lesson.
 
 My ultimate goal on the second day was to write a program to calculate
 the mean inflammation of each subject in the example files and then
-transform that program into a command-line script which would operate as a
+transform the program into a command-line script that would operate as a
 UNIX-style filter.
 I remember Greg Wilson teaching Python scripting (along with BASH and SQL)
 that way during my first workshop (as a _learner_!) at MSU
 in May 2012[^swc-msu].
-This seemed like a worthwhile mini-capstone,
+This [last topic][topic-10] seemed like a worthwhile mini-capstone,
 since it would reintroduce ideas from the BASH lesson the day before,
 and we could version-control our work with git.
 While we managed to run our code as a script (rather than a cell in the
@@ -265,30 +271,32 @@ didn't have time to add `sys.argv` or `sys.stdin`.
 
 [msu-site]: https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/
 
+[topic-10]: http://swcarpentry.github.io/python-novice-inflammation/10-cmdline.html
+
 ## Take-aways ##
 
 The second day of Python was much smoother than the first, and, while we
 did not get to all of the material, I was satisfied with what we did cover.
-It's quite remarkable that learners can go from indexing into lists all the way
-to defensive programming and unit tests.
+It's quite remarkable that learners can go all the way from indexing into lists
+to defensive programming and unit tests in just a few hours.
 I'm not convinced that we got them far enough to jump right into using Python
 for their own work, but I hope it was a good kick-start towards that goal.
 I'm amazed some novice workshops only allocate a half-day session to the
 programming language (be it Python, R, or Matlab),
 although a quick survey of [upcoming workshops][upcoming] suggests that almost
 _all_ of them do in fact use two sessions.
-Is this the standard approach (and if so where is it documented)
+Is this the recommended approach (and if so where is it documented)
 or have many instructors all independently come to the same conclusion?
 
 [upcoming]: http://software-carpentry.org/workshops/index.html#future
 
 Even so, there's still more material in python-novice-inflammation
 than can be covered in two sessions.
-I'm under the impression that this repository is sort of _meant_ to be like
+I'm under the impression that the repository is sort of _meant_ to be like
 that: way too big, so that instructors can pick and choose the parts that are
 most salient for their audience.
-That seems like a good idea, but
-(while many of the difficulties I had could have been solved with better
-preparation on my part)
+This seems like a good idea, but
 it was not sufficiently communicated to me as a first-time instructor,
-and having a "default" subset would have been helpful.
+and, while many of the difficulties I had could have been solved with more
+comprehensive preparation,
+having a "default" subset would have been helpful.
