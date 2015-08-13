@@ -52,6 +52,8 @@ EXTRA_PATH_METADATA = {'static/favicon.ico': {'path': './favicon.ico'}}
 
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
+DRAFT_URL = '{slug}.html'
+DRAFT_SAVE_AS = '{slug}.html'
 
 # Extract metadata from the filename
 SLUGIFY_SOURCE = 'basename'
