@@ -25,5 +25,7 @@ Author: Byron J. Smith
   [first post](./initial-commit.html).
 
   You can reach me at
-  <a itemprop="email" href=mailto:me@byronjsmith.com>me@byronjsmith.com</a>.
+  <a itemprop="email" href=mailto:me@byronjsmith.com>me@byronjsmith.com</a>
+  and check out my resume
+  <a href="http://byronjsmith.com/resume.html">here</a>.
 </span>
