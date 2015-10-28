@@ -4,5 +4,5 @@ cache/
 *.pyc
 *.pid
 develop_server.sh
-venv/
+.venv/
 privateconf.py
