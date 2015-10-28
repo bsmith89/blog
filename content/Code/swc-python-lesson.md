@@ -1,16 +1,17 @@
 ---
 title: First Time Teaching Python to Novices
-date: 2015-08-11 4:00
+date: 2015-08-12 01:00
 tags: software-carpentry, teaching, programming, mistakes, python
+modified: 2015-08-14 10:00
 ...
 
 This July I co-instructed with [Jennifer Shelton][shelton]
 a Software Carpentry [workshop][workshop-page] at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
-Jennifer taught the shell (BASH) and version control with Git,
+Jennifer taught the shell (Bash) and version control with Git,
 while I taught the general programming language Python.
 I've been aware of the [organization][swc-site], which teaches software
-development and computational methods to scientists, since going to a
+development and computational methods to scientists, since attending a
 workshop in 2012.
 Since then I've served as a helper at one workshop
 (troubleshooting individual learner's problems and helping catch them up with
@@ -50,7 +51,7 @@ By the time it became apparent that this wasn't going to work,
 adapting the first day's material had to be done on the fly.
 After that experience, and
 before the following afternoon,
-I prepared a subset of the remaining material that I thought I could cover
+I prepared a subset of the remaining material that I thought I could cover.
 I'm now relying on my (somewhat traumatic) memory of the first session,
 and that outline I put together for the second day to write this summary.
 
@@ -74,7 +75,7 @@ listening to me for the entirety of each topic before getting their feet wet.
 
 ## Motivating Python ##
 
-For that [first topic][topic-1] I did cover everything, but wish I hadn't,
+For that [first topic][topic-1] I _did_ cover everything, but wish I hadn't,
 since it was mostly focused on array operations and the specifics of working
 with NumPy (e.g. operations along axes).
 I appreciated that we were showing the learners powerful library features to
@@ -245,7 +246,7 @@ This was a much more difficult task than I expected
 and served nicely to demonstrate defensive programming and debugging.
 While we touched on many of the concepts in [topics 8][topic-8] and
 [9][topic-9],
-these ideas, defensive programming and debugging, were spread throughout,
+these ideas, were spread throughout,
 and I did not walk through either as an atomic lesson.
 
 [topic-8]: http://swcarpentry.github.io/python-novice-inflammation/08-defensive.html
@@ -256,11 +257,11 @@ My ultimate goal on the second day was to write a program to calculate
 the mean inflammation of each subject in the example files and then
 transform the program into a command-line script that would operate as a
 UNIX-style filter.
-I remember Greg Wilson teaching Python scripting (along with BASH and SQL)
+I remember Greg Wilson teaching Python scripting (along with Bash and SQL)
 that way during my first workshop (as a _learner_!) at MSU
 in May 2012[^swc-msu].
 This [last topic][topic-10] seemed like a worthwhile mini-capstone,
-since it would reintroduce ideas from the BASH lesson the day before,
+since it would reintroduce ideas from the Bash lesson the day before,
 and we could version-control our work with git.
 While we managed to run our code as a script (rather than a cell in the
 Jupyter notebook), the transition was a little rough around the edges, and we
