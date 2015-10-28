@@ -10,7 +10,7 @@ from pelicanconf import *
 
 SITEURL = "http://blog.byronjsmith.com"
 DISQUS_SITENAME = "byronjsmithblog"
-GOOGLE_ANALYTICS = "UA-40659359-1"
+GOOGLE_ANALYTICS = "UA-40659359-2"
 
 RELATIVE_URLS = False
 
