@@ -11,4 +11,4 @@ from publishconf import *
 SITEURL = "http://bsmith89.github.io/blog"
 GOOGLE_ANALYTICS = "UA-40659359-3"
 
-LINKS = LINKS + [('(The real site)', 'http://blog.byronjsmith.com')]
+LINKS += [('(The real site)', 'http://blog.byronjsmith.com')]
