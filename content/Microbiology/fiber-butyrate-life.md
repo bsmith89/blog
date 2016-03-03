@@ -1,8 +1,10 @@
 ---
-Title: "Not all carbs are bad: Getting enough fiber might do more than keep you regular."
+Title: "Not all carbs are bad."
 Date: 2015-10-27 21:30
 Tags: longevity, microbiome, diet, popular science
 ...
+
+## Getting enough fiber might do more than keep you regular. ##
 
 _This brief post was written as a popular science article for a class on
 science communication.
