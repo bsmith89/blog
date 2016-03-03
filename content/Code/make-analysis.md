@@ -17,25 +17,26 @@ Carpentry [Make lesson][swc-make-lesson] ([repository][swc-make-repo]).
 [swc-make-repo]: https://github.com/swcarpentry/make-novice
 
 I'm posting this tutorial because I think it's a good introduction to the
-analysis pipeline practices I have been slowly adopting over the last several
+analysis pipeline approach I have been slowly adopting over the last several
 years.
-That approach is even more deeply enshrined in a
-[project template][compbio-template] that I have been developing,
-but which I am not ready to actively promote.
+This approach is even more deeply enshrined in a
+[project template][compbio-template] that I have been developing.
+You can think of this tutorial as a gentle introduction to the motivation
+for that template.
 
 [compbio-template]:https://github.com/bsmith89/compbio-template
-
-While much of the material is original, it was heavily inspired by the
-Software Carpentry Make lesson which is licensed under [CC-BY 4.0.][cc-by],
-and the example files are almost identical.
-
-[cc-by]: https://creativecommons.org/licenses/by/4.0/legalcode
 
 The goals of this tutorial are three-fold:
 
 -   Teach GNU Make basics,
 -   Demonstrate the use of general best-practices (version control, README's, etc.), and
 -   Describe my preferred way to organize projects.
+
+While much of the material is original, it was heavily inspired by the
+Software Carpentry Make lesson which is licensed under [CC-BY 4.0.][cc-by],
+and the example files are almost identical.
+
+[cc-by]: https://creativecommons.org/licenses/by/4.0/legalcode
 
 And it is divided into five sections:
 
