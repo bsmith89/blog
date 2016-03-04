@@ -1,10 +1,19 @@
 ---
-title: Reproducible bioinformatics pipelines using GNU Make
+title: 'Tutorial: Reproducible bioinformatics pipelines using GNU Make'
 date: 2016-03-04 12:00
 tags: software-carpentry, teaching, programming, make, pipelines, bioinformatics, software
+modified: 2016-03-05 10:00
 ...
 
-This blog post is the clone of a tutorial that I wrote for Titus Brown's
+For most projects with moderate to intense data analysis you should
+consider using _Make_.
+Some day I'll write a post telling you why, but for now check out
+[this post][why-make] by Zachary M. Jones.
+If you're already convinced, or just want to see what it's all about, read on.
+
+[why-make]: http://zmjones.com/make/
+
+This post is the clone of a tutorial that I wrote for Titus Brown's
 week-long [Bioinformatics Workshop][bodega-workshop] at UC Davis's Bodega
 Marine Laboratory in February, 2016.
 For now, the live tutorial lives in [a Github repository][make-bml-repo],
@@ -33,8 +42,9 @@ The goals of this tutorial are three-fold:
 -   Describe my preferred way to organize projects.
 
 While much of the material is original, it was heavily inspired by the
-Software Carpentry Make lesson which is licensed under [CC-BY 4.0.][cc-by],
-and the example files are almost identical.
+[Software Carpentry Make lesson][swc-make-lesson]
+which is licensed [CC-BY 4.0.][cc-by],
+and the example project is almost identical.
 
 [cc-by]: https://creativecommons.org/licenses/by/4.0/legalcode
 
