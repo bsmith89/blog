@@ -2,15 +2,20 @@
 Title: 'PyMake I: Another GNU Make Clone'
 Date: 2013-05-07 19:00
 Tags: python, software, development, make, pipelines, bioinformatics
-modified: 2015-07-15 8:00
+modified: 2016-03-04 10:00
 ...
 
-~~_This is the first of two posts about my program
+(Edit 1): ~~_This is the first of two posts about my program
 [PyMake](http://github.com/bsmith89/pymake/).  I'll post the link to Part II
 here when I've written it._~~
-_While I still agree with some of the many of the views expressed in this
-piece, I have changed my thinking on Makefiles.  I'll post a new post about
-the topic when I take the time to write it._
+_While I still agree with some of the many of the views expressed in
+this piece, I have changed my thinking on Makefiles._
+
+(Edit 2): ~~_I'll post a new post about the topic when I take the time to write it._~~
+_I've written a [tutorial][make-analysis] on using _Make_ for reproducible data
+analysis_.
+
+[make-analysis]: make-analysis.html
 
 I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
