@@ -58,6 +58,8 @@ html:
 	$(PELICAN) $(INPUTDIR) -D -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 upload:
+	git diff --quiet  # Have you committed all your changes?
+	git push
 	@${MAKE} github
 	@${MAKE} rsync_upload
 
