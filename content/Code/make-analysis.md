@@ -8,10 +8,12 @@ modified: 2016-03-05 10:00
 For most projects with moderate to intense data analysis you should
 consider using _Make_.
 Some day I'll write a post telling you why, but for now check out
-[this post][why-make] by Zachary M. Jones.
+[this post][why-make] by Zachary M. Jones[^similar-title].
 If you're already convinced, or just want to see what it's all about, read on.
 
 [why-make]: http://zmjones.com/make/
+[^similar-title]: I swear I didn't know about that post when I titled my tutorial.
+    Great minds think alike?
 
 This post is the clone of a tutorial that I wrote for Titus Brown's
 week-long [Bioinformatics Workshop][bodega-workshop] at UC Davis's Bodega
