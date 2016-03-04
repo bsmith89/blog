@@ -665,7 +665,7 @@ make isles.dat
 <p>Now run <code>make all</code> again. What happened?</p>
 </blockquote>
 <p>As it stands, we have to run <code>make clean</code> followed by <code>make all</code> to update our analysis with the new script. We're missing out on the benefits of incremental analysis when our scripts are changing too.</p>
-<p>There must be a better way...and there is! Scripts should be prerequisites too.</p>
+<p>There must be a better way...and there is! <em>Scripts should be prerequisites too.</em></p>
 <p>Let's edit the pattern rule for <code>%.png</code> to include <code>plotcounts.py</code> as a prerequisites.</p>
 <div class="highlight"><pre><span class="nf">%.png</span><span class="o">:</span> <span class="n">plotcounts</span>.<span class="n">py</span> %.<span class="n">dat</span>
 	./<span class="nv">$^</span> <span class="nv">$@</span>

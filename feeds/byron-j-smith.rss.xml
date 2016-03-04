@@ -550,7 +550,7 @@ make isles.dat
 &lt;p&gt;Now run &lt;code&gt;make all&lt;/code&gt; again. What happened?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;As it stands, we have to run &lt;code&gt;make clean&lt;/code&gt; followed by &lt;code&gt;make all&lt;/code&gt; to update our analysis with the new script. We're missing out on the benefits of incremental analysis when our scripts are changing too.&lt;/p&gt;
-&lt;p&gt;There must be a better way...and there is! Scripts should be prerequisites too.&lt;/p&gt;
+&lt;p&gt;There must be a better way...and there is! &lt;em&gt;Scripts should be prerequisites too.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Let's edit the pattern rule for &lt;code&gt;%.png&lt;/code&gt; to include &lt;code&gt;plotcounts.py&lt;/code&gt; as a prerequisites.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;%.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;plotcounts&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; %.&lt;span class="n"&gt;dat&lt;/span&gt;
 	./&lt;span class="nv"&gt;$^&lt;/span&gt; &lt;span class="nv"&gt;$@&lt;/span&gt;
