@@ -72,8 +72,8 @@
 	<header>
 		<h1 id="main-title" itemprop="headline">
 			<a  href="http://bsmith89.github.io/blog/make-analysis.html" rel="bookmark"
-				title="Permalink to Reproducible bioinformatics pipelines using GNU Make">
-				Reproducible bioinformatics pipelines using GNU Make
+				title="Permalink to Tutorial: Reproducible bioinformatics pipelines using GNU Make">
+				Tutorial: Reproducible bioinformatics pipelines using GNU Make
 			</a>
 		</h1>
 	
@@ -88,6 +88,14 @@
 	</span>
 </div>
 
+<div class="modified">
+	<span class="info-tag">edited:</span>
+	<span class="info-value" itemprop="dateModified">
+		<abbr title="2016-03-05 10:00:00-05:00">
+			March 5, 2016, 10:00
+		</abbr>
+    </span>
+</div>
 
 
 <div class="category">
@@ -106,7 +114,8 @@
 </div><!-- /.tags -->
 	</footer><!-- /.info -->
 	<div class="content" itemprop="articleBody">
-		<p>This blog post is the clone of a tutorial that I wrote for Titus Brown's week-long <a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html">Bioinformatics Workshop</a> at UC Davis's Bodega Marine Laboratory in February, 2016. For now, the live tutorial lives in <a href="https://github.com/bsmith89/make-bml">a Github repository</a>, although I eventually want to merge all of the good parts into the Software Carpentry <a href="https://swcarpentry.github.io/make-novice">Make lesson</a> (<a href="https://github.com/swcarpentry/make-novice">repository</a>).</p>
+		<p>For most projects with moderate to intense data analysis you should consider using <em>Make</em>. Some day I'll write a post telling you why, but for now check out <a href="http://zmjones.com/make/">this post</a> by Zachary M. Jones<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. If you're already convinced, or just want to see what it's all about, read on.</p>
+<p>This post is the clone of a tutorial that I wrote for Titus Brown's week-long <a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html">Bioinformatics Workshop</a> at UC Davis's Bodega Marine Laboratory in February, 2016. For now, the live tutorial lives in <a href="https://github.com/bsmith89/make-bml">a Github repository</a>, although I eventually want to merge all of the good parts into the Software Carpentry <a href="https://swcarpentry.github.io/make-novice">Make lesson</a> (<a href="https://github.com/swcarpentry/make-novice">repository</a>).</p>
 <p>I'm posting this tutorial because I think it's a good introduction to the analysis pipeline approach I have been slowly adopting over the last several years. This approach is even more deeply enshrined in a <a href="https://github.com/bsmith89/compbio-template">project template</a> that I have been developing. You can think of this tutorial as a gentle introduction to the motivation for that template.</p>
 <p>The goals of this tutorial are three-fold:</p>
 <ul>
@@ -114,16 +123,17 @@
 <li>Demonstrate the use of general best-practices (version control, README's, etc.), and</li>
 <li>Describe my preferred way to organize projects.</li>
 </ul>
-<p>While much of the material is original, it was heavily inspired by the Software Carpentry Make lesson which is licensed under <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY 4.0.</a>, and the example files are almost identical.</p>
+<p>While much of the material is original, it was heavily inspired by the <a href="https://swcarpentry.github.io/make-novice">Software Carpentry Make lesson</a> which is licensed <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC-BY 4.0.</a>, and the example project is almost identical.</p>
 <p>And it is divided into five sections:</p>
 <ol type="1">
-<li><a href="#setup">Setup</a> (Estimated time: 15 Minutes)</li>
-<li><a href="#motivation">Motivation</a> (30 minutes)</li>
-<li><a href="#makefile-basics">Makefile basics</a> (45 minutes)</li>
-<li><a href="#make-features"><em>Make</em> features</a> (45 minutes)</li>
-<li><a href="#best-practices-for-make-based-projects">Best practices for <em>Make</em>-based projects</a> (60 minutes)</li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#makefile-basics">Makefile basics</a></li>
+<li><a href="#make-features"><em>Make</em> features</a></li>
+<li><a href="#best-practices-for-make-based-projects">Best practices for <em>Make</em>-based projects</a></li>
 </ol>
 <h1 id="setup">Setup</h1>
+<p>(Estimated time: 15 Minutes)</p>
 <p>This tutorial was designed for UNIX systems and has been tested on Amazon EC2 using the Ubuntu Server 14.04 LTS image and a &quot;m3.medium&quot; instance. If you would like to use Windows, Git-Bash (packaged with Git for Windows) is probably your best bet, although it has not been tested on that platform.</p>
 <p>For this lesson we will be using an already prepared set of files.</p>
 <div class="highlight"><pre>curl https://codeload.github.com/bsmith89/make-example/tar.gz/v1.0-snap <span class="se">\</span>
@@ -167,6 +177,7 @@ git config --global user.email you@example.com
 </pre></div>
 
 <h1 id="motivation">Motivation</h1>
+<p>(Estimated time: 30 minutes)</p>
 <blockquote>
 <p>The most frequently-occurring word occurs approximately twice as often as the second most frequent word. This is <a href="http://en.wikipedia.org/wiki/Zipf%27s_law">Zipf's Law</a>.</p>
 </blockquote>
@@ -302,6 +313,7 @@ rm -r zipf_results
 <p>But this process, and subsequently undoing it, can be a hassle and source of errors in complicated pipelines.</p>
 <p>What we really want is an executable <em>description</em> of our pipeline that allows software to do the tricky part for us: figuring out what steps need to be rerun. It would also be nice if this tool encourage a <em>modular</em> analysis and reusing instead of rewriting parts of our pipeline. As an added benefit, we'd like it all to play nice with the other mainstays of reproducible research: version control, Unix-style tools, and a variety of scripting languages.</p>
 <h1 id="makefile-basics">Makefile basics</h1>
+<p>(Estimated time: 45 minutes)</p>
 <p><em>Make</em> is a computer program originally designed to automate the compilation and installation of software. <em>Make</em> automates the process of building target files through a series of discrete steps. Despite it's original purpose, this design makes it a great fit for bioinformatics pipelines, which often work by transforming data from one form to another (e.g. <em>raw data</em> → <em>word counts</em> → <em>???</em> → <em>profit</em>).</p>
 <p>For this tutorial we will be using an implementation of <em>Make</em> called <em>GNU Make</em>, although others exist.</p>
 <h2 id="a-simple-makefile">A simple Makefile</h2>
@@ -311,7 +323,7 @@ rm -r zipf_results
 	./wordcount.py books/isles.txt isles.dat
 </pre></div>
 
-<p>We have now written the simplest, non-trivial Makefile<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. It is pretty reminiscent of one of the lines from our master script. It is a good bet that you can figure out what this Makefile does.</p>
+<p>We have now written the simplest, non-trivial Makefile<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. It is pretty reminiscent of one of the lines from our master script. It is a good bet that you can figure out what this Makefile does.</p>
 <p>Be sure to notice a few syntactical items.</p>
 <p>The part before the colon is called the <strong>target</strong> and the part after is our list of <strong>prerequisites</strong> (there is just one in this case). This first line is followed by an indented section called the <strong>recipe</strong>. The whole thing is together called a <strong>rule</strong>.</p>
 <p>Notice that the indent is <em>not</em> multiple spaces, but is instead a single tab character. This is the first gotcha in makefiles. If the difference between spaces and a tab character isn't obvious in your editor of choice, try moving your cursor from one side of the tab to the other. It should <em>jump</em> four or more spaces. If your recipe is not indented with a tab character it is likely to not work.</p>
@@ -341,7 +353,7 @@ git commit -m <span class="s2">&quot;Start converting master script into a Makef
 
 <p>You should see the following print to the terminal:</p>
 <div class ="highlight"><pre>./wordcount.py books/isles.txt isles.dat</pre></div>
-<p>By default, <em>Make</em> prints the recipes that it executes<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
+<p>By default, <em>Make</em> prints the recipes that it executes<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
 <p>Let's see if we got what we expected.</p>
 <div class="highlight"><pre>head -5 isles.dat
 </pre></div>
@@ -486,6 +498,7 @@ rm clean
 </pre></div>
 
 <h1 id="make-features"><em>Make</em> features</h1>
+<p>(Estimated time: 45 minutes)</p>
 <p>Right now our Makefile looks like this:</p>
 <div class="highlight"><pre><span class="c"># Dummy targets</span>
 <span class="nf">all</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span> <span class="n">zipf_results</span>.<span class="n">tgz</span>
@@ -544,7 +557,7 @@ make --jobs
 	./wordcount.py <span class="nv">$^</span> <span class="nv">$@</span>
 </pre></div>
 
-<p>Here we've replaced the prerequisite &quot;<code>books/isles.txt</code>&quot; in the recipe with &quot;<code>$^</code>&quot; and the target &quot;<code>isles.dat</code>&quot; with &quot;<code>$@</code>&quot;. Both &quot;<code>$^</code>&quot; and &quot;<code>$@</code>&quot; are variables that refer to all of the prerequisites and target of a rule, respectively. In <em>Make</em>, variables are referenced with a leading dollar sign symbol. While we can also define our own variables, <em>Make</em> <em>automatically</em> defines a number of variables, like the ones I've just shown you<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
+<p>Here we've replaced the prerequisite &quot;<code>books/isles.txt</code>&quot; in the recipe with &quot;<code>$^</code>&quot; and the target &quot;<code>isles.dat</code>&quot; with &quot;<code>$@</code>&quot;. Both &quot;<code>$^</code>&quot; and &quot;<code>$@</code>&quot; are variables that refer to all of the prerequisites and target of a rule, respectively. In <em>Make</em>, variables are referenced with a leading dollar sign symbol. While we can also define our own variables, <em>Make</em> <em>automatically</em> defines a number of variables, like the ones I've just shown you<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>.</p>
 <p>Therefore</p>
 <div class="highlight"><pre><span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
 	rm -rf zipf_results/
@@ -618,7 +631,7 @@ make isles.dat
 
 <p>Just like many other languages, in makefiles &quot;<code>\</code>&quot; is a line-continuation character. Think of this variable definition as a single line without the backslash.</p>
 <p>The variable <code>ARCHIVED</code> is a list of the files that we want to include in our tarball. Now wherever we write <code>${ARCHIVED}</code> it will be replaced with that list of files. The dollar sign, &quot;<code>$</code>&quot;, and curly-braces, &quot;<code>{}</code>&quot;, are both mandatory when inserting the contents of a variable.</p>
-<p>Notice the backslashes in the variable definition splitting the list over three lines, instead of one very long line. Also notice that we assigned to the variable with &quot;<code>:=</code>&quot;. This is generally a Good Idea; Assigning with a normal equals sign can result in non-intuitive behavior for reasons that we will not be talking about<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>. Finally, notice that the items in our list are separated by <em>whitespace</em>, not commas. Prerequisite lists were the same way; this is just how lists of things work in makefiles. If you included commas they would be considered parts of the filenames.</p>
+<p>Notice the backslashes in the variable definition splitting the list over three lines, instead of one very long line. Also notice that we assigned to the variable with &quot;<code>:=</code>&quot;. This is generally a Good Idea; Assigning with a normal equals sign can result in non-intuitive behavior for reasons that we will not be talking about<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>. Finally, notice that the items in our list are separated by <em>whitespace</em>, not commas. Prerequisite lists were the same way; this is just how lists of things work in makefiles. If you included commas they would be considered parts of the filenames.</p>
 <p>Using this variable we can replace the prerequisites of <code>zipf_results.tgz</code>. That rule would now be:</p>
 <div class="highlight"><pre><span class="nf">zipf_results.tgz</span><span class="o">:</span> ${<span class="n">ARCHIVED</span>}
 	rm -rf zipf_results/
@@ -639,6 +652,7 @@ make isles.dat
 <p>Does everything still work?</p>
 </blockquote>
 <h1 id="best-practices-for-make-based-projects">Best practices for <em>Make</em>-based projects</h1>
+<p>(Estimated time: 60 minutes)</p>
 <p>A Makefile can be an important part of a reproducible research pipeline. Have you noticed how simple it is now to add/remove books from our analysis? Just add or remove those files from the definition of <code>ARCHIVED</code> or the prerequisites for the <code>all</code> target! With a master script approach, like <code>run_pipeline.sh</code>, adding an additional book required either more complicated or less transparent changes.</p>
 <h2 id="whats-a-prerequisite">What's a prerequisite?</h2>
 <p>We've talked a lot about the power of <em>Make</em> for rebuilding research outputs when input data changes. When doing novel data analysis, however, it's very common for our <em>scripts</em> to be as or <em>more</em> dynamic than the data.</p>
@@ -900,10 +914,11 @@ git commit -m <span class="s2">&quot;Add pipeline testing recipe and book.&quot;
 <section class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>While several other filenames will work, it is a Good Idea to always call your Makefile <code>Makefile</code>.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Notice that we didn't tell <em>Make</em> to use <code>Makefile</code>. When you run <code>make</code>, the program automatically looks in several places for your Makefile.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>See https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html].<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>Variables are complicated in <em>Make</em>. Read the extensive [documentation][man-var] about variable assignment. [man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html<a href="#fnref4">↩</a></p></li>
+<li id="fn1"><p>I swear I didn't know about that post when I titled my tutorial. Great minds think alike?<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>While several other filenames will work, it is a Good Idea to always call your Makefile <code>Makefile</code>.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Notice that we didn't tell <em>Make</em> to use <code>Makefile</code>. When you run <code>make</code>, the program automatically looks in several places for your Makefile.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>See https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html].<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>Variables are complicated in <em>Make</em>. Read the extensive [documentation][man-var] about variable assignment. [man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html<a href="#fnref5">↩</a></p></li>
 </ol>
 </section>
 
@@ -988,7 +1003,7 @@ git commit -m <span class="s2">&quot;Add pipeline testing recipe and book.&quot;
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'byronjsmithblog'; // required: replace example with your forum shortname
     var disqus_identifier = 'make-analysis.html';
-    var disqus_title = 'Reproducible bioinformatics pipelines using GNU Make';
+    var disqus_title = 'Tutorial: Reproducible bioinformatics pipelines using GNU Make';
     var disqus_url = 'http://bsmith89.github.io/blog/make-analysis.html';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
