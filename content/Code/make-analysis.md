@@ -1035,7 +1035,8 @@ to update our analysis with the new script.
 We're missing out on the benefits of incremental analysis when our scripts
 are changing too.
 
-There must be a better way...and there is!  Scripts should be prerequisites too.
+There must be a better way...and there is!
+_Scripts should be prerequisites too._
 
 Let's edit the pattern rule for `%.png` to include `plotcounts.py`
 as a prerequisites.
