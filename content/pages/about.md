@@ -24,6 +24,17 @@ Author: Byron J. Smith
   For more information about how and why I put this blog together check out my
   [first post](./initial-commit.html).
 
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    <img alt="Creative Commons License"
+         style="border-width:0; width:10%; display:inline"
+         src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+  </a>
+  All content on this blog is licensed under a
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+  Creative Commons Attribution 4.0 International License
+  </a>.
+
+
   You can reach me at
   <a itemprop="email" href=mailto:me@byronjsmith.com>me@byronjsmith.com</a>
   and check out my resume
