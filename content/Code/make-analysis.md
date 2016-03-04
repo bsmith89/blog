@@ -52,15 +52,16 @@ and the example project is almost identical.
 
 And it is divided into five sections:
 
-1.  [Setup](#setup) (Estimated time: 15 Minutes)
-2.  [Motivation](#motivation) (30 minutes)
-3.  [Makefile basics](#makefile-basics) (45 minutes)
-4.  [_Make_ features](#make-features) (45 minutes)
+1.  [Setup](#setup)
+2.  [Motivation](#motivation)
+3.  [Makefile basics](#makefile-basics)
+4.  [_Make_ features](#make-features)
 5.  [Best practices for _Make_-based projects](#best-practices-for-make-based-projects)
-    (60 minutes)
 
 
 # Setup #
+
+(Estimated time: 15 Minutes)
 
 This tutorial was designed for UNIX systems and has been tested
 on Amazon EC2 using the
@@ -125,6 +126,8 @@ sudo apt-get install python3-matplotlib
 
 
 # Motivation #
+
+(Estimated time: 30 minutes)
 
 > The most frequently-occurring word occurs approximately twice as
 > often as the second most frequent word. This is
@@ -342,6 +345,8 @@ and a variety of scripting languages.
 
 
 # Makefile basics #
+
+(Estimated time: 45 minutes)
 
 _Make_ is a computer program originally designed to automate the compilation
 and installation of software.
@@ -698,6 +703,8 @@ rm clean
 
 # _Make_ features #
 
+(Estimated time: 45 minutes)
+
 Right now our Makefile looks like this:
 
 ```makefile
@@ -990,6 +997,8 @@ clean:
 
 
 # Best practices for _Make_-based projects #
+
+(Estimated time: 60 minutes)
 
 A Makefile can be an important part of a reproducible research pipeline.
 Have you noticed how simple it is now to add/remove books from our analysis?
