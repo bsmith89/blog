@@ -7,8 +7,9 @@ import sys
 sys.path.append(os.curdir)
 from publishconf import *
 
-# Override SITEURL
+# Override some variables
 SITEURL = "http://bsmith89.github.io/blog"
-GOOGLE_ANALYTICS = "UA-40659359-3"
+
+# GOOGLE_ANALYTICS = "UA-40659359-3"
 
 LINKS += [('(The real site)', 'http://blog.byronjsmith.com')]
