@@ -1,5 +1,5 @@
 ---
-Title: Software Carpentry Instructor Retention
+Title: Software Carpentry Instructor Training
 Subtitle: A survival analysis in python
 Date: 2016-05-30 12:00
 Tags: software-carpentry, python, statistics
@@ -21,7 +21,7 @@ I was excited to explore the data within that context.
 Survival analysis is focused on time-to-event data,
 for example time from birth until death, but also time to failure of
 engineered systems,
-or, in this case, time from instructor certification to first teaching a
+or in this case, time from instructor certification to first teaching a
 workshop.
 The language is somewhat morbid, but helps with talking
 precisely about models that can easily be applied to a variety of data,
@@ -29,7 +29,7 @@ only sometimes involving death or failure.
 The power of modern survival analysis is the ability to include results from
 subjects who have not yet experienced the event when data is collected.
 After all, studies rarely have the funding or patience to continue indefinitely.
-and excluding those data points entirely would mistakenly inflate rate
+and excluding those data points entirely would falsely inflate rate
 estimates.
 Instead, the absence of an event for an individual during the study is useful
 information that contributes to the precise estimation of rates.
@@ -48,6 +48,10 @@ import numpy as np
 import patsy
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+# If you're using jupyter:
+%matplotlib inline
 
 raw_data = pd.read_csv('teaching-stats-2016-05.csv').sort_values('Person')
 
@@ -103,6 +107,7 @@ def get_person_details(data):
 data = raw_data.groupby('Person').apply(get_person_details)
 
 print(data.head())
+
 ```
 
 ```
@@ -119,7 +124,6 @@ Person
 And some calculations
 
 ```python
-
 data.certified = pd.to_datetime(data.certified)
 data.taught_first = pd.to_datetime(data.taught_first)
 data.taught_second = pd.to_datetime(data.taught_second)
@@ -139,7 +143,7 @@ I'd like to include data on how long instructors have been certified,
 since, for instructors who have not taught, thats how long they have
 gone without teaching.
 To get this value I need to a collection date for the data, which I don't know.
-For now, I'll use June 1st.
+For now, I'll use June 1st since I know the data was from May.
 
 ```python
 COLLECTION_DATE = pd.datetime(year=2016, month=6, day=1)
@@ -200,8 +204,8 @@ Of the 474 instructors in this data, 228 have not yet taught.
 Now we jump into the survival analysis.
 I'm going to compare time-to-first-teaching to the year in which instructors
 were certified.
-This is mostly because I need a covariate here, and I don't have access to
-more interesting ones, like what style of training it was.
+This is mostly because I want a covariate here, and I don't have access to
+more interesting ones, e.g. what style of training it was (online, 2-day, etc.).
 
 ```python
 # We'll be modifying our data, so a copy will keep the original pristine.
@@ -258,12 +262,12 @@ instructors who have not yet taught by a given number of days after
 they were certified.
 
 Despite the fact that about 50% of certified instructors have not yet taught,
-many of these are recently trained and we can expect them to teach in the
+many of these are recently trained and we expect them to teach in the
 future.
 50% of certified instructors teach by 200 days.
 After more than a year, however, the survival curve flattens out.
 Approximately 30% of instructors get to 400 days without having taught
-and at 600 days approximately 30% have still not taught.
+and at 600 days about the same fraction have still not taught.
 If we want to extrapolate beyond the data (always a bad idea) then we
 might predict that these instructors will never teach.
 
@@ -279,7 +283,7 @@ print(fit1.summary())
 ====================================================================================
 Model:                       PH Reg                        Sample size:          474
 Dependent variable:          time_to_taught_first          Num. events:          246
-Ties:                        Breslow                                                
+Ties:                        Breslow
 ------------------------------------------------------------------------------------
                                 log HR log HR SE   HR      t    P>|t|  [0.025 0.975]
 ------------------------------------------------------------------------------------
@@ -347,7 +351,7 @@ print(fit2.summary())
 ==========================================================================
 Model:                  PH Reg                        Sample size:     246
 Dependent variable:     time_between_first_second     Num. events:     131
-Ties:                   Breslow                                           
+Ties:                   Breslow
 --------------------------------------------------------------------------
                       log HR log HR SE   HR      t    P>|t|  [0.025 0.975]
 --------------------------------------------------------------------------
@@ -359,17 +363,10 @@ Confidence intervals are for the hazard ratios
 
 We find a highly significant effect of time-to-first-teaching.
 
-
-```python
-print(("The per-day chance of teaching again goes down "
-       "by {:.2}% for every day "
-       "between certification and teaching the first time.")
-           .format(-fit2.params[0] * 100))
-
-```
-
-The per-day probability of teaching again goes down by 0.45% for every day
-between certification and teaching the first time.
+The hazard ratio estimate is 0.9955.
+We can interpret this to mean that the per-day probability of teaching again
+goes down by 0.45% for every day between certification and teaching the first
+time.
 This isn't all that surprising; individuals who are able to teach soon
 after being certified are probably both enthusiastic and have more time
 to devote to teaching.
@@ -380,7 +377,7 @@ I'd love to hear what you think and if you spot any glaring mistakes in my
 analysis.
 All of the code to do this is available [on github][survival-github].
 If you have ideas for additional analysis please leave a comment here,
-submit an issue to the github repository, or, even better, a pull-request.
+submit an issue to the github repository, or even better, a pull-request.
 
 [survival-github]: https://github.com/bsmith89/swc-instructor-training-analysis
 
