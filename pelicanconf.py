@@ -5,7 +5,6 @@ from glob import glob
 import os
 import sys
 sys.path.append(os.curdir)
-from privateconf import *
 
 # Site settings {{{1
 AUTHOR = "Byron J. Smith"
