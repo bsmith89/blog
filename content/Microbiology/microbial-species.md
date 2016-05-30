@@ -1,5 +1,5 @@
 ---
-Title: Do Bacterial Species Exist?
+Title: Do bacterial species exist?
 Date: 2013-08-06 18:30
 Tags: microbiology, species, semantics, rant
 ...

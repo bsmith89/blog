@@ -1,5 +1,5 @@
 ---
-Title: Even Pathogens Hate a Cheater
+Title: Even pathogens hate a cheater
 Date: 2013-06-19 12:00
 Tags: microbiology, cheaters, evolution, pathogens
 ...

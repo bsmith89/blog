@@ -1,5 +1,5 @@
 ---
-Title: You, Too, Can Host This Website
+Title: You, too, can host this website
 Date: 2013-07-13 17:00
 Tags: open-source, meta, pelican, website, blog
 ...

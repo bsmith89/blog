@@ -1,5 +1,5 @@
 ---
-title: First Time Teaching Python to Novices
+title: First time teaching Python to novices
 date: 2015-08-12 01:00
 tags: software-carpentry, teaching, programming, mistakes, python
 modified: 2015-08-14 10:00

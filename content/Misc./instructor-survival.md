@@ -1,5 +1,5 @@
 ---
-Title: Software Carpentry Instructor Training
+Title: Software carpentry instructor training
 Subtitle: A survival analysis in python
 Date: 2016-05-30 12:00
 Tags: software-carpentry, python, statistics

@@ -1,5 +1,5 @@
 ---
-Title: "Not All Carbs Are Bad"
+Title: Not all carbs are bad
 Subtitle: Getting enough fiber might do more than keep you regular.
 Date: 2015-10-27 21:30
 Tags: longevity, microbiome, diet, popular science
