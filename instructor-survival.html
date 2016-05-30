@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deep Ecology</title>
+<!-- #feeds -->
+<link href="http://bsmith89.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
+<link href="http://bsmith89.github.io/blog/feeds/category/misc.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
+<!-- /#feeds -->
+
+	<link rel="stylesheet" type="text/css" href="http://bsmith89.github.io/blog/theme/css/main.css" />
+<!-- #google-analytics-script -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40659359-2', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- /#google-analytics-script -->
+
+</head>
+
+<body id="main">
+<!-- #github-ribbon -->
+<a href="https://github.com/bsmith89">
+<img style="position: absolute; top: 0; right: 0; border: 0;"
+     src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+     alt="Fork me on GitHub"
+     id="gh-ribbon" />
+</a>
+<!-- /#github-ribbon -->
+
+	<div id="all-text">
+		<header id="main-banner" class="banner">
+		<h1 id="blog-title" class="title"><a href="http://bsmith89.github.io/blog/">
+			Deep Ecology
+			<span id="blog-subtitle" class="subtitle">
+				A blog of the new microbiology.
+			</span>
+		</a></h1>
+		<nav><ul>
+			<li><a  href="http://bsmith89.github.io/blog/category/code.html"
+>
+				Code
+			</a></li>
+			<li><a  href="http://bsmith89.github.io/blog/category/microbiology.html"
+>
+				Microbiology
+			</a></li>
+			<li><a  href="http://bsmith89.github.io/blog/category/misc.html"
+					class="active"
+>
+				Misc.
+			</a></li>
+		</ul></nav>
+		</header><!-- /#banner -->
+
+		<div id="content">
+<article itemscope itemtype="http://schema.org/BlogPosting">
+	<header>
+		<h1 id="main-title" itemprop="headline">
+			<a  href="http://bsmith89.github.io/blog/instructor-survival.html" rel="bookmark"
+				title="Permalink to Software Carpentry Instructor Retention">
+				Software Carpentry Instructor Retention
+			</a>
+		</h1>
+	
+	</header>
+	<footer class="info">
+<div class="published">
+	<span class="info-tag">published:</span>
+	<span class="info-value" itemprop="datePublished">
+		<abbr title="2016-05-30 12:00:00-04:00">
+			Monday, May 30, 2016
+		</abbr>
+	</span>
+</div>
+
+
+
+<div class="category">
+	<span class="info-tag">category:</span>
+	<span class="info-value" itemprop="articleSection">
+		<a href="http://bsmith89.github.io/blog/category/misc.html">
+			Misc.
+		</a>
+	</span>
+</div>
+
+<div class="tags">
+	<span class="info-tag">tags:</span>
+	<span class="info-value" itemprop="keywords">
+		<a href="http://bsmith89.github.io/blog/tag/software-carpentry.html">software-carpentry</a>, 		<a href="http://bsmith89.github.io/blog/tag/python.html">python</a>, 		<a href="http://bsmith89.github.io/blog/tag/statistics.html">statistics</a>	</span>
+</div><!-- /.tags -->
+	</footer><!-- /.info -->
+	<div class="content" itemprop="articleBody">
+		<p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of data about the organization's instructors, when they were certified, and when they taught. Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>, I was excited to explore the data within that context.</p>
+<p>Survival analysis is focused on time-to-event data, for example time from birth until death, but also time to failure of engineered systems, or, in this case, time from instructor certification to first teaching a workshop. The language is somewhat morbid, but helps with talking precisely about models that can easily be applied to a variety of data, only sometimes involving death or failure. The power of modern survival analysis is the ability to include results from subjects who have not yet experienced the event when data is collected. After all, studies rarely have the funding or patience to continue indefinitely. and excluding those data points entirely would mistakenly inflate rate estimates. Instead, the absence of an event for an individual during the study is useful information that contributes to the precise estimation of rates.</p>
+<p>Let's grab the Software Carpentry data and take a look.</p>
+<div class="highlight"><pre>curl -O http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
+</pre></div>
+
+<p>Now in Python:</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">patsy</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="kn">as</span> <span class="nn">sm</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="n">raw_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&#39;teaching-stats-2016-05.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">&#39;Person&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">raw_data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+<div class ="highlight"><pre>      Person   Certified      Taught
+1781   11268  2016-03-16         NaN
+1782   11278  2016-03-29         NaN
+1783   11280  2016-04-19         NaN
+1784   11292  2016-02-29         NaN
+1785   11293  2016-03-01         NaN
+1558   11294  2016-04-25  2016-04-18
+1557   11294  2016-04-25  2016-02-02
+1559   11295  2016-04-25  2016-02-02
+1786   11298  2016-04-21         NaN
+1787   11311  2016-04-19         NaN
+</pre></div>
+<p>This data is arranged as three columns: a ID number for each person, the date they were certified, and the date they taught. Individuals who have taught more than once have more than one row, and individuals who have been certified but have not yet taught have one row where taught is <code>NaN</code>.</p>
+<p>In our analysis, each certified instructor will be a data point with a certification date, a date of first teaching, second teaching, etc. Let's rearrange our data to reflect this structure using pandas split-apply-combine functionality.</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">get_person_details</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s">&#39;Taught&#39;</span><span class="p">)</span>
+    <span class="n">certified</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">Certified</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">certified</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="n">taught</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">Taught</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">taught</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">taught_first</span> <span class="o">=</span> <span class="n">taught</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">taught_second</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">taught_first</span> <span class="o">=</span> <span class="n">taught</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">taught_second</span> <span class="o">=</span> <span class="n">taught</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">({</span><span class="s">&#39;certified&#39;</span><span class="p">:</span> <span class="n">certified</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                      <span class="s">&#39;taught_first&#39;</span><span class="p">:</span> <span class="n">taught_first</span><span class="p">,</span>
+                      <span class="s">&#39;taught_second&#39;</span><span class="p">:</span> <span class="n">taught_second</span><span class="p">,</span>
+                      <span class="s">&#39;taught_count&#39;</span><span class="p">:</span> <span class="n">taught</span><span class="o">.</span><span class="n">notnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()})</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">raw_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;Person&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_person_details</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+
+<div class ="highlight"><pre>         certified  taught_count taught_first taught_second
+Person
+48      2014-05-04             1   2014-09-11           NaN
+75      2013-07-20            15   2013-03-20    2013-03-24
+85      2014-12-23             4   2015-03-06    2015-06-17
+87      2013-11-25             4   2014-05-12    2015-03-20
+135     2015-02-03             1   2015-09-03           NaN
+</pre></div>
+<p>And some calculations</p>
+<div class="highlight"><pre><span class="n">data</span><span class="o">.</span><span class="n">certified</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">taught_first</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">taught_first</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">taught_second</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">taught_second</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;has_taught&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">taught_count</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;has_taught_multiple&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">taught_count</span> <span class="o">&gt;</span> <span class="mi">1</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;time_to_taught_first&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">taught_first</span> <span class="o">-</span>
+                                <span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;time_to_taught_second&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">taught_second</span> <span class="o">-</span>
+                                 <span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;time_between_first_second&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_second</span> <span class="o">-</span>
+                                     <span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;year_certified&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
+</pre></div>
+
+<p>I'd like to include data on how long instructors have been certified, since, for instructors who have not taught, thats how long they have gone without teaching. To get this value I need to a collection date for the data, which I don't know. For now, I'll use June 1st.</p>
+<div class="highlight"><pre><span class="n">COLLECTION_DATE</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2016</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;time_since_certified&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">COLLECTION_DATE</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
+<span class="n">data</span><span class="p">[</span><span class="s">&#39;time_since_taught_first&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">COLLECTION_DATE</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">taught_first</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
+</pre></div>
+
+<p>I'll take a quick peek at the key column.</p>
+<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="s">&#39;time_to_taught_first&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+
+<div class ="highlight"><pre>        time_to_taught_first
+Person
+48                     130.0
+75                    -122.0
+85                      73.0
+87                     168.0
+135                    212.0
+</pre></div>
+<p>Some people (Person 75, for instance) taught their first workshop before they were officially certified. I don't have any idea how to include them in the analysis, so I will be removing them from this point forward.</p>
+<div class="highlight"><pre><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+</pre></div>
+
+<p>Visualization is usually a good idea:</p>
+<div class="highlight"><pre><span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">taught_count</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&#39;Days between certification and first teaching&#39;</span><span class="p">)</span>
+</pre></div>
+
+<figure>
+<img src="http://bsmith89.github.io/blog/static/images/swc-survival-taught-first-hist.png" alt="Histogram of days between certification and first teaching." /><figcaption>Histogram of days between certification and first teaching.</figcaption>
+</figure>
+<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;{} of {} instructors have not yet taught.&quot;</span>
+          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="o">~</span><span class="n">data</span><span class="o">.</span><span class="n">has_taught</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)))</span>
+</pre></div>
+
+<p>Of the 474 instructors in this data, 228 have not yet taught.</p>
+<p>Now we jump into the survival analysis. I'm going to compare time-to-first-teaching to the year in which instructors were certified. This is mostly because I need a covariate here, and I don't have access to more interesting ones, like what style of training it was.</p>
+<div class="highlight"><pre><span class="c"># We&#39;ll be modifying our data, so a copy will keep the original pristine.</span>
+<span class="n">_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c"># If individuals have not yet taught as of data collection,</span>
+<span class="c"># then we will censor them.</span>
+<span class="c"># statsmodels requires this time-to-censoring be in the same column as the</span>
+<span class="c"># time-to-event.</span>
+<span class="n">_data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">_data</span><span class="o">.</span><span class="n">time_since_certified</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c"># Fit a proportional hazards model, comparing certification year.</span>
+<span class="c"># &quot;Sum&quot; stands for sum-to-zero coding for the design matrix.</span>
+<span class="n">ydm</span><span class="p">,</span> <span class="n">xdm</span> <span class="o">=</span> \
+    <span class="n">patsy</span><span class="o">.</span><span class="n">dmatrices</span><span class="p">(</span><span class="s">&#39;time_to_taught_first ~ C(year_certified, Sum)&#39;</span><span class="p">,</span>
+                    <span class="n">data</span><span class="o">=</span><span class="n">_data</span><span class="p">,</span> <span class="n">return_type</span><span class="o">=</span><span class="s">&#39;dataframe&#39;</span><span class="p">)</span>
+<span class="c"># Remove the intercept term.</span>
+<span class="n">xdm</span> <span class="o">=</span> <span class="n">xdm</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">&#39;Intercept&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s">&#39;columns&#39;</span><span class="p">)</span>
+
+<span class="c"># Right censor for individuals who have not yet taught by the date</span>
+<span class="c"># of this data collection.</span>
+<span class="n">fit1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">PHReg</span><span class="p">(</span><span class="n">ydm</span><span class="p">,</span> <span class="n">xdm</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">_data</span><span class="o">.</span><span class="n">has_taught</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+</pre></div>
+
+<p>The most widely used model in survival analysis is called the <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model">proportional hazards model</a>. In the process of testing the significance of our covariates in this model, a survival curve is calculated. In this case, because of the coding for certification year in the design matrix, this &quot;baseline&quot; curve represents the mean of annual means.</p>
+<div class="highlight"><pre><span class="n">sf</span> <span class="o">=</span> <span class="n">fit1</span><span class="o">.</span><span class="n">baseline_cumulative_hazard</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sf</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sf</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;Days post-certification&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;Fraction instructors not taught&quot;</span><span class="p">)</span>
+</pre></div>
+
+<figure>
+<img src="http://bsmith89.github.io/blog/static/images/swc-survival-taught-first-curve.png" alt="Survival curve of days to teaching for the first time" /><figcaption>Survival curve of days to teaching for the first time</figcaption>
+</figure>
+<p>The key figure in survival analysis is the survival curve, or its derivative the hazard function. Survival curves plot the number or percentage of individuals who have not yet experienced the event after a given amount of time. In the case of this data, the survival curve reflects the fraction of instructors who have not yet taught by a given number of days after they were certified.</p>
+<p>Despite the fact that about 50% of certified instructors have not yet taught, many of these are recently trained and we can expect them to teach in the future. 50% of certified instructors teach by 200 days. After more than a year, however, the survival curve flattens out. Approximately 30% of instructors get to 400 days without having taught and at 600 days approximately 30% have still not taught. If we want to extrapolate beyond the data (always a bad idea) then we might predict that these instructors will never teach.</p>
+<p>We can also test the effect of certification year on time to first workshop.</p>
+<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">fit1</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+<div class ="highlight"><pre>                                   Results: PHReg
+====================================================================================
+Model:                       PH Reg                        Sample size:          474
+Dependent variable:          time_to_taught_first          Num. events:          246
+Ties:                        Breslow                                                
+------------------------------------------------------------------------------------
+                                log HR log HR SE   HR      t    P>|t|  [0.025 0.975]
+------------------------------------------------------------------------------------
+C(year_certified, Sum)[S.2012]  0.1382    0.5705 1.1482  0.2422 0.8086 0.3753 3.5124
+C(year_certified, Sum)[S.2013]  0.2230    0.2268 1.2498  0.9830 0.3256 0.8012 1.9493
+C(year_certified, Sum)[S.2014] -0.1383    0.1789 0.8708 -0.7732 0.4394 0.6132 1.2366
+C(year_certified, Sum)[S.2015]  0.0205    0.1730 1.0207  0.1183 0.9058 0.7272 1.4327
+====================================================================================
+Confidence intervals are for the hazard ratios
+</pre></div>
+<p>We see no significant deviation from the average year for any of the 4 years of certification data.</p>
+<p>Just for fun, let's go even further with this data. Of the 246 instructors who have taught at least once, 131 have taught a second time. Can we predict the time after first teaching that it takes to teach again?</p>
+<div class="highlight"><pre><span class="n">_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">_data</span> <span class="o">=</span> <span class="n">_data</span><span class="p">[</span><span class="n">_data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
+
+<span class="c"># Fill in dates for right censoring.</span>
+<span class="n">_data</span><span class="o">.</span><span class="n">time_between_first_second</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">_data</span><span class="o">.</span><span class="n">time_since_taught_first</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c"># Fit a proportional hazards model using time between certification and first taught.</span>
+<span class="n">ydm</span><span class="p">,</span> <span class="n">xdm</span> <span class="o">=</span> <span class="n">patsy</span><span class="o">.</span><span class="n">dmatrices</span><span class="p">(</span><span class="s">&#39;time_between_first_second ~ time_to_taught_first&#39;</span><span class="p">,</span>
+                           <span class="n">data</span><span class="o">=</span><span class="n">_data</span><span class="p">,</span> <span class="n">return_type</span><span class="o">=</span><span class="s">&#39;dataframe&#39;</span><span class="p">)</span>
+<span class="n">xdm</span> <span class="o">=</span> <span class="n">xdm</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">&#39;Intercept&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s">&#39;columns&#39;</span><span class="p">)</span>  <span class="c"># Remove the intercept term</span>
+
+<span class="c"># Right censor for individuals who have not yet taught a second time.</span>
+<span class="n">fit2</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">PHReg</span><span class="p">(</span><span class="n">ydm</span><span class="p">,</span> <span class="n">xdm</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">_data</span><span class="o">.</span><span class="n">has_taught_multiple</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c"># The baseline hazard is the probability of having not taught a second</span>
+<span class="c"># time by a given day for someone who taught at day 0 of being certified.</span>
+<span class="n">sf</span> <span class="o">=</span> <span class="n">fit2</span><span class="o">.</span><span class="n">baseline_cumulative_hazard</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sf</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sf</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;Days post-first-teaching&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;Fraction instructors not taught second time&quot;</span><span class="p">)</span>
+</pre></div>
+
+<figure>
+<img src="http://bsmith89.github.io/blog/static/images/swc-survival-taught-second-curve.png" alt="Survival curve of days to teaching a second time after having taught once" /><figcaption>Survival curve of days to teaching a second time after having taught once</figcaption>
+</figure>
+<p>The baseline survival curve reflects expectations for a theoretical individual who taught immediately upon being certified (day 0). For these folks, we expect 50% to teach again within 100 days, and almost 80% within a year.</p>
+<p>Let's take a look at the effect of time-to-first-teaching on time to teaching again.</p>
+<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">fit2</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+
+<div class ="highlight"><pre>                              Results: PHReg
+==========================================================================
+Model:                  PH Reg                        Sample size:     246
+Dependent variable:     time_between_first_second     Num. events:     131
+Ties:                   Breslow                                           
+--------------------------------------------------------------------------
+                      log HR log HR SE   HR      t    P>|t|  [0.025 0.975]
+--------------------------------------------------------------------------
+time_to_taught_first -0.0045    0.0010 0.9955 -4.3474 0.0000 0.9935 0.9975
+==========================================================================
+Confidence intervals are for the hazard ratios
+</pre></div>
+<p>We find a highly significant effect of time-to-first-teaching.</p>
+<div class="highlight"><pre><span class="k">print</span><span class="p">((</span><span class="s">&quot;The per-day chance of teaching again goes down &quot;</span>
+       <span class="s">&quot;by {:.2}</span><span class="si">% f</span><span class="s">or every day &quot;</span>
+       <span class="s">&quot;between certification and teaching the first time.&quot;</span><span class="p">)</span>
+           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">-</span><span class="n">fit2</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">))</span>
+</pre></div>
+
+<p>The per-day probability of teaching again goes down by 0.45% for every day between certification and teaching the first time. This isn't all that surprising; individuals who are able to teach soon after being certified are probably both enthusiastic and have more time to devote to teaching.</p>
+<p>That's all I've got. Thanks for reading. I'd love to hear what you think and if you spot any glaring mistakes in my analysis. All of the code to do this is available <a href="https://github.com/bsmith89/swc-instructor-training-analysis">on github</a>. If you have ideas for additional analysis please leave a comment here, submit an issue to the github repository, or, even better, a pull-request.</p>
+
+	</div><!-- /.content -->
+    
+</article>
+
+<div id="comments">
+	<h2>Comments</h2>
+	<div id="disqus_thread"></div>
+</div><!-- /#comments -->
+		</div><!-- /#content -->
+
+		<footer id="bottom">
+			<div id="extras">
+				<div class="blogroll">
+					<h2>blogroll</h2>
+					<ul>
+						<li><a href="http://ivory.idyll.org/blog/">Living in an Ivory Basement</a></li>
+						<li><a href="http://www.johndcook.com/blog/">The Endeavor</a></li>
+						<li><a href="http://blog.byronjsmith.com">(The real site)</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<h2>social</h2>
+					<ul>
+						<li><a  href="http://bsmith89.github.io/blog/feeds/all.atom.xml"
+								type="application/atom+xml"
+								rel="alternate">
+							atom feed
+						</a></li>
+						<li><a href="https://twitter.com/ByronJSmith">twitter</a></li>
+						<li><a href="https://linkedin.com/profile/view?id=76273001">linkedin</a></li>
+					</ul>
+				</div>
+			</div><!-- /#extras -->
+
+			<div id="info">
+				<p id="powered-by">
+					Proudly powered by <a href="http://getpelican.com">Pelican</a>,
+					which takes great advantage of
+					<a href="http://python.org">Python</a>
+				</p>
+				<p id="designed-by">
+					This theme was originally created for
+					<a href="http://blog.byronjsmith.com">blog.byronjsmith.com</a>
+				</p>
+			</div>
+		</footer><!-- #bottom -->
+	</div> <!-- /#all-text -->
+<!-- #mathjax-scripts -->
+<!-- Using MathJax, with the delimiters $ -->
+<!-- Conflict with pygments for the .mo and .mi -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  "HTML-CSS": {
+  styles: {
+  ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+  },
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],processEscapes: true}
+  });
+  MathJax.Hub.Register.StartupHook("HTML-CSS Jax Ready",function () {
+  var VARIANT = MathJax.OutputJax["HTML-CSS"].FONTDATA.VARIANT;
+  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+  });
+  MathJax.Hub.Register.StartupHook("SVG Jax Ready",function () {
+  var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;
+  VARIANT["normal"].fonts.unshift("MathJax_SansSerif");
+  VARIANT["bold"].fonts.unshift("MathJax_SansSerif-bold");
+  VARIANT["italic"].fonts.unshift("MathJax_SansSerif-italic");
+  VARIANT["-tex-mathit"].fonts.unshift("MathJax_SansSerif-italic");
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!-- /#mathjax-scripts -->
+
+<!-- #disqus-script -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'byronjsmithblog'; // required: replace example with your forum shortname
+    var disqus_identifier = 'instructor-survival.html';
+    var disqus_title = 'Software Carpentry Instructor Retention';
+    var disqus_url = 'http://bsmith89.github.io/blog/instructor-survival.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- /#disqus-script -->
+</body>
+</html>
