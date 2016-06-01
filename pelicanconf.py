@@ -12,6 +12,13 @@ SITENAME = "Deep Ecology"
 SITESUBTITLE = "A blog of the new microbiology."
 SITEURL = "http://blog.byronjsmith.com"
 
+COPYRIGHT = ('The contents of this blog are licensed '
+             '<a rel="license" '
+                'href="https://creativecommons.org/licenses/by/4.0">'
+             '<img title="CC-BY" '
+                  'src="https://i.creativecommons.org/l/by/4.0/88x31.png" />'
+             '</a>')
+
 TIMEZONE = 'US/Eastern'
 DEFAULT_LANG = 'en'
 
