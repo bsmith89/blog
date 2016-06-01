@@ -101,6 +101,14 @@
     </span>
   </div>
 
+  <div class="modified">
+    <span class="info-tag">edited:</span>
+    <span class="info-value" itemprop="dateModified">
+      <abbr title="2016-05-31 12:00:00-04:00">
+        May 31, 2016, 12:00
+      </abbr>
+    </span>
+  </div>
 
 
   <div class="category">
@@ -137,7 +145,8 @@
 
 </footer>
   <div class="article-content" itemprop="articleBody">
-    <p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of data about the organization's instructors, when they were certified, and when they taught. Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>, I was excited to explore the data within that context.</p>
+    <p><em>Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from <a href="http://www.datacarpentry.org/blog/instructor-metrics/">Erin Becker's</a>. Briefly: I removed individuals who taught before they were officially certified.</em></p>
+<p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of data about the organization's instructors, when they were certified, and when they taught. Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>, I was excited to explore the data within that context.</p>
 <p>Survival analysis is focused on time-to-event data, for example time from birth until death, but also time to failure of engineered systems, or in this case, time from instructor certification to first teaching a workshop. The language is somewhat morbid, but helps with talking precisely about models that can easily be applied to a variety of data, only sometimes involving death or failure. The power of modern survival analysis is the ability to include results from subjects who have not yet experienced the event when data is collected. After all, studies rarely have the funding or patience to continue indefinitely. and excluding those data points entirely would falsely inflate rate estimates. Instead, the absence of an event for an individual during the study is useful information that contributes to the precise estimation of rates.</p>
 <p>Let's grab the Software Carpentry data and take a look.</p>
 <div class="highlight"><pre>curl -O http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
@@ -237,7 +246,7 @@ Person
 87                     168.0
 135                    212.0
 </pre></div>
-<p>Some people (Person 75, for instance) taught their first workshop before they were officially certified. I don't have any idea how to include them in the analysis, so I will be removing them from this point forward.</p>
+<p>Some people (Person 75, for instance) taught their first workshop before they were officially certified. I don't have any idea how to include them in the analysis, so I will be removing them from this point forward. I believe that the removal of these individuals explain differences between my results and <a href="http://www.datacarpentry.org/blog/instructor-metrics/">the analysis</a> posted to the Software Carpentry blog by Erin Becker.</p>
 <div class="highlight"><pre><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span>
             <span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
 </pre></div>
@@ -410,15 +419,14 @@ Confidence intervals are for the hazard ratios
   </div>
 </div><!-- /#extras -->
 
-<div id="page-info">
-  <p id="powered-by">
-    Proudly powered by <a href="http://getpelican.com">Pelican</a>,
-    which takes great advantage of
-    <a href="http://python.org">Python</a>
+<div id="site-info">
+  <p id="site-copyright">
+    The contents of this blog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0"><img title="CC-BY" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
   </p>
-  <p id="designed-by">
+  <p id="theme-info">
     This theme was originally created for
     <a href="http://blog.byronjsmith.com">blog.byronjsmith.com</a>
+    and is powered by <a href="http://getpelican.com">Pelican</a>
   </p>
 </div>
     </footer>
