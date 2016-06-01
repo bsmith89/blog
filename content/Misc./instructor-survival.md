@@ -2,9 +2,16 @@
 Title: Software carpentry instructor training
 Subtitle: A survival analysis in python
 Date: 2016-05-30 12:00
+Modified: 2016-05-31 12:00
 Tags: software-carpentry, python, statistics
+
 ...
 
+_Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+[Erin Becker's][becker-analysis].  Briefly: I removed individuals who taught
+before they were officially certified._
+
+[becker-analysis]: http://www.datacarpentry.org/blog/instructor-metrics/
 
 A couple weeks ago, Greg Wilson [asked][swc-discuss-request] the [Software
 Carpentry][swc-site] community for [feedback][swc-blog-data] on a collection of
@@ -174,6 +181,9 @@ Some people (Person 75, for instance) taught their first workshop before they
 were officially certified.
 I don't have any idea how to include them in the analysis, so I will be
 removing them from this point forward.
+I believe that the removal of these individuals explain differences between
+my results and [the analysis][becker-analysis] posted to the Software Carpentry
+blog by Erin Becker.
 
 ```python
 data = data[(data.time_to_taught_first > 0) |
