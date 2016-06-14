@@ -20,7 +20,7 @@ their data can benefit from automating that process.
 [^shorter-tutorials]: My tutorial is designed to fill a three hour
         Software Carpentry lesson.  There are a number of much shorter
         primers to get you started (e.g. [#1][zmjones-tutorial],
-        [#2][bostock-tutorial], [#3][kborman-tutorial] ).
+        [#2][bostock-tutorial], [#3][kbroman-tutorial]).
 
 However, the investment required to learn _Make_ and to convert an
 entire project can seem daunting to many time-strapped researchers.
