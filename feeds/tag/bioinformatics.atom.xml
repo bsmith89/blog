@@ -205,7 +205,7 @@ make setup
 &lt;section class="footnotes"&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id="fn1"&gt;&lt;p&gt;My tutorial is designed to fill a three hour Software Carpentry lesson. There are a number of much shorter primers to get you started (e.g. &lt;a href="http://zmjones.com/make/"&gt;#1&lt;/a&gt;, &lt;a href="https://bost.ocks.org/mike/make/"&gt;#2&lt;/a&gt;, [#3][kborman-tutorial] ).&lt;a href="#fnref1"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn1"&gt;&lt;p&gt;My tutorial is designed to fill a three hour Software Carpentry lesson. There are a number of much shorter primers to get you started (e.g. &lt;a href="http://zmjones.com/make/"&gt;#1&lt;/a&gt;, &lt;a href="https://bost.ocks.org/mike/make/"&gt;#2&lt;/a&gt;, &lt;a href="http://kbroman.org/minimal_make/"&gt;#3&lt;/a&gt;).&lt;a href="#fnref1"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id="fn2"&gt;&lt;p&gt;Randall Munroe does not agree. Relevant XKCDs: &lt;a href="https://xkcd.com/1205/"&gt;#1&lt;/a&gt;, &lt;a href="https://xkcd.com/1319/"&gt;#2&lt;/a&gt;, and &lt;a href="https://xkcd.com/974/"&gt;#3&lt;/a&gt;&lt;a href="#fnref2"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id="fn3"&gt;&lt;p&gt;John Cook makes &lt;a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/"&gt;this argument&lt;/a&gt; on his blog.&lt;a href="#fnref3"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li id="fn4"&gt;&lt;p&gt;Even better, you could write a recipe to download those files on &lt;code&gt;make setup&lt;/code&gt;!&lt;a href="#fnref4"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
