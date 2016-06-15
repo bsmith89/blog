@@ -1,6 +1,7 @@
 ---
 title: 'Take five minutes to simplify your life with <em>Make</em>'
 date: 2016-06-14 12:00
+modified: 2016-06-15 18:20
 tags: make, pipelines, bioinformatics, protips, git, venv, python
 ...
 
@@ -164,6 +165,12 @@ typing `make` alone prints the help message.
 As you start adding additional recipes, fill out this usage message.
 That way you'll have both documentation about the analysis targets, and also
 a handy cheatsheet.
+
+_Edit (2016-06-15):_ [On Reddit, /r/guepier][guepier-comment] suggests using a
+nifty trick to auto-generate these help messages,
+keeping documentation and recipes together in your makefile.
+
+[guepier-comment]: https://www.reddit.com/r/bioinformatics/comments/4o7aaa/a_simple_makefile_to_make_your_life_simple_xpost/d4aa8ir
 
 ## Streamline git setup ##
 
