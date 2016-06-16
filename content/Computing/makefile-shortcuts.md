@@ -394,7 +394,7 @@ jupyter notebook --config=ipynb/jupyter_notebook_config.py --notebook-dir=ipynb/
 
 ```
 
-And my configuration is set to automatically changes the working directory to
+And my configuration automatically changes the working directory to
 the project root when launching a new notebook.
 
 Customize!
