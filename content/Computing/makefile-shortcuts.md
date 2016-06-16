@@ -75,7 +75,6 @@ Usage:
     make setup                  git init; make python-reqs git-config
 
     make start-jupyter          launch a jupyter server from the local virtualenv
-    make start-ipython          launch ipython from the local virtualenv
 
 endef
 export PROJECT_HELP_MSG
@@ -145,7 +144,6 @@ Usage:
     make setup                  git init; make python-reqs git-config
 
     make start-jupyter          launch a jupyter server from the local virtualenv
-    make start-ipython          launch ipython from the local virtualenv
 
 endef
 export PROJECT_HELP_MSG
@@ -390,7 +388,8 @@ I like to keep my notebooks in a subdirectory, so my invocation is a little diff
 [jupyter-config]: http://jupyter-notebook.readthedocs.io/en/latest/config.html
 
 ```shell
-jupyter notebook --config=ipynb/jupyter_notebook_config.py --notebook-dir=ipynb/
+jupyter notebook --config=ipynb/jupyter_notebook_config.py \
+    --notebook-dir=ipynb/
 
 ```
 
