@@ -113,9 +113,10 @@ the 2009 paper demonstrates several of the problems facing an empirically
 described microbial species.
 
 [**Figure 1:**](http://www.sciencemag.org/content/323/5915/741/F1.expansion.html)
-<img src="http://www.sciencemag.org/content/323/5915/741/F1.large.jpg"
-     alt="Two examples exhibiting conflicts with species concepts in microbes."
-     class="full-width">
+
+![Two examples exhibiting conflicts with species concepts in microbes.][fig-1]
+
+[fig-1]: http://www.sciencemag.org/content/323/5915/741/F1.large.jpg
 
 First, and most importantly, **1A** shows that genetic distance between and
 within clusters of _Streptococcus_ isolates is not consistent.  Current species
