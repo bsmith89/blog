@@ -1,4 +1,6 @@
 pelican
 pelican-extended-sitemap
-PyYAML
 ghp-import
+
+PyYAML
+git+https://github.com/bebraw/pypandoc#egg=pypandoc

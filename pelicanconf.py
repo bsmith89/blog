@@ -108,4 +108,5 @@ SITEMAP = {
 
 PLUGINS.append('pandoc_reader')
 PANDOC_FILES = ['md']
-PANDOC_ARGS = ['-F', 'pandoc-pygments-filter', '--preserve-tabs']
+PANDOC_FILTERS = ['pandoc-pygments-filter']
+PANDOC_ARGS = ['--preserve-tabs']
