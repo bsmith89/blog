@@ -38,6 +38,7 @@ LINKS =  [('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
 # Social widget
 SOCIAL = [('twitter', 'https://twitter.com/ByronJSmith'),
           ('linkedin', 'https://linkedin.com/profile/view?id=76273001'),
+          ('github', 'https://github.com/bsmith89')
          ]
 
 # Template settings {{{1
