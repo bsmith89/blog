@@ -90,9 +90,12 @@ git-config: | .git
         drop_jupyter_output.sh
 	git config --local filter.dropoutput_jupyter.smudge cat
 	git config --local core.page 'less -x4'
-	git config --local diff.daff-csv.command "daff.py diff --git"
-	git config --local merge.daff-csv.name "daff.py tabular merge"
-	git config --local merge.daff-csv.driver "daff.py merge --output %A %O %A %B"
+	git config --local \
+        diff.daff-csv.command "daff.py diff --git"
+	git config --local \
+        merge.daff-csv.name "daff.py tabular merge"
+	git config --local \
+        merge.daff-csv.driver "daff.py merge --output %A %O %A %B"
 
 VENV = .venv
 export VIRTUAL_ENV := $(abspath ${VENV})
