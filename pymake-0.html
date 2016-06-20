@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Deep Ecology
+Deep Ecology - PyMake I: Another GNU Make clone
   </title>
 <!-- #feeds -->
-<link href="http://bsmith89.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
-<link href="http://bsmith89.github.io/blog/feeds/category/computing.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
+<link href="http://blog.byronjsmith.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
+<link href="http://blog.byronjsmith.com/feeds/category/computing.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
 <!-- /#feeds -->
-  <link rel="stylesheet" type="text/css" href="http://bsmith89.github.io/blog/theme/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="http://bsmith89.github.io/blog/theme/css/pygment.css" />
+  <link rel="stylesheet" type="text/css" href="http://blog.byronjsmith.com/theme/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="http://blog.byronjsmith.com/theme/css/pygment.css" />
 <!-- #google-analytics-script -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -44,7 +44,7 @@
     <header id="main-banner" class="banner">
 <!-- page-chrome -->
 <h1 id="blog-title">
-  <a href="http://bsmith89.github.io/blog/">
+  <a href="http://blog.byronjsmith.com/">
     Deep Ecology
     <span id="blog-subtitle">
       A blog of the new microbiology.
@@ -55,32 +55,38 @@
 <nav>
   <ul>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/biology.html"
+      <a href="http://blog.byronjsmith.com/about.html"
+         >
+        About
+      </a>
+    </li>
+    <li>
+      <a href="http://blog.byronjsmith.com/category/biology.html"
 >
         Biology
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/computing.html"
-        class="active-category"
+      <a href="http://blog.byronjsmith.com/category/computing.html"
+        class="active"
 >
         Computing
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/data.html"
+      <a href="http://blog.byronjsmith.com/category/data.html"
 >
         Data
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/education.html"
+      <a href="http://blog.byronjsmith.com/category/education.html"
 >
         Education
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/misc.html"
+      <a href="http://blog.byronjsmith.com/category/misc.html"
 >
         Misc.
       </a>
@@ -93,7 +99,7 @@
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h1 id="page-title" class="headline" itemprop="headline">
-      <a href="http://bsmith89.github.io/blog/pymake-0.html" rel="bookmark"
+      <a href="http://blog.byronjsmith.com/pymake-0.html" rel="bookmark"
          title="Permalink to PyMake I: Another GNU Make clone">
         PyMake I: Another GNU Make clone
       </a>
@@ -123,7 +129,7 @@
   <div class="category">
     <span class="info-tag">category:</span>
     <span class="info-value" itemprop="articleSection">
-      <a href="http://bsmith89.github.io/blog/category/computing.html">
+      <a href="http://blog.byronjsmith.com/category/computing.html">
         Computing
       </a>
     </span>
@@ -134,32 +140,32 @@
     <span class="info-value" itemprop="keywords">
       <ul class="article-tag-list">
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/python.html">
+          <a href="http://blog.byronjsmith.com/tag/python.html">
             python
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/software.html">
+          <a href="http://blog.byronjsmith.com/tag/software.html">
             software
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/development.html">
+          <a href="http://blog.byronjsmith.com/tag/development.html">
             development
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/make.html">
+          <a href="http://blog.byronjsmith.com/tag/make.html">
             make
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/pipelines.html">
+          <a href="http://blog.byronjsmith.com/tag/pipelines.html">
             pipelines
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/bioinformatics.html">
+          <a href="http://blog.byronjsmith.com/tag/bioinformatics.html">
             bioinformatics
           </a>
         </li>
@@ -169,22 +175,22 @@
 
 </footer>
   <div class="article-content" itemprop="articleBody">
-    <p>(Edit 1): <del><em>This is the first of two posts about my program <a href="http://github.com/bsmith89/pymake/">PyMake</a>. I'll post the link to Part II here when I've written it.</em></del> <em>While I still agree with some of the many of the views expressed in this piece, I have changed my thinking on Makefiles.</em></p>
-<p>(Edit 2): <del><em>I'll post a new post about the topic when I take the time to write it.</em></del> <em>I've written a <a href="make-analysis.html">tutorial</a> on using <em>Make</em> for reproducible data analysis</em>.</p>
+    <p>(Edit 1): <del><em>This is the first of two posts about my program <a href="http://github.com/bsmith89/pymake/">PyMake</a>. I’ll post the link to Part II here when I’ve written it.</em></del> <em>While I still agree with some of the many of the views expressed in this piece, I have changed my thinking on Makefiles.</em></p>
+<p>(Edit 2): <del><em>I’ll post a new post about the topic when I take the time to write it.</em></del> <em>I’ve written a <a href="make-analysis.html">tutorial</a> on using <em>Make</em> for reproducible data analysis</em>.</p>
 <p>I am an aspiring but unskilled (not yet skilled?) computer geek. You can observe this for yourself by watching me fumble my way through <a href="https://github.com/bsmith89/dotfiles"><code>vim</code> configuration</a>, multi-threading/processing in Python, and <code>git</code> merges.</p>
-<p>Rarely do I actually feel like my products are worth sharing with the wider world. The only reason I have a GitHub account is personal convenience and absolute confidence that no one else will ever look at it besides me. (Yes, I realize that I am invalidating the previous sentence with that glaring &quot;Fork me on GitHub&quot; ribbon in the top-right corner of this page. I'm putting myself out there! OKAY?!)</p>
-<p>As an aspiring scientist, too, I've had plenty of opportunities to practice the relevant skill sets. A laboratory rotation with <a href="http://ivory.idyll.org/blog/">Titus Brown</a>, and the resulting exposure to his reproducible research and <a href="http://software-carpentry.org">Software Carpentry</a> evangelizing, has certainly influenced the tools and techniques in my belt.</p>
-<p>I try to use the <code>NumPy</code>/<code>SciPy</code>/<code>Pandas</code>/<code>matplotlib</code> stack for my computational and visualization tasks. I am a relatively competent <code>BASH</code>-ist and I work hard to write my scripts so that they'll make sense to me 5 years from now. I have even been known to do some of my data analysis in IPython notebooks.</p>
+<p>Rarely do I actually feel like my products are worth sharing with the wider world. The only reason I have a GitHub account is personal convenience and absolute confidence that no one else will ever look at it besides me. (Yes, I realize that I am invalidating the previous sentence with that glaring “Fork me on GitHub” ribbon in the top-right corner of this page. I’m putting myself out there! OKAY?!)</p>
+<p>As an aspiring scientist, too, I’ve had plenty of opportunities to practice the relevant skill sets. A laboratory rotation with <a href="http://ivory.idyll.org/blog/">Titus Brown</a>, and the resulting exposure to his reproducible research and <a href="http://software-carpentry.org">Software Carpentry</a> evangelizing, has certainly influenced the tools and techniques in my belt.</p>
+<p>I try to use the <code>NumPy</code>/<code>SciPy</code>/<code>Pandas</code>/<code>matplotlib</code> stack for my computational and visualization tasks. I am a relatively competent <code>BASH</code>-ist and I work hard to write my scripts so that they’ll make sense to me 5 years from now. I have even been known to do some of my data analysis in IPython notebooks.</p>
 <h1 id="a-pipeline-is-only-sometimes-a-makefile">A Pipeline is only sometimes a Makefile</h1>
-<p>Despite (or maybe because of) my obsession with writing simple, reproducible pipelines, one tool I have never come to terms with is GNU <code>make</code>. While it's not quite mainstream for bioinformaticians and other computational folk, <code>make</code> <a href="http://archive.nodalpoint.org/2007/03/18/a_pipeline_is_a_makefile">promises</a> to tie all those *<code>NIX</code> style scripts together seamlessly and with built-in parallelization, selective re-running, and more, all under a declarative language syntax. I say 'promises' because, for me, it never did any of those things.</p>
-<p>Now, I don't want to suggest that this ubiquitous piece of GNU software doesn't work well. I recognize that it does much of what the average user needs, but for my particular pipeline it just wasn't the right tool.</p>
-<p>My problem was a seemingly simple one. I had a set of gene models (HMMs) and a set of FASTQ formatted sequences from an Illumina sequencer. The goal was to search every sample for every gene using HMMER3 and to output the results (plus a respectable amount of pre- and post-processing). The problem is, <code>make</code> is designed for software compilation. Processing <code>foo.c</code> and <code>bar.h</code> into <code>foo.o</code> is easy. I, however, was asking <code>make</code> to generate the product of <span class="math inline"><em>n</em></span> samples and <span class="math inline"><em>m</em></span> models (<strong>complete aside</strong>: if you're curious about how I got the <span class="math inline">$\LaTeX$</span> formatting, see <a href="http://www.ceremade.dauphine.fr/~amic/blog/mathjax-and-pelican-en.html">this</a>).</p>
+<p>Despite (or maybe because of) my obsession with writing simple, reproducible pipelines, one tool I have never come to terms with is GNU <code>make</code>. While it’s not quite mainstream for bioinformaticians and other computational folk, <code>make</code> <a href="http://archive.nodalpoint.org/2007/03/18/a_pipeline_is_a_makefile">promises</a> to tie all those *<code>NIX</code> style scripts together seamlessly and with built-in parallelization, selective re-running, and more, all under a declarative language syntax. I say ‘promises’ because, for me, it never did any of those things.</p>
+<p>Now, I don’t want to suggest that this ubiquitous piece of GNU software doesn’t work well. I recognize that it does much of what the average user needs, but for my particular pipeline it just wasn’t the right tool.</p>
+<p>My problem was a seemingly simple one. I had a set of gene models (HMMs) and a set of FASTQ formatted sequences from an Illumina sequencer. The goal was to search every sample for every gene using HMMER3 and to output the results (plus a respectable amount of pre- and post-processing). The problem is, <code>make</code> is designed for software compilation. Processing <code>foo.c</code> and <code>bar.h</code> into <code>foo.o</code> is easy. I, however, was asking <code>make</code> to generate the product of <span class="math inline"><em>n</em></span> samples and <span class="math inline"><em>m</em></span> models (<strong>complete aside</strong>: if you’re curious about how I got the <span class="math inline">$\LaTeX$</span> formatting, see <a href="http://www.ceremade.dauphine.fr/~amic/blog/mathjax-and-pelican-en.html">this</a>).</p>
 <p>While, after a dozen hours of smashing my head against the table, I was able to get my <code>Makefile</code> to work, it required some <em>really</em> ugly tricks like secondary expansion and gratuitous calls to <code>sed</code> in my macros (for others with similar problems see <a href="http://stackoverflow.com/q/3745177/848121">here</a>, and <a href="http://stackoverflow.com/q/2880975/848121">here</a>). Plus, debugging <code>make</code> is torture, surely against the Geneva Conventions.</p>
-<p>I <em>wanted</em> to use <code>make</code>, I swear I did. It's open source, well used, extensively tested, available on all relevant systems, etc. And I probably could have... but only by keeping the ugly hack or hard-coding the recipe for each model, and that just didn't jive with my recently acquired simple/reproducible mentality. Converts always are the most zealous, afterall.</p>
+<p>I <em>wanted</em> to use <code>make</code>, I swear I did. It’s open source, well used, extensively tested, available on all relevant systems, etc. And I probably could have… but only by keeping the ugly hack or hard-coding the recipe for each model, and that just didn’t jive with my recently acquired simple/reproducible mentality. Converts always are the most zealous, afterall.</p>
 <h1 id="they-say-graduate-school-is-a-time-to-explore">They say graduate school is a time to explore</h1>
-<p>So what did I do? No, I didn't immediately start writing a make replacement with all of the features I wanted like some over-eager graduate student. Jeeze! What do you people think of me!? First I checked out the <a href="http://freecode.com/articles/make-alternatives">extant alternatives</a>... I hated everything. So <em>then</em> I started writing a make replacement with all of the features I wanted.</p>
-<p>The result was one of the first pieces of general purpose software to come off my laptop which I wouldn't be entirely ashamed to show to an experienced programmer. It's rough, don't get me wrong, but it does everything I need and is actually kinda pretty internally. Well, at least it was before I fixed some glaring problems. Whatever. The point is I want to share <a href="https://github.com/bsmith89/pymake">it</a> with the world; what better stage exists for its introduction than this blog, which absolutely no one reads?</p>
-<p>...Yeah, I'll probably post it to <a href="http://reddit.com/r/python">/r/python</a> too.</p>
+<p>So what did I do? No, I didn’t immediately start writing a make replacement with all of the features I wanted like some over-eager graduate student. Jeeze! What do you people think of me!? First I checked out the <a href="http://freecode.com/articles/make-alternatives">extant alternatives</a>… I hated everything. So <em>then</em> I started writing a make replacement with all of the features I wanted.</p>
+<p>The result was one of the first pieces of general purpose software to come off my laptop which I wouldn’t be entirely ashamed to show to an experienced programmer. It’s rough, don’t get me wrong, but it does everything I need and is actually kinda pretty internally. Well, at least it was before I fixed some glaring problems. Whatever. The point is I want to share <a href="https://github.com/bsmith89/pymake">it</a> with the world; what better stage exists for its introduction than this blog, which absolutely no one reads?</p>
+<p>…Yeah, I’ll probably post it to <a href="http://reddit.com/r/python">/r/python</a> too.</p>
 <p>Tune in for Part II, in which I explain why <em>you</em> should use my software.</p>
 
   </div>
@@ -198,7 +204,7 @@
     var disqus_shortname = 'byronjsmithblog';
     var disqus_identifier = 'pymake-0.html';
     var disqus_title = 'PyMake I: Another GNU Make clone';
-    var disqus_url = 'http://bsmith89.github.io/blog/pymake-0.html';
+    var disqus_url = 'http://blog.byronjsmith.com/pymake-0.html';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -221,19 +227,19 @@
     <ul>
       <li><a href="http://ivory.idyll.org/blog/">Living in an Ivory Basement</a></li>
       <li><a href="http://www.johndcook.com/blog/">The Endeavor</a></li>
-      <li><a href="http://blog.byronjsmith.com">(The real site)</a></li>
     </ul>
   </div>
   <div class="social">
     <h2>social</h2>
     <ul>
-      <li><a  href="http://bsmith89.github.io/blog/feeds/all.atom.xml"
+      <li><a  href="http://blog.byronjsmith.com/feeds/all.atom.xml"
           type="application/atom+xml"
           rel="alternate">
         atom feed
       </a></li>
       <li><a href="https://twitter.com/ByronJSmith">twitter</a></li>
       <li><a href="https://linkedin.com/profile/view?id=76273001">linkedin</a></li>
+      <li><a href="https://github.com/bsmith89">github</a></li>
     </ul>
   </div>
 </div><!-- /#extras -->
@@ -243,7 +249,8 @@
     The contents of this blog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0"><img title="CC-BY" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
   </p>
   <p id="theme-info">
-    This theme was originally created for
+    This <a href="https://github.com/bsmith89/blog-theme">theme</a>
+    was originally created for
     <a href="http://blog.byronjsmith.com">blog.byronjsmith.com</a>
     and is powered by <a href="http://getpelican.com">Pelican</a>
   </p>

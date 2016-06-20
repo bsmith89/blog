@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Deep Ecology
+Deep Ecology - Compiling SciPy on RHEL6
   </title>
 <!-- #feeds -->
-<link href="http://bsmith89.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
-<link href="http://bsmith89.github.io/blog/feeds/category/computing.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
+<link href="http://blog.byronjsmith.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
+<link href="http://blog.byronjsmith.com/feeds/category/computing.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
 <!-- /#feeds -->
-  <link rel="stylesheet" type="text/css" href="http://bsmith89.github.io/blog/theme/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="http://bsmith89.github.io/blog/theme/css/pygment.css" />
+  <link rel="stylesheet" type="text/css" href="http://blog.byronjsmith.com/theme/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="http://blog.byronjsmith.com/theme/css/pygment.css" />
 <!-- #google-analytics-script -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -44,7 +44,7 @@
     <header id="main-banner" class="banner">
 <!-- page-chrome -->
 <h1 id="blog-title">
-  <a href="http://bsmith89.github.io/blog/">
+  <a href="http://blog.byronjsmith.com/">
     Deep Ecology
     <span id="blog-subtitle">
       A blog of the new microbiology.
@@ -55,32 +55,38 @@
 <nav>
   <ul>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/biology.html"
+      <a href="http://blog.byronjsmith.com/about.html"
+         >
+        About
+      </a>
+    </li>
+    <li>
+      <a href="http://blog.byronjsmith.com/category/biology.html"
 >
         Biology
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/computing.html"
-        class="active-category"
+      <a href="http://blog.byronjsmith.com/category/computing.html"
+        class="active"
 >
         Computing
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/data.html"
+      <a href="http://blog.byronjsmith.com/category/data.html"
 >
         Data
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/education.html"
+      <a href="http://blog.byronjsmith.com/category/education.html"
 >
         Education
       </a>
     </li>
     <li>
-      <a href="http://bsmith89.github.io/blog/category/misc.html"
+      <a href="http://blog.byronjsmith.com/category/misc.html"
 >
         Misc.
       </a>
@@ -93,7 +99,7 @@
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h1 id="page-title" class="headline" itemprop="headline">
-      <a href="http://bsmith89.github.io/blog/scipy-on-rhel.html" rel="bookmark"
+      <a href="http://blog.byronjsmith.com/scipy-on-rhel.html" rel="bookmark"
          title="Permalink to Compiling SciPy on RHEL6">
         Compiling SciPy on RHEL6
       </a>
@@ -115,7 +121,7 @@
   <div class="category">
     <span class="info-tag">category:</span>
     <span class="info-value" itemprop="articleSection">
-      <a href="http://bsmith89.github.io/blog/category/computing.html">
+      <a href="http://blog.byronjsmith.com/category/computing.html">
         Computing
       </a>
     </span>
@@ -126,27 +132,27 @@
     <span class="info-value" itemprop="keywords">
       <ul class="article-tag-list">
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/python.html">
+          <a href="http://blog.byronjsmith.com/tag/python.html">
             python
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/hpc.html">
+          <a href="http://blog.byronjsmith.com/tag/hpc.html">
             hpc
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/software.html">
+          <a href="http://blog.byronjsmith.com/tag/software.html">
             software
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/scipy.html">
+          <a href="http://blog.byronjsmith.com/tag/scipy.html">
             scipy
           </a>
         </li>
         <li>
-          <a href="http://bsmith89.github.io/blog/tag/linux.html">
+          <a href="http://blog.byronjsmith.com/tag/linux.html">
             linux
           </a>
         </li>
@@ -156,10 +162,10 @@
 
 </footer>
   <div class="article-content" itemprop="articleBody">
-    <p>Within the past two years I've discovered something interesting about myself (...actually really, <em>really</em> boring about myself): I can be happily entertained for hours on end setting up my computational environment <em>just</em> right. I find that it gives me a similar type of satisfaction to cataloguing my music collection. I guess you could call it a hobby.</p>
-<p>Usually this entails installing the usual suspects (<code>NumPy</code>, <code>Pandas</code>, <code>IPython</code>, <code>matplotlib</code>, etc.) in a python <a href="http://www.virtualenv.org/en/latest/">virtual environment</a>. When I'm particularly into it (which is always), I'll also compile the python distribution itself. I've had several opportunities to indulge this pasttime, most recently in setting up my research pipeline on the <a href="http://cac.engin.umich.edu/resources/systems/flux">Flux</a> high-performance compute cluster at The University of Michigan.</p>
-<p>Installing <code>NumPy</code> is usually no trouble at all, but for some reason (if you know, please tell me), <code>SciPy</code> has <em>always</em> given me a &quot;BlasNotFoundError&quot; when installing on the Red Hat Enterprise Linux distros commonly used on academic clusters.</p>
-<div class="highlight"><pre><span class="gp">&gt;</span> pip install scipy
+    <p>Within the past two years I’ve discovered something interesting about myself (…actually really, <em>really</em> boring about myself): I can be happily entertained for hours on end setting up my computational environment <em>just</em> right. I find that it gives me a similar type of satisfaction to cataloguing my music collection. I guess you could call it a hobby.</p>
+<p>Usually this entails installing the usual suspects (<code>NumPy</code>, <code>Pandas</code>, <code>IPython</code>, <code>matplotlib</code>, etc.) in a python <a href="http://www.virtualenv.org/en/latest/">virtual environment</a>. When I’m particularly into it (which is always), I’ll also compile the python distribution itself. I’ve had several opportunities to indulge this pasttime, most recently in setting up my research pipeline on the <a href="http://cac.engin.umich.edu/resources/systems/flux">Flux</a> high-performance compute cluster at The University of Michigan.</p>
+<p>Installing <code>NumPy</code> is usually no trouble at all, but for some reason (if you know, please tell me), <code>SciPy</code> has <em>always</em> given me a “BlasNotFoundError” when installing on the Red Hat Enterprise Linux distros commonly used on academic clusters.</p>
+<div class="highlight"><pre><span></span><span class="gp">&gt;</span> pip install scipy
 <span class="go">Downloading/unpacking scipy</span>
 <span class="go">  Downloading scipy-0.12.0.zip (10.2MB): 100% 10.2MB downloaded</span>
 <span class="go">...</span>
@@ -170,40 +176,40 @@
 <span class="go">    the BLAS environment variable.</span>
 </pre></div>
 
-<p>I <em>know</em> BLAS and LAPACK are installed as shared libraries: at Michigan State University I had to load the respective modules, but at UMich they're right there in <code>/usr/lib64/atlas</code>. So why <code>pip install SciPy</code> always gives me that error, I have no clue. I've set the BLAS and LAPACK environmental variables to the relevant shared libraries. I've run <code>python setup.py build --fcompiler=gnu95</code> directly. But I always got that same error.</p>
-<p>Anyway, I <em>finally</em> got it to work, so I thought I'd share the steps I took just in case it helps someone else. My solution was found on Stack Overflow (surprise, surprise): The accepted answer to <a href="http://stackoverflow.com/q/7496547/848121">this</a> question.</p>
-<div class="highlight"><pre>mkdir -p ~/.local/src/
+<p>I <em>know</em> BLAS and LAPACK are installed as shared libraries: at Michigan State University I had to load the respective modules, but at UMich they’re right there in <code>/usr/lib64/atlas</code>. So why <code>pip install SciPy</code> always gives me that error, I have no clue. I’ve set the BLAS and LAPACK environmental variables to the relevant shared libraries. I’ve run <code>python setup.py build --fcompiler=gnu95</code> directly. But I always got that same error.</p>
+<p>Anyway, I <em>finally</em> got it to work, so I thought I’d share the steps I took just in case it helps someone else. My solution was found on Stack Overflow (surprise, surprise): The accepted answer to <a href="http://stackoverflow.com/q/7496547/848121">this</a> question.</p>
+<div class="highlight"><pre><span></span>mkdir -p ~/.local/src/
 <span class="nb">cd</span> ~/.local/src/
 wget -O BLAS.tgz http://www.netlib.org/blas/blas.tgz
 tar -xzf BLAS.tgz
-<span class="nb">cd </span>BLAS
+<span class="nb">cd</span> BLAS
 gfortran -O3 -std<span class="o">=</span>legacy -m64 -fno-second-underscore -fPIC -c *.f
 ar r libfblas.a *.o
 ranlib libfblas.a
-<span class="nb">export </span><span class="nv">BLAS</span><span class="o">=</span><span class="nv">$PWD</span>/libfblas.a
+<span class="nb">export</span> <span class="nv">BLAS</span><span class="o">=</span><span class="nv">$PWD</span>/libfblas.a
 
 <span class="nb">cd</span> ~/.local/src/
 wget -O LAPACK.tgz http://www.netlib.org/lapack/lapack.tgz
 tar -xzf LAPACK.tgz
-<span class="c"># The resulting directory may be named lapack-&lt;version&gt;/</span>
-<span class="c"># the following assumes that it&#39;s named LAPACK/</span>
-<span class="nb">cd </span>LAPACK
+<span class="c1"># The resulting directory may be named lapack-&lt;version&gt;/</span>
+<span class="c1"># the following assumes that it&#39;s named LAPACK/</span>
+<span class="nb">cd</span> LAPACK
 cp INSTALL/make.inc.gfortran make.inc
 vim make.inc
-<span class="c"># Change OPTS = -O2 to OPTS = -O2 -fPIC</span>
-<span class="c"># Change NOOPT = -O0 to NOOPT = -O0 -fPIC</span>
+<span class="c1"># Change OPTS = -O2 to OPTS = -O2 -fPIC</span>
+<span class="c1"># Change NOOPT = -O0 to NOOPT = -O0 -fPIC</span>
 make lapacklib
-<span class="nb">export </span><span class="nv">LAPACK</span><span class="o">=</span><span class="nv">$PWD</span>/libflapack.a
+<span class="nb">export</span> <span class="nv">LAPACK</span><span class="o">=</span><span class="nv">$PWD</span>/libflapack.a
 
 <span class="nb">cd</span> ~/.local/src/
 git clone https://github.com/scipy/scipy.git
-<span class="nb">cd </span>scipy
+<span class="nb">cd</span> scipy
 python setup.py build --fcompiler gnu95
 python setup.py install
-<span class="c"># Assuming you&#39;re already in the virtualenv you want to install to.</span>
+<span class="c1"># Assuming you&#39;re already in the virtualenv you want to install to.</span>
 </pre></div>
 
-<p>I don't know which other systems this will work on, but it does successfully install SciPy for me. On Python 3.3.2, running the unit tests give me several errors and failures (nothing too scary looking), but everything passes on Python 2.7.5!</p>
+<p>I don’t know which other systems this will work on, but it does successfully install SciPy for me. On Python 3.3.2, running the unit tests give me several errors and failures (nothing too scary looking), but everything passes on Python 2.7.5!</p>
 <p>Enjoy.</p>
 
   </div>
@@ -217,7 +223,7 @@ python setup.py install
     var disqus_shortname = 'byronjsmithblog';
     var disqus_identifier = 'scipy-on-rhel.html';
     var disqus_title = 'Compiling SciPy on RHEL6';
-    var disqus_url = 'http://bsmith89.github.io/blog/scipy-on-rhel.html';
+    var disqus_url = 'http://blog.byronjsmith.com/scipy-on-rhel.html';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -240,19 +246,19 @@ python setup.py install
     <ul>
       <li><a href="http://ivory.idyll.org/blog/">Living in an Ivory Basement</a></li>
       <li><a href="http://www.johndcook.com/blog/">The Endeavor</a></li>
-      <li><a href="http://blog.byronjsmith.com">(The real site)</a></li>
     </ul>
   </div>
   <div class="social">
     <h2>social</h2>
     <ul>
-      <li><a  href="http://bsmith89.github.io/blog/feeds/all.atom.xml"
+      <li><a  href="http://blog.byronjsmith.com/feeds/all.atom.xml"
           type="application/atom+xml"
           rel="alternate">
         atom feed
       </a></li>
       <li><a href="https://twitter.com/ByronJSmith">twitter</a></li>
       <li><a href="https://linkedin.com/profile/view?id=76273001">linkedin</a></li>
+      <li><a href="https://github.com/bsmith89">github</a></li>
     </ul>
   </div>
 </div><!-- /#extras -->
@@ -262,7 +268,8 @@ python setup.py install
     The contents of this blog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0"><img title="CC-BY" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
   </p>
   <p id="theme-info">
-    This theme was originally created for
+    This <a href="https://github.com/bsmith89/blog-theme">theme</a>
+    was originally created for
     <a href="http://blog.byronjsmith.com">blog.byronjsmith.com</a>
     and is powered by <a href="http://getpelican.com">Pelican</a>
   </p>

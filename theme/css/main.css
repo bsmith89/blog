@@ -5,7 +5,7 @@ body {
 }
 
 #all-text {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     text-align: left;
     color: #101010;
     width: 100%;
@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Slab", Times, serif;
+    font-family: 'Roboto Slab', Times, serif;
     font-weight: 400;
 }
 
@@ -36,7 +36,7 @@ a:visited {
     margin-bottom: 1em;
     line-height: 100%;
     font-size: 300%;
-    font-family: "Monda", Arial, sans-serif;
+    font-family: 'Monda', Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -51,7 +51,7 @@ a:visited {
 }
 
 #main-banner nav {
-    font-family: "Roboto Slab" arial sans-serif;
+    font-family: 'Monda', arial, sans-serif;
     background: #101010;
     color: #fff;
     border-radius: 0.5em;
@@ -91,7 +91,7 @@ a:visited {
 }
 
 pre, code {
-    font-family:  "Inconsolata" menlo monospace;
+    font-family:  'Inconsolata', menlo, monospace;
     line-height: 120%;
     tab-size: 4;
     -moz-tab-size: 4;
@@ -175,7 +175,7 @@ footer.article-info  ul.article-tag-list li a {
 }
 
 footer.article-info  ul.article-tag-list li + li:before {
-    content: ",";
+    content: ',';
 }
 
 @media (min-width: 500px) {
