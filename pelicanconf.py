@@ -4,6 +4,7 @@
 from glob import glob
 import os
 import sys
+
 sys.path.append(os.curdir)
 
 # Site settings {{{1
@@ -28,7 +29,6 @@ THEME = 'theme/'
 TWITTER_USERNAME = 'byronjsmith'
 GITHUB_URL = 'https://github.com/bsmith89'
 GITHUB_POSITION = 'right'
-
 
 # Blogroll {{{2
 LINKS =  [('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),

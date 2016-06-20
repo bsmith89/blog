@@ -4,9 +4,9 @@
 
 import os
 import sys
+
 sys.path.append(os.curdir)
 from pelicanconf import *
-
 
 SITEURL = "http://blog.byronjsmith.com"
 DISQUS_SITENAME = "byronjsmithblog"
