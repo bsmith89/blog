@@ -19,3 +19,4 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/category/%s.atom.xml'
 TAG_FEED_ATOM = 'feeds/tag/%s.atom.xml'
 
+PANDOC_FILES = ['md']
