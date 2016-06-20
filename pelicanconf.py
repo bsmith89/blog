@@ -79,10 +79,6 @@ TRANSLATION_FEED_ATOM = None
 # See publishconf.py
 RELATIVE_URLS = True
 
-# Cached content is also recompiled.
-# Good for testing plugin changes.
-LOAD_CONTENT_CACHE = False
-
 # Extras {{{1
 MATHJAX = True
 

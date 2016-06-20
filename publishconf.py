@@ -19,7 +19,3 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/category/%s.atom.xml'
 TAG_FEED_ATOM = 'feeds/tag/%s.atom.xml'
 
-DELETE_OUTPUT_DIRECTORY = True
-
-# DISQUS_SITENAME in ./privateconf.py
-# GOOGLE_ANALYTICS in ./privateconf.py
