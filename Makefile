@@ -49,10 +49,12 @@ help:
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
 
-${OUTPUTDIR_DEV}: ${INPUTDIR}
+${OUTPUTDIR_DEV}: ${INPUTDIR}/**/*
+	@rm -rf $@
 	${PELICAN} ${INPUTDIR} -D -o $@ -s ${CONFFILE} ${PELICANOPTS}
 
-${OUTPUTDIR_PUB}: ${INPUTDIR}
+${OUTPUTDIR_PUB}: ${INPUTDIR}/**/*
+	@rm -rf $@
 	${PELICAN} ${INPUTDIR} -D -o $@ -s ${PUBLISHCONF} ${PELICANOPTS}
 
 html: ${OUTPUTDIR_DEV}
