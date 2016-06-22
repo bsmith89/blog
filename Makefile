@@ -3,11 +3,15 @@
 # SSH_HOST, SSH_PORT, SSH_USER, SSH_TARGET_DIR, DROPBOX_DIR,
 # etc.
 
+.POSIX:
+.SECONDARY:
+.DELETE_ON_ERROR:
+
 PY ?= python3
 PELICAN ?= pelican
 PELICANOPTS =
 
-VENV = ./.venv
+VENV ?= .venv
 export VIRTUAL_ENV := $(abspath ${VENV})
 export PATH := ${VIRTUAL_ENV}/bin:${PATH}
 
