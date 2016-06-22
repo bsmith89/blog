@@ -22,7 +22,9 @@ Author: Byron J. Smith
 
   I intend to write about all of these things at some point or another.
   For more information about how and why I put this blog together check out my
-  [first post](./initial-commit.html).
+  [first post][first-post].
+
+  [first-post]: {filename}/Misc./initial-commit.md
 
   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
     <img alt="Creative Commons License"
