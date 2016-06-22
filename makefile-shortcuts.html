@@ -119,8 +119,8 @@ Deep Ecology - Take five minutes to simplify your life with Make
   <div class="modified">
     <span class="info-tag">edited:</span>
     <span class="info-value" itemprop="dateModified">
-      <abbr title="2016-06-15 18:20:00-04:00">
-        June 15, 2016, 18:20
+      <abbr title="2016-06-22 13:30:00-04:00">
+        June 22, 2016, 13:30
       </abbr>
     </span>
   </div>
@@ -347,6 +347,7 @@ git config --local <span class="se">\</span>
 </pre></div>
 
 <p>In the top block, we first set a variable <code>VENV</code> to be the location of our virtual environment. We then set <code>VIRTUAL_ENV</code> and prepend its <code>bin/</code> to our <code>PATH</code>. By exporting these variables, all recipes run from this makefile will use python packages and executables from the virtual environment. We don’t have to remember to <code>source .venv/bin/activate</code> first!</p>
+<p>(<em>Edit (2016-06-22):</em> Based on my own testing, it would appear that this approach to virtual environments in recipes does not work with the default <em>GNU Make</em> version installed on OS X. It will, however, work with <a href="http://brew.sh/">Homebrew</a>’s version which is installed as <code>gmake</code> instead of <code>make</code>. It is unclear to me why the behavior is different.)</p>
 <p>The next block is the recipe to initialize the virtual environment. If you’re not using Python 3 for your project you will have to edit this one.</p>
 <p>And finally, a recipe to install and update all of the packages listed in <code>requirements.pip</code>. If you want to make a change to your python requirements, add it to <code>requirements.pip</code> and re-run <code>make python-reqs</code>.</p>
 <p>You can bootstrap other software installations similarly. And, if you discipline yourself to make all changes to your execution environment in this way, you’ll have a permanently up-to-date record of your system requirements.</p>
