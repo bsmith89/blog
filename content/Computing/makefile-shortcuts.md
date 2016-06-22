@@ -1,7 +1,7 @@
 ---
 title: 'Take five minutes to simplify your life with <em>Make</em>'
 date: 2016-06-14 12:00
-modified: 2016-06-15 18:20
+modified: 2016-06-22 13:30
 tags: make, pipelines, bioinformatics, protips, git, venv, python
 ...
 
@@ -336,6 +336,16 @@ We then set `VIRTUAL_ENV` and prepend its `bin/` to our `PATH`.
 By exporting these variables, all recipes run from this makefile will
 use python packages and executables from the virtual environment.
 We don't have to remember to `source .venv/bin/activate` first!
+
+(_Edit (2016-06-22):_ Based on my own testing, it would appear that this
+approach to virtual environments in recipes does not work with the default
+_GNU Make_ version installed on OS X.
+It will, however, work with [Homebrew][homebrew-site]'s version which is
+installed as `gmake` instead of `make`.
+It is unclear to me why the behavior is different.)
+
+[homebrew-site]: http://brew.sh/
+
 
 The next block is the recipe to initialize the virtual environment.
 If you're not using Python 3 for your project you will have to edit this one.
