@@ -193,7 +193,7 @@ make setup
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And my configuration automatically changes the working directory to the project root when launching a new notebook.&lt;/p&gt;
-&lt;p&gt;Customize! The same general idea works for any other software you can start from the shell No need to remember any of the obnoxious command-line flags.&lt;/p&gt;
+&lt;p&gt;Customize! The same general idea works for any other software you can start from the shell. No need to remember any of the obnoxious command-line flags.&lt;/p&gt;
 &lt;h2 id="quick-cleanup"&gt;Quick cleanup&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
 
