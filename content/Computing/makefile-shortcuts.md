@@ -410,7 +410,7 @@ And my configuration automatically changes the working directory to
 the project root when launching a new notebook.
 
 Customize!
-The same general idea works for any other software you can start from the shell
+The same general idea works for any other software you can start from the shell.
 No need to remember any of the obnoxious command-line flags.
 
 
