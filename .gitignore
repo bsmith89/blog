@@ -1,6 +1,7 @@
 .DS_Store
 output_dev
 output_pub
+output/
 cache/
 *.pyc
 *.pid
