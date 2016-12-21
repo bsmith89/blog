@@ -9,7 +9,7 @@ _**tl;dr:** I tried out a modified Python lesson
 and I think it did a good job of balancing learner motivation with teaching
 foundational (and sometimes boring) concepts._
 
-## This stuff is hard ##
+# This stuff is hard #
 
 In many ways, [teaching Python to scientists][swcarpentry]
 is easier than just about every other audience.
@@ -63,7 +63,7 @@ working;
 the key is to avoid unintentionally teaching pathological models that are
 difficult for the instructor to diagnose and iterate beyond.
 
-## State of the Python lesson ##
+# State of the Python lesson #
 
 As of this writing, the current default Python lesson for Software Carpentry is
 the ["Novice Inflammation" lesson][inflammation-lesson].
@@ -119,7 +119,7 @@ I've now taught from this lesson once, and co-instructed a workshop that used
 the first half of it.
 The quality of lesson design was apparent both times.
 
-## Continual improvement ##
+# Continual improvement #
 
 That's not to say, however, that it cannot be improved.
 [One discussion][gapminder-113] that has happened in a limited form on the
@@ -191,7 +191,7 @@ manipulation, and plotting, (as well as novice Python) so a significant
 fraction of the time was spent on these topics and libraries instead of more
 foundational concepts.
 
-## Where to go from here? ##
+# Where to go from here? #
 
 I found this approach to be quite successful.
 In-person and exit survey feedback has been uniformly positive and
