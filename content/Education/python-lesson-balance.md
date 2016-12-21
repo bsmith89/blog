@@ -194,7 +194,7 @@ life-expectancy.
 [lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
 
 ![An example visualization of the gapminder data.][gapminder-plot]
-[gapminder-plot]: {filename}/static/images/gapminder-analysis.png
+[gapminder-plot]: {filename}../static/images/gapminder-analysis.png
 
 I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
