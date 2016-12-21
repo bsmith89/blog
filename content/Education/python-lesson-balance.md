@@ -15,10 +15,9 @@ is easier than just about every other audience.
 The learning objective is clear: write code to make my science more accurate,
 more efficient, and more impactful.
 The motivation is apparent: data is increasingly plentiful and increasingly
-complicated.
-TODO: Fix the above sentence.
-And the learners are engaged and used to putting in the effort needed to
-acquire new skills.
+complex.
+The learners are both engaged and prepared to put in the effort
+required to develop new skills.
 
 But, despite all of the advantages, teaching _anybody_ to program is _hard_.
 In my experience, one of the most challenging trade-offs for lesson planners
@@ -133,7 +132,7 @@ example usage and I didn't notice much loss of engagement.
 [gapminder-113]: https://github.com/swcarpentry/python-novice-gapminder/issues/113
 
 Like many trade-offs in lesson design, the optimal position on the
-motivations-foundations spectrum is context dependent.
+motivations/foundations spectrum is context dependent.
 I would be hesitant to focus on basic concepts for the first session if I were
 teaching high school students or any learners skeptical about the utility of
 the material.
@@ -145,7 +144,7 @@ motivation and building blocks.
 
 [lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
 
-Last week I co-taught an _unofficial_ SWC workshop teaching Python to
+In December I co-instructed an _unofficial_ SWC workshop teaching Python to
 about 20 learners, primarily graduate students in the biological sciences.
 My co-instructor, Jackie Cohen ([@jczetta][jczetta-twitter]),
 taught the first half-day using the Gapminder lesson.
@@ -154,22 +153,19 @@ instruction, but also the quality of the lesson.
 
 [jczetta-twitter]: https://twitter.com/jczetta
 
-I then taught second day with a customized lesson using the
+I then taught the second day with the
 same gapminder dataset and covering the same
-topics as the latter half of the normal lesson.
-Inspired by [a comment][lo5an-comment] in the Gapminder discussion,
-I wrote up a unified, "realistic" analysis of the gapminder data as a Jupyter
-notebook.
-In particular, my analysis produced a nearly publication quality figure which
-told a story about the relationship between per-capita GDP and
-life-expectancy[^congrats].
-I then had learners run this notebook to see the quality of analyses they could
-produce with less than 100 lines of code.
+topics as the normal materials, but using my new lesson plan.
+Inspired by [a comment][lo5an-comment] on the Gapminder GitHub repository,
+I constructed a unified, "realistic" analysis of the gapminder data
+[as a Jupyter notebook][notebook-view].
+In particular, the notebook generates a fairly complicated figure that
+tells a story about the relationship between per-capita GDP and
+life-expectancy.
 
-[^congrats]: Apologies for the self-congratulatory tone.
-             While I am proud of the figure, the gapminder data is also
-             particularly great to work with.]
-
+I started the second day by having learners download and run this notebook,
+demonstrating the quality of analyses they could produce with fewer than 100
+lines of code.
 By _not_ live-coding and expecting the learners to type along during the
 introduction, I believe this approach minimizes the likelihood of intimidating
 the learners with syntax.
