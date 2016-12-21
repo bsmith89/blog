@@ -26,7 +26,7 @@ for code execution.
 
 For example, scientists are easily motivated by simple data munging and
 plotting using `pandas` and `matplotlib`;
-these are features of the Python ecosystem which can convince a graduate
+these are features of the Python ecosystem that can convince a graduate
 student to pay attention to the lesson instead of answering emails.
 Actually _using_ these features, however, requires a long list of basic
 concepts: Python syntax, libraries, function calls, objects and methods,
@@ -114,14 +114,14 @@ topics.
 Overall, I think this lesson hits a superior balance between motivation
 and basics, while also improve the structure and refining the details.
 I have to applaud everyone who's contributed to its development.
-I've now taught from this lesson once, and co-instructed a workshop which used
+I've now taught from this lesson once, and co-instructed a workshop that used
 the first half of it.
 The quality of lesson design was apparent both times.
 
 ## Continual improvement ##
 
 That's not to say, however, that it cannot be improved.
-[One discussion][gapminder-113] which has happened in a limited form on the
+[One discussion][gapminder-113] that has happened in a limited form on the
 Github repository comes back to this same question of balance,
 with a proposal to delay the data analysis motivating example, further
 front-loading the basics.
