@@ -24,7 +24,7 @@ required to develop new skills.
 
 [swcarpentry]: https://software-carpentry.org
 
-But, despite all of the advantages, teaching _anybody_ to program is _hard_.
+But, despite all of the advantages, teaching _anybody_ to program is hard.
 In my experience, one of the most challenging trade-offs for lesson planners
 is between motivating the material and teaching a mental model
 for code execution.
