@@ -166,20 +166,68 @@ produce with less than 100 lines of code.
              While I am proud of the figure, the gapminder data is also
              particularly great to work with.]
 
+By _not_ live-coding and expecting the learners to type along during the
+introduction, I believe this approach minimizes the likelihood of intimidating
+the learners with syntax.
+To this end, I also did not walk through the code, but instead focused on
+describing the overarching flow of the analysis:
+loading external data, selecting a subset, plotting two columns as a
+scatter-plot with a third column determining the size of the points, running a
+linear regression, and plotting a best-fit line.
+The purpose of this introduction was purely to motivate the material, not
+to introduce the concepts.
+
+I then had them open a new, empty notebook, and
+the remainder of the lesson (which _was_ done in the traditional live-coding
+style) then revolved around reconstructing this exact analysis from scratch,
+a thematic unification, that I found to be elegant.
+Since the pre-constructed analysis made use of for-loops, if-statements,
+and functions, I was able to limit my use of foo/bar style examples and
+quickly return to the core analysis demonstrating the use of these elements
+in a realistic setting.
+Our workshop was advertised as an introduction to Jupyter notebooks, data
+manipulation, and plotting, (as well as novice Python) so a significant
+fraction of the time was spent on these topics and libraries instead of more
+foundational concepts.
+
+## Where to go from here? ##
+
+I found this approach to be quite successful.
+In-person and exit survey feedback has been uniformly positive and
+learners appeared to have achieved most or all of the learning objectives
+of the core Gapminder lesson.
+While the "realistic analysis" approach sounds more like the Data Carpentry
+style, in this particular case it was a great fit for the Software Carpentry
+learning objectives.
+
+I believe that this model could be implemented in the core Gapminder lesson,
+perhaps starting in the second half (as we did), or with a different
+example notebook for each half-day.
+However, this would entail modifying most or all of the lesson sections to
+focus on the new unified example.
+Is it worth expending the tens of hours required to implement it?
+Even then, I'm not convinced that the SWC lesson development model makes this
+kind of patch feasible.
+
+As an alternative to submitting a pull request,
+I'm hoping that I can convince a few instructors to try it out for themselves.
+A user base for an unofficial fork makes patching the main branch a more
+rational investment.
+I've also been evangelizing in this way for an alternative Git lesson,
+sharing my immature lesson outline and encouraging folks to try it out
+themselves.
+Is there a better approach to making changes of this scale to the lessons?
+
+In conclusion: I think we need additional discussion (and data) about the
+motivations/foundations trade-off in our lessons.
+I'd also like to hear your thoughts on the best way to lobby for and introduce
+moderately sized changes to the core lessons.
+What do you think about my approach?
+If you're brave, try it out and let me know how it goes!
 
 
-This modification also lends itself to a thematic unification, which I
-found to be somewhat elegant.
 
-
-
-
-
-
-Many of the most powerful features in Python (and in Python libraries)
-are founded on high-level abstractions which obfuscate the underlying
-flow of computation.
-What's more, even "Pythonic" code frequently utilizes advanced language
-features which would ideally be skipped in a two-day workshop.
-
-
+TODO: HEAD commits for all lessons mentioned
+TODO: Link to my lesson notes for gapminder
+TODO: Link to my argument for git-guacamole
+TODO: Add a tl;dr that links my lesson plan
