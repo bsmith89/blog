@@ -172,7 +172,7 @@ In December I co-instructed a (not officially SWC) [workshop][2016-12-14-umich]
 which taught Python to
 about 20 learners, primarily graduate students in the biological sciences,
 over two half-day sessions.
-My co-instructor, Jackie Cohen ([@jczetta][jczetta-twitter]),
+My co-instructor, Jackie Cohen ([\@jczetta][jackie-twitter]),
 taught the first half-day using the Gapminder lesson.
 The positive reception from learners to the first half of the material was
 testament not only to her skillful instruction, but also the quality of the
@@ -194,6 +194,7 @@ life-expectancy.
 [lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
 
 ![An example visualization of the gapminder data.][gapminder-plot]
+
 [gapminder-plot]: {filename}../static/images/gapminder-analysis.png
 
 I started the second day by having learners download and run this notebook,
