@@ -4,6 +4,10 @@ date: 2016-12-19 01:00
 tags: software-carpentry, teaching, programming, python, jupyter
 ...
 
+_**tl;dr:** I tried out a modified Python lesson
+and I think it did a good job of balancing learner motivation with teaching
+foundational (and sometimes boring) concepts._
+
 ## This stuff is hard ##
 
 In many ways, [teaching Python to scientists][swcarpentry]
