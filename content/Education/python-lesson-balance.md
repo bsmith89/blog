@@ -264,6 +264,3 @@ I'd also like to hear your thoughts on the best way to lobby for and introduce
 moderately sized changes to the core lessons.
 What do you think about my approach?
 If you're brave, try it out and let me know how it goes!
-
--   TODO: Figure out why this figure is the wrong size.
-
