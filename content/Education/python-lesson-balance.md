@@ -5,8 +5,8 @@ tags: software-carpentry, teaching, programming, python, jupyter
 status: draft
 ...
 
-_**tl;dr:** I tried out a modified Python lesson
-and I think it did a good job of balancing learner motivation with teaching
+_**tl;dr:** I tried out a [modified Python lesson][my-lesson]
+and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts._
 
 # This stuff is hard #
