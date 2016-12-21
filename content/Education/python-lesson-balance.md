@@ -9,6 +9,8 @@ _**tl;dr:** I tried out a [modified Python lesson][my-lesson]
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts._
 
+[my-lesson]: https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff
+
 # This stuff is hard #
 
 In many ways, [teaching Python to scientists][swcarpentry]
@@ -19,6 +21,8 @@ The motivation is apparent: data is increasingly plentiful and increasingly
 complex.
 The learners are both engaged and prepared to put in the effort
 required to develop new skills.
+
+[swcarpentry]: https://software-carpentry.org
 
 But, despite all of the advantages, teaching _anybody_ to program is _hard_.
 In my experience, one of the most challenging trade-offs for lesson planners
@@ -74,14 +78,19 @@ There is a _lot_ to be positive about in the composition of this lesson.
 It has been an effective approach to teaching Python to what at this point
 must be probably several thousand workshop attendees.
 
+[inflammation-lesson]: http://swcarpentry.github.io/python-novice-inflammation/
+[previous-experience]: {filename}/Education/swc-python-lesson.md
+[^inflammation-commit]: HEAD at
+    [030f3fbd30](https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6)
+
 However, this post is about how we can do better.
 My primary criticism for this lesson focuses on the first section:
-["Analyzing Patient Data"][inflammation-lesson-first-section].
+["Analyzing Patient Data"][inflammation-lesson-numpy].
 The approach here falls towards the motivation-first extreme.
 Learners are shown how one might go from raw data in a CSV to heatmaps
 and line plots, two useful skills.
 
-[inflammation-lesson-numpy]: http://swcarpentry.github.io/python-novice-inflammation/01-numpy/].
+[inflammation-lesson-numpy]: http://swcarpentry.github.io/python-novice-inflammation/01-numpy/
 
 The downside, however, is that this happens without fully explaining the
 syntax, what libraries are, `numpy` arrays versus Python lists, `dtypes` vs
@@ -100,6 +109,8 @@ reinvent the Python lesson.
 The ["Novice Gapminder" lesson][gapminder-lesson] is a from-scratch re-write.
 Tangentially, I think it's interesting that SWC's normal pull-request model for
 lesson development is unable to accommodate a major overhaul like this one.
+
+[gapminder-lesson]: http://swcarpentry.github.io/python-novice-gapminder/
 
 Gapminder is different in several ways, for instance using `pandas` as a focal
 library instead of `numpy`.
@@ -164,6 +175,8 @@ In particular, the notebook generates a fairly complicated figure that
 tells a story about the relationship between per-capita GDP and
 life-expectancy.
 
+[lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
+
 I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
 lines of code.
@@ -197,9 +210,12 @@ I found this approach to be quite successful.
 In-person and exit survey feedback has been uniformly positive and
 learners appeared to have achieved most or all of the learning objectives
 of the core Gapminder lesson.
-While the "realistic analysis" approach sounds more like the Data Carpentry
+While the "realistic analysis" approach sounds more like the
+[Data Carpentry][data-carpentry]
 style, in this particular case it was a great fit for the Software Carpentry
 learning objectives.
+
+[data-carpentry]: http://www.datacarpentry.org/
 
 I believe that this model could be implemented in the core Gapminder lesson,
 perhaps starting in the second half (as we did), or with a different
@@ -212,12 +228,16 @@ kind of patch feasible.
 
 As an alternative to submitting a pull request,
 I'm hoping that I can convince a few instructors to try it out for themselves.
-A user base for an unofficial fork makes patching the main branch a more
-rational investment.
-I've also been evangelizing in this way for an alternative Git lesson,
+Positive experiences with an unofficial fork makes patching the main branch a
+more rational investment.
+I've already been [evangelizing][git-guac-email] in this way for an
+[alternative Git lesson][git-guacamole],
 sharing my immature lesson outline and encouraging folks to try it out
 themselves.
 Is there a better approach to making changes of this scale to the lessons?
+
+[git-guac-email]: http://lists.software-carpentry.org/pipermail/discuss/2016-May/004529.html
+[git-guacamole]: https://github.com/bsmith89/git-novice-outline
 
 In conclusion: I think we need additional discussion (and data) about the
 motivations/foundations trade-off in our lessons.
