@@ -32,7 +32,7 @@ for code execution.
 For example, scientists are easily motivated by simple data munging and
 plotting using `pandas` and `matplotlib`;
 these are features of the Python ecosystem that can convince a graduate
-student to pay attention to the lesson instead of answering emails.
+student to pay attention to the material instead of answering emails.
 Actually _using_ these features, however, requires a long list of basic
 concepts: Python syntax, libraries, function calls, objects and methods,
 conditionals, and variable assignment, to name just a few.
@@ -40,8 +40,8 @@ A lesson planner can start from the basics, working in to these features
 along the branches of the dependency tree, but that could require hours
 (or even days) of "boring programming".
 It's all too easy to dismiss learners who lose interest before you get
-to the good stuff, but this is a reflection of the lesson materials and
-instructor, rather than the students.
+to the good stuff, but it is more a reflection of the materials and
+instructor, than the students.
 
 At the other extreme, a lesson could start with working code,
 or, in the Software Carpentry style the instructor could lead learners
@@ -49,7 +49,7 @@ through writing code that uses these features, before the concepts have
 been fully introduced.
 This in-at-the-deep-end approach quickly demonstrates exciting uses of Python,
 but at the risk of intimidating learners, making them wonder if they're the
-only one in the room who's confused by what's going on under the hood, and what
+only one in the room who's confused by what's going on under the hood and what
 all of the syntax means.
 I'm not aware of any studies on this topic (if you are, please pass them my
 way), but I'm willing to speculate that this second approach has
@@ -70,11 +70,10 @@ difficult for the instructor to diagnose and iterate beyond.
 # State of the Python lesson #
 
 As of this writing, the current default Python lesson for Software Carpentry is
-the ["Novice Inflammation" lesson][inflammation-lesson][^inflammation-commit].
+["Novice Inflammation"][inflammation-lesson][^inflammation-commit].
 I have [written previously][previous-experience] about my experience
-with this lesson, and have not been shy with my criticism when
-discussing it with fellow instructors.
-There is a _lot_ to be positive about in the composition of this lesson.
+with the lesson, and have not been shy with my criticism.
+There is a _lot_ to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
 must be probably several thousand workshop attendees.
 
@@ -84,7 +83,7 @@ must be probably several thousand workshop attendees.
     [030f3fbd30](https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6)
 
 However, this post is about how we can do better.
-My primary criticism for this lesson focuses on the first section:
+My primary criticism focuses on the first section:
 ["Analyzing Patient Data"][inflammation-lesson-numpy].
 The approach here falls towards the motivation-first extreme.
 Learners are shown how one might go from raw data in a CSV to heatmaps
@@ -100,9 +99,9 @@ those details we're giving learners a challenging mental model to iterate
 beyond.
 What's more, I believe that this results in a _diversity_ of models
 making later instruction more likely to leave some learners behind.
-This lesson also gets stuck in the weeds over difficult concepts which, in my
-opinion, aren't nearly as important for learners, for example, accumulating
-over particular axes in `numpy` arrays.
+Novice Inflammation also gets stuck in the weeds over difficult concepts which,
+in my opinion, aren't nearly as important for learners, for example,
+accumulating over particular axes in `numpy` arrays.
 
 For this and other reasons Greg Wilson spearheaded an attempt to
 reinvent the Python lesson.
@@ -122,15 +121,15 @@ to motivating the material.
 half-day,
 and only _after_ a thorough discussion of variable assignment, functions, and
 data types.
-The lesson also appears to lack the distractions and rabbit holes that I've
-criticized in Inflammation.
+The Gapminder lesson also appears to lack the distractions and rabbit holes
+that I've criticized in Inflammation.
 
-Overall, I think this lesson hits a superior balance between motivation
+Overall, I think Gapminder hits a superior balance between motivation
 and basics, while also improve the structure and refining the details.
 I have to applaud everyone who's contributed to its development.
-I've now taught from this lesson once, and co-instructed a workshop that used
-the first half.
-The quality of lesson design was apparent both times.
+I've now taught from the new lesson once, and co-instructed a workshop that
+used the first half.
+The improvements in the design were apparent both times.
 I expect it to be well received by the SWC community when it becomes the
 default.
 
@@ -159,8 +158,8 @@ teaching high school students or any learners skeptical about the utility of
 the material.
 A room full of scientists who were there specifically to learn Python, however,
 could probably tolerate even more front-loading of syntax and control-flow.
-A framework to help instructors customize the lesson for their audience might
-be useful.
+A framework to help instructors customize the materials for their audience
+would be useful.
 
 The main purpose of this post is to nominate a slightly different approach
 which introduces an advanced example early in the lesson without the
@@ -176,10 +175,10 @@ My co-instructor, Jackie Cohen ([\@jczetta][jackie-twitter]),
 taught the first half-day using the Gapminder lesson.
 The positive reception from learners to the first half of the material was
 testament not only to her skillful instruction, but also the quality of the
-lesson.
+design.
 
 [2016-12-14-umich]: https://umswc.github.io/2016-12-14-umich/
-[jczetta-twitter]: https://twitter.com/jczetta
+[jackie-twitter]: https://twitter.com/jczetta
 
 I then taught the second day with the
 same gapminder dataset and covering the same
@@ -203,7 +202,7 @@ lines of code.
 By _not_ live-coding, and _not_ expecting the learners to type along during the
 introduction, I believe this approach minimizes the likelihood of intimidating
 the learners with syntax.
-To this end, I also did not walk through the code itself, but instead focused
+To that end, I also did not walk through the code itself, but instead focused
 on describing the overarching flow of the analysis:
 loading external data, selecting a subset, plotting two columns as a
 scatter-plot with a third column determining the size of the points, running a
@@ -213,7 +212,7 @@ to introduce the concepts.
 
 I then had them open a new, empty notebook, and
 the remainder of the lesson (which _was_ done in the traditional live-coding
-style) then revolved around reconstructing this exact analysis from scratch,
+style) then revolved around reconstructing the same analysis from scratch,
 a thematic unification, that I found to be elegant.
 Since the pre-constructed analysis made use of for-loops, if-statements,
 and functions, I was able to limit my use of foo/bar style examples and
@@ -240,7 +239,7 @@ learning objectives.
 I believe that this model could be implemented in the core Gapminder lesson,
 perhaps starting in the second half (as we did), or with a different
 example notebook for each half-day.
-However, this would entail modifying most or all of the lesson sections to
+That would, however, entail modifying most or all of the sections to
 focus on the new unified example.
 Is it worth expending the tens of hours required to implement it?
 Even if it were implemented, I'm not convinced that the SWC lesson development
@@ -250,11 +249,11 @@ As an alternative to submitting a pull request,
 I'm hoping that I can convince a few instructors to try it out for themselves.
 Positive experiences with an unofficial fork makes patching the main branch a
 more rational investment.
-I've already been [evangelizing][git-guac-email] in this way for an
+I've already been [evangelizing][git-guac-email] in a similar way for an
 [alternative Git lesson][git-guacamole],
-sharing my immature lesson outline and encouraging folks to try it out
+sharing my immature outline and encouraging folks to try it out
 themselves.
-Is there a better approach to making medium to large changes to the lessons?
+Is there a better approach to making medium to large changes to the design?
 
 [git-guac-email]: http://lists.software-carpentry.org/pipermail/discuss/2016-May/004529.html
 [git-guacamole]: https://github.com/bsmith89/git-novice-outline
@@ -262,6 +261,6 @@ Is there a better approach to making medium to large changes to the lessons?
 In conclusion: I think we need additional discussion (and data) about the
 motivations/foundations trade-off in our lessons.
 I'd also like to hear your thoughts on the best way to lobby for and introduce
-moderately sized changes to the core lessons.
+moderately sized changes to the core materials.
 What do you think about my approach?
 If you're brave, try it out and let me know how it goes!
