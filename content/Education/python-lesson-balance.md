@@ -1,6 +1,6 @@
 ---
 title: Teaching Python by the (Note)Book
-date: 2016-12-21 17:00
+date: 2017-01-01 18:30
 tags: software-carpentry, teaching, programming, python, jupyter
 status: draft
 ...
@@ -25,10 +25,10 @@ required to develop new skills.
 [swcarpentry]: https://software-carpentry.org
 
 But, despite all of the advantages, teaching _anybody_ to program is hard.
+
 In my experience, one of the most challenging trade-offs for lesson planners
 is between motivating the material and teaching a mental model
 for code execution.
-
 For example, scientists are easily motivated by simple data munging and
 plotting using `pandas` and `matplotlib`;
 these are features of the Python ecosystem that can convince a graduate
@@ -36,6 +36,7 @@ student to pay attention to the material instead of answering emails.
 Actually _using_ these features, however, requires a long list of basic
 concepts: Python syntax, libraries, function calls, objects and methods,
 conditionals, and variable assignment, to name just a few.
+
 A lesson planner can start from the basics, working in to these features
 along the branches of the dependency tree, but that could require hours
 (or even days) of "boring programming".
@@ -62,10 +63,10 @@ motivations-first and foundations-first extremes.
 We can trust learners to self-motivate for a time, especially when we're
 teaching scientists.
 Attendees are there voluntarily (I would hope).
-Likewise, learners will never have a perfect mental model for how their code is
-working;
-the key is to avoid unintentionally teaching pathological models that are
-difficult for the instructor to diagnose and iterate beyond.
+Likewise, learners will never have a perfect understanding of how their code is
+working, regardless of how long you spend teaching the basics.
+The key is to avoid unintentionally teaching pathological mental models that
+are difficult for the instructor to diagnose and iterate beyond.
 
 # State of the Python lesson #
 
@@ -75,7 +76,7 @@ I have [written previously][previous-experience] about my experience
 with the lesson, and have not been shy with my criticism.
 There is a _lot_ to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
-must be probably several thousand workshop attendees.
+must be several thousand workshop attendees.
 
 [inflammation-lesson]: http://swcarpentry.github.io/python-novice-inflammation/
 [previous-experience]: {filename}/Education/swc-python-lesson.md
@@ -136,41 +137,39 @@ default.
 # Continual improvement #
 
 That's not to say, however, that it cannot be improved.
-The same motivation/foundations question has already come up in
+The same motivation-vs-foundations question has already come up in
 [a discussion on GitHub][gapminder-113].
 A proposal was made to delay the use of `pandas` and `matplotlib` until the
 second half, further front-loading the basics.
 My personal opinion, having taught the lesson is that
 this is unnecessary.
-By the time we got to them at the end of the first half-day,
-learners did not appear to be intimidated or
-mislead by the more advanced material.
-On the other hand, I also didn't notice a loss of engagement due to the current
-level of delayed pay-off.
+With the Gapminder lesson, by the time we got to these more advanced topics at
+the end of the first half-day, learners appeared to be ready for the material,
+comfortably updating their mental models in an appropriate way.
+And, thankfully, I also didn't notice a loss of engagement due to the delayed
+pay-off.
 
 [gapminder-113]: https://github.com/swcarpentry/python-novice-gapminder/issues/113
 
 Like many trade-offs in lesson design, the optimal position on the
 motivations/foundations spectrum is context dependent.
-I would be hesitant to focus on basic concepts over cool usage
+I would focus on cool application instead of basic concepts
 for the first session if I were
 teaching high school students or any learners skeptical about the utility of
 the material.
 A room full of scientists who were there specifically to learn Python, however,
 could probably tolerate even more front-loading of syntax and control-flow.
 A framework to help instructors customize the materials for their audience
-would be useful.
+would be a very useful addition.
 
 The main purpose of this post is to nominate a slightly different approach
 which introduces an advanced example early in the lesson without the
-risk of intimidating learners.
+risk (I believe) of intimidating learners.
 
-[lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
+In December 2016 I co-instructed a (not officially SWC)
+[workshop][2016-12-14-umich] which taught Python over two half-day sessions to
+about 20 learners, primarily graduate students in the biological sciences.
 
-In December I co-instructed a (not officially SWC) [workshop][2016-12-14-umich]
-which taught Python to
-about 20 learners, primarily graduate students in the biological sciences,
-over two half-day sessions.
 My co-instructor, Jackie Cohen ([\@jczetta][jackie-twitter]),
 taught the first half-day using the Gapminder lesson.
 The positive reception from learners to the first half of the material was
@@ -190,11 +189,11 @@ In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.
 
+[gapminder-plot]: {filename}../static/images/gapminder-analysis.png
 [lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
 
 ![An example visualization of the gapminder data.][gapminder-plot]
 
-[gapminder-plot]: {filename}../static/images/gapminder-analysis.png
 
 I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
@@ -210,9 +209,9 @@ linear regression, and plotting a best-fit line.
 The purpose of this introduction was purely to motivate the material, not
 to introduce the concepts.
 
-I then had them open a new, empty notebook, and
-the remainder of the lesson (which _was_ done in the traditional live-coding
-style) then revolved around reconstructing the same analysis from scratch,
+I then had them open a new, empty notebook, and the remainder of the lesson
+(which _was_ done in the traditional live-coding style)
+then revolved around reconstructing the same analysis from scratch,
 a thematic unification, that I found to be elegant.
 Since the pre-constructed analysis made use of for-loops, if-statements,
 and functions, I was able to limit my use of foo/bar style examples and
@@ -253,7 +252,8 @@ I've already been [evangelizing][git-guac-email] in a similar way for an
 [alternative Git lesson][git-guacamole],
 sharing my immature outline and encouraging folks to try it out
 themselves.
-Is there a better approach to making medium to large changes to the design?
+Is there a better approach to making medium to large changes to the design of
+a SWC lesson?
 
 [git-guac-email]: http://lists.software-carpentry.org/pipermail/discuss/2016-May/004529.html
 [git-guacamole]: https://github.com/bsmith89/git-novice-outline
@@ -263,4 +263,4 @@ motivations/foundations trade-off in our lessons.
 I'd also like to hear your thoughts on the best way to lobby for and introduce
 moderately sized changes to the core materials.
 What do you think about my approach?
-If you're brave, try it out and let me know how it goes!
+If you're feeling brave, please try it out and let me know how it goes!
