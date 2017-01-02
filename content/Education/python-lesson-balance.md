@@ -2,7 +2,6 @@
 title: Teaching Python by the (Note)Book
 date: 2017-01-01 18:30
 tags: software-carpentry, teaching, programming, python, jupyter
-status: draft
 ...
 
 _**tl;dr:** I tried out a [modified Python lesson][my-lesson]
