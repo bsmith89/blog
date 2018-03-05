@@ -1,9 +1,15 @@
 ---
-title: 'Take five minutes to simplify your life with <em>Make</em>'
+title: Take five minutes to simplify your life with <em>Make</em>
 date: 2016-06-14 12:00
-modified: 2016-06-22 13:30
 tags: make, pipelines, bioinformatics, protips, git, venv, python
+modified: 2017-11-21 09:30
 ...
+
+_WARNING: Because of the Markdown rendering of this blog, tab characters
+have been replaced with 4 spaces in code blocks.
+For this reason, **the makefile code will not work** when copied directly from
+the post.
+Instead, you must first replace all 4-space indents with a tab character._
 
 I use _GNU Make_ to automate my data processing pipelines.
 I've written a [tutorial][bjs-tutorial] [^shorter-tutorials] for novices on the

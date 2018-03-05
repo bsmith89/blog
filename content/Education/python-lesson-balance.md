@@ -188,7 +188,7 @@ In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.
 
-[gapminder-plot]: {filename}../static/images/gapminder-analysis.png
+[gapminder-plot]: {filename}/static/images/gapminder-analysis.png
 [lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
 
 ![An example visualization of the gapminder data.][gapminder-plot]

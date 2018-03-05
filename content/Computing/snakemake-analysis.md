@@ -1,7 +1,7 @@
 ---
-Title: 'Tutorial: Reproducible data analysis pipelines using Snakemake'
-Date: 2017-11-19 17:00
-Tags: teaching, programming, python, pipelines, bioinformatics, software
+title: Tutorial: Reproducible data analysis pipelines using Snakemake
+date: 2017-11-19 17:00
+tags: teaching, programming, python, pipelines, bioinformatics, software
 ...
 
 In many areas of natural and social science, as well as engineering, data
@@ -43,6 +43,10 @@ Some prior experience with the command line is assumed, and learners are
 encouraged to follow along on their own computers.
 The entire tutorial, including questions for the learner are designed to
 take 2 hours as a live-coded, Software Carpentry style lesson.
+A standalone lesson repository can be found [here][lesson-github] and is
+licensed CC-BY.
+
+[lesson-github]: https://github.com/bsmith89/snakemake-boise
 
 # Setup
 
@@ -63,9 +67,9 @@ If not already on your computer, install the following prerequistes.
 
 [This example directory][example-dir] should be downloaded to the user's
 desktop and navigated into at the command line.
-(e.g. `git clone https://github.com/bsmith89/zipf_example; cd zipf_example`)
+(e.g. `git clone https://github.com/bsmith89/zipf-example; cd zipf-example`)
 
-[example-dir]: https://github.com/bsmith89/zipf_example
+[example-dir]: https://github.com/bsmith89/zipf-example
 
 # Motivation
 
@@ -714,6 +718,11 @@ snakemake --dag zipf_results.tgz | dot -Tpng > dag.png
 ```
 
 Open that file and check it out.
+
+![A visualization of the analysis DAG]({filename}/static/images/snakemake-dag.png)
+
+Diagrams like this one can be a very useful way to debug problems with an
+analysis pipeline.
 
 ## Don't repeat yourself
 

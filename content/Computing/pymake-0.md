@@ -1,7 +1,7 @@
 ---
-Title: 'PyMake I: Another GNU Make clone'
-Date: 2013-05-07 19:00
-Tags: python, software, development, make, pipelines, bioinformatics
+title: PyMake I: Another GNU Make clone
+date: 2013-05-07 19:00
+tags: python, software, development, make, pipelines, bioinformatics
 modified: 2016-03-04 10:00
 ...
 

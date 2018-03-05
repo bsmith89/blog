@@ -1,9 +1,15 @@
 ---
-title: 'Tutorial: Reproducible bioinformatics pipelines using GNU Make'
+title: Tutorial: Reproducible bioinformatics pipelines using GNU Make
 date: 2016-03-04 12:00
 tags: software-carpentry, teaching, programming, make, pipelines, bioinformatics, software
-modified: 2016-03-05 10:00
+modified: 2017-11-21 09:30
 ...
+
+_WARNING: Because of the Markdown rendering of this blog, tab characters
+have been replaced with 4 spaces in code blocks.
+For this reason, **the makefile code will not work** when copied directly from
+the post.
+Instead, you must first replace all 4-space indents with a tab character._
 
 For most projects with moderate to intense data analysis you should
 consider using _Make_.

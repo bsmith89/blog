@@ -21,7 +21,7 @@ of carbohydrates, and starchy foods, which can quickly be broken down into
 sugars, in the increased risk of heart disease, obesity, even some forms of
 dementia.
 Americans have responded quickly, with 50% trying to limit their intake of
-sugars and carbohydrates according to a [2014 survey](food-survey).
+sugars and carbohydrates according to a [2014 survey][food-survey].
 That same survey found only 74% of respondents believe that a healthy diet
 can include moderate amounts of sugar, down from 84% in 2013.
 If these trends lead to decreasing calorie consumption as a whole, we could
@@ -58,12 +58,12 @@ which you can already recognize by smell: acetate (the acid in vinegar),
 lactate (which gives cheese its sharpness), propionate (similar to body
 odor), and butyrate (the distinctive stink of vomit).
 Despite its odious stench, butyrate has a number of
-[health benefits](butyrate-benefits), notably its ability to reduce
+[health benefits][butyrate-benefits], notably its ability to reduce
 inflammation, a fact that should come as welcome news to the almost
-[2 million](ccfa-book) Americans who suffer from inflammatory bowel diseases.
+[2 million][ccfa-book] Americans who suffer from inflammatory bowel diseases.
 The ability of these fibers to stimulate the growth of certain beneficial gut
 bacteria puts them into the category of dietary supplements called
-["prebiotics"](prebiotics-wiki) (rather than probiotics).
+["prebiotics"][prebiotics-wiki] (rather than probiotics).
 
 [butyrate-benefits]: http://dx.doi.org/10.1111/j.1365-2036.2007.03562.x
 [ccfa-book]: http://www.ccfa.org/assets/pdfs/updatedibdfactbook.pdf
@@ -75,7 +75,7 @@ Acarbose operates by blocking the breakdown and absorption of starch,
 effectively (and unintentionally) transforming it into dietary fiber to be
 broken down by the bacteria in our gut.
 Unsurprisingly, flatulence and diarrhea are commonly reported side effects.
-A little discomfort might be worth it, though, if the [finding](harrison-2014)
+A little discomfort might be worth it, though, if the [finding][harrison-2014]
 that treatment with acarbose extends lifespan in mice&mdash;by as much as
 20%&mdash;applies to humans as well.
 Why it has this effect is unclear, but if it is due to the increased
