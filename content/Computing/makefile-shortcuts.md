@@ -390,7 +390,7 @@ is all it takes to get up and running.
 
 ## Launch your tools without the hassle ##
 
-I use Jupyter Notebook's a lot.
+I use Jupyter Notebooks a lot.
 With this recipe (and the `PATH` we export above) I don't have to remember
 to activate my virtual environment or invoke specific configuration files
 when I launch a server.
