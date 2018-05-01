@@ -102,7 +102,7 @@ SITEMAP = {
             },
         }
 
-PLUGINS.append('pandoc_reader')
-# PANDOC_FILES = ['md']
-PANDOC_FILTERS = ['pandoc-pygments-filter']
-PANDOC_ARGS = ['--preserve-tabs', '--smart']
+# PLUGINS.append('pandoc_reader')
+# # PANDOC_FILES = ['md']
+# PANDOC_FILTERS = ['pandoc-pygments-filter']
+# PANDOC_ARGS = ['--preserve-tabs', '--smart']
