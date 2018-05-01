@@ -10,8 +10,6 @@ foundational (and sometimes boring) concepts._
 
 [my-lesson]: https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff
 
-# This stuff is hard #
-
 In many ways, [teaching Python to scientists][swcarpentry]
 is easier than just about every other audience.
 The learning objective is clear: write code to make my science more accurate,
