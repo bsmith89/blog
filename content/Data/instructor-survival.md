@@ -4,7 +4,6 @@ subtitle: A survival analysis in python
 date: 2016-05-30 12:00
 modified: 2016-05-31 12:00
 tags: software-carpentry, python, statistics
-
 ...
 
 _Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
