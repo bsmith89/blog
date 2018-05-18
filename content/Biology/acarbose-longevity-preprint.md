@@ -3,30 +3,30 @@ title: Changes to the gut microbiome resulting from acarbose treatment are assoc
 subtitle: New preprint posted to the bioRxiv
 date: 2018-05-01 12:00
 tags: microbiome, acarbose, preprint, SCFAs, longevity, open science
-status: draft
+modified: 2018-05-18 11:00
 ...
 
 <!--
 ## Introduction
 -->
 
-_I'm excited to announce that we've posted a [preprint][preprint] of our latest
-manuscript to the bioRxiv, as well as submitted it for peer review to the open
-access journal Microbiome.
+_I'm excited to announce that we've posted a
+[preprint of our latest manuscript to the bioRxiv][preprint],
+as well as submitted it for peer review to the open access journal Microbiome.
 I'll update this note if and when it gets accepted._
 
 [preprint]: https://doi.org/10.1101/311456
 
 These days it seems like the only research more over-hyped than
-_"microbiome"_ is longevity-enhancement.
+"microbiome" is _longevity-enhancement_.
 It is therefore with some trepidation that I have released into this world of
 buzz the first chapter of my dissertation, titled:
 "Changes in the gut microbiota and fermentation products associated with
 enhanced longevity in acarbose-treated mice."
 
-[Previous][acarbose-1] [work][acarbose-2] (done by my co-authors on this paper
-as well as others) has conclusively demonstrated that treatment with the
-anti-diabetic drug acarbose substantially increases lifespan in mice.
+Previous work (done by my co-authors on this paper as well as others) has
+conclusively demonstrated that treatment with the anti-diabetic drug acarbose
+[substantially increases lifespan in mice][acarbose-1] ([also][acarbose-2]).
 The magnitude of the effect in males&mdash;where it's the most
 pronounced&mdash;puts it on par with rapamycin and 17-&alpha;-estradiol, two
 drugs that have gotten heavy interest from the longevity-enhancement crowd.
@@ -155,6 +155,8 @@ of the less obvious bits that I think are worth your attention.
 An interesting methodological feature of our 16S rRNA gene survey is the
 inclusion of an internal DNA standard for the purpose of comparing the absolute
 abundance of the bacterial population between samples.
+This approach has been published in the past ([here][stammler] and
+[here][smets]), but is not widely implemented.
 Normally, sequence based surveys of bacterial communities are limited to
 comparing the relative abundance of particular amplicons.
 By spiking in a known amount of defined DNA&mdash;in this case
@@ -163,6 +165,9 @@ can compare population density of bacteria per gram of feces
 based on the recovery rate of the exogenous 16S gene.
 Since we can uniquely identify and remove the foreign sequence,
 this approach is fully complementary to a relative-abundance based analyses.
+
+[stammler]: https://doi.org/10.1186/s40168-016-0175-0
+[smets]: https://doi.org/10.1016/j.soilbio.2016.02.003
 
 We use this tool to confirm that observed increases in the relative abundance
 of several taxa reflect increases in their population size, rather than
@@ -266,4 +271,3 @@ Read the paper.
 Run the code.
 
 Let me know what you think.
-
