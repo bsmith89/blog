@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - mistakes</title><link href="//blog.byronjsmith.com/" rel="alternate"></link><link href="//blog.byronjsmith.com/feeds/tag/mistakes.atom.xml" rel="self"></link><id>//blog.byronjsmith.com/</id><updated>2015-08-14T10:00:00-04:00</updated><entry><title>First time teaching Python to novices</title><link href="//blog.byronjsmith.com/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-08-12:/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - mistakes</title><link href="//bsmith89.github.com/blog/" rel="alternate"></link><link href="//bsmith89.github.com/blog/feeds/tag/mistakes.atom.xml" rel="self"></link><id>//bsmith89.github.com/blog/</id><updated>2015-08-14T10:00:00-04:00</updated><entry><title>First time teaching Python to novices</title><link href="//bsmith89.github.com/blog/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2015-08-12:/blog/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
 a Software Carpentry &lt;a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/"&gt;workshop&lt;/a&gt; at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
 Jennifer taught the shell (Bash) and version control with Git,
@@ -153,7 +153,7 @@ I think the explicit approach worked well for the learners in this workshop.
 Since we were covering functions anyway, it wasn't hard to get a multi-level
 traceback.
 Syntax errors also combined nicely with learning function definition syntax.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//blog.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//bsmith89.github.com/blog/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Somewhere in the process of talking about functions we got sidetracked with
 &lt;code&gt;open()&lt;/code&gt;.
 I was surprised to see that the lesson plans have only limited discussion of

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - jupyter</title><link href="//blog.byronjsmith.com/" rel="alternate"></link><link href="//blog.byronjsmith.com/feeds/tag/jupyter.atom.xml" rel="self"></link><id>//blog.byronjsmith.com/</id><updated>2017-01-01T18:30:00-05:00</updated><entry><title>Teaching Python by the (Note)Book</title><link href="//blog.byronjsmith.com/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2017-01-01:/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - jupyter</title><link href="//bsmith89.github.com/blog/" rel="alternate"></link><link href="//bsmith89.github.com/blog/feeds/tag/jupyter.atom.xml" rel="self"></link><id>//bsmith89.github.com/blog/</id><updated>2017-01-01T18:30:00-05:00</updated><entry><title>Teaching Python by the (Note)Book</title><link href="//bsmith89.github.com/blog/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2017-01-01:/blog/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways, &lt;a href="https://software-carpentry.org"&gt;teaching Python to scientists&lt;/a&gt;
@@ -69,7 +69,7 @@ are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref-inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn-inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="//blog.byronjsmith.com/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
+I have &lt;a href="//bsmith89.github.com/blog/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -158,7 +158,7 @@ as a Jupyter notebook.
 In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="//blog.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="//bsmith89.github.com/blog/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
 &lt;p&gt;I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
 lines of code.
