@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Computing</title><link href="https://bsmith89.github.com/blog/" rel="alternate"></link><link href="https://bsmith89.github.com/blog/feeds/category/computing.atom.xml" rel="self"></link><id>https://bsmith89.github.com/blog/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://bsmith89.github.com/blog/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2017-11-19:/blog/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Computing</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/category/computing.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://bsmith89.github.io/blog/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2017-11-19:/blog/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
 analysis involves a series of transformations: filtering, aggregating,
 comparing to theoretical models, culminating in the visualization and
 communication of results.
@@ -10,7 +10,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://bsmith89.github.com/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://bsmith89.github.io/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -29,7 +29,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://bsmith89.github.com/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://bsmith89.github.io/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -38,7 +38,7 @@ challenging analyses.
 I've started using &lt;em&gt;Snakemake&lt;/em&gt; for my own data analysis projects, and I've
 found it to be a consistent improvement, enabling more complex pipelines with
 fewer of the "hacks" that are often necessary when using &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I've taught &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
+&lt;p&gt;I've taught &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
 so, when I was invited to present to the Boise State University Joint
 User Groups, I was excited to convert that tutorial to &lt;em&gt;Snakemake&lt;/em&gt;.
 Here, I've converted that tutorial into a blog post.
@@ -636,7 +636,7 @@ has tools for plotting this network automatically.&lt;/p&gt;
 
 
 &lt;p&gt;Open that file and check it out.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="A visualization of the analysis DAG" src="https://bsmith89.github.com/blog/static/images/snakemake-dag.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="A visualization of the analysis DAG" src="https://bsmith89.github.io/blog/static/images/snakemake-dag.png"&gt;&lt;/p&gt;
 &lt;p&gt;Diagrams like this one can be a very useful way to debug problems with an
 analysis pipeline.&lt;/p&gt;
 &lt;h2&gt;Don't repeat yourself&lt;/h2&gt;
@@ -835,13 +835,13 @@ we can forget about script names
 and intermediate steps and focus instead on the output files that we want.
 This &lt;a href="https://en.wikipedia.org/wiki/Declarative_programming"&gt;'declarative'&lt;/a&gt; approach to pipelines
 pipelines has transformed the way I do data analysis.
-I think it can do the same for you.&lt;/p&gt;</content><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Take five minutes to simplify your life with Make</title><link href="https://bsmith89.github.com/blog/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2016-06-14:/blog/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+I think it can do the same for you.&lt;/p&gt;</content><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Take five minutes to simplify your life with Make</title><link href="https://bsmith89.github.io/blog/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2016-06-14:/blog/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -859,7 +859,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -1207,7 +1207,7 @@ run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&g
     on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref-bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="https://bsmith89.github.com/blog/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2016-03-04:/blog/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="https://bsmith89.github.io/blog/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2016-03-04:/blog/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
@@ -2458,7 +2458,7 @@ Read the extensive [documentation][man-var] about variable assignment.
 [man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref-var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Compiling SciPy on RHEL6</title><link href="https://bsmith89.github.com/blog/scipy-on-rhel.html" rel="alternate"></link><published>2013-05-20T12:00:00-04:00</published><updated>2013-05-20T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2013-05-20:/blog/scipy-on-rhel.html</id><summary type="html">&lt;p&gt;Within the past two years I've discovered something interesting about myself
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Compiling SciPy on RHEL6</title><link href="https://bsmith89.github.io/blog/scipy-on-rhel.html" rel="alternate"></link><published>2013-05-20T12:00:00-04:00</published><updated>2013-05-20T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-05-20:/blog/scipy-on-rhel.html</id><summary type="html">&lt;p&gt;Within the past two years I've discovered something interesting about myself
 (...actually really, &lt;em&gt;really&lt;/em&gt; boring about myself):
 I can be happily entertained for hours on end setting up my
 computational environment &lt;em&gt;just&lt;/em&gt; right.  I find that it gives me a similar
@@ -2551,13 +2551,13 @@ python setup.py install
 install SciPy for me.  On Python 3.3.2, running the unit tests give me
 several errors and failures (nothing too scary looking), but everything passes
 on Python 2.7.5!&lt;/p&gt;
-&lt;p&gt;Enjoy.&lt;/p&gt;</content><category term="python"></category><category term="hpc"></category><category term="software"></category><category term="scipy"></category><category term="linux"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="https://bsmith89.github.com/blog/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.com,2013-05-07:/blog/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
+&lt;p&gt;Enjoy.&lt;/p&gt;</content><category term="python"></category><category term="hpc"></category><category term="software"></category><category term="scipy"></category><category term="linux"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="https://bsmith89.github.io/blog/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-05-07:/blog/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
 &lt;a href="http://github.com/bsmith89/pymake/"&gt;PyMake&lt;/a&gt;.  I'll post the link to Part II
 here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -2572,7 +2572,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
