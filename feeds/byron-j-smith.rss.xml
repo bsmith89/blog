@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//bsmith89.github.com/blog/</link><description>A blog of the new microbiology.</description><lastBuildDate>Fri, 18 May 2018 11:00:00 -0400</lastBuildDate><item><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link>//bsmith89.github.com/blog/acarbose-longevity-preprint.html</link><description>&lt;!--
+<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>https://bsmith89.github.com/blog/</link><description>A blog of the new microbiology.</description><lastBuildDate>Fri, 18 May 2018 11:00:00 -0400</lastBuildDate><item><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link>https://bsmith89.github.com/blog/acarbose-longevity-preprint.html</link><description>&lt;!--
 ## Introduction
 --&gt;
 
@@ -18,7 +18,7 @@ conclusively demonstrated that treatment with the anti-diabetic drug acarbose
 &lt;a href="https://doi.org/10.1111/acel.12170"&gt;substantially increases lifespan in mice&lt;/a&gt; (&lt;a href="https://doi.org/10.1111/acel.12496"&gt;also&lt;/a&gt;).
 The magnitude of the effect in males&amp;mdash;where it's the most
 pronounced&amp;mdash;puts it on par with rapamycin and 17-&amp;alpha;-estradiol, two
-drugs that have gotten heavy interest from the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 01 May 2018 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2018-05-01:/blog/acarbose-longevity-preprint.html</guid><category>microbiome</category><category>acarbose</category><category>preprint</category><category>SCFAs</category><category>longevity</category><category>open science</category></item><item><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link>//bsmith89.github.com/blog/snakemake-analysis.html</link><description>&lt;p&gt;In many areas of natural and social science, as well as engineering, data
+drugs that have gotten heavy interest from the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 01 May 2018 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2018-05-01:/blog/acarbose-longevity-preprint.html</guid><category>microbiome</category><category>acarbose</category><category>preprint</category><category>SCFAs</category><category>longevity</category><category>open science</category></item><item><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link>https://bsmith89.github.com/blog/snakemake-analysis.html</link><description>&lt;p&gt;In many areas of natural and social science, as well as engineering, data
 analysis involves a series of transformations: filtering, aggregating,
 comparing to theoretical models, culminating in the visualization and
 communication of results.
@@ -29,7 +29,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="//bsmith89.github.com/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://bsmith89.github.com/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -37,7 +37,7 @@ specifically for bioinformatics and other complex, computationally
 challenging analyses.
 I've started using &lt;em&gt;Snakemake&lt;/em&gt; for my own data analysis projects, and I've
 found it to be a consistent improvement, enabling more complex pipelines with
-fewer of the "hacks" that …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sun, 19 Nov 2017 17:00:00 -0500</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2017-11-19:/blog/snakemake-analysis.html</guid><category>teaching</category><category>programming</category><category>python</category><category>pipelines</category><category>bioinformatics</category><category>software</category></item><item><title>Teaching Python by the (Note)Book</title><link>//bsmith89.github.com/blog/python-lesson-balance.html</link><description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
+fewer of the "hacks" that …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sun, 19 Nov 2017 17:00:00 -0500</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2017-11-19:/blog/snakemake-analysis.html</guid><category>teaching</category><category>programming</category><category>python</category><category>pipelines</category><category>bioinformatics</category><category>software</category></item><item><title>Teaching Python by the (Note)Book</title><link>https://bsmith89.github.com/blog/python-lesson-balance.html</link><description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways, &lt;a href="https://software-carpentry.org"&gt;teaching Python to scientists&lt;/a&gt;
@@ -54,13 +54,13 @@ is between motivating the material and teaching a mental model
 for code execution.
 For example, scientists are easily motivated by simple data munging and
 plotting using &lt;code&gt;pandas&lt;/code&gt; and &lt;code&gt;matplotlib&lt;/code&gt;;
-these are features of the Python ecosystem that can convince …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sun, 01 Jan 2017 18:30:00 -0500</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2017-01-01:/blog/python-lesson-balance.html</guid><category>software-carpentry</category><category>teaching</category><category>programming</category><category>python</category><category>jupyter</category></item><item><title>Take five minutes to simplify your life with Make</title><link>//bsmith89.github.com/blog/makefile-shortcuts.html</link><description>&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+these are features of the Python ecosystem that can convince …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sun, 01 Jan 2017 18:30:00 -0500</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2017-01-01:/blog/python-lesson-balance.html</guid><category>software-carpentry</category><category>teaching</category><category>programming</category><category>python</category><category>jupyter</category></item><item><title>Take five minutes to simplify your life with Make</title><link>https://bsmith89.github.com/blog/makefile-shortcuts.html</link><description>&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="//bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -72,7 +72,7 @@ Even if you aren't
 living the dream—rebuilding
 a paper from raw data with a single invocation of
 &lt;code&gt;make paper&lt;/code&gt;—I still
-think you can benefit …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 14 Jun 2016 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2016-06-14:/blog/makefile-shortcuts.html</guid><category>make</category><category>pipelines</category><category>bioinformatics</category><category>protips</category><category>git</category><category>venv</category><category>python</category></item><item><title>Software carpentry instructor training</title><link>//bsmith89.github.com/blog/instructor-survival.html</link><description>&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+think you can benefit …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 14 Jun 2016 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2016-06-14:/blog/makefile-shortcuts.html</guid><category>make</category><category>pipelines</category><category>bioinformatics</category><category>protips</category><category>git</category><category>venv</category><category>python</category></item><item><title>Software carpentry instructor training</title><link>https://bsmith89.github.com/blog/instructor-survival.html</link><description>&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
 &lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;Erin Becker's&lt;/a&gt;.  Briefly: I removed individuals who taught
 before they were officially certified.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A couple weeks ago, Greg Wilson &lt;a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html"&gt;asked&lt;/a&gt; the &lt;a href="http://software-carpentry.org/"&gt;Software
@@ -90,7 +90,7 @@ The language is somewhat morbid, but helps with talking
 precisely about models that can easily be applied to a variety of data,
 only sometimes involving death or failure.
 The power of modern survival analysis is the ability to include results from
-subjects who have not …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Mon, 30 May 2016 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2016-05-30:/blog/instructor-survival.html</guid><category>software-carpentry</category><category>python</category><category>statistics</category></item><item><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link>//bsmith89.github.com/blog/make-analysis.html</link><description>&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+subjects who have not …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Mon, 30 May 2016 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2016-05-30:/blog/instructor-survival.html</guid><category>software-carpentry</category><category>python</category><category>statistics</category></item><item><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link>https://bsmith89.github.com/blog/make-analysis.html</link><description>&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
@@ -105,7 +105,7 @@ week-long &lt;a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bod
 Marine Laboratory in February, 2016.
 For now, the live tutorial lives in &lt;a href="https://github.com/bsmith89/make-bml"&gt;a Github repository&lt;/a&gt;,
 although I eventually want to merge all of the good parts into the Software
-Carpentry &lt;a href="https://swcarpentry.github.io/make-novice"&gt;Make lesson …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Fri, 04 Mar 2016 12:00:00 -0500</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2016-03-04:/blog/make-analysis.html</guid><category>software-carpentry</category><category>teaching</category><category>programming</category><category>make</category><category>pipelines</category><category>bioinformatics</category><category>software</category></item><item><title>Not all carbs are bad</title><link>//bsmith89.github.com/blog/fiber-butyrate-life.html</link><description>&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
+Carpentry &lt;a href="https://swcarpentry.github.io/make-novice"&gt;Make lesson …&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Fri, 04 Mar 2016 12:00:00 -0500</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2016-03-04:/blog/make-analysis.html</guid><category>software-carpentry</category><category>teaching</category><category>programming</category><category>make</category><category>pipelines</category><category>bioinformatics</category><category>software</category></item><item><title>Not all carbs are bad</title><link>https://bsmith89.github.com/blog/fiber-butyrate-life.html</link><description>&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
 science communication.
 My own research is currently focused on exactly this topic: describing microbial
 community dynamics associated with acarbose treatment and the production of
@@ -121,7 +121,7 @@ dementia.
 Americans have responded quickly, with 50% trying to limit their intake of
 sugars and carbohydrates according to a &lt;a href="http://www.foodinsight.org/sites/default/files/FINAL%202014%20Food%20and%20Health%20Survey%20Executive%20Summary_0.pdf)."&gt;2014 survey&lt;/a&gt;.
 That same survey found only 74% of respondents believe that a healthy diet
-can include moderate amounts of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 27 Oct 2015 21:30:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2015-10-27:/blog/fiber-butyrate-life.html</guid><category>longevity</category><category>microbiome</category><category>diet</category><category>popular science</category></item><item><title>First time teaching Python to novices</title><link>//bsmith89.github.com/blog/swc-python-lesson.html</link><description>&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
+can include moderate amounts of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 27 Oct 2015 21:30:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2015-10-27:/blog/fiber-butyrate-life.html</guid><category>longevity</category><category>microbiome</category><category>diet</category><category>popular science</category></item><item><title>First time teaching Python to novices</title><link>https://bsmith89.github.com/blog/swc-python-lesson.html</link><description>&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
 a Software Carpentry &lt;a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/"&gt;workshop&lt;/a&gt; at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
 Jennifer taught the shell (Bash) and version control with Git,
@@ -138,7 +138,7 @@ After the Stanford workshop, I took part in new-instructor debriefing
 on August 4th, during which I mentioned that I had to greatly pare down the
 community-written lesson plan, &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;python-novice-inflammation&lt;/a&gt;,
 to fit into the two half-day session we allotted it.&lt;/p&gt;
-&lt;p&gt;Karin and Tiffany, who were running the debriefing, asked me to send …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Wed, 12 Aug 2015 01:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2015-08-12:/blog/swc-python-lesson.html</guid><category>software-carpentry</category><category>teaching</category><category>programming</category><category>mistakes</category><category>python</category></item><item><title>Do bacterial species exist?</title><link>//bsmith89.github.com/blog/microbial-species.html</link><description>&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
+&lt;p&gt;Karin and Tiffany, who were running the debriefing, asked me to send …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Wed, 12 Aug 2015 01:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2015-08-12:/blog/swc-python-lesson.html</guid><category>software-carpentry</category><category>teaching</category><category>programming</category><category>mistakes</category><category>python</category></item><item><title>Do bacterial species exist?</title><link>https://bsmith89.github.com/blog/microbial-species.html</link><description>&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
 science with me for more than a few hours know that I am prepared, at the drop
 of a hat, to rant extensively about several standing debates in biology which I
 consider merely semantic.  For instance:&lt;/p&gt;
@@ -153,7 +153,7 @@ viruses?  And I don't even want to &lt;em&gt;hear&lt;/em&gt; the word "prion".&l
 definition for "species".   Ultimately I am a pluralist: the definition should
 be tailored to the scientific question.  Paleontologists, you have your
 morphological species concept, because what &lt;em&gt;else&lt;/em&gt; do stony
-fossils allow?  Are you studying speciation …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 06 Aug 2013 18:30:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-08-06:/blog/microbial-species.html</guid><category>microbiology</category><category>species</category><category>semantics</category><category>rant</category></item><item><title>You, too, can host this website</title><link>//bsmith89.github.com/blog/fork-this-blog.html</link><description>&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero)
+fossils allow?  Are you studying speciation …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 06 Aug 2013 18:30:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-08-06:/blog/microbial-species.html</guid><category>microbiology</category><category>species</category><category>semantics</category><category>rant</category></item><item><title>You, too, can host this website</title><link>https://bsmith89.github.com/blog/fork-this-blog.html</link><description>&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero)
 might have noticed that things are looking a little different since yesterday.
 That's because I've finally developed my own &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; theme
 to the point that it's functional, and not too embaressing to look at.&lt;/p&gt;
@@ -166,7 +166,7 @@ default theme.&lt;/p&gt;
 &lt;p&gt;Not that I know why you would want to, but you can read and copy the
 &lt;a href="https://github.com/bsmith89/blog"&gt;content and configuration files&lt;/a&gt; on Github.  The
 &lt;a href="https://github.com/bsmith89/blog-theme"&gt;theme source code&lt;/a&gt; is there as well.&lt;/p&gt;
-&lt;p&gt;By putting everything up on Github …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sat, 13 Jul 2013 17:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-07-13:/blog/fork-this-blog.html</guid><category>open-source</category><category>meta</category><category>pelican</category><category>website</category><category>blog</category></item><item><title>Even pathogens hate a cheater</title><link>//bsmith89.github.com/blog/the-enemy-of-my-enemy.html</link><description>&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post.  The excuse
+&lt;p&gt;By putting everything up on Github …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sat, 13 Jul 2013 17:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-07-13:/blog/fork-this-blog.html</guid><category>open-source</category><category>meta</category><category>pelican</category><category>website</category><category>blog</category></item><item><title>Even pathogens hate a cheater</title><link>https://bsmith89.github.com/blog/the-enemy-of-my-enemy.html</link><description>&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post.  The excuse
 (I keep telling myself) is that, having already written too many computational
 articles, it was time to prove that I could write about biology too.
 Unfortunately I'm not nearly as good at reading the literature as I should be.
@@ -178,7 +178,7 @@ or more) and doubling times on the order of hours, evolution can occur quite
 quickly.  Genetic variants within the population which are capable of growing
 faster will quickly take over.  For an organism which is, for example, wasting
 a huge fraction of its energy producing your future gasoline, you can bet this
-months …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Wed, 19 Jun 2013 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-06-19:/blog/the-enemy-of-my-enemy.html</guid><category>microbiology</category><category>cheaters</category><category>evolution</category><category>pathogens</category></item><item><title>Compiling SciPy on RHEL6</title><link>//bsmith89.github.com/blog/scipy-on-rhel.html</link><description>&lt;p&gt;Within the past two years I've discovered something interesting about myself
+months …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Wed, 19 Jun 2013 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-06-19:/blog/the-enemy-of-my-enemy.html</guid><category>microbiology</category><category>cheaters</category><category>evolution</category><category>pathogens</category></item><item><title>Compiling SciPy on RHEL6</title><link>https://bsmith89.github.com/blog/scipy-on-rhel.html</link><description>&lt;p&gt;Within the past two years I've discovered something interesting about myself
 (...actually really, &lt;em&gt;really&lt;/em&gt; boring about myself):
 I can be happily entertained for hours on end setting up my
 computational environment &lt;em&gt;just&lt;/em&gt; right.  I find that it gives me a similar
@@ -194,13 +194,13 @@ most recently in setting up my research pipeline on the
 high-performance compute cluster at The University of Michigan.&lt;/p&gt;
 &lt;p&gt;Installing &lt;code&gt;NumPy&lt;/code&gt; is usually no trouble at all, but for some reason
 (if you know, please tell me), &lt;code&gt;SciPy&lt;/code&gt; has &lt;em&gt;always&lt;/em&gt; given me a
-"BlasNotFoundError" when installing on the Red Hat Enterprise Linux distros …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Mon, 20 May 2013 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-05-20:/blog/scipy-on-rhel.html</guid><category>python</category><category>hpc</category><category>software</category><category>scipy</category><category>linux</category></item><item><title>PyMake I: Another GNU Make clone</title><link>//bsmith89.github.com/blog/pymake-0.html</link><description>&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
+"BlasNotFoundError" when installing on the Red Hat Enterprise Linux distros …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Mon, 20 May 2013 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-05-20:/blog/scipy-on-rhel.html</guid><category>python</category><category>hpc</category><category>software</category><category>scipy</category><category>linux</category></item><item><title>PyMake I: Another GNU Make clone</title><link>https://bsmith89.github.com/blog/pymake-0.html</link><description>&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
 &lt;a href="http://github.com/bsmith89/pymake/"&gt;PyMake&lt;/a&gt;.  I'll post the link to Part II
 here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="//bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.com/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -209,7 +209,7 @@ multi-threading/processing in Python, and &lt;code&gt;git&lt;/code&gt; merges.&l
 &lt;p&gt;Rarely do I actually feel like my products are worth sharing with
 the wider world.  The only reason I have a GitHub account is personal
 convenience and absolute confidence that no one else will ever look at it
-besides me …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 07 May 2013 19:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-05-07:/blog/pymake-0.html</guid><category>python</category><category>software</category><category>development</category><category>make</category><category>pipelines</category><category>bioinformatics</category></item><item><title>Hello World!</title><link>//bsmith89.github.com/blog/initial-commit.html</link><description>&lt;p&gt;Hi.&lt;/p&gt;
+besides me …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 07 May 2013 19:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.com,2013-05-07:/blog/pymake-0.html</guid><category>python</category><category>software</category><category>development</category><category>make</category><category>pipelines</category><category>bioinformatics</category></item><item><title>Hello World!</title><link>https://bsmith89.github.com/blog/initial-commit.html</link><description>&lt;p&gt;Hi.&lt;/p&gt;
 &lt;p&gt;This is mostly a test post and a chance to get some real content on my
 brand-new blog.&lt;/p&gt;
 &lt;p&gt;Inspired by
