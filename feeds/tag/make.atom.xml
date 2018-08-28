@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - make</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/tag/make.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Take five minutes to simplify your life with Make</title><link href="http://blog.byronjsmith.com/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-06-14:/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - make</title><link href="//blog.byronjsmith.com/" rel="alternate"></link><link href="//blog.byronjsmith.com/feeds/tag/make.atom.xml" rel="self"></link><id>//blog.byronjsmith.com/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Take five minutes to simplify your life with Make</title><link href="//blog.byronjsmith.com/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-06-14:/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="http://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="//blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -23,7 +23,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="http://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="//blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -371,7 +371,7 @@ run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&g
     on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref-bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="http://blog.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="//blog.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
@@ -1622,13 +1622,13 @@ Read the extensive [documentation][man-var] about variable assignment.
 [man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref-var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="http://blog.byronjsmith.com/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-07:/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="//blog.byronjsmith.com/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-07:/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
 &lt;a href="http://github.com/bsmith89/pymake/"&gt;PyMake&lt;/a&gt;.  I'll post the link to Part II
 here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="http://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -1643,7 +1643,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="http://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
