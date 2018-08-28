@@ -119,8 +119,8 @@ Deep Ecology - Take five minutes to simplify your life with Make
   <div class="modified">
     <span class="info-tag">edited:</span>
     <span class="info-value" itemprop="dateModified">
-      <abbr title="2016-06-22 13:30:00-04:00">
-        June 22, 2016, 13:30
+      <abbr title="2017-11-21 09:30:00-05:00">
+        November 21, 2017, 09:30
       </abbr>
     </span>
   </div>
@@ -180,12 +180,37 @@ Deep Ecology - Take five minutes to simplify your life with Make
 
 </footer>
   <div class="article-content" itemprop="articleBody">
-    <p>I use <em>GNU Make</em> to automate my data processing pipelines. I’ve written a <a href="http://blog.byronjsmith.com/make-analysis.html">tutorial</a> <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> for novices on the basics of using <em>Make</em> for reproducible analysis and I think that everyone who writes more than one script, or runs more than one shell command to process their data can benefit from automating that process. <a href="http://kbroman.org/minimal_make/">I’m</a> <a href="https://bost.ocks.org/mike/make/">not</a> <a href="http://zmjones.com/make/">alone</a>.</p>
-<p>However, the investment required to learn <em>Make</em> and to convert an entire project can seem daunting to many time-strapped researchers. Even if you aren’t living the dream—rebuilding a paper from raw data with a single invocation of <code>make paper</code>—I still think you can benefit from adding a simple <code>Makefile</code> to your project root.</p>
-<p>When done right, scripting the tedious parts of your job <em>can</em> save you time in the long run<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. But the time savings aren’t the only reason to do it. For me, a bigger advantage is that I get to save my mental energy for more interesting problems<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. <em>Make</em> goes a step further and lets me forget about everything but my real objective. With a <code>make [target]</code> invocation I don’t even need to remember the name of the script.</p>
-<h2 id="the-default-makefile">The default makefile</h2>
+    <p><em>WARNING: Because of the Markdown rendering of this blog, tab characters
+have been replaced with 4 spaces in code blocks.
+For this reason, <strong>the makefile code will not work</strong> when copied directly from
+the post.
+Instead, you must first replace all 4-space indents with a tab character.</em></p>
+<p>I use <em>GNU Make</em> to automate my data processing pipelines.
+I've written a <a href="http://blog.byronjsmith.com/make-analysis.html">tutorial</a> <sup id="fnref-shorter-tutorials"><a class="footnote-ref" href="#fn-shorter-tutorials">1</a></sup> for novices on the
+basics of using <em>Make</em> for reproducible analysis and I think that everyone who
+writes more than one script, or runs more than one shell command to process
+their data can benefit from automating that process.
+<a href="http://kbroman.org/minimal_make/">I'm</a> <a href="https://bost.ocks.org/mike/make/">not</a>
+<a href="http://zmjones.com/make/">alone</a>.</p>
+<p>However, the investment required to learn <em>Make</em> and to convert an
+entire project can seem daunting to many time-strapped researchers.
+Even if you aren't
+living the dream—rebuilding
+a paper from raw data with a single invocation of
+<code>make paper</code>—I still
+think you can benefit from adding a simple <code>Makefile</code> to your project root.</p>
+<p>When done right, scripting the tedious parts of your job <em>can</em>
+save you time in the long run<sup id="fnref-xkcd-refs"><a class="footnote-ref" href="#fn-xkcd-refs">2</a></sup>.
+But the time savings aren't the only reason to do it.
+For me, a bigger advantage is that I get to save my mental energy for
+more interesting problems<sup id="fnref-cook-ref"><a class="footnote-ref" href="#fn-cook-ref">3</a></sup>.
+<em>Make</em> goes a step further and lets me forget about everything but my
+real objective.
+With a <code>make [target]</code> invocation I don't even need to remember the name of the
+script.</p>
+<h2>The default makefile</h2>
 <p>TL;DR: All of the code in this post is available as a <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">gist</a>.</p>
-<p>Here’s what a minimal makefile might look like:</p>
+<p>Here's what a minimal makefile might look like:</p>
 <div class="highlight"><pre><span></span><span class="cp">define PROJECT_HELP_MSG</span>
 
 <span class="nf">Usage</span><span class="o">:</span>
@@ -203,21 +228,21 @@ Deep Ecology - Take five minutes to simplify your life with Make
 <span class="k">export</span> <span class="nv">PROJECT_HELP_MSG</span>
 
 <span class="nf">help</span><span class="o">:</span>
-	<span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG <span class="p">|</span> less
+    <span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG <span class="p">|</span> less
 
 <span class="nf">.git</span><span class="o">:</span>
-	git init
+    git init
 
 <span class="nf">git-config</span><span class="o">:</span> <span class="p">|</span> .<span class="n">git</span> 
-	git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
+    git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
         drop_jupyter_output.sh
-	git config --local filter.dropoutput_jupyter.smudge cat
-	git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
-	git config --local <span class="se">\</span>
+    git config --local filter.dropoutput_jupyter.smudge cat
+    git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
+    git config --local <span class="se">\</span>
         diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
-	git config --local <span class="se">\</span>
+    git config --local <span class="se">\</span>
         merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
-	git config --local <span class="se">\</span>
+    git config --local <span class="se">\</span>
         merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
 
 <span class="nv">VENV</span> <span class="o">=</span> .venv
@@ -225,28 +250,32 @@ Deep Ecology - Take five minutes to simplify your life with Make
 <span class="k">export </span><span class="nv">PATH</span> <span class="o">:=</span> <span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
 
 <span class="nf">${VENV}</span><span class="o">:</span>
-	python3 -m venv <span class="nv">$@</span>
+    python3 -m venv <span class="nv">$@</span>
 
 <span class="nf">python-reqs</span><span class="o">:</span> <span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
-	pip install --upgrade -r requirements.pip
+    pip install --upgrade -r requirements.pip
 
 <span class="nf">setup</span><span class="o">:</span> ${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
 
 <span class="nf">start-jupyter</span><span class="o">:</span>
-	jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
+    jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
 
 <span class="nv">CLEANUP</span> <span class="o">=</span> *.pyc
 
 <span class="nf">clean</span><span class="o">:</span>
-	rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
+    rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
 
 <span class="nf">.PHONY</span><span class="o">:</span> <span class="n">help</span> <span class="n">git</span>-<span class="n">config</span> <span class="n">start</span>-<span class="n">jupter</span> <span class="n">python</span>-<span class="n">reqs</span> <span class="n">setup</span> <span class="n">clean</span>
 </pre></div>
 
-<p>If you want to start using it right away, download the <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">gist</a>, which includes a couple of other necessary files. As long as you aren’t saving it over another makefile, it won’t mess anything up.</p>
-<p>But let’s break it down so you can see how it’s made and why it’s awesome.</p>
+
+<p>If you want to start using it right away, download the <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">gist</a>,
+which includes a couple of other necessary files.
+As long as you aren't saving it over another makefile, it won't mess anything
+up.</p>
+<p>But let's break it down so you can see how it's made and why it's awesome.</p>
 <p>From the top!</p>
-<h2 id="a-help-message-for-your-project">A help message for your project</h2>
+<h2>A help message for your project</h2>
 <div class="highlight"><pre><span></span><span class="cp">define PROJECT_HELP_MSG</span>
 
 <span class="nf">Usage</span><span class="o">:</span>
@@ -264,62 +293,103 @@ Deep Ecology - Take five minutes to simplify your life with Make
 <span class="k">export</span> <span class="nv">PROJECT_HELP_MSG</span>
 
 <span class="nf">help</span><span class="o">:</span>
-	<span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG
+    <span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG
 </pre></div>
 
-<p>The top of our makefile is a help message. Running the traditional invocation <code>make help</code> will call that recipe and we’ll see an abridged list of the available recipes printed to our terminal. Since <code>help</code> is the very first recipe in the makefile, it will also be the default recipe; typing <code>make</code> alone prints the help message.</p>
-<p>As you start adding additional recipes, fill out this usage message. That way you’ll have both documentation about the analysis targets, and also a handy cheatsheet.</p>
-<p><em>Edit (2016-06-15):</em> <a href="https://www.reddit.com/r/bioinformatics/comments/4o7aaa/a_simple_makefile_to_make_your_life_simple_xpost/d4aa8ir">On Reddit, /r/guepier</a> suggests using a nifty trick to auto-generate these help messages, keeping documentation and recipes together in your makefile.</p>
-<h2 id="streamline-git-setup">Streamline git setup</h2>
+
+<p>The top of our makefile is a help message.
+Running the traditional invocation <code>make help</code> will call that recipe and we'll
+see an abridged list of the available recipes printed to our terminal.
+Since <code>help</code> is the very first recipe in the makefile, it will also be the
+default recipe;
+typing <code>make</code> alone prints the help message.</p>
+<p>As you start adding additional recipes, fill out this usage message.
+That way you'll have both documentation about the analysis targets, and also
+a handy cheatsheet.</p>
+<p><em>Edit (2016-06-15):</em> <a href="https://www.reddit.com/r/bioinformatics/comments/4o7aaa/a_simple_makefile_to_make_your_life_simple_xpost/d4aa8ir">On Reddit, /r/guepier</a> suggests using a
+nifty trick to auto-generate these help messages,
+keeping documentation and recipes together in your makefile.</p>
+<h2>Streamline git setup</h2>
 <div class="highlight"><pre><span></span><span class="nf">.git</span><span class="o">:</span>
-	git init
+    git init
 </pre></div>
 
-<p>Every project should be <a href="https://dx.doi.org/10.1186/1751-0473-8-7">version controlled</a>. I prefer git, but the makefile can probably be adapted for Mercurial, Subversion, darcs, etc. This recipe is so simple as to appear useless (since <code>make .git</code> is no easier to type than <code>git init</code>) but we use the directory <code>.git/</code> as an <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html">order-only prerequisite</a> for the next recipe:</p>
+
+<p>Every project should be <a href="https://dx.doi.org/10.1186/1751-0473-8-7">version controlled</a>.
+I prefer git, but the makefile can probably be adapted for Mercurial,
+Subversion, darcs, etc.
+This recipe is so simple as to appear useless (since <code>make .git</code> is no easier
+to type than <code>git init</code>) but we use the directory <code>.git/</code> as an
+<a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html">order-only prerequisite</a>
+for the next recipe:</p>
 <div class="highlight"><pre><span></span><span class="nf">git-config</span><span class="o">:</span> <span class="p">|</span> .<span class="n">git</span> 
-	git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
+    git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
         drop_jupyter_output.sh
-	git config --local filter.dropoutput_jupyter.smudge cat
-	git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
-	git config --local <span class="se">\</span>
+    git config --local filter.dropoutput_jupyter.smudge cat
+    git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
+    git config --local <span class="se">\</span>
         diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
-	git config --local <span class="se">\</span>
+    git config --local <span class="se">\</span>
         merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
-	git config --local <span class="se">\</span>
+    git config --local <span class="se">\</span>
         merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
 </pre></div>
 
-<p>Git configuration is <em>just</em> annoying enough that I often put it off for a new project. With this recipe I don’t have to!</p>
-<p>There are three parts to the configuration above; customize it for how you use git.</p>
-<h3 id="drop-jupyter-notebook-output">Drop Jupyter Notebook output</h3>
+
+<p>Git configuration is <em>just</em> annoying enough that I often put it off for a new
+project.
+With this recipe I don't have to!</p>
+<p>There are three parts to the configuration above;
+customize it for how you use git.</p>
+<h3>Drop Jupyter Notebook output</h3>
 <div class="highlight"><pre><span></span>git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
     ./drop_jupyter_output.sh
 git config --local filter.dropoutput_jupyter.smudge cat
 </pre></div>
 
-<p>I set up a <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes">clean/smudge filter</a> for my Jupyter notebooks. Outputs of analysis should generally not be version controlled, and this includes those outputs that are inlined in a Jupyter notebook. Now, when you <code>git add</code> and <code>git diff</code> notebooks, the output from cells will be automatically ignored. Thankfully, using this filter won’t change the contents of the <code>.ipynb</code> file itself, just the contents of the diff. This does mean, however, that when you <code>git checkout</code> an old version of your notebook you’ll have to re-execute all of the cells to get the results.</p>
-<p>Two other files are needed for this configuration to have any effect. First, <code>.gitattributes</code> which is a tab-separated file mapping filename patterns to special git configuration. The first line in that file should be the following.</p>
-<div class ="highlight"><pre>*.ipynb	filter=dropoutput_jupyter
+
+<p>I set up a <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes">clean/smudge filter</a> for my Jupyter notebooks.
+Outputs of analysis should generally not be version controlled,
+and this includes those outputs that are inlined in a Jupyter notebook.
+Now, when you <code>git add</code> and <code>git diff</code> notebooks, the output from cells will
+be automatically ignored.
+Thankfully, using this filter won't change the contents of the <code>.ipynb</code> file
+itself, just the contents of the diff.
+This does mean, however, that when you <code>git checkout</code> an old version of your
+notebook you'll have to re-execute all of the cells to get the results.</p>
+<p>Two other files are needed for this configuration to have any effect.
+First, <code>.gitattributes</code> which is a tab-separated file mapping filename patterns
+to special git configuration.
+The first line in that file should be the following.</p>
+<div class="highlight"><pre><span></span>*.ipynb filter=dropoutput_jupyter
 </pre></div>
-<p>(That’s a tab after <code>*.ipynb</code>.)</p>
-<p>The second file is the filter <code>drop_jupyter_output.sh</code>, which needs to be executable.</p>
+
+
+<p>(That's a tab after <code>*.ipynb</code>.)</p>
+<p>The second file is the filter <code>drop_jupyter_output.sh</code>,
+which needs to be executable.</p>
 <div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
 <span class="c1"># run `chmod +x drop_jupyter_output.sh` to make it executable.</span>
 
 <span class="nv">file</span><span class="o">=</span><span class="k">$(</span>mktemp<span class="k">)</span>
 cat &lt;<span class="p">&amp;</span><span class="m">0</span> &gt;<span class="nv">$file</span>
 jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled<span class="o">=</span>True <span class="se">\</span>
-    <span class="nv">$file</span> --stdout 2&gt;/dev/null
+    <span class="nv">$file</span> --stdout <span class="m">2</span>&gt;/dev/null
 </pre></div>
 
-<h3 id="display-tabs-as-four-spaces">Display tabs as four spaces</h3>
-<p>I also configure <code>less</code> to show four spaces for tabs. This makes <code>git diff</code>-ing my makefile much easier on the eyes.</p>
+
+<h3>Display tabs as four spaces</h3>
+<p>I also configure <code>less</code> to show four spaces for tabs.
+This makes <code>git diff</code>-ing my makefile much easier on the eyes.</p>
 <div class="highlight"><pre><span></span>git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
 </pre></div>
 
-<h3 id="smart-diffs-for-tabular-data">Smart <code>diff</code>s for tabular data</h3>
-<p>Since git considers changes on a per-line basis, looking at <code>diff</code>s of comma-delimited and tab-delimited files can get obnoxious. The program <a href="http://paulfitz.github.io/daff/"><code>daff</code></a> fixes this problem.</p>
-<p>We’ll configure git to use <code>daff</code> for all tabular files.</p>
+
+<h3>Smart <code>diff</code>s for tabular data</h3>
+<p>Since git considers changes on a per-line basis, looking at
+<code>diff</code>s of comma-delimited and tab-delimited files can get obnoxious.
+The program <a href="http://paulfitz.github.io/daff/"><code>daff</code></a> fixes this problem.</p>
+<p>We'll configure git to use <code>daff</code> for all tabular files.</p>
 <div class="highlight"><pre><span></span>git config --local <span class="se">\</span>
     diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
 git config --local <span class="se">\</span>
@@ -328,75 +398,143 @@ git config --local <span class="se">\</span>
     merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
 </pre></div>
 
-<p>Just like the output filter for Jupyter notebooks, we need to associate this configuration with CSVs and TSVs in our <code>.gitattributes</code> file by adding the following two lines.</p>
-<div class ="highlight"><pre>*.[tc]sv diff=daff-csv
+
+<p>Just like the output filter for Jupyter notebooks, we need to associate
+this configuration with CSVs and TSVs in our <code>.gitattributes</code> file by adding
+the following two lines.</p>
+<div class="highlight"><pre><span></span>*.[tc]sv diff=daff-csv
 *.[tc]sv merge=daff-csv
 </pre></div>
-<h2 id="automatic-python-virtual-environments">Automatic python virtual environments</h2>
-<p>There are plenty of <a href="https://www.davidfischer.name/2010/04/why-you-should-be-using-pip-and-virtualenv/">reasons</a> to sandbox your python environments. If you’re like me and keep a separate virtual environment for every project, you’ll appreciate these recipes to automate creating them and updating packages.</p>
-<p>If you don’t use python/pip, these recipes can be swapped out for other sandboxing systems.</p>
+
+
+<h2>Automatic python virtual environments</h2>
+<p>There are plenty of <a href="https://www.davidfischer.name/2010/04/why-you-should-be-using-pip-and-virtualenv/">reasons</a> to sandbox your python environments.
+If you're like me and keep a separate virtual environment for every project,
+you'll appreciate these recipes to automate creating them and updating
+packages.</p>
+<p>If you don't use python/pip, these recipes can be swapped out for other
+sandboxing systems.</p>
 <div class="highlight"><pre><span></span><span class="nv">VENV</span> <span class="o">=</span> .venv
 <span class="k">export </span><span class="nv">VIRTUAL_ENV</span> <span class="o">:=</span> <span class="k">$(</span>abspath <span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="k">)</span>
 <span class="k">export </span><span class="nv">PATH</span> <span class="o">:=</span> <span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
 
 <span class="nf">${VENV}</span><span class="o">:</span>
-	python3 -m venv <span class="nv">$@</span>
+    python3 -m venv <span class="nv">$@</span>
 
 <span class="nf">python-reqs</span><span class="o">:</span> <span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
-	pip install --upgrade -r requirements.pip
+    pip install --upgrade -r requirements.pip
 </pre></div>
 
-<p>In the top block, we first set a variable <code>VENV</code> to be the location of our virtual environment. We then set <code>VIRTUAL_ENV</code> and prepend its <code>bin/</code> to our <code>PATH</code>. By exporting these variables, all recipes run from this makefile will use python packages and executables from the virtual environment. We don’t have to remember to <code>source .venv/bin/activate</code> first!</p>
-<p>(<em>Edit (2016-06-22):</em> Based on my own testing, it would appear that this approach to virtual environments in recipes does not work with the default <em>GNU Make</em> version installed on OS X. It will, however, work with <a href="http://brew.sh/">Homebrew</a>’s version which is installed as <code>gmake</code> instead of <code>make</code>. It is unclear to me why the behavior is different.)</p>
-<p>The next block is the recipe to initialize the virtual environment. If you’re not using Python 3 for your project you will have to edit this one.</p>
-<p>And finally, a recipe to install and update all of the packages listed in <code>requirements.pip</code>. If you want to make a change to your python requirements, add it to <code>requirements.pip</code> and re-run <code>make python-reqs</code>.</p>
-<p>You can bootstrap other software installations similarly. And, if you discipline yourself to make all changes to your execution environment in this way, you’ll have a permanently up-to-date record of your system requirements.</p>
-<h2 id="single-command-project-setup">Single-command project setup</h2>
+
+<p>In the top block, we first set a variable <code>VENV</code> to be the location of our
+virtual environment.
+We then set <code>VIRTUAL_ENV</code> and prepend its <code>bin/</code> to our <code>PATH</code>.
+By exporting these variables, all recipes run from this makefile will
+use python packages and executables from the virtual environment.
+We don't have to remember to <code>source .venv/bin/activate</code> first!</p>
+<p>(<em>Edit (2016-06-22):</em> Based on my own testing, it would appear that this
+approach to virtual environments in recipes does not work with the default
+<em>GNU Make</em> version installed on OS X.
+It will, however, work with <a href="http://brew.sh/">Homebrew</a>'s version which is
+installed as <code>gmake</code> instead of <code>make</code>.
+It is unclear to me why the behavior is different.)</p>
+<p>The next block is the recipe to initialize the virtual environment.
+If you're not using Python 3 for your project you will have to edit this one.</p>
+<p>And finally, a recipe to install and update all of the packages listed in
+<code>requirements.pip</code>.
+If you want to make a change to your python requirements, add it to
+<code>requirements.pip</code> and re-run <code>make python-reqs</code>.</p>
+<p>You can bootstrap other software installations similarly.
+And, if you discipline yourself to make all changes to your execution
+environment in this way, you'll have a permanently up-to-date record of your
+system requirements.</p>
+<h2>Single-command project setup</h2>
 <div class="highlight"><pre><span></span><span class="nf">setup</span><span class="o">:</span> ${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
 </pre></div>
 
-<p>With this meta-target a simple <code>make setup</code> will have our new project configured and ready to go. This is particularly useful if you work on multiple machines:</p>
+
+<p>With this meta-target a simple <code>make setup</code> will have our new project
+configured and ready to go.
+This is particularly useful if you work on multiple machines:</p>
 <div class="highlight"><pre><span></span>git clone git@github.com:username/project.git
 <span class="nb">cd</span> project
 make setup
 </pre></div>
 
+
 <p>is all it takes to get up and running.</p>
-<h2 id="launch-your-tools-without-the-hassle">Launch your tools without the hassle</h2>
-<p>I use Jupyter Notebook’s a lot. With this recipe (and the <code>PATH</code> we export above) I don’t have to remember to activate my virtual environment or invoke specific configuration files when I launch a server.</p>
+<h2>Launch your tools without the hassle</h2>
+<p>I use Jupyter Notebooks a lot.
+With this recipe (and the <code>PATH</code> we export above) I don't have to remember
+to activate my virtual environment or invoke specific configuration files
+when I launch a server.</p>
 <div class="highlight"><pre><span></span><span class="nf">start-jupyter</span><span class="o">:</span>
-	jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
+    jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
 </pre></div>
 
-<p>Put whatever you’d like into the <a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html">config file</a>. I like to keep my notebooks in a subdirectory, so my invocation is a little different:</p>
+
+<p>Put whatever you'd like into the <a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html">config file</a>.
+I like to keep my notebooks in a subdirectory, so my invocation is a little different:</p>
 <div class="highlight"><pre><span></span>jupyter notebook --config<span class="o">=</span>ipynb/jupyter_notebook_config.py <span class="se">\</span>
     --notebook-dir<span class="o">=</span>ipynb/
 </pre></div>
 
-<p>And my configuration automatically changes the working directory to the project root when launching a new notebook.</p>
-<p>Customize! The same general idea works for any other software you can start from the shell. No need to remember any of the obnoxious command-line flags.</p>
-<h2 id="quick-cleanup">Quick cleanup</h2>
+
+<p>And my configuration automatically changes the working directory to
+the project root when launching a new notebook.</p>
+<p>Customize!
+The same general idea works for any other software you can start from the shell.
+No need to remember any of the obnoxious command-line flags.</p>
+<h2>Quick cleanup</h2>
 <div class="highlight"><pre><span></span><span class="nv">CLEANUP</span> <span class="o">=</span> *.pyc
 
 <span class="nf">clean</span><span class="o">:</span>
-	rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
+    rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
 </pre></div>
 
-<p>A ubiquitous target for <em>Make</em> is <code>clean</code> to tidy up the repository. With this makefile, run <code>make clean</code> to remove all the <code>*.pyc</code> files. Customize the <code>CLEANUP</code> variable with filenames and globs you find yourself <code>rm</code>-ing repeatedly. For me, this includes a bunch of <code>*.log</code> and <code>*.logfile</code> files.</p>
-<h2 id="fork-this-code">Fork this code!</h2>
-<p>That’s all I’ve got for a default makefile. And even this one is more complicated than it has to be; any <em>one</em> component from it can make your life easier when practicing reproducible research.</p>
-<p>The whole point is to hide as much of the humdrum stuff as you can so you get to focus on what counts. I’ve found this makefile saves me both time and, more importantly, mental energy.</p>
-<p>The <code>Makefile</code>, <code>.gitattributes</code>, <code>requirements.pip</code> and <code>drop_jupyter_output.sh</code> described here can all be downloaded from <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">this gist</a><a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>. Next time you’re starting a project, download them to the project directory, run <code>make setup</code>, and let me know what you think!</p>
-<section class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>My tutorial is designed to fill a three hour Software Carpentry lesson. There are a number of much shorter primers to get you started (e.g. <a href="http://zmjones.com/make/">#1</a>, <a href="https://bost.ocks.org/mike/make/">#2</a>, <a href="http://kbroman.org/minimal_make/">#3</a>).<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Randall Munroe does not agree. Relevant XKCDs: <a href="https://xkcd.com/1205/">#1</a>, <a href="https://xkcd.com/1319/">#2</a>, and <a href="https://xkcd.com/974/">#3</a><a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>John Cook makes <a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/">this argument</a> on his blog.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>Even better, you could write a recipe to download those files on <code>make setup</code>!<a href="#fnref4">↩</a></p></li>
-</ol>
-</section>
 
+<p>A ubiquitous target for <em>Make</em> is <code>clean</code> to tidy up the repository.
+With this makefile, run <code>make clean</code> to remove all the <code>*.pyc</code> files.
+Customize the <code>CLEANUP</code> variable with filenames and globs you find yourself
+<code>rm</code>-ing repeatedly.
+For me, this includes a bunch of <code>*.log</code> and <code>*.logfile</code> files.</p>
+<h2>Fork this code!</h2>
+<p>That's all I've got for a default makefile.
+And even this one is more complicated than it has to be;
+any <em>one</em> component from it can make your life easier when practicing
+reproducible research.</p>
+<p>The whole point is to hide as much of the humdrum stuff as you can so you get
+to focus on what counts.
+I've found this makefile saves me both time and, more importantly, mental
+energy.</p>
+<p>The <code>Makefile</code>, <code>.gitattributes</code>, <code>requirements.pip</code> and
+<code>drop_jupyter_output.sh</code> described
+here can all be downloaded from <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">this gist</a><sup id="fnref-bootstrap-idea"><a class="footnote-ref" href="#fn-bootstrap-idea">4</a></sup>.
+Next time you're starting a project, download them to the project directory,
+run <code>make setup</code>, and let me know what you think!</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn-shorter-tutorials">
+<p>My tutorial is designed to fill a three hour
+    Software Carpentry lesson.  There are a number of much shorter
+    primers to get you started (e.g. <a href="http://zmjones.com/make/">#1</a>,
+    <a href="https://bost.ocks.org/mike/make/">#2</a>, <a href="http://kbroman.org/minimal_make/">#3</a>).&#160;<a class="footnote-backref" href="#fnref-shorter-tutorials" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn-xkcd-refs">
+<p>Randall Munroe does not agree.
+    Relevant XKCDs: <a href="https://xkcd.com/1205/">#1</a>,
+    <a href="https://xkcd.com/1319/">#2</a>, and <a href="https://xkcd.com/974/">#3</a>&#160;<a class="footnote-backref" href="#fnref-xkcd-refs" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn-cook-ref">
+<p>John Cook makes <a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/">this argument</a> on his blog.&#160;<a class="footnote-backref" href="#fnref-cook-ref" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn-bootstrap-idea">
+<p>Even better, you could write a recipe to download those files
+    on <code>make setup</code>!&#160;<a class="footnote-backref" href="#fnref-bootstrap-idea" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
   </div>
   
 </article>

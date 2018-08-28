@@ -1,58 +1,571 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Biology</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/category/biology.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2015-10-27T21:30:00-04:00</updated><entry><title>Not all carbs are bad</title><link href="http://blog.byronjsmith.com/fiber-butyrate-life.html" rel="alternate"></link><published>2015-10-27T21:30:00-04:00</published><updated>2015-10-27T21:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-10-27:/fiber-butyrate-life.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on science communication. My own research is currently focused on exactly this topic: describing microbial community dynamics associated with acarbose treatment and the production of butyrate.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A quick internet search search for “low-carb diets” comes back filled with promises to make you sleek, spry, and slim just by cutting out this entire category of foods. The popularity of these diets shouldn’t surprise you. Recent research has implicated overconsumption of sugars, the simplest form of carbohydrates, and starchy foods, which can quickly be broken down into sugars, in the increased risk of heart disease, obesity, even some forms of dementia. Americans have responded quickly, with 50% trying to limit their intake of sugars and carbohydrates according to a &lt;a href="food-survey"&gt;2014 survey&lt;/a&gt;. That same survey found only 74% of respondents believe that a healthy diet can include moderate amounts …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on science communication. My own research is currently focused on exactly this topic: describing microbial community dynamics associated with acarbose treatment and the production of butyrate.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A quick internet search search for “low-carb diets” comes back filled with promises to make you sleek, spry, and slim just by cutting out this entire category of foods. The popularity of these diets shouldn’t surprise you. Recent research has implicated overconsumption of sugars, the simplest form of carbohydrates, and starchy foods, which can quickly be broken down into sugars, in the increased risk of heart disease, obesity, even some forms of dementia. Americans have responded quickly, with 50% trying to limit their intake of sugars and carbohydrates according to a &lt;a href="food-survey"&gt;2014 survey&lt;/a&gt;. That same survey found only 74% of respondents believe that a healthy diet can include moderate amounts of sugar, down from 84% in 2013. If these trends lead to decreasing calorie consumption as a whole, we could see a decline in obesity, diabetes, and heart disease.&lt;/p&gt;
-&lt;p&gt;Unfortunately, there may be an unintended consequence of these quickly shifting attitudes. The fraction of Americans that are actively trying to consume fiber and whole grains in their diet dropped to 53% in 2014 from 62% the year before. Dietary fiber is also a carbohydrate, made-up of individual sugars combined like daisies into long chains and branching structures. What makes these carbohydrates special is that, due to the links holding them together, the human body is not capable of breaking fiber down into individual sugars to be absorbed into the blood stream.&lt;/p&gt;
-&lt;p&gt;Without any way to digest it, fiber is often thought of as an inert component of our food, increasing feelings of fullness but not contributing to the calorie content, all while improving our digestive health by absorbing water and pushing everything smoothly along. While some of the benefits of fiber consumption may be due to its inertness, the problem with that description is that it entirely ignores the multitudes of microbes living in our gut, collectively referred to as the microbiome. Many of these bacteria can break down and feed on dietary fibers, in the process, producing a huge variety of byproducts. The discomfort and flatulence associated with the consumption of beans, for instance—or in lactose intolerant individuals, milk—is due to the carbon dioxide and hydrogen gas belched out by trillions of microbes in the large intestine while they feast on carbohydrates inaccessible to our bodies. Despite the discomfort, the breakdown of these compounds by fermentation produces a number of small molecules called short-chain fatty acids, each of which you can already recognize by smell: acetate (the acid in vinegar), lactate (which gives cheese its sharpness), propionate (similar to body odor), and butyrate (the distinctive stink of vomit). Despite its odious stench, butyrate has a number of &lt;a href="butyrate-benefits"&gt;health benefits&lt;/a&gt;, notably its ability to reduce inflammation, a fact that should come as welcome news to the almost &lt;a href="ccfa-book"&gt;2 million&lt;/a&gt; Americans who suffer from inflammatory bowel diseases. The ability of these fibers to stimulate the growth of certain beneficial gut bacteria puts them into the category of dietary supplements called &lt;a href="prebiotics-wiki"&gt;“prebiotics”&lt;/a&gt; (rather than probiotics).&lt;/p&gt;
-&lt;p&gt;For years, diabetics have been prescribed a drug called acarbose to temper the glucose spikes that occur after starch-heavy meals. Acarbose operates by blocking the breakdown and absorption of starch, effectively (and unintentionally) transforming it into dietary fiber to be broken down by the bacteria in our gut. Unsurprisingly, flatulence and diarrhea are commonly reported side effects. A little discomfort might be worth it, though, if the &lt;a href="harrison-2014"&gt;finding&lt;/a&gt; that treatment with acarbose extends lifespan in mice—by as much as 20%—applies to humans as well. Why it has this effect is unclear, but if it is due to the increased production of butyrate by gut bacteria, increased fiber consumption could have similar effects. Studies are currently underway testing the longevity effects of inulin, a dietary fiber from chicory root. If this and other fibers also increase lifespan in mice, butyrate, and by extension the microbiome, will be new targets for the growing field of life-extending therapies.&lt;/p&gt;
-</content><category term="longevity"></category><category term="microbiome"></category><category term="diet"></category><category term="popular science"></category></entry><entry><title>Do bacterial species exist?</title><link href="http://blog.byronjsmith.com/microbial-species.html" rel="alternate"></link><published>2013-08-06T18:30:00-04:00</published><updated>2013-08-06T18:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-08-06:/microbial-species.html</id><summary type="html">&lt;p&gt;Any of my friends or colleagues who have had the “pleasure” of talking about science with me for more than a few hours know that I am prepared, at the drop of a hat, to rant extensively about several standing debates in biology which I consider merely semantic. For instance:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Biology</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/category/biology.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2018-05-18T11:00:00-04:00</updated><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="http://blog.byronjsmith.com/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2018-05-01:/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
+## Introduction
+--&gt;
+
+&lt;p&gt;&lt;em&gt;I'm excited to announce that we've posted a
+&lt;a href="https://doi.org/10.1101/311456"&gt;preprint of our latest manuscript to the bioRxiv&lt;/a&gt;,
+as well as submitted it for peer review to the open access journal Microbiome.
+I'll update this note if and when it gets accepted.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These days it seems like the only research more over-hyped than
+"microbiome" is &lt;em&gt;longevity-enhancement&lt;/em&gt;.
+It is therefore with some trepidation that I have released into this world of
+buzz the first chapter of my dissertation, titled:
+"Changes in the gut microbiota and fermentation products associated with
+enhanced longevity in acarbose-treated mice."&lt;/p&gt;
+&lt;p&gt;Previous work (done by my co-authors on this paper as well as others) has
+conclusively demonstrated that treatment with the anti-diabetic drug acarbose
+&lt;a href="https://doi.org/10.1111/acel.12170"&gt;substantially increases lifespan in mice&lt;/a&gt; (&lt;a href="https://doi.org/10.1111/acel.12496"&gt;also&lt;/a&gt;).
+The magnitude of the effect in males&amp;mdash;where it's the most
+pronounced&amp;mdash;puts it on par with rapamycin and 17-&amp;alpha;-estradiol, two
+drugs that have gotten heavy interest from the …&lt;/p&gt;</summary><content type="html">&lt;!--
+## Introduction
+--&gt;
+
+&lt;p&gt;&lt;em&gt;I'm excited to announce that we've posted a
+&lt;a href="https://doi.org/10.1101/311456"&gt;preprint of our latest manuscript to the bioRxiv&lt;/a&gt;,
+as well as submitted it for peer review to the open access journal Microbiome.
+I'll update this note if and when it gets accepted.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These days it seems like the only research more over-hyped than
+"microbiome" is &lt;em&gt;longevity-enhancement&lt;/em&gt;.
+It is therefore with some trepidation that I have released into this world of
+buzz the first chapter of my dissertation, titled:
+"Changes in the gut microbiota and fermentation products associated with
+enhanced longevity in acarbose-treated mice."&lt;/p&gt;
+&lt;p&gt;Previous work (done by my co-authors on this paper as well as others) has
+conclusively demonstrated that treatment with the anti-diabetic drug acarbose
+&lt;a href="https://doi.org/10.1111/acel.12170"&gt;substantially increases lifespan in mice&lt;/a&gt; (&lt;a href="https://doi.org/10.1111/acel.12496"&gt;also&lt;/a&gt;).
+The magnitude of the effect in males&amp;mdash;where it's the most
+pronounced&amp;mdash;puts it on par with rapamycin and 17-&amp;alpha;-estradiol, two
+drugs that have gotten heavy interest from the longevity-enhancement crowd.
+&lt;!--
+TODO: Link to this buzz.
+--&gt;
+While the approximately 20% increase in median lifespan in males is not as big
+as dietary restriction (a whopping ~40% in several studies), and the effect
+is much less in females (only 5% give-or-take) this still represents an
+exciting potential therapy if it can be reproduced in humans.&lt;/p&gt;
+&lt;p&gt;More importantly, it represents another tiny toehold in the still inscrutable
+field of longevity science.
+(Disclaimer: &lt;em&gt;I am not a longevity expert.&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;To drive home how little we understand about longevity, not only do we have
+just a rudimentary understanding of
+&lt;a href="https://doi.org/10.1016/j.cell.2015.02.020"&gt;how dietary restriction increases lifespan&lt;/a&gt;&lt;sup id="fnref-dr-mechanism-note"&gt;&lt;a class="footnote-ref" href="#fn-dr-mechanism-note"&gt;1&lt;/a&gt;&lt;/sup&gt;,
+but we can't even say if acarbose (or any other therapy) has a similar
+mechanism of action.
+It seems reasonable to expect that it might;
+acarbose inhibits the enzymes that break down starch, reducing the uptake of
+glucose after a meal.
+However, the physiological response to long-term treatment with the drug is
+quite distinct from dietary restriction.&lt;/p&gt;
+&lt;p&gt;This discrepancy has inspired an alternative hypothesis: looking instead to the
+starch left undigested and that therefore enters the &lt;em&gt;lower&lt;/em&gt; digestive system
+in much larger amounts.
+If this increased supply of substrate for microbial fermentation causes an
+increased production of "good" bacterial products&amp;mdash;for instance short-chain
+fatty acids (SCFAs)&amp;mdash;then this could result in improved health and,
+ultimately, longevity.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Concept diagram: our alternative model for acarbose's effect on longevity.
+" src="static/images/longev_concept.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Features and limitations of our study&lt;/h2&gt;
+&lt;p&gt;To explore this hypothesis, we have been very fortunate to collaborate
+with the National Institute on Aging's
+&lt;a href="https://www.nia.nih.gov/research/dab/interventions-testing-program-itp"&gt;Interventions Testing Program (ITP)&lt;/a&gt;, an
+ongoing multi-institutional study that trials promising anti-aging therapies
+in large mouse cohorts.
+The life-extending properties of acarbose were first observed in this study,
+and subsequent mouse cohorts have both confirmed the original finding and built
+on it.&lt;/p&gt;
+&lt;p&gt;My manuscript is based on the analysis of fecal samples from these mice,
+measuring the concentrations of three key SCFAs and other metabolites as
+well as the composition of the bacterial community.
+Longevity studies like these are challenging simply because you're waiting
+for your mice to die naturally.
+This is both time consuming and expensive;
+you need quite a few mice for statistical reasons, and they can live for years.
+To my knowledge, ours is the first study to combine characterization of the
+fecal microbiome with longevity measurement in normal, healthy mice.
+Another valuable feature of our study is the pairing of chemical analysis with
+community characterization in the same samples, presumably improving
+our ability to detect associations between bacterial taxa and their
+fermentation products.&lt;/p&gt;
+&lt;p&gt;Nonetheless, as with any research this study has crucial limitations
+and is only the first step in process of validating an exciting
+hypothesis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, we did not set out to test the central, causal claim of our model:
+    that SCFAs in the gut increase lifespan.
+    To do so would require experimental control of one or more of the three key
+    SCFAs in the lower digestive system&amp;mdash;acetate, butyrate and
+    propionate&amp;mdash;&lt;em&gt;without&lt;/em&gt; independently affecting mouse physiology.
+    While a useful manipulation, acarbose supplementation has other major
+    effects (on blood glucose, for instance) and therefore does not qualify.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Second, by definition, the mice for which we obtained fecal pellets had
+    survived up to the time of collection.
+    Since samples were collected from mice nearing to the median lifespan of
+    the control mice,
+    our interpretation are therefore limited to &lt;em&gt;old&lt;/em&gt; mice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third, this was a purely cross-sectional study with a single sample
+    collected from each mouse.
+    We can answer the most pressing questions without longitudinal sampling,
+    but variation within each mouse, on the time-scale of hours, days, or
+    weeks, surely introduced noise and decreased our statistical power.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, we only measure chemical and community composition in &lt;em&gt;feces&lt;/em&gt;.
+    While this is an effective proxy for the gut microbiome, and a huge
+    fraction of studies accept this shortcoming, it is important to remember
+    that fecal SCFA concentrations may not reflect bacterial production, nor
+    exposure of the gut and other host tissues to these compounds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Interesting findings&lt;/h2&gt;
+&lt;p&gt;Our study explores predictions of the hypothesis that acarbose
+increases longevity via the bacterial production of short-chain fatty acids,
+finding that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;acarbose treatment modifies the composition of the gut microbiota,&lt;/li&gt;
+&lt;li&gt;variation in the abundance of particular bacterial community members
+is associated with variation in the concentration of fermentation products,&lt;/li&gt;
+&lt;li&gt;one or more of the major SCFAs are increased in the feces of acarbose
+treated mice, and&lt;/li&gt;
+&lt;li&gt;SCFA concentrations are associated with mouse lifespan.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;While our model does not supersede the more mainstream hypothesis that
+acarbose acts to increase longevity through its effects on glucose homeostasis
+pathways, our work is important support for an alternative model in which the
+microbiota plays a central role.&lt;/p&gt;
+&lt;p&gt;If you want to know all the juicy details, &lt;a href="https://doi.org/10.1101/311456"&gt;read the paper&lt;/a&gt;.
+Here, however, I want to expand a little bit on some
+of the less obvious bits that I think are worth your attention.&lt;/p&gt;
+&lt;h3&gt;Quantification of bacterial density&lt;/h3&gt;
+&lt;p&gt;An interesting methodological feature of our 16S rRNA gene survey is the
+inclusion of an internal DNA standard for the purpose of comparing the absolute
+abundance of the bacterial population between samples.
+This approach has been published in the past (&lt;a href="https://doi.org/10.1186/s40168-016-0175-0"&gt;here&lt;/a&gt; and
+&lt;a href="https://doi.org/10.1016/j.soilbio.2016.02.003"&gt;here&lt;/a&gt;), but is not widely implemented.
+Normally, sequence based surveys of bacterial communities are limited to
+comparing the relative abundance of particular amplicons.
+By spiking in a known amount of defined DNA&amp;mdash;in this case
+10 &amp;mu;L of a stationary phase culture of &lt;em&gt;Sphingopyxis alaskensis&lt;/em&gt;&amp;mdash;we
+can compare population density of bacteria per gram of feces
+based on the recovery rate of the exogenous 16S gene.
+Since we can uniquely identify and remove the foreign sequence,
+this approach is fully complementary to a relative-abundance based analyses.&lt;/p&gt;
+&lt;p&gt;We use this tool to confirm that observed increases in the relative abundance
+of several taxa reflect increases in their population size, rather than
+the decreased abundance of other bacteria, a distinction that is impossible
+to make with standard survey methods.&lt;/p&gt;
+&lt;p&gt;In this study we did not attempt to quantify the density of bacteria in the
+spike itself, which means that our abundance estimates are in units of
+spike-equivalents rather than gene copies.
+This does not affect our interpretations, although it can create challenges for
+communication.
+We skipped this step because it is probably not possible to accurately estimate
+cell counts in the endemic community based on 16S rRNA gene density.
+Extraction and amplification efficiency, as well as
+&lt;a href="https://rrndb.umms.med.umich.edu/"&gt;16S rRNA gene copies per cell&lt;/a&gt;, vary among species.
+Instead we depend on an assumption of per cell copy number invariance in the
+community on average, as well as in the specific taxa being assessed.
+For this reason, we've opted to use "spike-adjusted abundance" as a euphemism
+for the estimate.&lt;/p&gt;
+&lt;p&gt;I plan to write more about this approach in the future.
+For now I'll just say it was a small, but valuable feature of our study.&lt;/p&gt;
+&lt;h3&gt;Identification of bacterial function&lt;/h3&gt;
+&lt;p&gt;Another interesting method that I'm proud to have included was a
+&lt;a href="https://en.wikipedia.org/wiki/Lasso_(statistics)"&gt;LASSO regression&lt;/a&gt; of metabolite concentrations on taxon abundances.
+Our reason for doing this was the belief that the bacteria
+most strongly correlated with particular fermentation products were the most
+likely to be producing them.
+This na&amp;iuml;ve approach appears to have paid off;
+the method identified contenders for these functional roles that, in many
+cases, match &lt;em&gt;a priori&lt;/em&gt; expectations.
+For instance, the most abundant &lt;em&gt;Lactobacillus&lt;/em&gt; was closely associated with
+lactate concentrations.
+(Surprised?)
+Likewise, the dominant members of the &lt;em&gt;Muribaculaceae&lt;/em&gt; appear
+to be predictive of propionate concentrations, matching functional annotations
+of genomes from this family.&lt;/p&gt;
+&lt;p&gt;There are almost certainly better methods for discovering the taxa that
+produce particular metabolites,
+but LASSO regression is a surprisingly simple approach and sufficient to
+demonstrate a relationship between bacterial abundances and SCFAs,
+while being (theoretically) more robust to other sources of co-linearity.&lt;/p&gt;
+&lt;h2&gt;A reproducible paper&lt;/h2&gt;
+&lt;p&gt;Besides the joy of having contributed to SCIENCE,
+I am also proud to declare that the results&lt;sup id="fnref-but-one"&gt;&lt;a class="footnote-ref" href="#fn-but-one"&gt;2&lt;/a&gt;&lt;/sup&gt; in our manuscript
+are recreate-able by sufficiently interested readers.
+Raw sequence data are available from the &lt;a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA448009"&gt;SRA&lt;/a&gt;, and everything
+else&amp;mdash;HPLC peak area tables, mouse survival data, and all of the relevant
+metadata&amp;mdash;can be found in a &lt;a href="https://github.com/bsmith89/smith2018paper"&gt;public GitHub repository&lt;/a&gt;.
+That repo also comes with all of the pipeline
+code, implemented as scripts and a Makefile, for raw data
+processing.&lt;/p&gt;
+&lt;p&gt;For anyone who doesn't want to install a bunch of software and
+reserve about a hundred hours of CPU time
+to reprocess our sequences, intermediate results are available in a preloaded
+SQLite database.
+Finally, Jupyter notebooks with code to reproduce published figures and
+statistics have also been included.
+I'm not providing a prepared container, unfortunately, and some of the
+required software can be challenging to install.
+Once that's done, though, the Makefile is designed to generate the finished
+paper with a single invocation of &lt;code&gt;make paper&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;While there's an "official", current release of that repository,
+&lt;a href="https://doi.org/10.5281/zenodo.1229203"&gt;checkpointed by Zenodo&lt;/a&gt;,
+I may implement patches if they make results easier for readers to recreate.
+If anyone out there wants to get really crazy, I'll even take pull-requests!&lt;/p&gt;
+&lt;p&gt;This manuscript is a key chapter of my PhD thesis, and I'll be building off of
+the findings in subsequent work.
+So stay tuned!&lt;/p&gt;
+&lt;p&gt;Read the paper.&lt;/p&gt;
+&lt;p&gt;Run the code.&lt;/p&gt;
+&lt;p&gt;Let me know what you think.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn-dr-mechanism-note"&gt;
+&lt;p&gt;Quote: "The mechanisms mediating the health benefits of
+  DR are not fully understood in any organism."&amp;#160;&lt;a class="footnote-backref" href="#fnref-dr-mechanism-note" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn-but-one"&gt;
+&lt;p&gt;Except for one: Our supplemental materials do not included the code
+        needed to recreate the first figure, survival curves demonstrating
+        that the population of mice from which we sampled recapitulate the
+        sex-specific longevity effects of acarbose.
+        This result was computed by a collaborator and uses longevity data
+        that will be released with a different paper, currently in
+        preparation.
+        I believe that this particular result is a relatively minor part
+        of our story, confirming a previously observed, and well
+        established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref-but-one" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="microbiome"></category><category term="acarbose"></category><category term="preprint"></category><category term="SCFAs"></category><category term="longevity"></category><category term="open science"></category></entry><entry><title>Not all carbs are bad</title><link href="http://blog.byronjsmith.com/fiber-butyrate-life.html" rel="alternate"></link><published>2015-10-27T21:30:00-04:00</published><updated>2015-10-27T21:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-10-27:/fiber-butyrate-life.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
+science communication.
+My own research is currently focused on exactly this topic: describing microbial
+community dynamics associated with acarbose treatment and the production of
+butyrate.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A quick internet search search for “low-carb diets” comes back filled with
+promises to make you sleek, spry, and slim just by cutting out this entire
+category of foods.
+The popularity of these diets shouldn't surprise you.
+Recent research has implicated overconsumption of sugars, the simplest form
+of carbohydrates, and starchy foods, which can quickly be broken down into
+sugars, in the increased risk of heart disease, obesity, even some forms of
+dementia.
+Americans have responded quickly, with 50% trying to limit their intake of
+sugars and carbohydrates according to a &lt;a href="http://www.foodinsight.org/sites/default/files/FINAL%202014%20Food%20and%20Health%20Survey%20Executive%20Summary_0.pdf)."&gt;2014 survey&lt;/a&gt;.
+That same survey found only 74% of respondents believe that a healthy diet
+can include moderate amounts of …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
+science communication.
+My own research is currently focused on exactly this topic: describing microbial
+community dynamics associated with acarbose treatment and the production of
+butyrate.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A quick internet search search for “low-carb diets” comes back filled with
+promises to make you sleek, spry, and slim just by cutting out this entire
+category of foods.
+The popularity of these diets shouldn't surprise you.
+Recent research has implicated overconsumption of sugars, the simplest form
+of carbohydrates, and starchy foods, which can quickly be broken down into
+sugars, in the increased risk of heart disease, obesity, even some forms of
+dementia.
+Americans have responded quickly, with 50% trying to limit their intake of
+sugars and carbohydrates according to a &lt;a href="http://www.foodinsight.org/sites/default/files/FINAL%202014%20Food%20and%20Health%20Survey%20Executive%20Summary_0.pdf)."&gt;2014 survey&lt;/a&gt;.
+That same survey found only 74% of respondents believe that a healthy diet
+can include moderate amounts of sugar, down from 84% in 2013.
+If these trends lead to decreasing calorie consumption as a whole, we could
+see a decline in obesity, diabetes, and heart disease.&lt;/p&gt;
+&lt;p&gt;Unfortunately, there may be an unintended consequence of these quickly
+shifting attitudes.
+The fraction of Americans that are actively trying to consume fiber and whole
+grains in their diet dropped to 53% in 2014 from 62% the year before.
+Dietary fiber is also a carbohydrate, made-up of individual sugars combined
+like daisies into long chains and branching structures.
+What makes these carbohydrates special is that, due to the links holding them
+together, the human body is not capable of breaking fiber down into
+individual sugars to be absorbed into the blood stream.&lt;/p&gt;
+&lt;p&gt;Without any way to digest it, fiber is often thought of as an inert component
+of our food, increasing feelings of fullness but not contributing to the
+calorie content, all while improving our digestive health by absorbing water
+and pushing everything smoothly along.
+While some of the benefits of fiber consumption may be due to its inertness,
+the problem with that description is that it entirely ignores the multitudes
+of microbes living in our gut, collectively referred to as the microbiome.
+Many of these bacteria can break down and feed on dietary fibers, in the
+process, producing a huge variety of byproducts.
+The discomfort and flatulence associated with the consumption of beans, for
+instance&amp;mdash;or in lactose intolerant individuals, milk&amp;mdash;is due to the
+carbon dioxide and hydrogen gas belched out by trillions of microbes in the
+large intestine while they feast on carbohydrates inaccessible to our bodies.
+Despite the discomfort, the breakdown of these compounds by fermentation
+produces a number of small molecules called short-chain fatty acids, each of
+which you can already recognize by smell: acetate (the acid in vinegar),
+lactate (which gives cheese its sharpness), propionate (similar to body
+odor), and butyrate (the distinctive stink of vomit).
+Despite its odious stench, butyrate has a number of
+&lt;a href="http://dx.doi.org/10.1111/j.1365-2036.2007.03562.x"&gt;health benefits&lt;/a&gt;, notably its ability to reduce
+inflammation, a fact that should come as welcome news to the almost
+&lt;a href="http://www.ccfa.org/assets/pdfs/updatedibdfactbook.pdf"&gt;2 million&lt;/a&gt; Americans who suffer from inflammatory bowel diseases.
+The ability of these fibers to stimulate the growth of certain beneficial gut
+bacteria puts them into the category of dietary supplements called
+&lt;a href="https://en.wikipedia.org/wiki/Prebiotic_(nutrition)"&gt;"prebiotics"&lt;/a&gt; (rather than probiotics).&lt;/p&gt;
+&lt;p&gt;For years, diabetics have been prescribed a drug called acarbose to temper
+the glucose spikes that occur after starch-heavy meals.
+Acarbose operates by blocking the breakdown and absorption of starch,
+effectively (and unintentionally) transforming it into dietary fiber to be
+broken down by the bacteria in our gut.
+Unsurprisingly, flatulence and diarrhea are commonly reported side effects.
+A little discomfort might be worth it, though, if the &lt;a href="http://dx.doi.org/10.1111/acel.12170"&gt;finding&lt;/a&gt;
+that treatment with acarbose extends lifespan in mice&amp;mdash;by as much as
+20%&amp;mdash;applies to humans as well.
+Why it has this effect is unclear, but if it is due to the increased
+production of butyrate by gut bacteria, increased fiber consumption could
+have similar effects.
+Studies are currently underway testing the longevity effects of inulin, a
+dietary fiber from chicory root.
+If this and other fibers also increase lifespan in mice, butyrate, and by
+extension the microbiome, will be new targets for the growing field of
+life-extending therapies.&lt;/p&gt;</content><category term="longevity"></category><category term="microbiome"></category><category term="diet"></category><category term="popular science"></category></entry><entry><title>Do bacterial species exist?</title><link href="http://blog.byronjsmith.com/microbial-species.html" rel="alternate"></link><published>2013-08-06T18:30:00-04:00</published><updated>2013-08-06T18:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-08-06:/microbial-species.html</id><summary type="html">&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
+science with me for more than a few hours know that I am prepared, at the drop
+of a hat, to rant extensively about several standing debates in biology which I
+consider merely semantic.  For instance:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Are viruses alive?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: &lt;em&gt;Who CARES!?&lt;/em&gt; Viruses do what they do. Cellular organisms do something else. What difference does it make if we decide to allow our middle-schoolers to draw little dotted lines around animals, bacteria, &lt;em&gt;and&lt;/em&gt; viruses? And I don’t even want to &lt;em&gt;hear&lt;/em&gt; the word “prion”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: &lt;em&gt;Who CARES!?&lt;/em&gt;  Viruses do what they do.  Cellular organisms do
+something else. What difference does it make if we decide to allow our
+middle-schoolers to draw little dotted lines around animals, bacteria, &lt;em&gt;and&lt;/em&gt;
+viruses?  And I don't even want to &lt;em&gt;hear&lt;/em&gt; the word "prion".&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I have a similar level of disdain for people who try to decide on a single definition for “species”. Ultimately I am a pluralist: the definition should be tailored to the scientific question. Paleontologists, you have your morphological species concept, because what &lt;em&gt;else&lt;/em&gt; do stony fossils allow? Are you studying …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Any of my friends or colleagues who have had the “pleasure” of talking about science with me for more than a few hours know that I am prepared, at the drop of a hat, to rant extensively about several standing debates in biology which I consider merely semantic. For instance:&lt;/p&gt;
+&lt;p&gt;I have a similar level of disdain for people who try to decide on a single
+definition for "species".   Ultimately I am a pluralist: the definition should
+be tailored to the scientific question.  Paleontologists, you have your
+morphological species concept, because what &lt;em&gt;else&lt;/em&gt; do stony
+fossils allow?  Are you studying speciation …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
+science with me for more than a few hours know that I am prepared, at the drop
+of a hat, to rant extensively about several standing debates in biology which I
+consider merely semantic.  For instance:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt;: Are viruses alive?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: &lt;em&gt;Who CARES!?&lt;/em&gt; Viruses do what they do. Cellular organisms do something else. What difference does it make if we decide to allow our middle-schoolers to draw little dotted lines around animals, bacteria, &lt;em&gt;and&lt;/em&gt; viruses? And I don’t even want to &lt;em&gt;hear&lt;/em&gt; the word “prion”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A&lt;/strong&gt;: &lt;em&gt;Who CARES!?&lt;/em&gt;  Viruses do what they do.  Cellular organisms do
+something else. What difference does it make if we decide to allow our
+middle-schoolers to draw little dotted lines around animals, bacteria, &lt;em&gt;and&lt;/em&gt;
+viruses?  And I don't even want to &lt;em&gt;hear&lt;/em&gt; the word "prion".&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;I have a similar level of disdain for people who try to decide on a single definition for “species”. Ultimately I am a pluralist: the definition should be tailored to the scientific question. Paleontologists, you have your morphological species concept, because what &lt;em&gt;else&lt;/em&gt; do stony fossils allow? Are you studying speciation, you can keep the biological species concept, just be prepared for the inevitable craziness when fairly divergent plants hybridize or genes are transferred horizontally. Macro-evolution folks, don’t give up on the phylogenetic species concept.&lt;/p&gt;
-&lt;p&gt;As an aside, I have no tolerance for arbitrary definitions which do not admit to their arbitrariness. Since I have yet to be convinced otherwise, this has precluded my acceptance of higher taxonomic divisions. If someone can give me a non-arbitrary definition for genus, order, family, phylum, etc. I would love to know what it is. As far as I am concerned they’re just a naming system for monophyletic groups which pander to dead systematists.&lt;/p&gt;
-&lt;h2 id="most-species-concepts-are-not-applicable-or-arbitrary"&gt;Most species concepts are not applicable or arbitrary&lt;/h2&gt;
-&lt;p&gt;For us microbiologists, several &lt;a href="http://dx.doi.org/10.1146/annurev.micro.56.012302.160634"&gt;species concepts&lt;/a&gt; are in use. The genetic species concept groups organisms whose full genomes or selected genes have diverged minimally. This definition is applied in operational taxonomic unit (OTU) based analysis, and indirectly in whole genome DNA-DNA hybridization, the traditional determination of bacterial species.&lt;/p&gt;
-&lt;p&gt;OTU thresholds are certainly arbitrary; The definition fully acknowledges that fact. But the OTU concept is particularly useful for culture independent methods, since genetic distance is perhaps the only measure of familial resemblance available. Just as the biological species concept doesn’t do much good for a paleontologist who lacks live, mating specimens, a morphological species concept is helpless when faced with sequence divorced from physiology.&lt;/p&gt;
-&lt;p&gt;When in possession of pure cultures, however, and therefore the luxury of phenotypic data, a physiological (which I’m using synonymously with “morphological”) species concept is viable. Unfortunately, application of the morphogical definition depends critically on the exhaustivity of our search for physiological differences and an arbitrary delineation between groups.&lt;/p&gt;
-&lt;p&gt;The phylogenetic species concept is equally impotent. I challenge the reader to devise a monophyletic “basic unit” for any &lt;a href="http://en.wikipedia.org/wiki/Asexual_reproduction"&gt;agamogenic&lt;/a&gt; organism which does not classify every daughter as a new species.&lt;/p&gt;
-&lt;p&gt;Despite the lack of canonical sex in microbes, an unsurprising (if not justifiable) urge to model ourselves after animal ecologists has driven some microbiologists to consider a biological species concept as well. With many microbes partaking in some form of recombination through transduction, transformation, or conjugation, it seems feasible to group those individuals which are capable of exchanging genetic material into a single species. Unfortunately this definition leaves behind all those clades which are &lt;em&gt;not&lt;/em&gt; known to horizontally transfer genes. What’s more, it fails the “arbitrariness test”: how much recombination is required before two individuals share a species?&lt;/p&gt;
-&lt;h2 id="the-ecological-species-concept-saves-the-day"&gt;The ecological species concept saves the day&lt;/h2&gt;
-&lt;p&gt;So if everything else is ultimately arbitrary, what’s left? Originally formulated by Leigh Van Valen (&lt;a href="http://www.jstor.org/stable/1219444"&gt;1976&lt;/a&gt;), the ecological species concept has been distilled down to (&lt;a href="http://dx.doi.org/10.1111/j.1420-9101.2009.01897.x"&gt;Martinez-Gordillo, 2010&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;I have a similar level of disdain for people who try to decide on a single
+definition for "species".   Ultimately I am a pluralist: the definition should
+be tailored to the scientific question.  Paleontologists, you have your
+morphological species concept, because what &lt;em&gt;else&lt;/em&gt; do stony
+fossils allow?  Are you studying speciation, you can keep the biological species
+concept, just be prepared for the inevitable craziness when fairly divergent
+plants hybridize or genes are transferred horizontally.  Macro-evolution folks,
+don't give up on the phylogenetic species concept.&lt;/p&gt;
+&lt;p&gt;As an aside, I have no tolerance for arbitrary definitions which do not admit
+to their arbitrariness.  Since I have yet to be convinced otherwise, this has
+precluded my acceptance of higher taxonomic divisions.  If someone can give me
+a non-arbitrary definition for genus, order, family, phylum, etc. I would love
+to know what it is.  As far as I am concerned they're just a naming system for
+monophyletic groups which pander to dead systematists.&lt;/p&gt;
+&lt;h2&gt;Most species concepts are not applicable or arbitrary&lt;/h2&gt;
+&lt;p&gt;For us microbiologists, several
+&lt;a href="http://dx.doi.org/10.1146/annurev.micro.56.012302.160634"&gt;species concepts&lt;/a&gt;
+are in use.  The genetic species concept groups organisms whose full genomes or
+selected genes have diverged minimally.  This definition is applied in
+operational taxonomic unit (OTU) based analysis, and indirectly in whole genome
+DNA-DNA hybridization, the traditional determination of bacterial species.&lt;/p&gt;
+&lt;p&gt;OTU thresholds are certainly arbitrary; The definition fully acknowledges that
+fact.  But the OTU concept is particularly useful for culture independent
+methods, since genetic distance is perhaps the only measure of familial
+resemblance available.  Just as the biological species concept doesn't do much
+good for a paleontologist who lacks live, mating specimens, a morphological
+species concept is helpless when faced with sequence divorced from physiology.&lt;/p&gt;
+&lt;p&gt;When in possession of pure cultures, however, and therefore the luxury of
+phenotypic data, a physiological (which I'm using synonymously with
+"morphological") species concept is viable.  Unfortunately, application of the
+morphogical definition depends critically on the exhaustivity of our search for
+physiological differences and an arbitrary delineation between groups.&lt;/p&gt;
+&lt;p&gt;The phylogenetic species concept is equally impotent.  I challenge the reader
+to devise a monophyletic "basic unit" for any
+&lt;a href="http://en.wikipedia.org/wiki/Asexual_reproduction"&gt;agamogenic&lt;/a&gt; organism which
+does not classify every daughter as a new species.&lt;/p&gt;
+&lt;p&gt;Despite the lack of canonical sex in microbes, an unsurprising (if not
+justifiable) urge to model ourselves after animal ecologists has driven some
+microbiologists to consider a biological species concept as well.  With many
+microbes partaking in some form of recombination through transduction,
+transformation, or conjugation, it seems feasible to group those individuals
+which are capable of exchanging genetic material into a single species.
+Unfortunately this definition leaves behind all those clades which are &lt;em&gt;not&lt;/em&gt;
+known to horizontally transfer genes.  What's more, it fails the "arbitrariness
+test": how much recombination is required before two individuals share a
+species?&lt;/p&gt;
+&lt;h2&gt;The ecological species concept saves the day&lt;/h2&gt;
+&lt;p&gt;So if everything else is ultimately arbitrary, what's left?  Originally
+formulated by Leigh Van Valen
+(&lt;a href="http://www.jstor.org/stable/1219444"&gt;1976&lt;/a&gt;),
+the ecological species concept has been distilled down to
+(&lt;a href="http://dx.doi.org/10.1111/j.1420-9101.2009.01897.x"&gt;Martinez-Gordillo, 2010&lt;/a&gt;):&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A species is a set of [related] organisms exploiting (or adapted to) a single niche.&lt;/p&gt;
+&lt;p&gt;A species is a set of [related] organisms exploiting
+(or adapted to) a single niche.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Now that’s interesting! The ecological concept flips the &lt;a href="http://en.wikipedia.org/wiki/Competitive_exclusion_principle"&gt;competitive exclusion principle&lt;/a&gt; upside down. This definition sets the threshold for familial resemblance at the point where two lineages are no longer in the same niche. While there are still some rough edges, namely questions about what constitutes a niche, this definition appears to pass the test of arbitrariness and makes a satisfying connection between taxonomy and ecology.&lt;/p&gt;
-&lt;p&gt;Despite their inherent differences in criteria, and in my opinion defensibility, all of these species concepts (genetic, morphological, biological, and ecological) are getting at the same core idea: what makes one organism more “like” another? What keeps the diversity of life clumped together into identifiable units? There is a certain harmony to these species concepts. Whether &lt;strong&gt;recombination&lt;/strong&gt; or &lt;strong&gt;ecological&lt;/strong&gt; processes, we expect the end result to be &lt;strong&gt;genetic&lt;/strong&gt; similarity which will manifest itself as &lt;strong&gt;physiological&lt;/strong&gt; clustering.&lt;/p&gt;
-&lt;h2 id="are-species-empirically-real"&gt;Are species empirically real?&lt;/h2&gt;
-&lt;p&gt;But wait. This is certainly begging the question. Does the microbial world &lt;em&gt;actually&lt;/em&gt; have this assumed genetic and physiological clustering? Finally, a hypothesis to be tested!&lt;/p&gt;
-&lt;p&gt;Hanage &lt;em&gt;et al.&lt;/em&gt; have (&lt;a href="http://dx.doi.org/10.1098%2Frstb.2006.1917"&gt;2006&lt;/a&gt;) summarized the current literature on genomic clustering and, in a second paper (&lt;a href="http://dx.doi.org/10.1126/science.1159388"&gt;2009&lt;/a&gt;), the models which may explain the observations. The data is somewhat ambiguous. &lt;strong&gt;Figure 1&lt;/strong&gt; from the 2009 paper demonstrates several of the problems facing an empirically described microbial species.&lt;/p&gt;
+&lt;p&gt;Now that's interesting!  The ecological concept flips the
+&lt;a href="http://en.wikipedia.org/wiki/Competitive_exclusion_principle"&gt;competitive exclusion principle&lt;/a&gt;
+upside down.  This definition sets the threshold for familial resemblance at
+the point where two lineages are no longer in the same niche.  While there are
+still some rough edges, namely questions about what constitutes a niche, this
+definition appears to pass the test of arbitrariness and makes a satisfying
+connection between taxonomy and ecology.&lt;/p&gt;
+&lt;p&gt;Despite their inherent differences in criteria, and in my opinion
+defensibility, all of these species concepts (genetic, morphological,
+biological, and ecological) are getting at the same core idea: what makes one
+organism more "like" another?  What keeps the diversity of life clumped
+together into identifiable units?  There is a certain harmony to these species
+concepts.  Whether &lt;strong&gt;recombination&lt;/strong&gt; or &lt;strong&gt;ecological&lt;/strong&gt; processes, we expect the
+end result to be &lt;strong&gt;genetic&lt;/strong&gt; similarity which will manifest itself as
+&lt;strong&gt;physiological&lt;/strong&gt; clustering.&lt;/p&gt;
+&lt;h2&gt;Are species empirically real?&lt;/h2&gt;
+&lt;p&gt;But wait.  This is certainly begging the question.  Does the microbial world
+&lt;em&gt;actually&lt;/em&gt; have this assumed genetic and physiological clustering?  Finally, a
+hypothesis to be tested!&lt;/p&gt;
+&lt;p&gt;Hanage &lt;em&gt;et al.&lt;/em&gt; have (&lt;a href="http://dx.doi.org/10.1098%2Frstb.2006.1917"&gt;2006&lt;/a&gt;)
+summarized the current literature on genomic clustering and, in a second paper
+(&lt;a href="http://dx.doi.org/10.1126/science.1159388"&gt;2009&lt;/a&gt;), the models which may
+explain the observations.  The data is somewhat ambiguous.  &lt;strong&gt;Figure 1&lt;/strong&gt; from
+the 2009 paper demonstrates several of the problems facing an empirically
+described microbial species.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.sciencemag.org/content/323/5915/741/F1.expansion.html"&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;figure&gt;
-&lt;img src="http://www.sciencemag.org/content/323/5915/741/F1.large.jpg" alt="Two examples exhibiting conflicts with species concepts in microbes." /&gt;&lt;figcaption&gt;Two examples exhibiting conflicts with species concepts in microbes.&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;First, and most importantly, &lt;strong&gt;1A&lt;/strong&gt; shows that genetic distance between and within clusters of &lt;em&gt;Streptococcus&lt;/em&gt; isolates is not consistent. Current species designations are indicated. Clearly, the level of genetic distance within any visually (indicated by terminal node color) or &lt;em&gt;a priori&lt;/em&gt; designated species varies by a factor of 5 or more. What’s more, &lt;strong&gt;1B&lt;/strong&gt; demonstrates that while ecological preference (terminal node color) is fairly correlated with phylogeny in &lt;em&gt;Vibrio&lt;/em&gt;, some clades lack this association, specifically &lt;em&gt;V. splendidus&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;The fractal-like clustering in the &lt;em&gt;Streptococcus&lt;/em&gt; phylogeny makes me wonder if we’re not seeing the result of numerous intense bottlenecks or selective sweeps which occur stochastically. And, while the ecological-phylogenetic mapping is fairly consistent, a point in favor of the species concept, I am curious if stabilizing selection and/or recombination models explain this clustering better than other, less interesting processes (e.g. gradual niche migration). I’m also concerned about problems with sampling. If there were genotypes which bridged the clusters would we know it? And, like every database dependent analysis in microbiology, a bias for pathogens could be misleading us here as well.&lt;/p&gt;
-&lt;h2 id="so"&gt;&lt;a href="http://en.wikipedia.org/wiki/Betteridge&amp;#39;s_law_of_headlines"&gt;So…&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Despite a exhaustive debate over the semantics of asexual species, surprisingly little data has has been collected to show that bacteria even exhibit more than trivial clustering. Several mechanisms have been proposed for maintaining genetic conformity, namely recombination and niche specificity. Some of this research has aimed to find parallels with plant and animal ecology, but I would suggest we lose little by discarding the species concept entirely.&lt;/p&gt;
-&lt;p&gt;I can understand the need to define morpho-species when diagnosing disease, or the utility of OTU based approaches in molecular surveys. I’m also not suggesting that we should stop categorizing strains into species; the convenience for communicating microbiology is undeniable. But by remembering that most species divisions are arbitrary, and that every microbe is a new lineage, we’re one step closer to escaping the chains of the old microbiology.&lt;/p&gt;
-</content><category term="microbiology"></category><category term="species"></category><category term="semantics"></category><category term="rant"></category></entry><entry><title>Even pathogens hate a cheater</title><link href="http://blog.byronjsmith.com/the-enemy-of-my-enemy.html" rel="alternate"></link><published>2013-06-19T12:00:00-04:00</published><updated>2013-06-19T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-06-19:/the-enemy-of-my-enemy.html</id><summary type="html">&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post. The excuse (I keep telling myself) is that, having already written too many computational articles, it was time to prove that I could write about biology too. Unfortunately I’m not nearly as good at reading the literature as I should be. Anyway, it’s done. You can stop complaining now.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;One barrier to engineering bacteria for biofuel production or any other human endeavor is that evolutionary rates are scaled by population sizes and growth rates. For an organism with massive population sizes (trillions of individuals or more) and doubling times on the order of hours, evolution can occur quite quickly. Genetic variants within the population which are capable of growing faster will quickly take over. For an organism which is, for example, wasting a huge fraction of its energy producing your future gasoline, you can bet …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post. The excuse (I keep telling myself) is that, having already written too many computational articles, it was time to prove that I could write about biology too. Unfortunately I’m not nearly as good at reading the literature as I should be. Anyway, it’s done. You can stop complaining now.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;One barrier to engineering bacteria for biofuel production or any other human endeavor is that evolutionary rates are scaled by population sizes and growth rates. For an organism with massive population sizes (trillions of individuals or more) and doubling times on the order of hours, evolution can occur quite quickly. Genetic variants within the population which are capable of growing faster will quickly take over. For an organism which is, for example, wasting a huge fraction of its energy producing your future gasoline, you can bet this months graduate stipend that mutants which put more resources into growth will sweep the population.&lt;/p&gt;
-&lt;p&gt;See kids, cheaters &lt;em&gt;do&lt;/em&gt; win in the end! In the above example the microbes are “cheating” the metabolic engineers out of their valuable chemical products, but the same sort of evolutionary trend: favoring fitness over (and often at the expense of) any other metric we can think of, has big implications for other bacteria as well. My current research explores the impact of selection on growth rate versus resource use efficiency, but I’ll write more about that some other time.&lt;/p&gt;
-&lt;p&gt;Many microbial populations engage in cooperative behavior. &lt;a href="http://en.wikipedia.org/wiki/Salmonella_enterica"&gt;&lt;em&gt;Salmonella&lt;/em&gt; Typhimurium&lt;/a&gt;, for instance, a human pathogen, uses a type III secretion system (imagine bacteria using tiny syringes to pump toxins into your cells) to induce wide-spread inflamation in the gut. By inducing enough inflamation, a population of &lt;em&gt;Salmonella&lt;/em&gt; can make a niche for themselves in which they outcompete the non-pathogenic (commensal) bacteria already present. Those syringes are expensive, but without them the &lt;em&gt;Salmonella&lt;/em&gt; can’t colonize at all, so everyone works together for the common good.&lt;/p&gt;
-&lt;p&gt;Unfortunately (for &lt;em&gt;Salmonella&lt;/em&gt; at least) evolution doesn’t really care about the common good. Every so often a mutant will come along which has lost the type III secretion system genes, or doesn’t express them as frequently or at such high levels. Since this new strain doesn’t have to waste resources on producing the costly virulence factor, but can still take advantage of the inflamation being induced by all his straight-laced bretheren, he grows faster than all the normal (“wild-type”) &lt;em&gt;Salmonella&lt;/em&gt;. Even when it’s almost entirely cheaters and the population’s ability to inflame the host is greatly reduced, even when they’re all struggling to outcompete the commensal bacteria, the mutant is still a &lt;em&gt;little&lt;/em&gt; better off because it’s not wasting resources on that silly syringe.&lt;/p&gt;
-&lt;p&gt;The cheater wins again! In this example it’s not the metabolic engineers that are being deprived of their liquid fuel, but the wild-type &lt;em&gt;Salmonella&lt;/em&gt; which is being cheated out of its public resource: inflamation. Of course winning for the cheater also means that the entire population is wiped out. Without sufficient inflamation &lt;em&gt;Salmonella&lt;/em&gt; can’t survive, but up until that last cell is killed or expelled, at least the cheater was doing better &lt;em&gt;relative to&lt;/em&gt; the wild-type. And, in the short-term, that’s what winning &lt;em&gt;is&lt;/em&gt; in the Game of Evolution.&lt;/p&gt;
-&lt;p&gt;“But wait just a minute”, says the astute reader, “why have I been cooking my eggs all these years if &lt;em&gt;Salmonella&lt;/em&gt; can so easily be wiped out by this internal rebellion?” Aha! That’s the exact question raised by Médéric Diard and co-authors in their recent paper, “&lt;a href="http://www.nature.com/nature/journal/v494/n7437/abs/nature11913.html"&gt;Stabilization of cooperative virulence by the expression of an avirulent phenotype.&lt;/a&gt;”&lt;/p&gt;
-&lt;p&gt;What they found was that wild-type &lt;em&gt;Salmonella&lt;/em&gt; Typhimurium was playing chess with the mutant, sacrificing a Knight in order to take the King. Diard et al. discovered that a fraction of the wild-type Typhimurium population was not expressing the costly virulence factors. These are not cheaters; their genotype is identical to cooperators which &lt;em&gt;are&lt;/em&gt; expressing the type III secretion system. Their phenotype, however, is identical to the cheaters. By choosing to not expend the energy needed for the construction of those microscopic syringes, they achieve the same fitness as the mutant.&lt;/p&gt;
-&lt;p&gt;It’s not a complete equilizer. Their daughters still have some probability of expressing the virulence factors (or else they might as well be &lt;em&gt;real&lt;/em&gt; cheaters), but their fitness deficit is not as great. This boost was bought, however at the price of a reduced population size. Since only a fraction of their ranks are inducing host inflamation, the total virulence of the population is reduced.&lt;/p&gt;
-&lt;p&gt;“But wait again”, you might point out, “just because the fitness benefit of cheating has been minimized does not mean that it has been eliminated entirely. The cheaters will still take over the population in the end, no?” You’re right, cheaters will still grow faster in the long run, since they &lt;em&gt;never&lt;/em&gt; cooperate, but &lt;strong&gt;it will require additional time for them to take over&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The rate at which an allele fixes in the population is positively related to the relative fitness of that allele and therefore the cheater will not fix as quickly. In a pathogen like &lt;em&gt;Salmonella&lt;/em&gt;, the ultimate goal is to infect a new host. If the cooperators can sustain a sufficiently large population for long enough, their host is likely to pass them on to another unsuspecting (and un-hand-washing) individual. The cheater’s success was all for nothing; without the type III secretion system, the mutant will never colonize another host. While they may have won the figurative battle, they lost the war. They’ve painted themselves into a corner. (Insert additional cliches here.)&lt;/p&gt;
-&lt;p&gt;Diard et al., in their article, do some fantastic simulations, showing all of the dynamics at play. I encourage you to check it out. One of the most exciting sentences is the second to last (see, a snoodier blogger would have said “penultimate”), the authors point out that this tendency for mutants to out-compete the wild-type pathogen, and therefore reduce the negative effects on the host, suggests a potential &lt;a href="http://en.wikipedia.org/wiki/Evolutionary_medicine"&gt;therapy&lt;/a&gt;: treat those suffering from &lt;em&gt;Salmonella&lt;/em&gt; with a large dose of cheaters!&lt;/p&gt;
-</content><category term="microbiology"></category><category term="cheaters"></category><category term="evolution"></category><category term="pathogens"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Two examples exhibiting conflicts with species concepts in microbes." src="http://www.sciencemag.org/content/323/5915/741/F1.large.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;First, and most importantly, &lt;strong&gt;1A&lt;/strong&gt; shows that genetic distance between and
+within clusters of &lt;em&gt;Streptococcus&lt;/em&gt; isolates is not consistent.  Current species
+designations are indicated.  Clearly, the level of genetic distance within any
+visually (indicated by terminal node color) or &lt;em&gt;a priori&lt;/em&gt; designated species
+varies by a factor of 5 or more.  What's more, &lt;strong&gt;1B&lt;/strong&gt; demonstrates that while
+ecological preference (terminal node color) is fairly correlated with phylogeny
+in &lt;em&gt;Vibrio&lt;/em&gt;, some clades lack this association, specifically &lt;em&gt;V. splendidus&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The fractal-like clustering in the &lt;em&gt;Streptococcus&lt;/em&gt; phylogeny makes me wonder if
+we're not seeing the result of numerous intense bottlenecks or selective sweeps
+which occur stochastically.  And, while the ecological-phylogenetic mapping is
+fairly consistent, a point in favor of the species concept, I am curious if
+stabilizing selection and/or recombination models explain this clustering
+better than other, less interesting processes (e.g. gradual niche migration).
+I'm also concerned about problems with sampling.  If there were genotypes which
+bridged the clusters would we know it?  And, like every database dependent
+analysis in microbiology, a bias for pathogens could be misleading us here as
+well.&lt;/p&gt;
+&lt;h2&gt;&lt;a href="http://en.wikipedia.org/wiki/Betteridge's_law_of_headlines"&gt;So...&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Despite a exhaustive debate over the semantics of asexual species, surprisingly
+little data has has been collected to show that bacteria even exhibit more than
+trivial clustering.  Several mechanisms have been proposed for maintaining
+genetic conformity, namely recombination and niche specificity.  Some of this
+research has aimed to find parallels with plant and animal ecology, but I would
+suggest we lose little by discarding the species concept entirely.&lt;/p&gt;
+&lt;p&gt;I can understand the need to define morpho-species when diagnosing disease, or
+the utility of OTU based approaches in molecular surveys.  I'm also not
+suggesting that we should stop categorizing strains into species; the
+convenience for communicating microbiology is undeniable.  But by remembering
+that most species divisions are arbitrary, and that every microbe is a new
+lineage, we're one step closer to escaping the chains of the old microbiology.&lt;/p&gt;</content><category term="microbiology"></category><category term="species"></category><category term="semantics"></category><category term="rant"></category></entry><entry><title>Even pathogens hate a cheater</title><link href="http://blog.byronjsmith.com/the-enemy-of-my-enemy.html" rel="alternate"></link><published>2013-06-19T12:00:00-04:00</published><updated>2013-06-19T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-06-19:/the-enemy-of-my-enemy.html</id><summary type="html">&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post.  The excuse
+(I keep telling myself) is that, having already written too many computational
+articles, it was time to prove that I could write about biology too.
+Unfortunately I'm not nearly as good at reading the literature as I should be.
+Anyway, it's done.  You can stop complaining now.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One barrier to engineering bacteria for biofuel production or any other human
+endeavor is that evolutionary rates are scaled by population sizes and growth
+rates.  For an organism with massive population sizes (trillions of individuals
+or more) and doubling times on the order of hours, evolution can occur quite
+quickly.  Genetic variants within the population which are capable of growing
+faster will quickly take over.  For an organism which is, for example, wasting
+a huge fraction of its energy producing your future gasoline, you can bet this
+months …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post.  The excuse
+(I keep telling myself) is that, having already written too many computational
+articles, it was time to prove that I could write about biology too.
+Unfortunately I'm not nearly as good at reading the literature as I should be.
+Anyway, it's done.  You can stop complaining now.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One barrier to engineering bacteria for biofuel production or any other human
+endeavor is that evolutionary rates are scaled by population sizes and growth
+rates.  For an organism with massive population sizes (trillions of individuals
+or more) and doubling times on the order of hours, evolution can occur quite
+quickly.  Genetic variants within the population which are capable of growing
+faster will quickly take over.  For an organism which is, for example, wasting
+a huge fraction of its energy producing your future gasoline, you can bet this
+months graduate stipend that mutants which put more resources into growth will
+sweep the population.&lt;/p&gt;
+&lt;p&gt;See kids, cheaters &lt;em&gt;do&lt;/em&gt; win in the end!   In the above example the microbes are
+"cheating" the metabolic engineers out of their valuable chemical products, but
+the same sort of evolutionary trend: favoring fitness over (and often at the
+expense of) any other metric we can think of, has big implications for other
+bacteria as well.  My current research explores the impact of selection on
+growth rate versus resource use efficiency, but I'll write more about that some
+other time.&lt;/p&gt;
+&lt;p&gt;Many microbial populations engage in cooperative behavior. &lt;a href="http://en.wikipedia.org/wiki/Salmonella_enterica"&gt;&lt;em&gt;Salmonella&lt;/em&gt;
+Typhimurium&lt;/a&gt;, for instance, a human pathogen, uses a type III
+secretion system (imagine bacteria using tiny syringes to pump toxins into your
+cells) to induce wide-spread inflamation in the gut.  By inducing enough
+inflamation, a population of &lt;em&gt;Salmonella&lt;/em&gt; can make a niche for themselves in
+which they outcompete the non-pathogenic (commensal) bacteria already present.
+Those syringes are expensive, but without them the &lt;em&gt;Salmonella&lt;/em&gt; can't colonize
+at all, so everyone works together for the common good.&lt;/p&gt;
+&lt;p&gt;Unfortunately (for &lt;em&gt;Salmonella&lt;/em&gt; at least) evolution doesn't really care about
+the common good.  Every so often a mutant will come along which has lost the
+type III secretion system genes, or doesn't express them as frequently or at
+such high levels.  Since this new strain doesn't have to waste resources on
+producing the costly virulence factor, but can still take advantage of the
+inflamation being induced by all his straight-laced bretheren, he grows faster
+than all the normal ("wild-type") &lt;em&gt;Salmonella&lt;/em&gt;.  Even when it's almost entirely
+cheaters and the population's ability to inflame the host is greatly reduced,
+even when they're all struggling to outcompete the commensal bacteria, the
+mutant is still a &lt;em&gt;little&lt;/em&gt; better off because it's not wasting resources on
+that silly syringe.&lt;/p&gt;
+&lt;p&gt;The cheater wins again!  In this example it's not the metabolic engineers
+that are being deprived of their liquid fuel, but the wild-type &lt;em&gt;Salmonella&lt;/em&gt;
+which is being cheated out of its public resource: inflamation.  Of course
+winning for the cheater also means that the entire population is wiped out.
+Without sufficient inflamation &lt;em&gt;Salmonella&lt;/em&gt; can't survive, but up until that last
+cell is killed or expelled, at least the cheater was doing better &lt;em&gt;relative to&lt;/em&gt;
+the wild-type.  And, in the short-term, that's what winning &lt;em&gt;is&lt;/em&gt; in the Game of
+Evolution.&lt;/p&gt;
+&lt;p&gt;"But wait just a minute", says the astute reader, "why have I been cooking my
+eggs all these years if &lt;em&gt;Salmonella&lt;/em&gt; can so easily be wiped out by this internal
+rebellion?"  Aha!  That's the exact question raised by Médéric Diard and
+co-authors in their recent paper, "&lt;a href="http://www.nature.com/nature/journal/v494/n7437/abs/nature11913.html"&gt;Stabilization of cooperative virulence by
+the expression of an avirulent phenotype.&lt;/a&gt;"&lt;/p&gt;
+&lt;p&gt;What they found was that wild-type &lt;em&gt;Salmonella&lt;/em&gt; Typhimurium was playing chess
+with the mutant, sacrificing a Knight in order to take the King.  Diard et al.
+discovered that a fraction of the wild-type Typhimurium population was not
+expressing the costly virulence factors.  These are not cheaters; their
+genotype is identical to cooperators which &lt;em&gt;are&lt;/em&gt; expressing the type III
+secretion system.  Their phenotype, however, is identical to the cheaters.  By
+choosing to not expend the energy needed for the construction of those microscopic
+syringes, they achieve the same fitness as the mutant.&lt;/p&gt;
+&lt;p&gt;It's not a complete equilizer.  Their daughters still have some probability of
+expressing the virulence factors (or else they might as well be &lt;em&gt;real&lt;/em&gt;
+cheaters), but their fitness deficit is not as great.  This boost was bought,
+however at the price of a reduced population size.  Since only a fraction of
+their ranks are inducing host inflamation, the total virulence of the
+population is reduced.&lt;/p&gt;
+&lt;p&gt;"But wait again", you might point out, "just because the fitness benefit of
+cheating has been minimized does not mean that it has been eliminated entirely.
+The cheaters will still take over the population in the end, no?"  You're
+right, cheaters will still grow faster in the long run, since they &lt;em&gt;never&lt;/em&gt;
+cooperate, but &lt;strong&gt;it will require additional time for them to take over&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The rate at which an allele fixes in the population is positively related to
+the relative fitness of that allele and therefore the cheater will not fix as
+quickly.  In a pathogen like &lt;em&gt;Salmonella&lt;/em&gt;, the ultimate goal is to infect a new
+host.  If the cooperators can sustain a sufficiently large population for long
+enough, their host is likely to pass them on to another unsuspecting (and
+un-hand-washing) individual.  The cheater's success was all for nothing;
+without the type III secretion system, the mutant will never colonize another
+host.  While they may have won the figurative battle, they lost the war.
+They've painted themselves into a corner.  (Insert additional cliches here.)&lt;/p&gt;
+&lt;p&gt;Diard et al., in their article, do some fantastic simulations, showing all of
+the dynamics at play.  I encourage you to check it out.  One of the most
+exciting sentences is the second to last (see, a snoodier blogger would have
+said "penultimate"), the authors point out that this tendency for mutants to
+out-compete the wild-type pathogen, and therefore reduce the negative effects
+on the host, suggests a potential &lt;a href="http://en.wikipedia.org/wiki/Evolutionary_medicine"&gt;therapy&lt;/a&gt;: treat those suffering
+from &lt;em&gt;Salmonella&lt;/em&gt; with a large dose of cheaters!&lt;/p&gt;</content><category term="microbiology"></category><category term="cheaters"></category><category term="evolution"></category><category term="pathogens"></category></entry></feed>

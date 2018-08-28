@@ -171,11 +171,24 @@ Articles tagged <em>software-carpentry</em>
 
 </footer>
         <div class="article-content">
-          <p><em><strong>tl;dr:</strong> I tried out a <a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff">modified Python lesson</a> and I think it was successful at balancing learner motivation with teaching foundational (and sometimes boring) concepts.</em></p>
-<h1 id="this-stuff-is-hard">This stuff is hard</h1>
-<p>In many ways, <a href="https://software-carpentry.org">teaching Python to scientists</a> is easier than just about every other audience. The learning objective is clear: write code to make my science more accurate, more efficient, and more impactful. The motivation is apparent: data is increasingly plentiful and increasingly complex. The learners are both engaged and prepared to put in the effort required to develop new skills.</p>
+          <p><em><strong>tl;dr:</strong> I tried out a <a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff">modified Python lesson</a>
+and I think it was successful at balancing learner motivation with teaching
+foundational (and sometimes boring) concepts.</em></p>
+<p>In many ways, <a href="https://software-carpentry.org">teaching Python to scientists</a>
+is easier than just about every other audience.
+The learning objective is clear: write code to make my science more accurate,
+more efficient, and more impactful.
+The motivation is apparent: data is increasingly plentiful and increasingly
+complex.
+The learners are both engaged and prepared to put in the effort
+required to develop new skills.</p>
 <p>But, despite all of the advantages, teaching <em>anybody</em> to program is hard.</p>
-<p>In my experience, one of the most challenging trade-offs for lesson planners is between motivating the material and teaching a mental model for code execution. For example, scientists are easily motivated by simple data munging and plotting using <code>pandas</code> and <code>matplotlib</code>; these are features of the Python …</p>
+<p>In my experience, one of the most challenging trade-offs for lesson planners
+is between motivating the material and teaching a mental model
+for code execution.
+For example, scientists are easily motivated by simple data munging and
+plotting using <code>pandas</code> and <code>matplotlib</code>;
+these are features of the Python ecosystem that can convince …</p>
           <div class="read-more">
             <a href="http://blog.byronjsmith.com/python-lesson-balance.html">
               ...More
@@ -253,9 +266,25 @@ Articles tagged <em>software-carpentry</em>
 
 </footer>
         <div class="article-content">
-          <p><em>Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from <a href="http://www.datacarpentry.org/blog/instructor-metrics/">Erin Becker’s</a>. Briefly: I removed individuals who taught before they were officially certified.</em></p>
-<p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of data about the organization’s instructors, when they were certified, and when they taught. Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>, I was excited to explore the data within that context.</p>
-<p>Survival analysis is focused on time-to-event data, for example time from birth until death, but also time to failure of engineered systems, or in this case, time from instructor certification to first teaching a workshop. The language is somewhat morbid, but helps with talking precisely about models that can easily be applied to a variety of data, only sometimes involving death or failure. The power of modern survival analysis is the ability to include results from subjects who …</p>
+          <p><em>Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+<a href="http://www.datacarpentry.org/blog/instructor-metrics/">Erin Becker's</a>.  Briefly: I removed individuals who taught
+before they were officially certified.</em></p>
+<p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software
+Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of
+data about the organization's instructors, when they were certified, and when
+they taught.
+Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>,
+I was excited to explore the data within that context.</p>
+<p>Survival analysis is focused on time-to-event data,
+for example time from birth until death, but also time to failure of
+engineered systems,
+or in this case, time from instructor certification to first teaching a
+workshop.
+The language is somewhat morbid, but helps with talking
+precisely about models that can easily be applied to a variety of data,
+only sometimes involving death or failure.
+The power of modern survival analysis is the ability to include results from
+subjects who have not …</p>
           <div class="read-more">
             <a href="http://blog.byronjsmith.com/instructor-survival.html">
               ...More
@@ -289,8 +318,8 @@ Articles tagged <em>software-carpentry</em>
   <div class="modified">
     <span class="info-tag">edited:</span>
     <span class="info-value" itemprop="dateModified">
-      <abbr title="2016-03-05 10:00:00-05:00">
-        March 5, 2016, 10:00
+      <abbr title="2017-11-21 09:30:00-05:00">
+        November 21, 2017, 09:30
       </abbr>
     </span>
   </div>
@@ -350,9 +379,22 @@ Articles tagged <em>software-carpentry</em>
 
 </footer>
         <div class="article-content">
-          <p>For most projects with moderate to intense data analysis you should consider using <em>Make</em>. Some day I’ll write a post telling you why, but for now check out <a href="http://zmjones.com/make/">this post</a> by Zachary M. Jones<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. If you’re already convinced, or just want to see what it’s all about, read on.</p>
-<p>This post is the clone of a tutorial that I wrote for Titus Brown’s week-long <a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html">Bioinformatics Workshop</a> at UC Davis’s Bodega Marine Laboratory in February, 2016. For now, the live tutorial lives in <a href="https://github.com/bsmith89/make-bml">a Github repository</a>, although I eventually want to merge all of the good parts into the Software Carpentry <a href="https://swcarpentry.github.io/make-novice">Make lesson</a> (<a href="https://github.com/swcarpentry/make-novice">repository</a>).</p>
-<p>I’m posting this tutorial because I think it’s a good introduction to the analysis pipeline approach I have been slowly adopting over the last several years. This approach is even more deeply enshrined in a <a href="https://github.com/bsmith89/compbio-template">project template</a> that I …</p>
+          <p><em>WARNING: Because of the Markdown rendering of this blog, tab characters
+have been replaced with 4 spaces in code blocks.
+For this reason, <strong>the makefile code will not work</strong> when copied directly from
+the post.
+Instead, you must first replace all 4-space indents with a tab character.</em></p>
+<p>For most projects with moderate to intense data analysis you should
+consider using <em>Make</em>.
+Some day I'll write a post telling you why, but for now check out
+<a href="http://zmjones.com/make/">this post</a> by Zachary M. Jones<sup id="fnref-similar-title"><a class="footnote-ref" href="#fn-similar-title">1</a></sup>.
+If you're already convinced, or just want to see what it's all about, read on.</p>
+<p>This post is the clone of a tutorial that I wrote for Titus Brown's
+week-long <a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html">Bioinformatics Workshop</a> at UC Davis's Bodega
+Marine Laboratory in February, 2016.
+For now, the live tutorial lives in <a href="https://github.com/bsmith89/make-bml">a Github repository</a>,
+although I eventually want to merge all of the good parts into the Software
+Carpentry <a href="https://swcarpentry.github.io/make-novice">Make lesson …</a></p>
           <div class="read-more">
             <a href="http://blog.byronjsmith.com/make-analysis.html">
               ...More
@@ -437,8 +479,24 @@ Articles tagged <em>software-carpentry</em>
 
 </footer>
         <div class="article-content">
-          <p>This July I co-instructed with <a href="https://impactstory.org/JenniferShelton">Jennifer Shelton</a> a Software Carpentry <a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/">workshop</a> at Stanford University, targeted to researchers with genomic or evolutionary datasets. Jennifer taught the shell (Bash) and version control with Git, while I taught the general programming language Python. I’ve been aware of the <a href="http://software-carpentry.org/">organization</a>, which teaches software development and computational methods to scientists, since attending a workshop in 2012. Since then I’ve served as a helper at one workshop (troubleshooting individual learner’s problems and helping catch them up with the rest of the class), and gone through the “accelerated”, two day, instructor training at Michigan State University. After the Stanford workshop, I took part in new-instructor debriefing on August 4th, during which I mentioned that I had to greatly pare down the community-written lesson plan, <a href="http://swcarpentry.github.io/python-novice-inflammation/">python-novice-inflammation</a>, to fit into the two half-day session we allotted it.</p>
-<p>Karin and Tiffany, who were running the debriefing, asked …</p>
+          <p>This July I co-instructed with <a href="https://impactstory.org/JenniferShelton">Jennifer Shelton</a>
+a Software Carpentry <a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/">workshop</a> at Stanford University,
+targeted to researchers with genomic or evolutionary datasets.
+Jennifer taught the shell (Bash) and version control with Git,
+while I taught the general programming language Python.
+I've been aware of the <a href="http://software-carpentry.org/">organization</a>, which teaches software
+development and computational methods to scientists, since attending a
+workshop in 2012.
+Since then I've served as a helper at one workshop
+(troubleshooting individual learner's problems and helping catch them up with
+the rest of the class),
+and gone through the "accelerated", two day, instructor training at Michigan
+State University.
+After the Stanford workshop, I took part in new-instructor debriefing
+on August 4th, during which I mentioned that I had to greatly pare down the
+community-written lesson plan, <a href="http://swcarpentry.github.io/python-novice-inflammation/">python-novice-inflammation</a>,
+to fit into the two half-day session we allotted it.</p>
+<p>Karin and Tiffany, who were running the debriefing, asked me to send …</p>
           <div class="read-more">
             <a href="http://blog.byronjsmith.com/swc-python-lesson.html">
               ...More

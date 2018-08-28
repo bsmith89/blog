@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - open science</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/tag/open-science.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2018-05-18T11:00:00-04:00</updated><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="http://blog.byronjsmith.com/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2018-05-01:/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
+## Introduction
+--&gt;
+
+&lt;p&gt;&lt;em&gt;I'm excited to announce that we've posted a
+&lt;a href="https://doi.org/10.1101/311456"&gt;preprint of our latest manuscript to the bioRxiv&lt;/a&gt;,
+as well as submitted it for peer review to the open access journal Microbiome.
+I'll update this note if and when it gets accepted.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These days it seems like the only research more over-hyped than
+"microbiome" is &lt;em&gt;longevity-enhancement&lt;/em&gt;.
+It is therefore with some trepidation that I have released into this world of
+buzz the first chapter of my dissertation, titled:
+"Changes in the gut microbiota and fermentation products associated with
+enhanced longevity in acarbose-treated mice."&lt;/p&gt;
+&lt;p&gt;Previous work (done by my co-authors on this paper as well as others) has
+conclusively demonstrated that treatment with the anti-diabetic drug acarbose
+&lt;a href="https://doi.org/10.1111/acel.12170"&gt;substantially increases lifespan in mice&lt;/a&gt; (&lt;a href="https://doi.org/10.1111/acel.12496"&gt;also&lt;/a&gt;).
+The magnitude of the effect in males&amp;mdash;where it's the most
+pronounced&amp;mdash;puts it on par with rapamycin and 17-&amp;alpha;-estradiol, two
+drugs that have gotten heavy interest from the …&lt;/p&gt;</summary><content type="html">&lt;!--
+## Introduction
+--&gt;
+
+&lt;p&gt;&lt;em&gt;I'm excited to announce that we've posted a
+&lt;a href="https://doi.org/10.1101/311456"&gt;preprint of our latest manuscript to the bioRxiv&lt;/a&gt;,
+as well as submitted it for peer review to the open access journal Microbiome.
+I'll update this note if and when it gets accepted.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These days it seems like the only research more over-hyped than
+"microbiome" is &lt;em&gt;longevity-enhancement&lt;/em&gt;.
+It is therefore with some trepidation that I have released into this world of
+buzz the first chapter of my dissertation, titled:
+"Changes in the gut microbiota and fermentation products associated with
+enhanced longevity in acarbose-treated mice."&lt;/p&gt;
+&lt;p&gt;Previous work (done by my co-authors on this paper as well as others) has
+conclusively demonstrated that treatment with the anti-diabetic drug acarbose
+&lt;a href="https://doi.org/10.1111/acel.12170"&gt;substantially increases lifespan in mice&lt;/a&gt; (&lt;a href="https://doi.org/10.1111/acel.12496"&gt;also&lt;/a&gt;).
+The magnitude of the effect in males&amp;mdash;where it's the most
+pronounced&amp;mdash;puts it on par with rapamycin and 17-&amp;alpha;-estradiol, two
+drugs that have gotten heavy interest from the longevity-enhancement crowd.
+&lt;!--
+TODO: Link to this buzz.
+--&gt;
+While the approximately 20% increase in median lifespan in males is not as big
+as dietary restriction (a whopping ~40% in several studies), and the effect
+is much less in females (only 5% give-or-take) this still represents an
+exciting potential therapy if it can be reproduced in humans.&lt;/p&gt;
+&lt;p&gt;More importantly, it represents another tiny toehold in the still inscrutable
+field of longevity science.
+(Disclaimer: &lt;em&gt;I am not a longevity expert.&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;To drive home how little we understand about longevity, not only do we have
+just a rudimentary understanding of
+&lt;a href="https://doi.org/10.1016/j.cell.2015.02.020"&gt;how dietary restriction increases lifespan&lt;/a&gt;&lt;sup id="fnref-dr-mechanism-note"&gt;&lt;a class="footnote-ref" href="#fn-dr-mechanism-note"&gt;1&lt;/a&gt;&lt;/sup&gt;,
+but we can't even say if acarbose (or any other therapy) has a similar
+mechanism of action.
+It seems reasonable to expect that it might;
+acarbose inhibits the enzymes that break down starch, reducing the uptake of
+glucose after a meal.
+However, the physiological response to long-term treatment with the drug is
+quite distinct from dietary restriction.&lt;/p&gt;
+&lt;p&gt;This discrepancy has inspired an alternative hypothesis: looking instead to the
+starch left undigested and that therefore enters the &lt;em&gt;lower&lt;/em&gt; digestive system
+in much larger amounts.
+If this increased supply of substrate for microbial fermentation causes an
+increased production of "good" bacterial products&amp;mdash;for instance short-chain
+fatty acids (SCFAs)&amp;mdash;then this could result in improved health and,
+ultimately, longevity.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Concept diagram: our alternative model for acarbose's effect on longevity.
+" src="static/images/longev_concept.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Features and limitations of our study&lt;/h2&gt;
+&lt;p&gt;To explore this hypothesis, we have been very fortunate to collaborate
+with the National Institute on Aging's
+&lt;a href="https://www.nia.nih.gov/research/dab/interventions-testing-program-itp"&gt;Interventions Testing Program (ITP)&lt;/a&gt;, an
+ongoing multi-institutional study that trials promising anti-aging therapies
+in large mouse cohorts.
+The life-extending properties of acarbose were first observed in this study,
+and subsequent mouse cohorts have both confirmed the original finding and built
+on it.&lt;/p&gt;
+&lt;p&gt;My manuscript is based on the analysis of fecal samples from these mice,
+measuring the concentrations of three key SCFAs and other metabolites as
+well as the composition of the bacterial community.
+Longevity studies like these are challenging simply because you're waiting
+for your mice to die naturally.
+This is both time consuming and expensive;
+you need quite a few mice for statistical reasons, and they can live for years.
+To my knowledge, ours is the first study to combine characterization of the
+fecal microbiome with longevity measurement in normal, healthy mice.
+Another valuable feature of our study is the pairing of chemical analysis with
+community characterization in the same samples, presumably improving
+our ability to detect associations between bacterial taxa and their
+fermentation products.&lt;/p&gt;
+&lt;p&gt;Nonetheless, as with any research this study has crucial limitations
+and is only the first step in process of validating an exciting
+hypothesis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, we did not set out to test the central, causal claim of our model:
+    that SCFAs in the gut increase lifespan.
+    To do so would require experimental control of one or more of the three key
+    SCFAs in the lower digestive system&amp;mdash;acetate, butyrate and
+    propionate&amp;mdash;&lt;em&gt;without&lt;/em&gt; independently affecting mouse physiology.
+    While a useful manipulation, acarbose supplementation has other major
+    effects (on blood glucose, for instance) and therefore does not qualify.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Second, by definition, the mice for which we obtained fecal pellets had
+    survived up to the time of collection.
+    Since samples were collected from mice nearing to the median lifespan of
+    the control mice,
+    our interpretation are therefore limited to &lt;em&gt;old&lt;/em&gt; mice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third, this was a purely cross-sectional study with a single sample
+    collected from each mouse.
+    We can answer the most pressing questions without longitudinal sampling,
+    but variation within each mouse, on the time-scale of hours, days, or
+    weeks, surely introduced noise and decreased our statistical power.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, we only measure chemical and community composition in &lt;em&gt;feces&lt;/em&gt;.
+    While this is an effective proxy for the gut microbiome, and a huge
+    fraction of studies accept this shortcoming, it is important to remember
+    that fecal SCFA concentrations may not reflect bacterial production, nor
+    exposure of the gut and other host tissues to these compounds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Interesting findings&lt;/h2&gt;
+&lt;p&gt;Our study explores predictions of the hypothesis that acarbose
+increases longevity via the bacterial production of short-chain fatty acids,
+finding that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;acarbose treatment modifies the composition of the gut microbiota,&lt;/li&gt;
+&lt;li&gt;variation in the abundance of particular bacterial community members
+is associated with variation in the concentration of fermentation products,&lt;/li&gt;
+&lt;li&gt;one or more of the major SCFAs are increased in the feces of acarbose
+treated mice, and&lt;/li&gt;
+&lt;li&gt;SCFA concentrations are associated with mouse lifespan.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;While our model does not supersede the more mainstream hypothesis that
+acarbose acts to increase longevity through its effects on glucose homeostasis
+pathways, our work is important support for an alternative model in which the
+microbiota plays a central role.&lt;/p&gt;
+&lt;p&gt;If you want to know all the juicy details, &lt;a href="https://doi.org/10.1101/311456"&gt;read the paper&lt;/a&gt;.
+Here, however, I want to expand a little bit on some
+of the less obvious bits that I think are worth your attention.&lt;/p&gt;
+&lt;h3&gt;Quantification of bacterial density&lt;/h3&gt;
+&lt;p&gt;An interesting methodological feature of our 16S rRNA gene survey is the
+inclusion of an internal DNA standard for the purpose of comparing the absolute
+abundance of the bacterial population between samples.
+This approach has been published in the past (&lt;a href="https://doi.org/10.1186/s40168-016-0175-0"&gt;here&lt;/a&gt; and
+&lt;a href="https://doi.org/10.1016/j.soilbio.2016.02.003"&gt;here&lt;/a&gt;), but is not widely implemented.
+Normally, sequence based surveys of bacterial communities are limited to
+comparing the relative abundance of particular amplicons.
+By spiking in a known amount of defined DNA&amp;mdash;in this case
+10 &amp;mu;L of a stationary phase culture of &lt;em&gt;Sphingopyxis alaskensis&lt;/em&gt;&amp;mdash;we
+can compare population density of bacteria per gram of feces
+based on the recovery rate of the exogenous 16S gene.
+Since we can uniquely identify and remove the foreign sequence,
+this approach is fully complementary to a relative-abundance based analyses.&lt;/p&gt;
+&lt;p&gt;We use this tool to confirm that observed increases in the relative abundance
+of several taxa reflect increases in their population size, rather than
+the decreased abundance of other bacteria, a distinction that is impossible
+to make with standard survey methods.&lt;/p&gt;
+&lt;p&gt;In this study we did not attempt to quantify the density of bacteria in the
+spike itself, which means that our abundance estimates are in units of
+spike-equivalents rather than gene copies.
+This does not affect our interpretations, although it can create challenges for
+communication.
+We skipped this step because it is probably not possible to accurately estimate
+cell counts in the endemic community based on 16S rRNA gene density.
+Extraction and amplification efficiency, as well as
+&lt;a href="https://rrndb.umms.med.umich.edu/"&gt;16S rRNA gene copies per cell&lt;/a&gt;, vary among species.
+Instead we depend on an assumption of per cell copy number invariance in the
+community on average, as well as in the specific taxa being assessed.
+For this reason, we've opted to use "spike-adjusted abundance" as a euphemism
+for the estimate.&lt;/p&gt;
+&lt;p&gt;I plan to write more about this approach in the future.
+For now I'll just say it was a small, but valuable feature of our study.&lt;/p&gt;
+&lt;h3&gt;Identification of bacterial function&lt;/h3&gt;
+&lt;p&gt;Another interesting method that I'm proud to have included was a
+&lt;a href="https://en.wikipedia.org/wiki/Lasso_(statistics)"&gt;LASSO regression&lt;/a&gt; of metabolite concentrations on taxon abundances.
+Our reason for doing this was the belief that the bacteria
+most strongly correlated with particular fermentation products were the most
+likely to be producing them.
+This na&amp;iuml;ve approach appears to have paid off;
+the method identified contenders for these functional roles that, in many
+cases, match &lt;em&gt;a priori&lt;/em&gt; expectations.
+For instance, the most abundant &lt;em&gt;Lactobacillus&lt;/em&gt; was closely associated with
+lactate concentrations.
+(Surprised?)
+Likewise, the dominant members of the &lt;em&gt;Muribaculaceae&lt;/em&gt; appear
+to be predictive of propionate concentrations, matching functional annotations
+of genomes from this family.&lt;/p&gt;
+&lt;p&gt;There are almost certainly better methods for discovering the taxa that
+produce particular metabolites,
+but LASSO regression is a surprisingly simple approach and sufficient to
+demonstrate a relationship between bacterial abundances and SCFAs,
+while being (theoretically) more robust to other sources of co-linearity.&lt;/p&gt;
+&lt;h2&gt;A reproducible paper&lt;/h2&gt;
+&lt;p&gt;Besides the joy of having contributed to SCIENCE,
+I am also proud to declare that the results&lt;sup id="fnref-but-one"&gt;&lt;a class="footnote-ref" href="#fn-but-one"&gt;2&lt;/a&gt;&lt;/sup&gt; in our manuscript
+are recreate-able by sufficiently interested readers.
+Raw sequence data are available from the &lt;a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA448009"&gt;SRA&lt;/a&gt;, and everything
+else&amp;mdash;HPLC peak area tables, mouse survival data, and all of the relevant
+metadata&amp;mdash;can be found in a &lt;a href="https://github.com/bsmith89/smith2018paper"&gt;public GitHub repository&lt;/a&gt;.
+That repo also comes with all of the pipeline
+code, implemented as scripts and a Makefile, for raw data
+processing.&lt;/p&gt;
+&lt;p&gt;For anyone who doesn't want to install a bunch of software and
+reserve about a hundred hours of CPU time
+to reprocess our sequences, intermediate results are available in a preloaded
+SQLite database.
+Finally, Jupyter notebooks with code to reproduce published figures and
+statistics have also been included.
+I'm not providing a prepared container, unfortunately, and some of the
+required software can be challenging to install.
+Once that's done, though, the Makefile is designed to generate the finished
+paper with a single invocation of &lt;code&gt;make paper&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;While there's an "official", current release of that repository,
+&lt;a href="https://doi.org/10.5281/zenodo.1229203"&gt;checkpointed by Zenodo&lt;/a&gt;,
+I may implement patches if they make results easier for readers to recreate.
+If anyone out there wants to get really crazy, I'll even take pull-requests!&lt;/p&gt;
+&lt;p&gt;This manuscript is a key chapter of my PhD thesis, and I'll be building off of
+the findings in subsequent work.
+So stay tuned!&lt;/p&gt;
+&lt;p&gt;Read the paper.&lt;/p&gt;
+&lt;p&gt;Run the code.&lt;/p&gt;
+&lt;p&gt;Let me know what you think.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn-dr-mechanism-note"&gt;
+&lt;p&gt;Quote: "The mechanisms mediating the health benefits of
+  DR are not fully understood in any organism."&amp;#160;&lt;a class="footnote-backref" href="#fnref-dr-mechanism-note" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn-but-one"&gt;
+&lt;p&gt;Except for one: Our supplemental materials do not included the code
+        needed to recreate the first figure, survival curves demonstrating
+        that the population of mice from which we sampled recapitulate the
+        sex-specific longevity effects of acarbose.
+        This result was computed by a collaborator and uses longevity data
+        that will be released with a different paper, currently in
+        preparation.
+        I believe that this particular result is a relatively minor part
+        of our story, confirming a previously observed, and well
+        established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref-but-one" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="microbiome"></category><category term="acarbose"></category><category term="preprint"></category><category term="SCFAs"></category><category term="longevity"></category><category term="open science"></category></entry></feed>

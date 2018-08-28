@@ -170,49 +170,235 @@ Deep Ecology - First time teaching Python to novices
 
 </footer>
   <div class="article-content" itemprop="articleBody">
-    <p>This July I co-instructed with <a href="https://impactstory.org/JenniferShelton">Jennifer Shelton</a> a Software Carpentry <a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/">workshop</a> at Stanford University, targeted to researchers with genomic or evolutionary datasets. Jennifer taught the shell (Bash) and version control with Git, while I taught the general programming language Python. I’ve been aware of the <a href="http://software-carpentry.org/">organization</a>, which teaches software development and computational methods to scientists, since attending a workshop in 2012. Since then I’ve served as a helper at one workshop (troubleshooting individual learner’s problems and helping catch them up with the rest of the class), and gone through the “accelerated”, two day, instructor training at Michigan State University. After the Stanford workshop, I took part in new-instructor debriefing on August 4th, during which I mentioned that I had to greatly pare down the community-written lesson plan, <a href="http://swcarpentry.github.io/python-novice-inflammation/">python-novice-inflammation</a>, to fit into the two half-day session we allotted it.</p>
-<p>Karin and Tiffany, who were running the debriefing, asked me to send a note to the mentorship email list about which parts I removed and which I kept in. I thought I’d also take the opportunity to comment on the material at large: what worked for me and what didn’t. What started as an email quickly ballooned into this blog post.</p>
-<p>To be explicit, I was teaching from the state of the repository at the time of the workshop<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> .</p>
-<p>With this as my first workshop<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>, I (incorrectly) thought I could teach all of the topics straight through. By the time it became apparent that this wasn’t going to work, adapting the first day’s material had to be done on the fly. After that experience, and before the following afternoon, I prepared a subset of the remaining material that I thought I could cover. I’m now relying on my (somewhat traumatic) memory of the first session, and that outline I put together for the second day to write this summary.</p>
-<p>My plan going in was to split <a href="http://swcarpentry.github.io/python-novice-inflammation/index.html#topics">the material</a> after Topic 6, getting learners up to writing functions on the first day, so that we could discuss debugging and best-practices, and transition from the Jupyter notebook to shell scripts, the next day. Based on my co-instructors recommendation, I did not have learners do all of the challenge questions for each topic, but instead picked just one or two that I thought would be most useful.</p>
-<p>I found myself wishing (especially for Topic 1: “Analyzing Patient Data”) that some of the easier questions were integrated into the lesson itself, instead of all at the bottom. Learners should have had more chances to problem-solve early, instead of listening to me for the entirety of each topic before getting their feet wet.</p>
-<h2 id="motivating-python">Motivating Python</h2>
-<p>For that <a href="http://swcarpentry.github.io/python-novice-inflammation/01-numpy.html">first topic</a> I <em>did</em> cover everything, but wish I hadn’t, since it was mostly focused on array operations and the specifics of working with NumPy (e.g. operations along axes). I appreciated that we were showing the learners powerful library features to motivate the later work, but I didn’t feel like it was great for this workshop’s “genomics” audience. Maybe these initial motivating sections should be targeted the same way the capstone projects are. It was also too long relative to the other sections, in my opinion.</p>
-<p>It <em>was</em> very good, however, for introducing some python specifics, especially things that learners coming from other languages like R or Mathematica might not know (e.g. 0-indexing, slices, that variable assignment happens when each line is executed, etc.). It gave learners a chance to be surprised by their misconceptions and ask questions. We should do more of that.</p>
-<p>It would have been helpful for the lesson to have pre-built explanations for 0-indexing and right-exclusive slicing, since these were the hard parts and I’m not happy with the explanations I initially used.</p>
-<p>I found the nature of the made-up data (maximum values smooth and minimum values as a step-function along the first axis) distracting. I also didn’t know what they were supposed to represent (beyond inflammation over time), so the “actually doing science” part of the motivation was a bit lost. Is there a reason we use these data?</p>
-<h2 id="python-basics-lists-loops-conditionals-etc.">Python basics: lists, loops, conditionals, etc.</h2>
-<p><a href="http://swcarpentry.github.io/python-novice-inflammation/02-loop.html">Topics 2</a> and <a href="http://swcarpentry.github.io/python-novice-inflammation/03-lists.html">3</a>, “Repeating Actions with Loops” and “Storing Multiple Values in Lists” respectively, were good and short. I didn’t feel like I had to cut anything out. However, for-loop syntax was not explicitly covered early in the lesson plan. It wasn’t until I realized I had gotten ahead of myself that we talked about loop variables, iterables<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>, and the indented code-block.</p>
-<p>I also thought the segue from Topic 1 to 2 was a bit weak. This was a theme throughout, mixing the inflammation data with much simpler stuff (e.g. looping over short strings and lists). I realize we want to keep the motivation going, but, as a first-time instructor, I found it to be distracting, and didn’t know which I should be emphasizing to the learners.</p>
-<p>I also picked the wrong challenge question from Topic 1 (reverse <code>'Newton'</code> using a loop), since we hadn’t covered <code>range</code>, <code>append</code>ing to lists, <code>''.join</code>, etc. What novice audience is that question appropriate for? Maybe the solution is simple and I’m just confused…</p>
-<p>The material for <a href="http://swcarpentry.github.io/python-novice-inflammation/04-files.html">topic 4</a>, “Analyzing Data from Multiple Files” worked well overall. The only mistake I remember was copy-pasting the big chunk of code from the lesson (looping over files and drawing sets of plots) instead of typing it out. I figured since most of the code was library calls, learners wouldn’t get anything out of me taking the time to type all of it. That may have been true, but it meant the learners weren’t executing the code at the same time as me, which interrupted the flow of the lesson.</p>
-<p><a href="http://swcarpentry.github.io/python-novice-inflammation/05-cond.html">Topic 5</a>, “Making Choice” (if-statements), was where things got hairy. I panicked a bit and went mostly off the lesson plan. It did not go well. When I tried to find something in the lesson to get me back on track, I wished there was more explicit discussion of syntax and booleans. I was able to review the topic the next day, which I think got any lost learners mostly caught up.</p>
-<p>As you can imagine, at this point we were nearing the end of the first day. I did manage to show the learners the syntax for defining and using functions, but I covered <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">topic 6</a>, “Creating Functions”, in its entirety at the start of the next session.</p>
-<h2 id="learning-my-lesson">Learning my lesson</h2>
-<p>After the harrowing experience with conditionals on the first day, I took the time to write out a personalized lesson outline for the next day with learning objectives, steps in explaining difficult concepts, and pre-picked understanding/challenge questions. The exercise of writing an outline of learning objectives before the class was very helpful, and something I intend to repeat before future workshops.</p>
-<p>If I remember correctly<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>, the second day I started once again with functions, and largely based the lesson on the material in <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">the topic</a>. The temperature conversion formulas were an effective motivator for this lesson. I wonder if simple examples, like this one, can replace the more complex (and, admittedly, more impressive) inflammation tutorial to demonstrate the value of Python for scientists. I also integrated material from the <a href="http://swcarpentry.github.io/python-novice-inflammation/07-errors.html">topic on errors and exceptions</a>: tracebacks, syntax errors, etc. In this combined topic I did not use the <code>import errors_01</code> example. It was unclear to me why the lesson plan, as written, uses a black-box script like <code>errors_01.py</code>, and not something more explicit, like an index or attribute error, to dissect the traceback. I think the explicit approach worked well for the learners in this workshop. Since we were covering functions anyway, it wasn’t hard to get a multi-level traceback. Syntax errors also combined nicely with learning function definition syntax.</p>
-<figure>
-<img src="http://blog.byronjsmith.com/static/images/swc-stanford-byron.jpg" alt="The author dissecting an attribute error." /><figcaption>The author dissecting an attribute error.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></figcaption>
-</figure>
-<p>Somewhere in the process of talking about functions we got sidetracked with <code>open()</code>. I was surprised to see that the lesson plans have only limited discussion of file objects, only really dealing with them in the section on <code>IOErrors</code>. I think learners appreciated a chance to see how the array data they had used the day before were saved as a CSV, and how they could access the data directly. It also gave us a chance to show that other objects besides lists and strings can serve as iterators in for-loops.</p>
-<p>I liked how the topic 6 <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html#defining-defaults">lesson plan</a> used the library function <code>numpy.loadtxt()</code> to talk about default arguments and the <code>help()</code> built-in. I jumped back and forth between examining that function and implementing the same things (keywords, documentation) in a <code>center()</code> function we were building. The realized lesson was very similar to the repository’s lesson plan, but a little more integrated with errors and exceptions.</p>
-<p>I had the learners implement <code>rescale()</code> as a challenge question. We then worked together as a class to add lower and upper bounds. This was a much more difficult task than I expected (even just deriving the correct formula), and served nicely to demonstrate defensive programming and debugging. While we touched on many of the concepts in <a href="http://swcarpentry.github.io/python-novice-inflammation/08-defensive.html">topics 8</a> and <a href="http://swcarpentry.github.io/python-novice-inflammation/09-debugging.html">9</a>, these ideas, were spread throughout, and I did not walk through either as an atomic lesson.</p>
-<p>My ultimate goal on the second day was to write a program to calculate the mean inflammation of each subject in the example files and then transform the program into a command-line script that would operate as a UNIX-style filter. I remember Greg Wilson teaching Python scripting (along with Bash and SQL) that way during my first workshop (as a <em>learner</em>!) at MSU in May 2012<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>. This <a href="http://swcarpentry.github.io/python-novice-inflammation/10-cmdline.html">last topic</a> seemed like a worthwhile mini-capstone, since it would reintroduce ideas from the Bash lesson the day before, and we could version-control our work with git. While we managed to run our code as a script (rather than a cell in the Jupyter notebook), the transition was a little rough around the edges, and we didn’t have time to add <code>sys.argv</code> or <code>sys.stdin</code>.</p>
-<h2 id="take-aways">Take-aways</h2>
-<p>The second day of Python was much smoother than the first, and, while we did not get to all of the material, I was satisfied with what we did cover. It’s quite remarkable that learners can go all the way from indexing into lists to defensive programming and unit tests in just a few hours. I’m not convinced that we got them far enough to jump right into using Python for their own work, but I hope it was a good kick-start towards that goal. I’m amazed some novice workshops only allocate a half-day session to the programming language (be it Python, R, or Matlab), although a quick survey of <a href="http://software-carpentry.org/workshops/index.html#future">upcoming workshops</a> suggests that almost <em>all</em> of them do in fact use two sessions. Is this the recommended approach (and if so where is it documented) or have many instructors all independently come to the same conclusion?</p>
-<p>Even so, there’s still more material in python-novice-inflammation than can be covered in two sessions. I’m under the impression that the repository is sort of <em>meant</em> to be like that: way too big, so that instructors can pick and choose the parts that are most salient for their audience. This seems like a good idea, but it was not sufficiently communicated to me as a first-time instructor, and, while many of the difficulties I had could have been solved with more comprehensive preparation, having a “default” subset would have been helpful.</p>
-<section class="footnotes">
-<hr />
+    <p>This July I co-instructed with <a href="https://impactstory.org/JenniferShelton">Jennifer Shelton</a>
+a Software Carpentry <a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/">workshop</a> at Stanford University,
+targeted to researchers with genomic or evolutionary datasets.
+Jennifer taught the shell (Bash) and version control with Git,
+while I taught the general programming language Python.
+I've been aware of the <a href="http://software-carpentry.org/">organization</a>, which teaches software
+development and computational methods to scientists, since attending a
+workshop in 2012.
+Since then I've served as a helper at one workshop
+(troubleshooting individual learner's problems and helping catch them up with
+the rest of the class),
+and gone through the "accelerated", two day, instructor training at Michigan
+State University.
+After the Stanford workshop, I took part in new-instructor debriefing
+on August 4th, during which I mentioned that I had to greatly pare down the
+community-written lesson plan, <a href="http://swcarpentry.github.io/python-novice-inflammation/">python-novice-inflammation</a>,
+to fit into the two half-day session we allotted it.</p>
+<p>Karin and Tiffany, who were running the debriefing, asked me to send a note
+to the mentorship email list about which parts I removed and which I kept in.
+I thought I'd also take the opportunity to comment on the material at large:
+what worked for me and what didn't.
+What started as an email quickly ballooned into this blog post.</p>
+<p>To be explicit, I was teaching from the state of the repository at the time of
+the workshop<sup id="fnref-repo-state"><a class="footnote-ref" href="#fn-repo-state">1</a></sup> .</p>
+<p>With this as my first workshop<sup id="fnref-unprepared"><a class="footnote-ref" href="#fn-unprepared">2</a></sup>, I (incorrectly) thought
+I could teach all of the topics straight through.
+By the time it became apparent that this wasn't going to work,
+adapting the first day's material had to be done on the fly.
+After that experience, and
+before the following afternoon,
+I prepared a subset of the remaining material that I thought I could cover.
+I'm now relying on my (somewhat traumatic) memory of the first session,
+and that outline I put together for the second day to write this summary.</p>
+<p>My plan going in was to split <a href="http://swcarpentry.github.io/python-novice-inflammation/index.html#topics">the material</a> after Topic 6,
+getting learners up to writing functions on the first day,
+so that we could discuss debugging and best-practices,
+and transition from the Jupyter notebook to shell scripts, the next day.
+Based on my co-instructors recommendation,
+I did not have learners do all of the challenge questions for each topic,
+but instead picked just one or two that I thought would be most useful.</p>
+<p>I found myself wishing (especially for Topic 1: "Analyzing Patient Data") that
+some of the easier questions were integrated into the lesson itself, instead of
+all at the bottom.
+Learners should have had more chances to problem-solve early, instead of
+listening to me for the entirety of each topic before getting their feet wet.</p>
+<h2>Motivating Python</h2>
+<p>For that <a href="http://swcarpentry.github.io/python-novice-inflammation/01-numpy.html">first topic</a> I <em>did</em> cover everything, but wish I hadn't,
+since it was mostly focused on array operations and the specifics of working
+with NumPy (e.g. operations along axes).
+I appreciated that we were showing the learners powerful library features to
+motivate the later work, but I didn't feel like it was great for this
+workshop's "genomics" audience.
+Maybe these initial motivating sections should be targeted the same way the
+capstone projects are.
+It was also too long relative to the other sections, in my opinion.</p>
+<p>It <em>was</em> very good, however, for introducing some python specifics, especially
+things that learners coming from other languages like R or Mathematica might
+not know (e.g. 0-indexing, slices, that variable assignment happens when each
+line is executed, etc.).
+It gave learners a chance to be surprised by their misconceptions and ask
+questions.
+We should do more of that.</p>
+<p>It would have been helpful for the lesson to have pre-built explanations for
+0-indexing and right-exclusive slicing, since these were the hard parts and I'm
+not happy with the explanations I initially used.</p>
+<p>I found the nature of the made-up data (maximum values smooth and minimum
+values as a step-function along the first axis) distracting.
+I also didn't know what they were supposed to represent (beyond inflammation
+over time), so the "actually doing science" part of the motivation was a bit
+lost.
+Is there a reason we use these data?</p>
+<h2>Python basics: lists, loops, conditionals, etc.</h2>
+<p><a href="http://swcarpentry.github.io/python-novice-inflammation/02-loop.html">Topics 2</a> and <a href="http://swcarpentry.github.io/python-novice-inflammation/03-lists.html">3</a>, "Repeating Actions with Loops" and
+"Storing Multiple Values in Lists" respectively, were good and short.
+I didn't feel like I had to cut anything out.
+However, for-loop syntax was not explicitly covered early in the lesson plan.
+It wasn't until I realized I had gotten ahead of myself that we talked about
+loop variables, iterables<sup id="fnref-iterables"><a class="footnote-ref" href="#fn-iterables">3</a></sup>, and the indented code-block.</p>
+<p>I also thought the segue from Topic 1 to 2 was a bit weak.
+This was a theme throughout, mixing the inflammation data with much simpler
+stuff (e.g. looping over short strings and lists).
+I realize we want to keep the motivation going, but, as a first-time
+instructor, I found it to be distracting, and didn't know which I should be
+emphasizing to the learners.</p>
+<p>I also picked the wrong challenge question from Topic 1 (reverse <code>'Newton'</code>
+using a loop), since we hadn't covered <code>range</code>, <code>append</code>ing to lists,
+<code>''.join</code>, etc.
+What novice audience is that question appropriate for?
+Maybe the solution is simple and I'm just confused...</p>
+<p>The material for <a href="http://swcarpentry.github.io/python-novice-inflammation/04-files.html">topic 4</a>, "Analyzing Data from Multiple Files"
+worked well overall.
+The only mistake I remember was copy-pasting the big chunk of code from the
+lesson (looping over files and drawing sets of plots) instead of typing it out.
+I figured since most of the code was library calls, learners wouldn't get
+anything out of me taking the time to type all of it.
+That may have been true, but it meant the learners weren't executing the code
+at the
+same time as me, which interrupted the flow of the lesson.</p>
+<p><a href="http://swcarpentry.github.io/python-novice-inflammation/05-cond.html">Topic 5</a>, "Making Choice" (if-statements), was where things got
+hairy.
+I panicked a bit and went mostly off the lesson plan.
+It did not go well.
+When I tried to find something in the lesson to get me back on track,
+I wished there was more explicit discussion of syntax and booleans.
+I was able to review the topic the next day, which I think got any lost
+learners
+mostly caught up.</p>
+<p>As you can imagine, at this point we were nearing the end of the first day.
+I did manage to show the learners the syntax for defining and using functions,
+but I covered <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">topic 6</a>, "Creating Functions", in its entirety at the
+start of the next
+session.</p>
+<h2>Learning my lesson</h2>
+<p>After the harrowing experience with conditionals on the first day, I took the
+time to write out a personalized lesson outline for the next day with learning
+objectives, steps in explaining difficult concepts, and pre-picked
+understanding/challenge questions.
+The exercise of writing an outline of learning objectives before the class was
+very helpful, and something I intend to repeat before future workshops.</p>
+<p>If I remember correctly<sup id="fnref-metamemory"><a class="footnote-ref" href="#fn-metamemory">4</a></sup>, the second day I started once again with
+functions, and largely based the lesson on the material in
+<a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">the topic</a>.
+The temperature conversion formulas were an effective motivator for this
+lesson.
+I wonder if simple examples, like this one, can replace the more complex
+(and, admittedly, more impressive)
+inflammation tutorial to demonstrate the value of Python for scientists.
+I also integrated material from the <a href="http://swcarpentry.github.io/python-novice-inflammation/07-errors.html">topic on errors and exceptions</a>:
+tracebacks, syntax errors, etc.
+In this combined topic I did not use the <code>import errors_01</code> example.
+It was unclear to me why the lesson plan, as written, uses a black-box script
+like <code>errors_01.py</code>, and not something more explicit, like an index or
+attribute error, to dissect the traceback.
+I think the explicit approach worked well for the learners in this workshop.
+Since we were covering functions anyway, it wasn't hard to get a multi-level
+traceback.
+Syntax errors also combined nicely with learning function definition syntax.</p>
+<p><img alt="The author dissecting an attribute error.5" src="http://blog.byronjsmith.com/static/images/swc-stanford-byron.jpg"></p>
+<p>Somewhere in the process of talking about functions we got sidetracked with
+<code>open()</code>.
+I was surprised to see that the lesson plans have only limited discussion of
+file objects, only really dealing with them in the section on <code>IOErrors</code>.
+I think learners appreciated a chance to see how the array data they had used
+the day before were saved as a CSV,
+and how they could access the data directly.
+It also gave us a chance to show that other objects besides lists and strings
+can serve as iterators in for-loops.</p>
+<p>I liked how the topic 6 <a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html#defining-defaults">lesson plan</a> used the library
+function <code>numpy.loadtxt()</code> to talk about default arguments and the <code>help()</code>
+built-in.
+I jumped back and forth between examining that function and implementing
+the same things (keywords, documentation) in a <code>center()</code> function we were
+building.
+The realized lesson was very similar to the repository's lesson plan,
+but a little more integrated with errors and exceptions.</p>
+<p>I had the learners implement <code>rescale()</code> as a challenge question.
+We then worked together as a class to add lower and upper bounds.
+This was a much more difficult task than I expected
+(even just deriving the correct formula),
+and served nicely to demonstrate defensive programming and debugging.
+While we touched on many of the concepts in <a href="http://swcarpentry.github.io/python-novice-inflammation/08-defensive.html">topics 8</a> and
+<a href="http://swcarpentry.github.io/python-novice-inflammation/09-debugging.html">9</a>,
+these ideas, were spread throughout,
+and I did not walk through either as an atomic lesson.</p>
+<p>My ultimate goal on the second day was to write a program to calculate
+the mean inflammation of each subject in the example files and then
+transform the program into a command-line script that would operate as a
+UNIX-style filter.
+I remember Greg Wilson teaching Python scripting (along with Bash and SQL)
+that way during my first workshop (as a <em>learner</em>!) at MSU
+in May 2012<sup id="fnref-swc-msu"><a class="footnote-ref" href="#fn-swc-msu">6</a></sup>.
+This <a href="http://swcarpentry.github.io/python-novice-inflammation/10-cmdline.html">last topic</a> seemed like a worthwhile mini-capstone,
+since it would reintroduce ideas from the Bash lesson the day before,
+and we could version-control our work with git.
+While we managed to run our code as a script (rather than a cell in the
+Jupyter notebook), the transition was a little rough around the edges, and we
+didn't have time to add <code>sys.argv</code> or <code>sys.stdin</code>.</p>
+<h2>Take-aways</h2>
+<p>The second day of Python was much smoother than the first, and, while we
+did not get to all of the material, I was satisfied with what we did cover.
+It's quite remarkable that learners can go all the way from indexing into lists
+to defensive programming and unit tests in just a few hours.
+I'm not convinced that we got them far enough to jump right into using Python
+for their own work, but I hope it was a good kick-start towards that goal.
+I'm amazed some novice workshops only allocate a half-day session to the
+programming language (be it Python, R, or Matlab),
+although a quick survey of <a href="http://software-carpentry.org/workshops/index.html#future">upcoming workshops</a> suggests that almost
+<em>all</em> of them do in fact use two sessions.
+Is this the recommended approach (and if so where is it documented)
+or have many instructors all independently come to the same conclusion?</p>
+<p>Even so, there's still more material in python-novice-inflammation
+than can be covered in two sessions.
+I'm under the impression that the repository is sort of <em>meant</em> to be like
+that: way too big, so that instructors can pick and choose the parts that are
+most salient for their audience.
+This seems like a good idea, but
+it was not sufficiently communicated to me as a first-time instructor,
+and, while many of the difficulties I had could have been solved with more
+comprehensive preparation,
+having a "default" subset would have been helpful.</p>
+<div class="footnote">
+<hr>
 <ol>
-<li id="fn1"><p><a href="https://github.com/swcarpentry/python-novice-inflammation/tree/76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a"><code>76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a</code></a>: still the HEAD as of this writing.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>and being insufficiently prepared<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>Actually, we talked about getting values from lists and how strings are like lists, rather than about iterables in general.<a href="#fnref3">↩</a></p></li>
-<li id="fn4"><p>Despite the fact that I have those notes, I actually don’t remember the details of that day’s lesson as well. I wonder if there’s some weird metamemory thing going on e.g. <a href="http://www.sciencemag.org/content/333/6043/776.abstract">this</a> (unfortunately paywalled).<a href="#fnref4">↩</a></p></li>
-<li id="fn5"><p>Photo credit: Amy Hodge (<a href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a>)<a href="#fnref5">↩</a></p></li>
-<li id="fn6"><p>The site for this historic event can still be found <a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/">here</a>.<a href="#fnref6">↩</a></p></li>
+<li id="fn-repo-state">
+<p><a href="https://github.com/swcarpentry/python-novice-inflammation/tree/76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a"><code>76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a</code></a>: still the
+HEAD as of this writing.&#160;<a class="footnote-backref" href="#fnref-repo-state" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn-unprepared">
+<p>and being insufficiently prepared&#160;<a class="footnote-backref" href="#fnref-unprepared" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn-iterables">
+<p>Actually, we talked about getting values from lists and how
+strings are like lists, rather than about iterables in general.&#160;<a class="footnote-backref" href="#fnref-iterables" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn-metamemory">
+<p>Despite the fact that I have those notes, I actually don't
+remember the details of that day's lesson as well.
+I wonder if there's some weird metamemory thing going on
+e.g. <a href="http://www.sciencemag.org/content/333/6043/776.abstract">this</a> (unfortunately paywalled).&#160;<a class="footnote-backref" href="#fnref-metamemory" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn-photo-credit">
+<p>Photo credit: Amy Hodge (<a href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a>)&#160;<a class="footnote-backref" href="#fnref-photo-credit" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn-swc-msu">
+<p>The site for this historic event can still be found
+<a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/">here</a>.&#160;<a class="footnote-backref" href="#fnref-swc-msu" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
 </ol>
-</section>
-
+</div>
   </div>
   
 </article>

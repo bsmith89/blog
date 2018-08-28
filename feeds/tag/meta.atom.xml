@@ -1,28 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - meta</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/tag/meta.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2015-08-14T10:00:00-04:00</updated><entry><title>You, too, can host this website</title><link href="http://blog.byronjsmith.com/fork-this-blog.html" rel="alternate"></link><published>2013-07-13T17:00:00-04:00</published><updated>2013-07-13T17:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-07-13:/fork-this-blog.html</id><summary type="html">&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero) might have noticed that things are looking a little different since yesterday. That’s because I’ve finally developed my own &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; theme to the point that it’s functional, and not too embaressing to look at.&lt;/p&gt;
-&lt;p&gt;It doesn’t appear &lt;em&gt;too&lt;/em&gt; different—it’s certainly still inspired by the &lt;a href="https://github.com/getpelican/pelican-themes/tree/master/notmyidea-cms"&gt;sample theme&lt;/a&gt;—but now I understand 95% of the code, instead of 5%. My goal was to simplify the template files and css to the point that I could customize just about anything with a minimum of work. I also attempted to maintain compatability with all of the configuration options supported by the default theme.&lt;/p&gt;
-&lt;p&gt;Not that I know why you would want to, but you can read and copy the &lt;a href="https://github.com/bsmith89/blog"&gt;content and configuration files&lt;/a&gt; on Github. The &lt;a href="https://github.com/bsmith89/blog-theme"&gt;theme source code&lt;/a&gt; is there as well.&lt;/p&gt;
-&lt;p&gt;By …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero) might have noticed that things are looking a little different since yesterday. That’s because I’ve finally developed my own &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; theme to the point that it’s functional, and not too embaressing to look at.&lt;/p&gt;
-&lt;p&gt;It doesn’t appear &lt;em&gt;too&lt;/em&gt; different—it’s certainly still inspired by the &lt;a href="https://github.com/getpelican/pelican-themes/tree/master/notmyidea-cms"&gt;sample theme&lt;/a&gt;—but now I understand 95% of the code, instead of 5%. My goal was to simplify the template files and css to the point that I could customize just about anything with a minimum of work. I also attempted to maintain compatability with all of the configuration options supported by the default theme.&lt;/p&gt;
-&lt;p&gt;Not that I know why you would want to, but you can read and copy the &lt;a href="https://github.com/bsmith89/blog"&gt;content and configuration files&lt;/a&gt; on Github. The &lt;a href="https://github.com/bsmith89/blog-theme"&gt;theme source code&lt;/a&gt; is there as well.&lt;/p&gt;
-&lt;p&gt;By putting everything up on Github I make development easy for myself, get a free, external backup, and give off an air of open-science superiority.&lt;/p&gt;
-&lt;p&gt;So please, fork my blog.&lt;/p&gt;
-</content><category term="open-source"></category><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="blog"></category></entry><entry><title>Hello World!</title><link href="http://blog.byronjsmith.com/initial-commit.html" rel="alternate"></link><published>2013-05-05T22:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-05:/initial-commit.html</id><summary type="html">&lt;p&gt;Hi.&lt;/p&gt;
-&lt;p&gt;This is mostly a test post and a chance to get some real content on my brand-new blog.&lt;/p&gt;
-&lt;p&gt;Inspired by &lt;a href="http://ivory.idyll.org/blog/advice-to-graduate-students.html"&gt;C. Titus Brown&lt;/a&gt;’s tireless pressure to make more graduate student clones of himself—and the fact that a pretty damn good domain name was still available—I started this website/blog over the weekend.&lt;/p&gt;
-&lt;p&gt;I hope that it will turn into a place for me to share my excitement and views on microbiology, microbial ecology, mathematical ecology, bioinformatics, python, (very) amateur software development, etc. But I will be satisfied if it turns out to just be writing practice. Heaven knows I need that.&lt;/p&gt;
-&lt;p&gt;In case you’re curious, setup took me about 3 hours (plus some waiting for DNS updates). Largely, this is because I’m shamelessly mirroring Titus’s well trafficked blog by using a nifty python application called &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;. And at $15/year for the domain …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi.&lt;/p&gt;
-&lt;p&gt;This is mostly a test post and a chance to get some real content on my brand-new blog.&lt;/p&gt;
-&lt;p&gt;Inspired by &lt;a href="http://ivory.idyll.org/blog/advice-to-graduate-students.html"&gt;C. Titus Brown&lt;/a&gt;’s tireless pressure to make more graduate student clones of himself—and the fact that a pretty damn good domain name was still available—I started this website/blog over the weekend.&lt;/p&gt;
-&lt;p&gt;I hope that it will turn into a place for me to share my excitement and views on microbiology, microbial ecology, mathematical ecology, bioinformatics, python, (very) amateur software development, etc. But I will be satisfied if it turns out to just be writing practice. Heaven knows I need that.&lt;/p&gt;
-&lt;p&gt;In case you’re curious, setup took me about 3 hours (plus some waiting for DNS updates). Largely, this is because I’m shamelessly mirroring Titus’s well trafficked blog by using a nifty python application called &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;. And at $15/year for the domain (using &lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;a href="#fn1" class="footnoteRef" id="fnref1"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; as my registrar) and $35/year for hosting (tiny, shared server with &lt;a href="http://asmallorange.com/?ref_id=lTryoX47YjmF"&gt;A Small Orange&lt;/a&gt;&lt;a href="#fn2" class="footnoteRef" id="fnref2"&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;, I really had no financial excuse to not do this.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - meta</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/tag/meta.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2015-08-14T10:00:00-04:00</updated><entry><title>You, too, can host this website</title><link href="http://blog.byronjsmith.com/fork-this-blog.html" rel="alternate"></link><published>2013-07-13T17:00:00-04:00</published><updated>2013-07-13T17:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-07-13:/fork-this-blog.html</id><summary type="html">&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero)
+might have noticed that things are looking a little different since yesterday.
+That's because I've finally developed my own &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; theme
+to the point that it's functional, and not too embaressing to look at.&lt;/p&gt;
+&lt;p&gt;It doesn't appear &lt;em&gt;too&lt;/em&gt; different—it's certainly still inspired by the
+&lt;a href="https://github.com/getpelican/pelican-themes/tree/master/notmyidea-cms"&gt;sample theme&lt;/a&gt;—but now I understand 95% of the code, instead of 5%.
+My goal was to simplify the template files and css to the point that I could
+customize just about anything with a minimum of work.  I also attempted to
+maintain compatability with all of the configuration options supported by the
+default theme.&lt;/p&gt;
+&lt;p&gt;Not that I know why you would want to, but you can read and copy the
+&lt;a href="https://github.com/bsmith89/blog"&gt;content and configuration files&lt;/a&gt; on Github.  The
+&lt;a href="https://github.com/bsmith89/blog-theme"&gt;theme source code&lt;/a&gt; is there as well.&lt;/p&gt;
+&lt;p&gt;By putting everything up on Github …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero)
+might have noticed that things are looking a little different since yesterday.
+That's because I've finally developed my own &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; theme
+to the point that it's functional, and not too embaressing to look at.&lt;/p&gt;
+&lt;p&gt;It doesn't appear &lt;em&gt;too&lt;/em&gt; different—it's certainly still inspired by the
+&lt;a href="https://github.com/getpelican/pelican-themes/tree/master/notmyidea-cms"&gt;sample theme&lt;/a&gt;—but now I understand 95% of the code, instead of 5%.
+My goal was to simplify the template files and css to the point that I could
+customize just about anything with a minimum of work.  I also attempted to
+maintain compatability with all of the configuration options supported by the
+default theme.&lt;/p&gt;
+&lt;p&gt;Not that I know why you would want to, but you can read and copy the
+&lt;a href="https://github.com/bsmith89/blog"&gt;content and configuration files&lt;/a&gt; on Github.  The
+&lt;a href="https://github.com/bsmith89/blog-theme"&gt;theme source code&lt;/a&gt; is there as well.&lt;/p&gt;
+&lt;p&gt;By putting everything up on Github I make development easy for myself, get
+a free, external backup, and give off an air of open-science superiority.&lt;/p&gt;
+&lt;p&gt;So please, fork my blog.&lt;/p&gt;</content><category term="open-source"></category><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="blog"></category></entry><entry><title>Hello World!</title><link href="http://blog.byronjsmith.com/initial-commit.html" rel="alternate"></link><published>2013-05-05T22:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-05:/initial-commit.html</id><summary type="html">&lt;p&gt;Hi.&lt;/p&gt;
+&lt;p&gt;This is mostly a test post and a chance to get some real content on my
+brand-new blog.&lt;/p&gt;
+&lt;p&gt;Inspired by
+&lt;a href="http://ivory.idyll.org/blog/advice-to-graduate-students.html"&gt;C. Titus Brown&lt;/a&gt;'s
+tireless pressure to make more graduate student clones of himself—and the
+fact that a pretty damn good domain name was still available—I started this
+website/blog over the weekend.&lt;/p&gt;
+&lt;p&gt;I hope that it will turn into a place for me to share my
+excitement and views on microbiology, microbial ecology, mathematical
+ecology, bioinformatics, python, (very) amateur software development,
+etc.  But I will be satisfied if it turns out to just be writing practice.
+Heaven knows I need that.&lt;/p&gt;
+&lt;p&gt;In case you're curious, setup took me about 3 hours (plus some waiting for DNS
+updates).  Largely, this is because I'm shamelessly mirroring Titus's well
+trafficked blog by using a nifty python application called
+&lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref-hover-disc"&gt;&lt;a class="footnote-ref" href="#fn-hover-disc"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi.&lt;/p&gt;
+&lt;p&gt;This is mostly a test post and a chance to get some real content on my
+brand-new blog.&lt;/p&gt;
+&lt;p&gt;Inspired by
+&lt;a href="http://ivory.idyll.org/blog/advice-to-graduate-students.html"&gt;C. Titus Brown&lt;/a&gt;'s
+tireless pressure to make more graduate student clones of himself—and the
+fact that a pretty damn good domain name was still available—I started this
+website/blog over the weekend.&lt;/p&gt;
+&lt;p&gt;I hope that it will turn into a place for me to share my
+excitement and views on microbiology, microbial ecology, mathematical
+ecology, bioinformatics, python, (very) amateur software development,
+etc.  But I will be satisfied if it turns out to just be writing practice.
+Heaven knows I need that.&lt;/p&gt;
+&lt;p&gt;In case you're curious, setup took me about 3 hours (plus some waiting for DNS
+updates).  Largely, this is because I'm shamelessly mirroring Titus's well
+trafficked blog by using a nifty python application called
+&lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref-hover-disc"&gt;&lt;a class="footnote-ref" href="#fn-hover-disc"&gt;1&lt;/a&gt;&lt;/sup&gt; as my registrar) and $35/year for hosting
+(tiny, shared server with &lt;a href="http://asmallorange.com/?ref_id=lTryoX47YjmF"&gt;A Small Orange&lt;/a&gt;&lt;sup id="fnref-aso-disc"&gt;&lt;a class="footnote-ref" href="#fn-aso-disc"&gt;2&lt;/a&gt;&lt;/sup&gt;,
+I really had no financial excuse to not do this.&lt;/p&gt;
 &lt;p&gt;Wish me luck!&lt;/p&gt;
 &lt;p&gt;-Byron&lt;/p&gt;
-&lt;section class="footnotes"&gt;
-&lt;hr /&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn1"&gt;&lt;p&gt;DISCLOSURE: That’s a referral link. I’ll get $2 in credit each time one of you nerds signs up.&lt;a href="#fnref1"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li id="fn2"&gt;&lt;p&gt;That, too, is a referral link. My handlers told me to also suggest that you use the coupon code ‘FRIENDME’ for 15% off.&lt;a href="#fnref2"&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id="fn-hover-disc"&gt;
+&lt;p&gt;DISCLOSURE: That's a referral link.  I'll get $2 in credit
+  each time one of you nerds signs up.&amp;#160;&lt;a class="footnote-backref" href="#fnref-hover-disc" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn-aso-disc"&gt;
+&lt;p&gt;That, too, is a referral link.
+  My handlers told me to also suggest
+  that you use the coupon code 'FRIENDME' for 15% off.&amp;#160;&lt;a class="footnote-backref" href="#fnref-aso-disc" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/section&gt;
-</content><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="hosting"></category><category term="blog"></category></entry></feed>
+&lt;/div&gt;</content><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="hosting"></category><category term="blog"></category></entry></feed>

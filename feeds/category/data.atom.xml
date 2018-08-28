@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Data</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/category/data.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2016-05-31T12:00:00-04:00</updated><entry><title>Software carpentry instructor training</title><link href="http://blog.byronjsmith.com/instructor-survival.html" rel="alternate"></link><published>2016-05-30T12:00:00-04:00</published><updated>2016-05-31T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-05-30:/instructor-survival.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from &lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;Erin Becker’s&lt;/a&gt;. Briefly: I removed individuals who taught before they were officially certified.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A couple weeks ago, Greg Wilson &lt;a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html"&gt;asked&lt;/a&gt; the &lt;a href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; community for &lt;a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html"&gt;feedback&lt;/a&gt; on a collection of data about the organization’s instructors, when they were certified, and when they taught. Having dabbled in &lt;a href="https://en.wikipedia.org/wiki/Survival_analysis"&gt;survival analysis&lt;/a&gt;, I was excited to explore the data within that context.&lt;/p&gt;
-&lt;p&gt;Survival analysis is focused on time-to-event data, for example time from birth until death, but also time to failure of engineered systems, or in this case, time from instructor certification to first teaching a workshop. The language is somewhat morbid, but helps with talking precisely about models that can easily be applied to a variety of data, only sometimes involving death or failure. The power of modern survival analysis is the ability to include results from subjects who …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from &lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;Erin Becker’s&lt;/a&gt;. Briefly: I removed individuals who taught before they were officially certified.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;A couple weeks ago, Greg Wilson &lt;a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html"&gt;asked&lt;/a&gt; the &lt;a href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; community for &lt;a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html"&gt;feedback&lt;/a&gt; on a collection of data about the organization’s instructors, when they were certified, and when they taught. Having dabbled in &lt;a href="https://en.wikipedia.org/wiki/Survival_analysis"&gt;survival analysis&lt;/a&gt;, I was excited to explore the data within that context.&lt;/p&gt;
-&lt;p&gt;Survival analysis is focused on time-to-event data, for example time from birth until death, but also time to failure of engineered systems, or in this case, time from instructor certification to first teaching a workshop. The language is somewhat morbid, but helps with talking precisely about models that can easily be applied to a variety of data, only sometimes involving death or failure. The power of modern survival analysis is the ability to include results from subjects who have not yet experienced the event when data is collected. After all, studies rarely have the funding or patience to continue indefinitely. and excluding those data points entirely would falsely inflate rate estimates. Instead, the absence of an event for an individual during the study is useful information that contributes to the precise estimation of rates.&lt;/p&gt;
-&lt;p&gt;Let’s grab the Software Carpentry data and take a look.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Data</title><link href="http://blog.byronjsmith.com/" rel="alternate"></link><link href="http://blog.byronjsmith.com/feeds/category/data.atom.xml" rel="self"></link><id>http://blog.byronjsmith.com/</id><updated>2016-05-31T12:00:00-04:00</updated><entry><title>Software carpentry instructor training</title><link href="http://blog.byronjsmith.com/instructor-survival.html" rel="alternate"></link><published>2016-05-30T12:00:00-04:00</published><updated>2016-05-31T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-05-30:/instructor-survival.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+&lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;Erin Becker's&lt;/a&gt;.  Briefly: I removed individuals who taught
+before they were officially certified.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A couple weeks ago, Greg Wilson &lt;a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html"&gt;asked&lt;/a&gt; the &lt;a href="http://software-carpentry.org/"&gt;Software
+Carpentry&lt;/a&gt; community for &lt;a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html"&gt;feedback&lt;/a&gt; on a collection of
+data about the organization's instructors, when they were certified, and when
+they taught.
+Having dabbled in &lt;a href="https://en.wikipedia.org/wiki/Survival_analysis"&gt;survival analysis&lt;/a&gt;,
+I was excited to explore the data within that context.&lt;/p&gt;
+&lt;p&gt;Survival analysis is focused on time-to-event data,
+for example time from birth until death, but also time to failure of
+engineered systems,
+or in this case, time from instructor certification to first teaching a
+workshop.
+The language is somewhat morbid, but helps with talking
+precisely about models that can easily be applied to a variety of data,
+only sometimes involving death or failure.
+The power of modern survival analysis is the ability to include results from
+subjects who have not …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+&lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;Erin Becker's&lt;/a&gt;.  Briefly: I removed individuals who taught
+before they were officially certified.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A couple weeks ago, Greg Wilson &lt;a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html"&gt;asked&lt;/a&gt; the &lt;a href="http://software-carpentry.org/"&gt;Software
+Carpentry&lt;/a&gt; community for &lt;a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html"&gt;feedback&lt;/a&gt; on a collection of
+data about the organization's instructors, when they were certified, and when
+they taught.
+Having dabbled in &lt;a href="https://en.wikipedia.org/wiki/Survival_analysis"&gt;survival analysis&lt;/a&gt;,
+I was excited to explore the data within that context.&lt;/p&gt;
+&lt;p&gt;Survival analysis is focused on time-to-event data,
+for example time from birth until death, but also time to failure of
+engineered systems,
+or in this case, time from instructor certification to first teaching a
+workshop.
+The language is somewhat morbid, but helps with talking
+precisely about models that can easily be applied to a variety of data,
+only sometimes involving death or failure.
+The power of modern survival analysis is the ability to include results from
+subjects who have not yet experienced the event when data is collected.
+After all, studies rarely have the funding or patience to continue indefinitely.
+and excluding those data points entirely would falsely inflate rate
+estimates.
+Instead, the absence of an event for an individual during the study is useful
+information that contributes to the precise estimation of rates.&lt;/p&gt;
+&lt;p&gt;Let's grab the Software Carpentry data and take a look.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;curl -O http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
 &lt;/pre&gt;&lt;/div&gt;
+
 
 &lt;p&gt;Now in Python:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
@@ -24,7 +62,8 @@
 &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;raw_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class ="highlight"&gt;&lt;pre&gt;      Person   Certified      Taught
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;      Person   Certified      Taught
 1781   11268  2016-03-16         NaN
 1782   11278  2016-03-29         NaN
 1783   11280  2016-04-19         NaN
@@ -36,8 +75,17 @@
 1786   11298  2016-04-21         NaN
 1787   11311  2016-04-19         NaN
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This data is arranged as three columns: a ID number for each person, the date they were certified, and the date they taught. Individuals who have taught more than once have more than one row, and individuals who have been certified but have not yet taught have one row where taught is &lt;code&gt;NaN&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In our analysis, each certified instructor will be a data point with a certification date, a date of first teaching, second teaching, etc. Let’s rearrange our data to reflect this structure using pandas split-apply-combine functionality.&lt;/p&gt;
+
+
+&lt;p&gt;This data is arranged as three columns: a ID number for each person,
+the date they were certified, and the date they taught.
+Individuals who have taught more than once have more than one row,
+and individuals who have been certified but have not yet taught have one
+row where taught is &lt;code&gt;NaN&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In our analysis, each certified instructor will be a data point with a
+certification date, a date of first teaching, second teaching, etc.
+Let's rearrange our data to reflect this structure using pandas
+split-apply-combine functionality.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_person_details&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;copy&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Taught&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;certified&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Certified&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop_duplicates&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -61,7 +109,8 @@
 &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class ="highlight"&gt;&lt;pre&gt;         certified  taught_count taught_first taught_second
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;         certified  taught_count taught_first taught_second
 Person
 48      2014-05-04             1   2014-09-11           NaN
 75      2013-07-20            15   2013-03-20    2013-03-24
@@ -69,6 +118,8 @@ Person
 87      2013-11-25             4   2014-05-12    2015-03-20
 135     2015-02-03             1   2015-09-03           NaN
 &lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;And some calculations&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;certified&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;certified&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;taught_first&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;taught_first&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -84,17 +135,24 @@ Person
 &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;year_certified&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;certified&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;I’d like to include data on how long instructors have been certified, since, for instructors who have not taught, thats how long they have gone without teaching. To get this value I need to a collection date for the data, which I don’t know. For now, I’ll use June 1st since I know the data was from May.&lt;/p&gt;
+
+&lt;p&gt;I'd like to include data on how long instructors have been certified,
+since, for instructors who have not taught, thats how long they have
+gone without teaching.
+To get this value I need to a collection date for the data, which I don't know.
+For now, I'll use June 1st since I know the data was from May.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;COLLECTION_DATE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2016&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;month&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;day&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time_since_certified&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;COLLECTION_DATE&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;certified&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt;
 &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time_since_taught_first&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;COLLECTION_DATE&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;taught_first&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;days&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;I’ll take a quick peek at the key column.&lt;/p&gt;
+
+&lt;p&gt;I'll take a quick peek at the key column.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time_to_taught_first&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class ="highlight"&gt;&lt;pre&gt;        time_to_taught_first
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;        time_to_taught_first
 Person
 48                     130.0
 75                    -122.0
@@ -102,25 +160,38 @@ Person
 87                     168.0
 135                    212.0
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Some people (Person 75, for instance) taught their first workshop before they were officially certified. I don’t have any idea how to include them in the analysis, so I will be removing them from this point forward. I believe that the removal of these individuals explain differences between my results and &lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;the analysis&lt;/a&gt; posted to the Software Carpentry blog by Erin Becker.&lt;/p&gt;
+
+
+&lt;p&gt;Some people (Person 75, for instance) taught their first workshop before they
+were officially certified.
+I don't have any idea how to include them in the analysis, so I will be
+removing them from this point forward.
+I believe that the removal of these individuals explain differences between
+my results and &lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;the analysis&lt;/a&gt; posted to the Software Carpentry
+blog by Erin Becker.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time_to_taught_first&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
             &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time_to_taught_first&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+
 
 &lt;p&gt;Visualization is usually a good idea:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time_to_taught_first&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bins&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;taught_count&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Days between certification and first teaching&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;figure&gt;
-&lt;img src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png" alt="Histogram of days between certification and first teaching." /&gt;&lt;figcaption&gt;Histogram of days between certification and first teaching.&lt;/figcaption&gt;
-&lt;/figure&gt;
+
+&lt;p&gt;&lt;img alt="Histogram of days between certification and first teaching." src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png"&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;{} of {} instructors have not yet taught.&amp;quot;&lt;/span&gt;
           &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;has_taught&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
+
 &lt;p&gt;Of the 474 instructors in this data, 228 have not yet taught.&lt;/p&gt;
-&lt;p&gt;Now we jump into the survival analysis. I’m going to compare time-to-first-teaching to the year in which instructors were certified. This is mostly because I want a covariate here, and I don’t have access to more interesting ones, e.g. what style of training it was (online, 2-day, etc.).&lt;/p&gt;
+&lt;p&gt;Now we jump into the survival analysis.
+I'm going to compare time-to-first-teaching to the year in which instructors
+were certified.
+This is mostly because I want a covariate here, and I don't have access to
+more interesting ones, e.g. what style of training it was (online, 2-day, etc.).&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# We&amp;#39;ll be modifying our data, so a copy will keep the original pristine.&lt;/span&gt;
 &lt;span class="n"&gt;_data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;copy&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 
@@ -143,7 +214,13 @@ Person
 &lt;span class="n"&gt;fit1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sm&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PHReg&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ydm&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;xdm&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;status&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;has_taught&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The most widely used model in survival analysis is called the &lt;a href="https://en.wikipedia.org/wiki/Proportional_hazards_model"&gt;proportional hazards model&lt;/a&gt;. In the process of testing the significance of our covariates in this model, a survival curve is calculated. In this case, because of the coding for certification year in the design matrix, this “baseline” curve represents the mean of annual means.&lt;/p&gt;
+
+&lt;p&gt;The most widely used model in survival analysis is called the
+&lt;a href="https://en.wikipedia.org/wiki/Proportional_hazards_model"&gt;proportional hazards model&lt;/a&gt;.
+In the process of testing the significance of our covariates in this model,
+a survival curve is calculated.
+In this case, because of the coding for certification year in the design matrix,
+this "baseline" curve represents the mean of annual means.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;sf&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;fit1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;baseline_cumulative_hazard&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sf&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;sf&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylim&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -151,22 +228,36 @@ Person
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Fraction instructors not taught&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;figure&gt;
-&lt;img src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png" alt="Survival curve of days to teaching for the first time" /&gt;&lt;figcaption&gt;Survival curve of days to teaching for the first time&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The key figure in survival analysis is the survival curve, or its derivative the hazard function. Survival curves plot the number or percentage of individuals who have not yet experienced the event after a given amount of time. In the case of this data, the survival curve reflects the fraction of instructors who have not yet taught by a given number of days after they were certified.&lt;/p&gt;
-&lt;p&gt;Despite the fact that about 50% of certified instructors have not yet taught, many of these are recently trained and we expect them to teach in the future. 50% of certified instructors teach by 200 days. After more than a year, however, the survival curve flattens out. Approximately 30% of instructors get to 400 days without having taught and at 600 days about the same fraction have still not taught. If we want to extrapolate beyond the data (always a bad idea) then we might predict that these instructors will never teach.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Survival curve of days to teaching for the first time" src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png"&gt;&lt;/p&gt;
+&lt;p&gt;The key figure in survival analysis is the survival curve, or its derivative
+the hazard function.
+Survival curves plot the number or percentage of individuals who have not yet
+experienced the event after a given amount of time.
+In the case of this data, the survival curve reflects the fraction of
+instructors who have not yet taught by a given number of days after
+they were certified.&lt;/p&gt;
+&lt;p&gt;Despite the fact that about 50% of certified instructors have not yet taught,
+many of these are recently trained and we expect them to teach in the
+future.
+50% of certified instructors teach by 200 days.
+After more than a year, however, the survival curve flattens out.
+Approximately 30% of instructors get to 400 days without having taught
+and at 600 days about the same fraction have still not taught.
+If we want to extrapolate beyond the data (always a bad idea) then we
+might predict that these instructors will never teach.&lt;/p&gt;
 &lt;p&gt;We can also test the effect of certification year on time to first workshop.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fit1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class ="highlight"&gt;&lt;pre&gt;                                   Results: PHReg
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;                                   Results: PHReg
 ====================================================================================
 Model:                       PH Reg                        Sample size:          474
 Dependent variable:          time_to_taught_first          Num. events:          246
 Ties:                        Breslow
 ------------------------------------------------------------------------------------
-                                log HR log HR SE   HR      t    P&gt;|t|  [0.025 0.975]
+                                log HR log HR SE   HR      t    P&amp;gt;|t|  [0.025 0.975]
 ------------------------------------------------------------------------------------
 C(year_certified, Sum)[S.2012]  0.1382    0.5705 1.1482  0.2422 0.8086 0.3753 3.5124
 C(year_certified, Sum)[S.2013]  0.2230    0.2268 1.2498  0.9830 0.3256 0.8012 1.9493
@@ -175,8 +266,14 @@ C(year_certified, Sum)[S.2015]  0.0205    0.1730 1.0207  0.1183 0.9058 0.7272 1.
 ====================================================================================
 Confidence intervals are for the hazard ratios
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;We see no significant deviation from the average year for any of the 4 years of certification data.&lt;/p&gt;
-&lt;p&gt;Just for fun, let’s go even further with this data. Of the 246 instructors who have taught at least once, 131 have taught a second time. Can we predict the time after first teaching that it takes to teach again?&lt;/p&gt;
+
+
+&lt;p&gt;We see no significant deviation from the average year for any of the 4 years of
+certification data.&lt;/p&gt;
+&lt;p&gt;Just for fun, let's go even further with this data.
+Of the 246 instructors who have taught at least once, 131 have taught a
+second time.
+Can we predict the time after first teaching that it takes to teach again?&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;_data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;copy&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;_data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;_data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time_to_taught_first&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;notnull&lt;/span&gt;&lt;span class="p"&gt;()]&lt;/span&gt;
 
@@ -200,27 +297,44 @@ Confidence intervals are for the hazard ratios
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Fraction instructors not taught second time&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;figure&gt;
-&lt;img src="http://blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png" alt="Survival curve of days to teaching a second time after having taught once" /&gt;&lt;figcaption&gt;Survival curve of days to teaching a second time after having taught once&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;The baseline survival curve reflects expectations for a theoretical individual who taught immediately upon being certified (day 0). For these folks, we expect 50% to teach again within 100 days, and almost 80% within a year.&lt;/p&gt;
-&lt;p&gt;Let’s take a look at the effect of time-to-first-teaching on time to teaching again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Survival curve of days to teaching a second time after having taught once" src="http://blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png"&gt;&lt;/p&gt;
+&lt;p&gt;The baseline survival curve reflects expectations for a theoretical individual
+who taught immediately upon being certified (day 0).
+For these folks, we expect 50% to teach again within 100 days, and almost 80%
+within a year.&lt;/p&gt;
+&lt;p&gt;Let's take a look at the effect of time-to-first-teaching on time to teaching
+again.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fit2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class ="highlight"&gt;&lt;pre&gt;                              Results: PHReg
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;                              Results: PHReg
 ==========================================================================
 Model:                  PH Reg                        Sample size:     246
 Dependent variable:     time_between_first_second     Num. events:     131
 Ties:                   Breslow
 --------------------------------------------------------------------------
-                      log HR log HR SE   HR      t    P&gt;|t|  [0.025 0.975]
+                      log HR log HR SE   HR      t    P&amp;gt;|t|  [0.025 0.975]
 --------------------------------------------------------------------------
 time_to_taught_first -0.0045    0.0010 0.9955 -4.3474 0.0000 0.9935 0.9975
 ==========================================================================
 Confidence intervals are for the hazard ratios
 &lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;We find a highly significant effect of time-to-first-teaching.&lt;/p&gt;
-&lt;p&gt;The hazard ratio estimate is 0.9955. We can interpret this to mean that the per-day probability of teaching again goes down by 0.45% for every day between certification and teaching the first time. This isn’t all that surprising; individuals who are able to teach soon after being certified are probably both enthusiastic and have more time to devote to teaching.&lt;/p&gt;
-&lt;p&gt;That’s all I’ve got. Thanks for reading. I’d love to hear what you think and if you spot any glaring mistakes in my analysis. All of the code to do this is available &lt;a href="https://github.com/bsmith89/swc-instructor-training-analysis"&gt;on github&lt;/a&gt;. If you have ideas for additional analysis please leave a comment here, submit an issue to the github repository, or even better, a pull-request.&lt;/p&gt;
-</content><category term="software-carpentry"></category><category term="python"></category><category term="statistics"></category></entry></feed>
+&lt;p&gt;The hazard ratio estimate is 0.9955.
+We can interpret this to mean that the per-day probability of teaching again
+goes down by 0.45% for every day between certification and teaching the first
+time.
+This isn't all that surprising; individuals who are able to teach soon
+after being certified are probably both enthusiastic and have more time
+to devote to teaching.&lt;/p&gt;
+&lt;p&gt;That's all I've got.
+Thanks for reading.
+I'd love to hear what you think and if you spot any glaring mistakes in my
+analysis.
+All of the code to do this is available &lt;a href="https://github.com/bsmith89/swc-instructor-training-analysis"&gt;on github&lt;/a&gt;.
+If you have ideas for additional analysis please leave a comment here,
+submit an issue to the github repository, or even better, a pull-request.&lt;/p&gt;</content><category term="software-carpentry"></category><category term="python"></category><category term="statistics"></category></entry></feed>

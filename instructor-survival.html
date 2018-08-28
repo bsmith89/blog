@@ -163,12 +163,34 @@ Deep Ecology - Software carpentry instructor training
 
 </footer>
   <div class="article-content" itemprop="articleBody">
-    <p><em>Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from <a href="http://www.datacarpentry.org/blog/instructor-metrics/">Erin Becker’s</a>. Briefly: I removed individuals who taught before they were officially certified.</em></p>
-<p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of data about the organization’s instructors, when they were certified, and when they taught. Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>, I was excited to explore the data within that context.</p>
-<p>Survival analysis is focused on time-to-event data, for example time from birth until death, but also time to failure of engineered systems, or in this case, time from instructor certification to first teaching a workshop. The language is somewhat morbid, but helps with talking precisely about models that can easily be applied to a variety of data, only sometimes involving death or failure. The power of modern survival analysis is the ability to include results from subjects who have not yet experienced the event when data is collected. After all, studies rarely have the funding or patience to continue indefinitely. and excluding those data points entirely would falsely inflate rate estimates. Instead, the absence of an event for an individual during the study is useful information that contributes to the precise estimation of rates.</p>
-<p>Let’s grab the Software Carpentry data and take a look.</p>
+    <p><em>Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+<a href="http://www.datacarpentry.org/blog/instructor-metrics/">Erin Becker's</a>.  Briefly: I removed individuals who taught
+before they were officially certified.</em></p>
+<p>A couple weeks ago, Greg Wilson <a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html">asked</a> the <a href="http://software-carpentry.org/">Software
+Carpentry</a> community for <a href="http://software-carpentry.org/blog/2016/05/looking-for-a-model.html">feedback</a> on a collection of
+data about the organization's instructors, when they were certified, and when
+they taught.
+Having dabbled in <a href="https://en.wikipedia.org/wiki/Survival_analysis">survival analysis</a>,
+I was excited to explore the data within that context.</p>
+<p>Survival analysis is focused on time-to-event data,
+for example time from birth until death, but also time to failure of
+engineered systems,
+or in this case, time from instructor certification to first teaching a
+workshop.
+The language is somewhat morbid, but helps with talking
+precisely about models that can easily be applied to a variety of data,
+only sometimes involving death or failure.
+The power of modern survival analysis is the ability to include results from
+subjects who have not yet experienced the event when data is collected.
+After all, studies rarely have the funding or patience to continue indefinitely.
+and excluding those data points entirely would falsely inflate rate
+estimates.
+Instead, the absence of an event for an individual during the study is useful
+information that contributes to the precise estimation of rates.</p>
+<p>Let's grab the Software Carpentry data and take a look.</p>
 <div class="highlight"><pre><span></span>curl -O http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
 </pre></div>
+
 
 <p>Now in Python:</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -186,7 +208,8 @@ Deep Ecology - Software carpentry instructor training
 <span class="k">print</span><span class="p">(</span><span class="n">raw_data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 </pre></div>
 
-<div class ="highlight"><pre>      Person   Certified      Taught
+
+<div class="highlight"><pre><span></span>      Person   Certified      Taught
 1781   11268  2016-03-16         NaN
 1782   11278  2016-03-29         NaN
 1783   11280  2016-04-19         NaN
@@ -198,8 +221,17 @@ Deep Ecology - Software carpentry instructor training
 1786   11298  2016-04-21         NaN
 1787   11311  2016-04-19         NaN
 </pre></div>
-<p>This data is arranged as three columns: a ID number for each person, the date they were certified, and the date they taught. Individuals who have taught more than once have more than one row, and individuals who have been certified but have not yet taught have one row where taught is <code>NaN</code>.</p>
-<p>In our analysis, each certified instructor will be a data point with a certification date, a date of first teaching, second teaching, etc. Let’s rearrange our data to reflect this structure using pandas split-apply-combine functionality.</p>
+
+
+<p>This data is arranged as three columns: a ID number for each person,
+the date they were certified, and the date they taught.
+Individuals who have taught more than once have more than one row,
+and individuals who have been certified but have not yet taught have one
+row where taught is <code>NaN</code>.</p>
+<p>In our analysis, each certified instructor will be a data point with a
+certification date, a date of first teaching, second teaching, etc.
+Let's rearrange our data to reflect this structure using pandas
+split-apply-combine functionality.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_person_details</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Taught&#39;</span><span class="p">)</span>
     <span class="n">certified</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">Certified</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
@@ -223,7 +255,8 @@ Deep Ecology - Software carpentry instructor training
 <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 
-<div class ="highlight"><pre>         certified  taught_count taught_first taught_second
+
+<div class="highlight"><pre><span></span>         certified  taught_count taught_first taught_second
 Person
 48      2014-05-04             1   2014-09-11           NaN
 75      2013-07-20            15   2013-03-20    2013-03-24
@@ -231,6 +264,8 @@ Person
 87      2013-11-25             4   2014-05-12    2015-03-20
 135     2015-02-03             1   2015-09-03           NaN
 </pre></div>
+
+
 <p>And some calculations</p>
 <div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">certified</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="p">)</span>
 <span class="n">data</span><span class="o">.</span><span class="n">taught_first</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">taught_first</span><span class="p">)</span>
@@ -246,17 +281,24 @@ Person
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;year_certified&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
 </pre></div>
 
-<p>I’d like to include data on how long instructors have been certified, since, for instructors who have not taught, thats how long they have gone without teaching. To get this value I need to a collection date for the data, which I don’t know. For now, I’ll use June 1st since I know the data was from May.</p>
+
+<p>I'd like to include data on how long instructors have been certified,
+since, for instructors who have not taught, thats how long they have
+gone without teaching.
+To get this value I need to a collection date for the data, which I don't know.
+For now, I'll use June 1st since I know the data was from May.</p>
 <div class="highlight"><pre><span></span><span class="n">COLLECTION_DATE</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2016</span><span class="p">,</span> <span class="n">month</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;time_since_certified&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">COLLECTION_DATE</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">certified</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;time_since_taught_first&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">COLLECTION_DATE</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">taught_first</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span>
 </pre></div>
 
-<p>I’ll take a quick peek at the key column.</p>
+
+<p>I'll take a quick peek at the key column.</p>
 <div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="s1">&#39;time_to_taught_first&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 
-<div class ="highlight"><pre>        time_to_taught_first
+
+<div class="highlight"><pre><span></span>        time_to_taught_first
 Person
 48                     130.0
 75                    -122.0
@@ -264,25 +306,38 @@ Person
 87                     168.0
 135                    212.0
 </pre></div>
-<p>Some people (Person 75, for instance) taught their first workshop before they were officially certified. I don’t have any idea how to include them in the analysis, so I will be removing them from this point forward. I believe that the removal of these individuals explain differences between my results and <a href="http://www.datacarpentry.org/blog/instructor-metrics/">the analysis</a> posted to the Software Carpentry blog by Erin Becker.</p>
+
+
+<p>Some people (Person 75, for instance) taught their first workshop before they
+were officially certified.
+I don't have any idea how to include them in the analysis, so I will be
+removing them from this point forward.
+I believe that the removal of these individuals explain differences between
+my results and <a href="http://www.datacarpentry.org/blog/instructor-metrics/">the analysis</a> posted to the Software Carpentry
+blog by Erin Becker.</p>
 <div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[(</span><span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span>
             <span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
 </pre></div>
+
 
 <p>Visualization is usually a good idea:</p>
 <div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">taught_count</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Days between certification and first teaching&#39;</span><span class="p">)</span>
 </pre></div>
 
-<figure>
-<img src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png" alt="Histogram of days between certification and first teaching." /><figcaption>Histogram of days between certification and first teaching.</figcaption>
-</figure>
+
+<p><img alt="Histogram of days between certification and first teaching." src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png"></p>
 <div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;{} of {} instructors have not yet taught.&quot;</span>
           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="o">~</span><span class="n">data</span><span class="o">.</span><span class="n">has_taught</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)))</span>
 </pre></div>
 
+
 <p>Of the 474 instructors in this data, 228 have not yet taught.</p>
-<p>Now we jump into the survival analysis. I’m going to compare time-to-first-teaching to the year in which instructors were certified. This is mostly because I want a covariate here, and I don’t have access to more interesting ones, e.g. what style of training it was (online, 2-day, etc.).</p>
+<p>Now we jump into the survival analysis.
+I'm going to compare time-to-first-teaching to the year in which instructors
+were certified.
+This is mostly because I want a covariate here, and I don't have access to
+more interesting ones, e.g. what style of training it was (online, 2-day, etc.).</p>
 <div class="highlight"><pre><span></span><span class="c1"># We&#39;ll be modifying our data, so a copy will keep the original pristine.</span>
 <span class="n">_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
@@ -305,7 +360,13 @@ Person
 <span class="n">fit1</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">PHReg</span><span class="p">(</span><span class="n">ydm</span><span class="p">,</span> <span class="n">xdm</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">_data</span><span class="o">.</span><span class="n">has_taught</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 </pre></div>
 
-<p>The most widely used model in survival analysis is called the <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model">proportional hazards model</a>. In the process of testing the significance of our covariates in this model, a survival curve is calculated. In this case, because of the coding for certification year in the design matrix, this “baseline” curve represents the mean of annual means.</p>
+
+<p>The most widely used model in survival analysis is called the
+<a href="https://en.wikipedia.org/wiki/Proportional_hazards_model">proportional hazards model</a>.
+In the process of testing the significance of our covariates in this model,
+a survival curve is calculated.
+In this case, because of the coding for certification year in the design matrix,
+this "baseline" curve represents the mean of annual means.</p>
 <div class="highlight"><pre><span></span><span class="n">sf</span> <span class="o">=</span> <span class="n">fit1</span><span class="o">.</span><span class="n">baseline_cumulative_hazard</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sf</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sf</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -313,22 +374,36 @@ Person
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Fraction instructors not taught&quot;</span><span class="p">)</span>
 </pre></div>
 
-<figure>
-<img src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png" alt="Survival curve of days to teaching for the first time" /><figcaption>Survival curve of days to teaching for the first time</figcaption>
-</figure>
-<p>The key figure in survival analysis is the survival curve, or its derivative the hazard function. Survival curves plot the number or percentage of individuals who have not yet experienced the event after a given amount of time. In the case of this data, the survival curve reflects the fraction of instructors who have not yet taught by a given number of days after they were certified.</p>
-<p>Despite the fact that about 50% of certified instructors have not yet taught, many of these are recently trained and we expect them to teach in the future. 50% of certified instructors teach by 200 days. After more than a year, however, the survival curve flattens out. Approximately 30% of instructors get to 400 days without having taught and at 600 days about the same fraction have still not taught. If we want to extrapolate beyond the data (always a bad idea) then we might predict that these instructors will never teach.</p>
+
+<p><img alt="Survival curve of days to teaching for the first time" src="http://blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png"></p>
+<p>The key figure in survival analysis is the survival curve, or its derivative
+the hazard function.
+Survival curves plot the number or percentage of individuals who have not yet
+experienced the event after a given amount of time.
+In the case of this data, the survival curve reflects the fraction of
+instructors who have not yet taught by a given number of days after
+they were certified.</p>
+<p>Despite the fact that about 50% of certified instructors have not yet taught,
+many of these are recently trained and we expect them to teach in the
+future.
+50% of certified instructors teach by 200 days.
+After more than a year, however, the survival curve flattens out.
+Approximately 30% of instructors get to 400 days without having taught
+and at 600 days about the same fraction have still not taught.
+If we want to extrapolate beyond the data (always a bad idea) then we
+might predict that these instructors will never teach.</p>
 <p>We can also test the effect of certification year on time to first workshop.</p>
 <div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">fit1</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 </pre></div>
 
-<div class ="highlight"><pre>                                   Results: PHReg
+
+<div class="highlight"><pre><span></span>                                   Results: PHReg
 ====================================================================================
 Model:                       PH Reg                        Sample size:          474
 Dependent variable:          time_to_taught_first          Num. events:          246
 Ties:                        Breslow
 ------------------------------------------------------------------------------------
-                                log HR log HR SE   HR      t    P>|t|  [0.025 0.975]
+                                log HR log HR SE   HR      t    P&gt;|t|  [0.025 0.975]
 ------------------------------------------------------------------------------------
 C(year_certified, Sum)[S.2012]  0.1382    0.5705 1.1482  0.2422 0.8086 0.3753 3.5124
 C(year_certified, Sum)[S.2013]  0.2230    0.2268 1.2498  0.9830 0.3256 0.8012 1.9493
@@ -337,8 +412,14 @@ C(year_certified, Sum)[S.2015]  0.0205    0.1730 1.0207  0.1183 0.9058 0.7272 1.
 ====================================================================================
 Confidence intervals are for the hazard ratios
 </pre></div>
-<p>We see no significant deviation from the average year for any of the 4 years of certification data.</p>
-<p>Just for fun, let’s go even further with this data. Of the 246 instructors who have taught at least once, 131 have taught a second time. Can we predict the time after first teaching that it takes to teach again?</p>
+
+
+<p>We see no significant deviation from the average year for any of the 4 years of
+certification data.</p>
+<p>Just for fun, let's go even further with this data.
+Of the 246 instructors who have taught at least once, 131 have taught a
+second time.
+Can we predict the time after first teaching that it takes to teach again?</p>
 <div class="highlight"><pre><span></span><span class="n">_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">_data</span> <span class="o">=</span> <span class="n">_data</span><span class="p">[</span><span class="n">_data</span><span class="o">.</span><span class="n">time_to_taught_first</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
 
@@ -362,30 +443,47 @@ Confidence intervals are for the hazard ratios
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Fraction instructors not taught second time&quot;</span><span class="p">)</span>
 </pre></div>
 
-<figure>
-<img src="http://blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png" alt="Survival curve of days to teaching a second time after having taught once" /><figcaption>Survival curve of days to teaching a second time after having taught once</figcaption>
-</figure>
-<p>The baseline survival curve reflects expectations for a theoretical individual who taught immediately upon being certified (day 0). For these folks, we expect 50% to teach again within 100 days, and almost 80% within a year.</p>
-<p>Let’s take a look at the effect of time-to-first-teaching on time to teaching again.</p>
+
+<p><img alt="Survival curve of days to teaching a second time after having taught once" src="http://blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png"></p>
+<p>The baseline survival curve reflects expectations for a theoretical individual
+who taught immediately upon being certified (day 0).
+For these folks, we expect 50% to teach again within 100 days, and almost 80%
+within a year.</p>
+<p>Let's take a look at the effect of time-to-first-teaching on time to teaching
+again.</p>
 <div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">fit2</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 </pre></div>
 
-<div class ="highlight"><pre>                              Results: PHReg
+
+<div class="highlight"><pre><span></span>                              Results: PHReg
 ==========================================================================
 Model:                  PH Reg                        Sample size:     246
 Dependent variable:     time_between_first_second     Num. events:     131
 Ties:                   Breslow
 --------------------------------------------------------------------------
-                      log HR log HR SE   HR      t    P>|t|  [0.025 0.975]
+                      log HR log HR SE   HR      t    P&gt;|t|  [0.025 0.975]
 --------------------------------------------------------------------------
 time_to_taught_first -0.0045    0.0010 0.9955 -4.3474 0.0000 0.9935 0.9975
 ==========================================================================
 Confidence intervals are for the hazard ratios
 </pre></div>
-<p>We find a highly significant effect of time-to-first-teaching.</p>
-<p>The hazard ratio estimate is 0.9955. We can interpret this to mean that the per-day probability of teaching again goes down by 0.45% for every day between certification and teaching the first time. This isn’t all that surprising; individuals who are able to teach soon after being certified are probably both enthusiastic and have more time to devote to teaching.</p>
-<p>That’s all I’ve got. Thanks for reading. I’d love to hear what you think and if you spot any glaring mistakes in my analysis. All of the code to do this is available <a href="https://github.com/bsmith89/swc-instructor-training-analysis">on github</a>. If you have ideas for additional analysis please leave a comment here, submit an issue to the github repository, or even better, a pull-request.</p>
 
+
+<p>We find a highly significant effect of time-to-first-teaching.</p>
+<p>The hazard ratio estimate is 0.9955.
+We can interpret this to mean that the per-day probability of teaching again
+goes down by 0.45% for every day between certification and teaching the first
+time.
+This isn't all that surprising; individuals who are able to teach soon
+after being certified are probably both enthusiastic and have more time
+to devote to teaching.</p>
+<p>That's all I've got.
+Thanks for reading.
+I'd love to hear what you think and if you spot any glaring mistakes in my
+analysis.
+All of the code to do this is available <a href="https://github.com/bsmith89/swc-instructor-training-analysis">on github</a>.
+If you have ideas for additional analysis please leave a comment here,
+submit an issue to the github repository, or even better, a pull-request.</p>
   </div>
   
 </article>

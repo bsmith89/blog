@@ -216,6 +216,9 @@ ol#entry-list li .read-more {
     text-align: right;
 }
 
+.footnote {
+    font-size: 85%;
+}
 
 .blogroll ul {
     list-style: none;
