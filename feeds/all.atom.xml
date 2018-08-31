@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology</title><link href="https://test2.byronjsmith.com/" rel="alternate"></link><link href="https://test2.byronjsmith.com/feeds/all.atom.xml" rel="self"></link><id>https://test2.byronjsmith.com/</id><updated>2018-05-18T11:00:00-04:00</updated><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="https://test2.byronjsmith.com/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2018-05-01:/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology</title><link href="https://blog.byronjsmith.com/" rel="alternate"></link><link href="https://blog.byronjsmith.com/feeds/all.atom.xml" rel="self"></link><id>https://blog.byronjsmith.com/</id><updated>2018-05-18T11:00:00-04:00</updated><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="https://blog.byronjsmith.com/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2018-05-01:/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
 ## Introduction
 --&gt;
 
@@ -246,7 +246,7 @@ So stay tuned!&lt;/p&gt;
         established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref-but-one" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="microbiome"></category><category term="acarbose"></category><category term="preprint"></category><category term="SCFAs"></category><category term="longevity"></category><category term="open science"></category></entry><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://test2.byronjsmith.com/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2017-11-19:/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
+&lt;/div&gt;</content><category term="microbiome"></category><category term="acarbose"></category><category term="preprint"></category><category term="SCFAs"></category><category term="longevity"></category><category term="open science"></category></entry><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://blog.byronjsmith.com/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2017-11-19:/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
 analysis involves a series of transformations: filtering, aggregating,
 comparing to theoretical models, culminating in the visualization and
 communication of results.
@@ -257,7 +257,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://test2.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://blog.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -276,7 +276,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://test2.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://blog.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -285,7 +285,7 @@ challenging analyses.
 I've started using &lt;em&gt;Snakemake&lt;/em&gt; for my own data analysis projects, and I've
 found it to be a consistent improvement, enabling more complex pipelines with
 fewer of the "hacks" that are often necessary when using &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I've taught &lt;a href="https://test2.byronjsmith.com/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
+&lt;p&gt;I've taught &lt;a href="https://blog.byronjsmith.com/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
 so, when I was invited to present to the Boise State University Joint
 User Groups, I was excited to convert that tutorial to &lt;em&gt;Snakemake&lt;/em&gt;.
 Here, I've converted that tutorial into a blog post.
@@ -883,7 +883,7 @@ has tools for plotting this network automatically.&lt;/p&gt;
 
 
 &lt;p&gt;Open that file and check it out.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="A visualization of the analysis DAG" src="https://test2.byronjsmith.com/static/images/snakemake-dag.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="A visualization of the analysis DAG" src="https://blog.byronjsmith.com/static/images/snakemake-dag.png"&gt;&lt;/p&gt;
 &lt;p&gt;Diagrams like this one can be a very useful way to debug problems with an
 analysis pipeline.&lt;/p&gt;
 &lt;h2&gt;Don't repeat yourself&lt;/h2&gt;
@@ -1082,7 +1082,7 @@ we can forget about script names
 and intermediate steps and focus instead on the output files that we want.
 This &lt;a href="https://en.wikipedia.org/wiki/Declarative_programming"&gt;'declarative'&lt;/a&gt; approach to pipelines
 pipelines has transformed the way I do data analysis.
-I think it can do the same for you.&lt;/p&gt;</content><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Teaching Python by the (Note)Book</title><link href="https://test2.byronjsmith.com/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2017-01-01:/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
+I think it can do the same for you.&lt;/p&gt;</content><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Teaching Python by the (Note)Book</title><link href="https://blog.byronjsmith.com/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2017-01-01:/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways, &lt;a href="https://software-carpentry.org"&gt;teaching Python to scientists&lt;/a&gt;
@@ -1152,7 +1152,7 @@ are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref-inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn-inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="https://test2.byronjsmith.com/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
+I have &lt;a href="https://blog.byronjsmith.com/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -1241,7 +1241,7 @@ as a Jupyter notebook.
 In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="https://test2.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="https://blog.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
 &lt;p&gt;I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
 lines of code.
@@ -1311,13 +1311,13 @@ If you're feeling brave, please try it out and let me know how it goes!&lt;/p&gt
 &lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-gapminder-commit" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>Take five minutes to simplify your life with Make</title><link href="https://test2.byronjsmith.com/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2016-06-14:/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>Take five minutes to simplify your life with Make</title><link href="https://blog.byronjsmith.com/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-06-14:/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://test2.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -1335,7 +1335,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://test2.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -1683,7 +1683,7 @@ run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&g
     on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref-bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Software carpentry instructor training</title><link href="https://test2.byronjsmith.com/instructor-survival.html" rel="alternate"></link><published>2016-05-30T12:00:00-04:00</published><updated>2016-05-31T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2016-05-30:/instructor-survival.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
+&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Software carpentry instructor training</title><link href="https://blog.byronjsmith.com/instructor-survival.html" rel="alternate"></link><published>2016-05-30T12:00:00-04:00</published><updated>2016-05-31T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-05-30:/instructor-survival.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
 &lt;a href="http://www.datacarpentry.org/blog/instructor-metrics/"&gt;Erin Becker's&lt;/a&gt;.  Briefly: I removed individuals who taught
 before they were officially certified.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A couple weeks ago, Greg Wilson &lt;a href="http://lists.software-carpentry.org/pipermail/discuss/2016-May/004471.html"&gt;asked&lt;/a&gt; the &lt;a href="http://software-carpentry.org/"&gt;Software
@@ -1864,7 +1864,7 @@ blog by Erin Becker.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Histogram of days between certification and first teaching." src="https://test2.byronjsmith.com/static/images/swc-survival-taught-first-hist.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Histogram of days between certification and first teaching." src="https://blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png"&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;{} of {} instructors have not yet taught.&amp;quot;&lt;/span&gt;
           &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;has_taught&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -1913,7 +1913,7 @@ this "baseline" curve represents the mean of annual means.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Survival curve of days to teaching for the first time" src="https://test2.byronjsmith.com/static/images/swc-survival-taught-first-curve.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Survival curve of days to teaching for the first time" src="https://blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png"&gt;&lt;/p&gt;
 &lt;p&gt;The key figure in survival analysis is the survival curve, or its derivative
 the hazard function.
 Survival curves plot the number or percentage of individuals who have not yet
@@ -1982,7 +1982,7 @@ Can we predict the time after first teaching that it takes to teach again?&lt;/p
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Survival curve of days to teaching a second time after having taught once" src="https://test2.byronjsmith.com/static/images/swc-survival-taught-second-curve.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Survival curve of days to teaching a second time after having taught once" src="https://blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png"&gt;&lt;/p&gt;
 &lt;p&gt;The baseline survival curve reflects expectations for a theoretical individual
 who taught immediately upon being certified (day 0).
 For these folks, we expect 50% to teach again within 100 days, and almost 80%
@@ -2021,7 +2021,7 @@ I'd love to hear what you think and if you spot any glaring mistakes in my
 analysis.
 All of the code to do this is available &lt;a href="https://github.com/bsmith89/swc-instructor-training-analysis"&gt;on github&lt;/a&gt;.
 If you have ideas for additional analysis please leave a comment here,
-submit an issue to the github repository, or even better, a pull-request.&lt;/p&gt;</content><category term="software-carpentry"></category><category term="python"></category><category term="statistics"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="https://test2.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+submit an issue to the github repository, or even better, a pull-request.&lt;/p&gt;</content><category term="software-carpentry"></category><category term="python"></category><category term="statistics"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="https://blog.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
@@ -3272,7 +3272,7 @@ Read the extensive [documentation][man-var] about variable assignment.
 [man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref-var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Not all carbs are bad</title><link href="https://test2.byronjsmith.com/fiber-butyrate-life.html" rel="alternate"></link><published>2015-10-27T21:30:00-04:00</published><updated>2015-10-27T21:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2015-10-27:/fiber-butyrate-life.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Not all carbs are bad</title><link href="https://blog.byronjsmith.com/fiber-butyrate-life.html" rel="alternate"></link><published>2015-10-27T21:30:00-04:00</published><updated>2015-10-27T21:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-10-27:/fiber-butyrate-life.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
 science communication.
 My own research is currently focused on exactly this topic: describing microbial
 community dynamics associated with acarbose treatment and the production of
@@ -3357,7 +3357,7 @@ Studies are currently underway testing the longevity effects of inulin, a
 dietary fiber from chicory root.
 If this and other fibers also increase lifespan in mice, butyrate, and by
 extension the microbiome, will be new targets for the growing field of
-life-extending therapies.&lt;/p&gt;</content><category term="longevity"></category><category term="microbiome"></category><category term="diet"></category><category term="popular science"></category></entry><entry><title>First time teaching Python to novices</title><link href="https://test2.byronjsmith.com/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2015-08-12:/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
+life-extending therapies.&lt;/p&gt;</content><category term="longevity"></category><category term="microbiome"></category><category term="diet"></category><category term="popular science"></category></entry><entry><title>First time teaching Python to novices</title><link href="https://blog.byronjsmith.com/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-08-12:/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
 a Software Carpentry &lt;a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/"&gt;workshop&lt;/a&gt; at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
 Jennifer taught the shell (Bash) and version control with Git,
@@ -3511,7 +3511,7 @@ I think the explicit approach worked well for the learners in this workshop.
 Since we were covering functions anyway, it wasn't hard to get a multi-level
 traceback.
 Syntax errors also combined nicely with learning function definition syntax.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="https://test2.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="https://blog.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Somewhere in the process of talking about functions we got sidetracked with
 &lt;code&gt;open()&lt;/code&gt;.
 I was surprised to see that the lesson plans have only limited discussion of
@@ -3602,7 +3602,7 @@ e.g. &lt;a href="http://www.sciencemag.org/content/333/6043/776.abstract"&gt;thi
 &lt;a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/"&gt;here&lt;/a&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref-swc-msu" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="mistakes"></category><category term="python"></category></entry><entry><title>Do bacterial species exist?</title><link href="https://test2.byronjsmith.com/microbial-species.html" rel="alternate"></link><published>2013-08-06T18:30:00-04:00</published><updated>2013-08-06T18:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2013-08-06:/microbial-species.html</id><summary type="html">&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="mistakes"></category><category term="python"></category></entry><entry><title>Do bacterial species exist?</title><link href="https://blog.byronjsmith.com/microbial-species.html" rel="alternate"></link><published>2013-08-06T18:30:00-04:00</published><updated>2013-08-06T18:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-08-06:/microbial-species.html</id><summary type="html">&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
 science with me for more than a few hours know that I am prepared, at the drop
 of a hat, to rant extensively about several standing debates in biology which I
 consider merely semantic.  For instance:&lt;/p&gt;
@@ -3740,7 +3740,7 @@ the utility of OTU based approaches in molecular surveys.  I'm also not
 suggesting that we should stop categorizing strains into species; the
 convenience for communicating microbiology is undeniable.  But by remembering
 that most species divisions are arbitrary, and that every microbe is a new
-lineage, we're one step closer to escaping the chains of the old microbiology.&lt;/p&gt;</content><category term="microbiology"></category><category term="species"></category><category term="semantics"></category><category term="rant"></category></entry><entry><title>You, too, can host this website</title><link href="https://test2.byronjsmith.com/fork-this-blog.html" rel="alternate"></link><published>2013-07-13T17:00:00-04:00</published><updated>2013-07-13T17:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2013-07-13:/fork-this-blog.html</id><summary type="html">&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero)
+lineage, we're one step closer to escaping the chains of the old microbiology.&lt;/p&gt;</content><category term="microbiology"></category><category term="species"></category><category term="semantics"></category><category term="rant"></category></entry><entry><title>You, too, can host this website</title><link href="https://blog.byronjsmith.com/fork-this-blog.html" rel="alternate"></link><published>2013-07-13T17:00:00-04:00</published><updated>2013-07-13T17:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-07-13:/fork-this-blog.html</id><summary type="html">&lt;p&gt;Loyal readers of this blog (of which I am sure there are exactly zero)
 might have noticed that things are looking a little different since yesterday.
 That's because I've finally developed my own &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt; theme
 to the point that it's functional, and not too embaressing to look at.&lt;/p&gt;
@@ -3768,7 +3768,7 @@ default theme.&lt;/p&gt;
 &lt;a href="https://github.com/bsmith89/blog-theme"&gt;theme source code&lt;/a&gt; is there as well.&lt;/p&gt;
 &lt;p&gt;By putting everything up on Github I make development easy for myself, get
 a free, external backup, and give off an air of open-science superiority.&lt;/p&gt;
-&lt;p&gt;So please, fork my blog.&lt;/p&gt;</content><category term="open-source"></category><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="blog"></category></entry><entry><title>Even pathogens hate a cheater</title><link href="https://test2.byronjsmith.com/the-enemy-of-my-enemy.html" rel="alternate"></link><published>2013-06-19T12:00:00-04:00</published><updated>2013-06-19T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2013-06-19:/the-enemy-of-my-enemy.html</id><summary type="html">&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post.  The excuse
+&lt;p&gt;So please, fork my blog.&lt;/p&gt;</content><category term="open-source"></category><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="blog"></category></entry><entry><title>Even pathogens hate a cheater</title><link href="https://blog.byronjsmith.com/the-enemy-of-my-enemy.html" rel="alternate"></link><published>2013-06-19T12:00:00-04:00</published><updated>2013-06-19T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-06-19:/the-enemy-of-my-enemy.html</id><summary type="html">&lt;p&gt;&lt;em&gt;I would like to apologize for the long delay since my last post.  The excuse
 (I keep telling myself) is that, having already written too many computational
 articles, it was time to prove that I could write about biology too.
 Unfortunately I'm not nearly as good at reading the literature as I should be.
@@ -3867,7 +3867,7 @@ exciting sentences is the second to last (see, a snoodier blogger would have
 said "penultimate"), the authors point out that this tendency for mutants to
 out-compete the wild-type pathogen, and therefore reduce the negative effects
 on the host, suggests a potential &lt;a href="http://en.wikipedia.org/wiki/Evolutionary_medicine"&gt;therapy&lt;/a&gt;: treat those suffering
-from &lt;em&gt;Salmonella&lt;/em&gt; with a large dose of cheaters!&lt;/p&gt;</content><category term="microbiology"></category><category term="cheaters"></category><category term="evolution"></category><category term="pathogens"></category></entry><entry><title>Compiling SciPy on RHEL6</title><link href="https://test2.byronjsmith.com/scipy-on-rhel.html" rel="alternate"></link><published>2013-05-20T12:00:00-04:00</published><updated>2013-05-20T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2013-05-20:/scipy-on-rhel.html</id><summary type="html">&lt;p&gt;Within the past two years I've discovered something interesting about myself
+from &lt;em&gt;Salmonella&lt;/em&gt; with a large dose of cheaters!&lt;/p&gt;</content><category term="microbiology"></category><category term="cheaters"></category><category term="evolution"></category><category term="pathogens"></category></entry><entry><title>Compiling SciPy on RHEL6</title><link href="https://blog.byronjsmith.com/scipy-on-rhel.html" rel="alternate"></link><published>2013-05-20T12:00:00-04:00</published><updated>2013-05-20T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-20:/scipy-on-rhel.html</id><summary type="html">&lt;p&gt;Within the past two years I've discovered something interesting about myself
 (...actually really, &lt;em&gt;really&lt;/em&gt; boring about myself):
 I can be happily entertained for hours on end setting up my
 computational environment &lt;em&gt;just&lt;/em&gt; right.  I find that it gives me a similar
@@ -3960,13 +3960,13 @@ python setup.py install
 install SciPy for me.  On Python 3.3.2, running the unit tests give me
 several errors and failures (nothing too scary looking), but everything passes
 on Python 2.7.5!&lt;/p&gt;
-&lt;p&gt;Enjoy.&lt;/p&gt;</content><category term="python"></category><category term="hpc"></category><category term="software"></category><category term="scipy"></category><category term="linux"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="https://test2.byronjsmith.com/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2013-05-07:/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
+&lt;p&gt;Enjoy.&lt;/p&gt;</content><category term="python"></category><category term="hpc"></category><category term="software"></category><category term="scipy"></category><category term="linux"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="https://blog.byronjsmith.com/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-07:/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
 &lt;a href="http://github.com/bsmith89/pymake/"&gt;PyMake&lt;/a&gt;.  I'll post the link to Part II
 here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://test2.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -3981,7 +3981,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://test2.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://blog.byronjsmith.com/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -4055,7 +4055,7 @@ fixed some glaring problems.  Whatever.  The point is I want to share
 the world; what better stage exists for its introduction than this blog, which
 absolutely no one reads?&lt;/p&gt;
 &lt;p&gt;...Yeah, I'll probably post it to &lt;a href="http://reddit.com/r/python"&gt;/r/python&lt;/a&gt; too.&lt;/p&gt;
-&lt;p&gt;Tune in for Part II, in which I explain why &lt;em&gt;you&lt;/em&gt; should use my software.&lt;/p&gt;</content><category term="python"></category><category term="software"></category><category term="development"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category></entry><entry><title>Hello World!</title><link href="https://test2.byronjsmith.com/initial-commit.html" rel="alternate"></link><published>2013-05-05T22:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2013-05-05:/initial-commit.html</id><summary type="html">&lt;p&gt;Hi.&lt;/p&gt;
+&lt;p&gt;Tune in for Part II, in which I explain why &lt;em&gt;you&lt;/em&gt; should use my software.&lt;/p&gt;</content><category term="python"></category><category term="software"></category><category term="development"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category></entry><entry><title>Hello World!</title><link href="https://blog.byronjsmith.com/initial-commit.html" rel="alternate"></link><published>2013-05-05T22:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-05:/initial-commit.html</id><summary type="html">&lt;p&gt;Hi.&lt;/p&gt;
 &lt;p&gt;This is mostly a test post and a chance to get some real content on my
 brand-new blog.&lt;/p&gt;
 &lt;p&gt;Inspired by

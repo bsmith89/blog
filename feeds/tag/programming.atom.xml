@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - programming</title><link href="https://test2.byronjsmith.com/" rel="alternate"></link><link href="https://test2.byronjsmith.com/feeds/tag/programming.atom.xml" rel="self"></link><id>https://test2.byronjsmith.com/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://test2.byronjsmith.com/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2017-11-19:/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - programming</title><link href="https://blog.byronjsmith.com/" rel="alternate"></link><link href="https://blog.byronjsmith.com/feeds/tag/programming.atom.xml" rel="self"></link><id>https://blog.byronjsmith.com/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://blog.byronjsmith.com/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2017-11-19:/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
 analysis involves a series of transformations: filtering, aggregating,
 comparing to theoretical models, culminating in the visualization and
 communication of results.
@@ -10,7 +10,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://test2.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://blog.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -29,7 +29,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://test2.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://blog.byronjsmith.com/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -38,7 +38,7 @@ challenging analyses.
 I've started using &lt;em&gt;Snakemake&lt;/em&gt; for my own data analysis projects, and I've
 found it to be a consistent improvement, enabling more complex pipelines with
 fewer of the "hacks" that are often necessary when using &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I've taught &lt;a href="https://test2.byronjsmith.com/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
+&lt;p&gt;I've taught &lt;a href="https://blog.byronjsmith.com/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
 so, when I was invited to present to the Boise State University Joint
 User Groups, I was excited to convert that tutorial to &lt;em&gt;Snakemake&lt;/em&gt;.
 Here, I've converted that tutorial into a blog post.
@@ -636,7 +636,7 @@ has tools for plotting this network automatically.&lt;/p&gt;
 
 
 &lt;p&gt;Open that file and check it out.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="A visualization of the analysis DAG" src="https://test2.byronjsmith.com/static/images/snakemake-dag.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="A visualization of the analysis DAG" src="https://blog.byronjsmith.com/static/images/snakemake-dag.png"&gt;&lt;/p&gt;
 &lt;p&gt;Diagrams like this one can be a very useful way to debug problems with an
 analysis pipeline.&lt;/p&gt;
 &lt;h2&gt;Don't repeat yourself&lt;/h2&gt;
@@ -835,7 +835,7 @@ we can forget about script names
 and intermediate steps and focus instead on the output files that we want.
 This &lt;a href="https://en.wikipedia.org/wiki/Declarative_programming"&gt;'declarative'&lt;/a&gt; approach to pipelines
 pipelines has transformed the way I do data analysis.
-I think it can do the same for you.&lt;/p&gt;</content><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Teaching Python by the (Note)Book</title><link href="https://test2.byronjsmith.com/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2017-01-01:/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
+I think it can do the same for you.&lt;/p&gt;</content><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Teaching Python by the (Note)Book</title><link href="https://blog.byronjsmith.com/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2017-01-01:/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways, &lt;a href="https://software-carpentry.org"&gt;teaching Python to scientists&lt;/a&gt;
@@ -905,7 +905,7 @@ are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref-inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn-inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="https://test2.byronjsmith.com/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
+I have &lt;a href="https://blog.byronjsmith.com/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -994,7 +994,7 @@ as a Jupyter notebook.
 In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="https://test2.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="https://blog.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
 &lt;p&gt;I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
 lines of code.
@@ -1064,7 +1064,7 @@ If you're feeling brave, please try it out and let me know how it goes!&lt;/p&gt
 &lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-gapminder-commit" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="https://test2.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="https://blog.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
@@ -2315,7 +2315,7 @@ Read the extensive [documentation][man-var] about variable assignment.
 [man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref-var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>First time teaching Python to novices</title><link href="https://test2.byronjsmith.com/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:test2.byronjsmith.com,2015-08-12:/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>First time teaching Python to novices</title><link href="https://blog.byronjsmith.com/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-08-12:/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
 a Software Carpentry &lt;a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/"&gt;workshop&lt;/a&gt; at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
 Jennifer taught the shell (Bash) and version control with Git,
@@ -2469,7 +2469,7 @@ I think the explicit approach worked well for the learners in this workshop.
 Since we were covering functions anyway, it wasn't hard to get a multi-level
 traceback.
 Syntax errors also combined nicely with learning function definition syntax.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="https://test2.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="https://blog.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Somewhere in the process of talking about functions we got sidetracked with
 &lt;code&gt;open()&lt;/code&gt;.
 I was surprised to see that the lesson plans have only limited discussion of
