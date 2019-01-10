@@ -200,7 +200,7 @@ plt.xlabel('Days between certification and first teaching')
 
 ![Histogram of days between certification and first teaching.][taught-first-hist]
 
-[taught-first-hist]: {filename}/static/images/swc-survival-taught-first-hist.png
+[taught-first-hist]: {static}/static/images/swc-survival-taught-first-hist.png
 
 ```python
 print("{} of {} instructors have not yet taught."
@@ -260,7 +260,7 @@ plt.ylabel("Fraction instructors not taught")
 
 ![Survival curve of days to teaching for the first time][taught-first-survival]
 
-[taught-first-survival]: {filename}/static/images/swc-survival-taught-first-curve.png
+[taught-first-survival]: {static}/static/images/swc-survival-taught-first-curve.png
 
 The key figure in survival analysis is the survival curve, or its derivative
 the hazard function.
@@ -340,7 +340,7 @@ plt.ylabel("Fraction instructors not taught second time")
 
 ![Survival curve of days to teaching a second time after having taught once][taught-second-survival]
 
-[taught-second-survival]: {filename}/static/images/swc-survival-taught-second-curve.png
+[taught-second-survival]: {static}/static/images/swc-survival-taught-second-curve.png
 
 The baseline survival curve reflects expectations for a theoretical individual
 who taught immediately upon being certified (day 0).

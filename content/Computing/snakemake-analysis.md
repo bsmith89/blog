@@ -19,7 +19,7 @@ In the past I've [evangelized extensively for GNU Make][makefile-shortcuts],
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.
 
-[makefile-shortcuts]: {filename}/Computing/makefile-shortcuts.md
+[makefile-shortcuts]: {static}/Computing/makefile-shortcuts.md
 
 _Snakemake_ is a next-generation tool based on this concept and designed
 specifically for bioinformatics and other complex, computationally
@@ -36,7 +36,7 @@ The original (and therefore this lesson as well) is inspired by the
 [Software Carpentry _Make_ lesson][swc-make],
 to which I am also a contributor.
 
-[make-tutorial]: {filename}/Computing/make-analysis.md
+[make-tutorial]: {static}/Computing/make-analysis.md
 [swc-make]: https://swcarpentry.github.io/make-novice/
 
 Some prior experience with the command line is assumed, and learners are
@@ -719,7 +719,7 @@ snakemake --dag zipf_results.tgz | dot -Tpng > dag.png
 
 Open that file and check it out.
 
-![A visualization of the analysis DAG]({filename}/static/images/snakemake-dag.png)
+![A visualization of the analysis DAG]({static}/static/images/snakemake-dag.png)
 
 Diagrams like this one can be a very useful way to debug problems with an
 analysis pipeline.

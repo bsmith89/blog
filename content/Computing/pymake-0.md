@@ -15,7 +15,7 @@ this piece, I have changed my thinking on Makefiles._
 _I've written a [tutorial][make-analysis] on using _Make_ for reproducible data
 analysis_.
 
-[make-analysis]: {filename}/Computing/make-analysis.md
+[make-analysis]: {static}/Computing/make-analysis.md
 
 I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through

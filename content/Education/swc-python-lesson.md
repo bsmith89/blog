@@ -212,7 +212,7 @@ Syntax errors also combined nicely with learning function definition syntax.
 
 
 
-[attribute-error]: {filename}/static/images/swc-stanford-byron.jpg
+[attribute-error]: {static}/static/images/swc-stanford-byron.jpg
 
 [^photo-credit]: Photo credit: Amy Hodge ([CC-BY][cc-by])
 

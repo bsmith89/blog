@@ -76,7 +76,7 @@ It has been an effective approach to teaching Python to what at this point
 must be several thousand workshop attendees.
 
 [inflammation-lesson]: http://swcarpentry.github.io/python-novice-inflammation/
-[previous-experience]: {filename}/Education/swc-python-lesson.md
+[previous-experience]: {static}/Education/swc-python-lesson.md
 [^inflammation-commit]: HEAD at
     [030f3fbd30](https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6)
 
@@ -186,7 +186,7 @@ In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.
 
-[gapminder-plot]: {filename}/static/images/gapminder-analysis.png
+[gapminder-plot]: {static}/static/images/gapminder-analysis.png
 [lo5an-comment]: https://github.com/swcarpentry/python-novice-gapminder/issues/113#issuecomment-256230540
 
 ![An example visualization of the gapminder data.][gapminder-plot]
