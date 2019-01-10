@@ -1,19 +1,19 @@
 ---
-Title: About
-Date: 2013-05-06 19:00
-Category: Misc.
-Author: Byron J. Smith
+title: About
+date: 2013-05-06 19:00
+modified: 2019-01-10 11:00
+category: Misc.
+author: Byron J. Smith
 ...
 
 <span itemscope itemtype="http://data-vocabulary.org/Person">
   Hi! I'm
   <span itemprop="name">Byron</span>, a
-  <span itemprop="role">graduate student</span> in
+  <span itemprop="role">postdoc</span> at
   <span itemprop="affiliation" itemscope
         itemtype="http://data-vocabulary.org/Organization">
     <span itemprop="name">
-      the Department of Ecology and Evolutionary Biology at the University of
-      Michigan</span></span>, interested in
+      the Gladstone Institutes</span></span>, interested in
   <span>
     microbiology, microbial ecology, mathematical ecology,
     bioinformatics, metagenomics, software development, technology,
@@ -39,6 +39,6 @@ Author: Byron J. Smith
 
   You can reach me at
   <a itemprop="email" href=mailto:me@byronjsmith.com>me@byronjsmith.com</a>
-  and check out my resume
+  and check out my CV
   <a href="http://byronjsmith.com/resume.html">here</a>.
 </span>
