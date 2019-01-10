@@ -5,7 +5,6 @@ output/
 cache/
 *.pyc
 *.pid
-develop_server.sh
 .venv/
 privateconf.py
 local.mk
