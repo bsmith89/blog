@@ -11,7 +11,7 @@ sys.path.append(os.curdir)
 AUTHOR = "Byron J. Smith"
 SITENAME = "Deep Ecology"
 SITESUBTITLE = "A blog of the new microbiology."
-SITEURL = "http://blog.byronjsmith.com"
+SITEURL = "//blog.byronjsmith.com"
 
 COPYRIGHT = ('The contents of this blog are licensed '
              '<a rel="license" '
