@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - longevity</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/longevity.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2018-05-18T11:00:00-04:00</updated><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="https://bsmith89.github.io/blog/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2018-05-01:/blog/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - longevity</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/longevity.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2018-05-18T11:00:00-04:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="https://bsmith89.github.io/blog/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2018-05-01:/blog/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
 ## Introduction
 --&gt;
 
@@ -50,7 +50,7 @@ field of longevity science.
 (Disclaimer: &lt;em&gt;I am not a longevity expert.&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;To drive home how little we understand about longevity, not only do we have
 just a rudimentary understanding of
-&lt;a href="https://doi.org/10.1016/j.cell.2015.02.020"&gt;how dietary restriction increases lifespan&lt;/a&gt;&lt;sup id="fnref-dr-mechanism-note"&gt;&lt;a class="footnote-ref" href="#fn-dr-mechanism-note"&gt;1&lt;/a&gt;&lt;/sup&gt;,
+&lt;a href="https://doi.org/10.1016/j.cell.2015.02.020"&gt;how dietary restriction increases lifespan&lt;/a&gt;&lt;sup id="fnref:dr-mechanism-note"&gt;&lt;a class="footnote-ref" href="#fn:dr-mechanism-note" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;,
 but we can't even say if acarbose (or any other therapy) has a similar
 mechanism of action.
 It seems reasonable to expect that it might;
@@ -198,7 +198,7 @@ demonstrate a relationship between bacterial abundances and SCFAs,
 while being (theoretically) more robust to other sources of co-linearity.&lt;/p&gt;
 &lt;h2&gt;A reproducible paper&lt;/h2&gt;
 &lt;p&gt;Besides the joy of having contributed to SCIENCE,
-I am also proud to declare that the results&lt;sup id="fnref-but-one"&gt;&lt;a class="footnote-ref" href="#fn-but-one"&gt;2&lt;/a&gt;&lt;/sup&gt; in our manuscript
+I am also proud to declare that the results&lt;sup id="fnref:but-one"&gt;&lt;a class="footnote-ref" href="#fn:but-one" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; in our manuscript
 are recreate-able by sufficiently interested readers.
 Raw sequence data are available from the &lt;a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA448009"&gt;SRA&lt;/a&gt;, and everything
 else&amp;mdash;HPLC peak area tables, mouse survival data, and all of the relevant
@@ -229,11 +229,11 @@ So stay tuned!&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-dr-mechanism-note"&gt;
+&lt;li id="fn:dr-mechanism-note"&gt;
 &lt;p&gt;Quote: "The mechanisms mediating the health benefits of
-  DR are not fully understood in any organism."&amp;#160;&lt;a class="footnote-backref" href="#fnref-dr-mechanism-note" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+  DR are not fully understood in any organism."&amp;#160;&lt;a class="footnote-backref" href="#fnref:dr-mechanism-note" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-but-one"&gt;
+&lt;li id="fn:but-one"&gt;
 &lt;p&gt;Except for one: Our supplemental materials do not included the code
         needed to recreate the first figure, survival curves demonstrating
         that the population of mice from which we sampled recapitulate the
@@ -243,7 +243,7 @@ So stay tuned!&lt;/p&gt;
         preparation.
         I believe that this particular result is a relatively minor part
         of our story, confirming a previously observed, and well
-        established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref-but-one" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+        established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref:but-one" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="microbiome"></category><category term="acarbose"></category><category term="preprint"></category><category term="SCFAs"></category><category term="longevity"></category><category term="open science"></category></entry><entry><title>Not all carbs are bad</title><link href="https://bsmith89.github.io/blog/fiber-butyrate-life.html" rel="alternate"></link><published>2015-10-27T21:30:00-04:00</published><updated>2015-10-27T21:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2015-10-27:/blog/fiber-butyrate-life.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on

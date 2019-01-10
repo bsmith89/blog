@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - protips</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/protips.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2017-11-21T09:30:00-05:00</updated><entry><title>Take five minutes to simplify your life with Make</title><link href="https://bsmith89.github.io/blog/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2016-06-14:/blog/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - protips</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/protips.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2017-11-21T09:30:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Take five minutes to simplify your life with Make</title><link href="https://bsmith89.github.io/blog/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2016-06-14:/blog/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -23,7 +23,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -37,10 +37,10 @@ a paper from raw data with a single invocation of
 &lt;code&gt;make paper&lt;/code&gt;—I still
 think you can benefit from adding a simple &lt;code&gt;Makefile&lt;/code&gt; to your project root.&lt;/p&gt;
 &lt;p&gt;When done right, scripting the tedious parts of your job &lt;em&gt;can&lt;/em&gt;
-save you time in the long run&lt;sup id="fnref-xkcd-refs"&gt;&lt;a class="footnote-ref" href="#fn-xkcd-refs"&gt;2&lt;/a&gt;&lt;/sup&gt;.
+save you time in the long run&lt;sup id="fnref:xkcd-refs"&gt;&lt;a class="footnote-ref" href="#fn:xkcd-refs" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.
 But the time savings aren't the only reason to do it.
 For me, a bigger advantage is that I get to save my mental energy for
-more interesting problems&lt;sup id="fnref-cook-ref"&gt;&lt;a class="footnote-ref" href="#fn-cook-ref"&gt;3&lt;/a&gt;&lt;/sup&gt;.
+more interesting problems&lt;sup id="fnref:cook-ref"&gt;&lt;a class="footnote-ref" href="#fn:cook-ref" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;.
 &lt;em&gt;Make&lt;/em&gt; goes a step further and lets me forget about everything but my
 real objective.
 With a &lt;code&gt;make [target]&lt;/code&gt; invocation I don't even need to remember the name of the
@@ -346,29 +346,29 @@ I've found this makefile saves me both time and, more importantly, mental
 energy.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;Makefile&lt;/code&gt;, &lt;code&gt;.gitattributes&lt;/code&gt;, &lt;code&gt;requirements.pip&lt;/code&gt; and
 &lt;code&gt;drop_jupyter_output.sh&lt;/code&gt; described
-here can all be downloaded from &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;this gist&lt;/a&gt;&lt;sup id="fnref-bootstrap-idea"&gt;&lt;a class="footnote-ref" href="#fn-bootstrap-idea"&gt;4&lt;/a&gt;&lt;/sup&gt;.
+here can all be downloaded from &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;this gist&lt;/a&gt;&lt;sup id="fnref:bootstrap-idea"&gt;&lt;a class="footnote-ref" href="#fn:bootstrap-idea" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;.
 Next time you're starting a project, download them to the project directory,
 run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-shorter-tutorials"&gt;
+&lt;li id="fn:shorter-tutorials"&gt;
 &lt;p&gt;My tutorial is designed to fill a three hour
     Software Carpentry lesson.  There are a number of much shorter
     primers to get you started (e.g. &lt;a href="http://zmjones.com/make/"&gt;#1&lt;/a&gt;,
-    &lt;a href="https://bost.ocks.org/mike/make/"&gt;#2&lt;/a&gt;, &lt;a href="http://kbroman.org/minimal_make/"&gt;#3&lt;/a&gt;).&amp;#160;&lt;a class="footnote-backref" href="#fnref-shorter-tutorials" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;a href="https://bost.ocks.org/mike/make/"&gt;#2&lt;/a&gt;, &lt;a href="http://kbroman.org/minimal_make/"&gt;#3&lt;/a&gt;).&amp;#160;&lt;a class="footnote-backref" href="#fnref:shorter-tutorials" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-xkcd-refs"&gt;
+&lt;li id="fn:xkcd-refs"&gt;
 &lt;p&gt;Randall Munroe does not agree.
     Relevant XKCDs: &lt;a href="https://xkcd.com/1205/"&gt;#1&lt;/a&gt;,
-    &lt;a href="https://xkcd.com/1319/"&gt;#2&lt;/a&gt;, and &lt;a href="https://xkcd.com/974/"&gt;#3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-xkcd-refs" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;a href="https://xkcd.com/1319/"&gt;#2&lt;/a&gt;, and &lt;a href="https://xkcd.com/974/"&gt;#3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:xkcd-refs" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-cook-ref"&gt;
-&lt;p&gt;John Cook makes &lt;a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/"&gt;this argument&lt;/a&gt; on his blog.&amp;#160;&lt;a class="footnote-backref" href="#fnref-cook-ref" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:cook-ref"&gt;
+&lt;p&gt;John Cook makes &lt;a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/"&gt;this argument&lt;/a&gt; on his blog.&amp;#160;&lt;a class="footnote-backref" href="#fnref:cook-ref" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-bootstrap-idea"&gt;
+&lt;li id="fn:bootstrap-idea"&gt;
 &lt;p&gt;Even better, you could write a recipe to download those files
-    on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref-bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref:bootstrap-idea" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry></feed>

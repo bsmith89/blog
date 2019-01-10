@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - jupyter</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/jupyter.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2017-01-01T18:30:00-05:00</updated><entry><title>Teaching Python by the (Note)Book</title><link href="https://bsmith89.github.io/blog/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2017-01-01:/blog/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - jupyter</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/jupyter.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2017-01-01T18:30:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Teaching Python by the (Note)Book</title><link href="https://bsmith89.github.io/blog/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2017-01-01:/blog/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways, &lt;a href="https://software-carpentry.org"&gt;teaching Python to scientists&lt;/a&gt;
@@ -68,8 +68,8 @@ The key is to avoid unintentionally teaching pathological mental models that
 are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
-&lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref-inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn-inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="https://bsmith89.github.io/blog/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
+&lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref:inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn:inflammation-commit" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+I have &lt;a href="https://bsmith89.github.io/blog/Education/swc-python-lesson.md"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -93,7 +93,7 @@ in my opinion, aren't nearly as important for learners, for example,
 accumulating over particular axes in &lt;code&gt;numpy&lt;/code&gt; arrays.&lt;/p&gt;
 &lt;p&gt;For this and other reasons Greg Wilson spearheaded an attempt to
 reinvent the Python lesson.
-The &lt;a href="http://swcarpentry.github.io/python-novice-gapminder/"&gt;"Novice Gapminder" lesson&lt;/a&gt;&lt;sup id="fnref-gapminder-commit"&gt;&lt;a class="footnote-ref" href="#fn-gapminder-commit"&gt;2&lt;/a&gt;&lt;/sup&gt;
+The &lt;a href="http://swcarpentry.github.io/python-novice-gapminder/"&gt;"Novice Gapminder" lesson&lt;/a&gt;&lt;sup id="fnref:gapminder-commit"&gt;&lt;a class="footnote-ref" href="#fn:gapminder-commit" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;
 is a from-scratch re-write.
 It's worth noting that SWC's normal pull-request model for lesson development
 is unable to accommodate a major overhaul like this one.&lt;/p&gt;
@@ -220,12 +220,12 @@ If you're feeling brave, please try it out and let me know how it goes!&lt;/p&gt
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-inflammation-commit"&gt;
+&lt;li id="fn:inflammation-commit"&gt;
 &lt;p&gt;HEAD at
-&lt;a href="https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6"&gt;030f3fbd30&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-inflammation-commit" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6"&gt;030f3fbd30&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:inflammation-commit" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-gapminder-commit"&gt;
-&lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-gapminder-commit" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:gapminder-commit"&gt;
+&lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:gapminder-commit" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry></feed>

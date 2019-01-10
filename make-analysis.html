@@ -9,7 +9,7 @@ Deep Ecology - Tutorial: Reproducible bioinformatics pipelines using GNU Make
   </title>
 <!-- #feeds -->
 <link href="https://bsmith89.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Full Atom Feed" />
-<link href="https://bsmith89.github.io/blog/feeds/category/computing.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
+<link href="https://bsmith89.github.io/blog/feeds/category/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="Deep Ecology Categories Atom Feed" />
 <!-- /#feeds -->
   <link rel="stylesheet" type="text/css" href="https://bsmith89.github.io/blog/theme/css/main.css" />
   <link rel="stylesheet" type="text/css" href="https://bsmith89.github.io/blog/theme/css/pygment.css" />
@@ -189,7 +189,7 @@ Instead, you must first replace all 4-space indents with a tab character.</em></
 <p>For most projects with moderate to intense data analysis you should
 consider using <em>Make</em>.
 Some day I'll write a post telling you why, but for now check out
-<a href="http://zmjones.com/make/">this post</a> by Zachary M. Jones<sup id="fnref-similar-title"><a class="footnote-ref" href="#fn-similar-title">1</a></sup>.
+<a href="http://zmjones.com/make/">this post</a> by Zachary M. Jones<sup id="fnref:similar-title"><a class="footnote-ref" href="#fn:similar-title" rel="footnote">1</a></sup>.
 If you're already convinced, or just want to see what it's all about, read on.</p>
 <p>This post is the clone of a tutorial that I wrote for Titus Brown's
 week-long <a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html">Bioinformatics Workshop</a> at UC Davis's Bodega
@@ -488,7 +488,7 @@ and add the following:</p>
 </pre></div>
 
 
-<p>We have now written the simplest, non-trivial Makefile<sup id="fnref-makefile-name"><a class="footnote-ref" href="#fn-makefile-name">2</a></sup>.
+<p>We have now written the simplest, non-trivial Makefile<sup id="fnref:makefile-name"><a class="footnote-ref" href="#fn:makefile-name" rel="footnote">2</a></sup>.
 It is pretty reminiscent of one of the lines from our master script.
 It is a good bet that you can figure out what this Makefile does.</p>
 <p>Be sure to notice a few syntactical items.</p>
@@ -542,7 +542,7 @@ let's use <em>Make</em> to execute it.</p>
 </pre></div>
 
 
-<p>By default, <em>Make</em> prints the recipes that it executes<sup id="fnref-makefile-identification"><a class="footnote-ref" href="#fn-makefile-identification">3</a></sup>.</p>
+<p>By default, <em>Make</em> prints the recipes that it executes<sup id="fnref:makefile-identification"><a class="footnote-ref" href="#fn:makefile-identification" rel="footnote">3</a></sup>.</p>
 <p>Let's see if we got what we expected.</p>
 <div class="highlight"><pre><span></span>head -5 isles.dat
 </pre></div>
@@ -853,7 +853,7 @@ target of a rule, respectively.
 In <em>Make</em>, variables are referenced with a leading dollar sign symbol.
 While we can also define our own variables,
 <em>Make</em> <em>automatically</em> defines a number of variables, like the ones
-I've just shown you<sup id="fnref-auto-vars"><a class="footnote-ref" href="#fn-auto-vars">4</a></sup>.</p>
+I've just shown you<sup id="fnref:auto-vars"><a class="footnote-ref" href="#fn:auto-vars" rel="footnote">4</a></sup>.</p>
 <p>Therefore</p>
 <div class="highlight"><pre><span></span><span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
     rm -rf zipf_results/
@@ -961,7 +961,7 @@ splitting the list over three lines, instead of one very long line.
 Also notice that we assigned to the variable with "<code>:=</code>".
 This is generally a Good Idea;
 Assigning with a normal equals sign can result in non-intuitive behavior for
-reasons that we will not be talking about<sup id="fnref-var-assign"><a class="footnote-ref" href="#fn-var-assign">5</a></sup>.
+reasons that we will not be talking about<sup id="fnref:var-assign"><a class="footnote-ref" href="#fn:var-assign" rel="footnote">5</a></sup>.
 Finally, notice that the items in our list are separated by <em>whitespace</em>,
 not commas.
 Prerequisite lists were the same way; this is just how lists of things work in
@@ -1395,26 +1395,26 @@ all of the changes in a commit.</p>
 <div class="footnote">
 <hr>
 <ol>
-<li id="fn-similar-title">
+<li id="fn:similar-title">
 <p>I swear I didn't know about that post when I titled my tutorial.
-Great minds think alike?&#160;<a class="footnote-backref" href="#fnref-similar-title" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+Great minds think alike?&#160;<a class="footnote-backref" href="#fnref:similar-title" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-<li id="fn-makefile-name">
+<li id="fn:makefile-name">
 <p>While several other filenames will work, it is a Good Idea to
-always call your Makefile <code>Makefile</code>.&#160;<a class="footnote-backref" href="#fnref-makefile-name" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+always call your Makefile <code>Makefile</code>.&#160;<a class="footnote-backref" href="#fnref:makefile-name" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
-<li id="fn-makefile-identification">
+<li id="fn:makefile-identification">
 <p>Notice that we didn't tell <em>Make</em> to use
 <code>Makefile</code>.  When you run <code>make</code>, the program automatically looks in
-several places for your Makefile.&#160;<a class="footnote-backref" href="#fnref-makefile-identification" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+several places for your Makefile.&#160;<a class="footnote-backref" href="#fnref:makefile-identification" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
-<li id="fn-auto-vars">
-<p>See https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html].&#160;<a class="footnote-backref" href="#fnref-auto-vars" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<li id="fn:auto-vars">
+<p>See https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html].&#160;<a class="footnote-backref" href="#fnref:auto-vars" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
-<li id="fn-var-assign">
+<li id="fn:var-assign">
 <p>Variables are complicated in <em>Make</em>.
 Read the extensive [documentation][man-var] about variable assignment.
-[man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&#160;<a class="footnote-backref" href="#fnref-var-assign" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+[man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&#160;<a class="footnote-backref" href="#fnref:var-assign" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

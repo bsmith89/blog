@@ -29,7 +29,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://bsmith89.github.io/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://bsmith89.github.io/blog/Computing/makefile-shortcuts.md"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -60,7 +60,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -98,7 +98,7 @@ Instead, you must first replace all 4-space indents with a tab character.&lt;/em
 &lt;p&gt;For most projects with moderate to intense data analysis you should
 consider using &lt;em&gt;Make&lt;/em&gt;.
 Some day I'll write a post telling you why, but for now check out
-&lt;a href="http://zmjones.com/make/"&gt;this post&lt;/a&gt; by Zachary M. Jones&lt;sup id="fnref-similar-title"&gt;&lt;a class="footnote-ref" href="#fn-similar-title"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;a href="http://zmjones.com/make/"&gt;this post&lt;/a&gt; by Zachary M. Jones&lt;sup id="fnref:similar-title"&gt;&lt;a class="footnote-ref" href="#fn:similar-title" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.
 If you're already convinced, or just want to see what it's all about, read on.&lt;/p&gt;
 &lt;p&gt;This post is the clone of a tutorial that I wrote for Titus Brown's
 week-long &lt;a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html"&gt;Bioinformatics Workshop&lt;/a&gt; at UC Davis's Bodega
@@ -200,7 +200,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -226,4 +226,4 @@ Heaven knows I need that.&lt;/p&gt;
 updates).  Largely, this is because I'm shamelessly mirroring Titus's well
 trafficked blog by using a nifty python application called
 &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
-&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref-hover-disc"&gt;&lt;a class="footnote-ref" href="#fn-hover-disc"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sun, 05 May 2013 22:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.io,2013-05-05:/blog/initial-commit.html</guid><category>meta</category><category>pelican</category><category>website</category><category>hosting</category><category>blog</category></item></channel></rss>
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc" rel="footnote"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Sun, 05 May 2013 22:00:00 -0400</pubDate><guid isPermaLink="false">tag:bsmith89.github.io,2013-05-05:/blog/initial-commit.html</guid><category>meta</category><category>pelican</category><category>website</category><category>hosting</category><category>blog</category></item></channel></rss>

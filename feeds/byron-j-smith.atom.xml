@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Byron J. Smith</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/byron-j-smith.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2018-05-18T11:00:00-04:00</updated><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="https://bsmith89.github.io/blog/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2018-05-01:/blog/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Byron J. Smith</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/byron-j-smith.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2018-05-18T11:00:00-04:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link href="https://bsmith89.github.io/blog/acarbose-longevity-preprint.html" rel="alternate"></link><published>2018-05-01T12:00:00-04:00</published><updated>2018-05-18T11:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2018-05-01:/blog/acarbose-longevity-preprint.html</id><summary type="html">&lt;!--
 ## Introduction
 --&gt;
 
@@ -50,7 +50,7 @@ field of longevity science.
 (Disclaimer: &lt;em&gt;I am not a longevity expert.&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;To drive home how little we understand about longevity, not only do we have
 just a rudimentary understanding of
-&lt;a href="https://doi.org/10.1016/j.cell.2015.02.020"&gt;how dietary restriction increases lifespan&lt;/a&gt;&lt;sup id="fnref-dr-mechanism-note"&gt;&lt;a class="footnote-ref" href="#fn-dr-mechanism-note"&gt;1&lt;/a&gt;&lt;/sup&gt;,
+&lt;a href="https://doi.org/10.1016/j.cell.2015.02.020"&gt;how dietary restriction increases lifespan&lt;/a&gt;&lt;sup id="fnref:dr-mechanism-note"&gt;&lt;a class="footnote-ref" href="#fn:dr-mechanism-note" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;,
 but we can't even say if acarbose (or any other therapy) has a similar
 mechanism of action.
 It seems reasonable to expect that it might;
@@ -198,7 +198,7 @@ demonstrate a relationship between bacterial abundances and SCFAs,
 while being (theoretically) more robust to other sources of co-linearity.&lt;/p&gt;
 &lt;h2&gt;A reproducible paper&lt;/h2&gt;
 &lt;p&gt;Besides the joy of having contributed to SCIENCE,
-I am also proud to declare that the results&lt;sup id="fnref-but-one"&gt;&lt;a class="footnote-ref" href="#fn-but-one"&gt;2&lt;/a&gt;&lt;/sup&gt; in our manuscript
+I am also proud to declare that the results&lt;sup id="fnref:but-one"&gt;&lt;a class="footnote-ref" href="#fn:but-one" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; in our manuscript
 are recreate-able by sufficiently interested readers.
 Raw sequence data are available from the &lt;a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA448009"&gt;SRA&lt;/a&gt;, and everything
 else&amp;mdash;HPLC peak area tables, mouse survival data, and all of the relevant
@@ -229,11 +229,11 @@ So stay tuned!&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-dr-mechanism-note"&gt;
+&lt;li id="fn:dr-mechanism-note"&gt;
 &lt;p&gt;Quote: "The mechanisms mediating the health benefits of
-  DR are not fully understood in any organism."&amp;#160;&lt;a class="footnote-backref" href="#fnref-dr-mechanism-note" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+  DR are not fully understood in any organism."&amp;#160;&lt;a class="footnote-backref" href="#fnref:dr-mechanism-note" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-but-one"&gt;
+&lt;li id="fn:but-one"&gt;
 &lt;p&gt;Except for one: Our supplemental materials do not included the code
         needed to recreate the first figure, survival curves demonstrating
         that the population of mice from which we sampled recapitulate the
@@ -243,7 +243,7 @@ So stay tuned!&lt;/p&gt;
         preparation.
         I believe that this particular result is a relatively minor part
         of our story, confirming a previously observed, and well
-        established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref-but-one" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+        established, pattern.&amp;#160;&lt;a class="footnote-backref" href="#fnref:but-one" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="microbiome"></category><category term="acarbose"></category><category term="preprint"></category><category term="SCFAs"></category><category term="longevity"></category><category term="open science"></category></entry><entry><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link href="https://bsmith89.github.io/blog/snakemake-analysis.html" rel="alternate"></link><published>2017-11-19T17:00:00-05:00</published><updated>2017-11-19T17:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2017-11-19:/blog/snakemake-analysis.html</id><summary type="html">&lt;p&gt;In many areas of natural and social science, as well as engineering, data
@@ -257,7 +257,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://bsmith89.github.io/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://bsmith89.github.io/blog/Computing/makefile-shortcuts.md"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -276,7 +276,7 @@ results.
 Describing data analysis as a directed network of transformations
 has proven useful for translating between human intuition and computer
 automation.
-In the past I've &lt;a href="https://bsmith89.github.io/blog/makefile-shortcuts.html"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
+In the past I've &lt;a href="https://bsmith89.github.io/blog/Computing/makefile-shortcuts.md"&gt;evangelized extensively for GNU Make&lt;/a&gt;,
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Snakemake&lt;/em&gt; is a next-generation tool based on this concept and designed
@@ -285,7 +285,7 @@ challenging analyses.
 I've started using &lt;em&gt;Snakemake&lt;/em&gt; for my own data analysis projects, and I've
 found it to be a consistent improvement, enabling more complex pipelines with
 fewer of the "hacks" that are often necessary when using &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I've taught &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
+&lt;p&gt;I've taught &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;&lt;em&gt;Make&lt;/em&gt; workshops in the past&lt;/a&gt;,
 so, when I was invited to present to the Boise State University Joint
 User Groups, I was excited to convert that tutorial to &lt;em&gt;Snakemake&lt;/em&gt;.
 Here, I've converted that tutorial into a blog post.
@@ -1151,8 +1151,8 @@ The key is to avoid unintentionally teaching pathological mental models that
 are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
-&lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref-inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn-inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="https://bsmith89.github.io/blog/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
+&lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref:inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn:inflammation-commit" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+I have &lt;a href="https://bsmith89.github.io/blog/Education/swc-python-lesson.md"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -1176,7 +1176,7 @@ in my opinion, aren't nearly as important for learners, for example,
 accumulating over particular axes in &lt;code&gt;numpy&lt;/code&gt; arrays.&lt;/p&gt;
 &lt;p&gt;For this and other reasons Greg Wilson spearheaded an attempt to
 reinvent the Python lesson.
-The &lt;a href="http://swcarpentry.github.io/python-novice-gapminder/"&gt;"Novice Gapminder" lesson&lt;/a&gt;&lt;sup id="fnref-gapminder-commit"&gt;&lt;a class="footnote-ref" href="#fn-gapminder-commit"&gt;2&lt;/a&gt;&lt;/sup&gt;
+The &lt;a href="http://swcarpentry.github.io/python-novice-gapminder/"&gt;"Novice Gapminder" lesson&lt;/a&gt;&lt;sup id="fnref:gapminder-commit"&gt;&lt;a class="footnote-ref" href="#fn:gapminder-commit" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;
 is a from-scratch re-write.
 It's worth noting that SWC's normal pull-request model for lesson development
 is unable to accommodate a major overhaul like this one.&lt;/p&gt;
@@ -1303,12 +1303,12 @@ If you're feeling brave, please try it out and let me know how it goes!&lt;/p&gt
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-inflammation-commit"&gt;
+&lt;li id="fn:inflammation-commit"&gt;
 &lt;p&gt;HEAD at
-&lt;a href="https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6"&gt;030f3fbd30&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-inflammation-commit" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6"&gt;030f3fbd30&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:inflammation-commit" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-gapminder-commit"&gt;
-&lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-gapminder-commit" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:gapminder-commit"&gt;
+&lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:gapminder-commit" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>Take five minutes to simplify your life with Make</title><link href="https://bsmith89.github.io/blog/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2016-06-14:/blog/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
@@ -1317,7 +1317,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -1335,7 +1335,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref-shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn-shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -1349,10 +1349,10 @@ a paper from raw data with a single invocation of
 &lt;code&gt;make paper&lt;/code&gt;—I still
 think you can benefit from adding a simple &lt;code&gt;Makefile&lt;/code&gt; to your project root.&lt;/p&gt;
 &lt;p&gt;When done right, scripting the tedious parts of your job &lt;em&gt;can&lt;/em&gt;
-save you time in the long run&lt;sup id="fnref-xkcd-refs"&gt;&lt;a class="footnote-ref" href="#fn-xkcd-refs"&gt;2&lt;/a&gt;&lt;/sup&gt;.
+save you time in the long run&lt;sup id="fnref:xkcd-refs"&gt;&lt;a class="footnote-ref" href="#fn:xkcd-refs" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.
 But the time savings aren't the only reason to do it.
 For me, a bigger advantage is that I get to save my mental energy for
-more interesting problems&lt;sup id="fnref-cook-ref"&gt;&lt;a class="footnote-ref" href="#fn-cook-ref"&gt;3&lt;/a&gt;&lt;/sup&gt;.
+more interesting problems&lt;sup id="fnref:cook-ref"&gt;&lt;a class="footnote-ref" href="#fn:cook-ref" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;.
 &lt;em&gt;Make&lt;/em&gt; goes a step further and lets me forget about everything but my
 real objective.
 With a &lt;code&gt;make [target]&lt;/code&gt; invocation I don't even need to remember the name of the
@@ -1658,29 +1658,29 @@ I've found this makefile saves me both time and, more importantly, mental
 energy.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;Makefile&lt;/code&gt;, &lt;code&gt;.gitattributes&lt;/code&gt;, &lt;code&gt;requirements.pip&lt;/code&gt; and
 &lt;code&gt;drop_jupyter_output.sh&lt;/code&gt; described
-here can all be downloaded from &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;this gist&lt;/a&gt;&lt;sup id="fnref-bootstrap-idea"&gt;&lt;a class="footnote-ref" href="#fn-bootstrap-idea"&gt;4&lt;/a&gt;&lt;/sup&gt;.
+here can all be downloaded from &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;this gist&lt;/a&gt;&lt;sup id="fnref:bootstrap-idea"&gt;&lt;a class="footnote-ref" href="#fn:bootstrap-idea" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;.
 Next time you're starting a project, download them to the project directory,
 run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-shorter-tutorials"&gt;
+&lt;li id="fn:shorter-tutorials"&gt;
 &lt;p&gt;My tutorial is designed to fill a three hour
     Software Carpentry lesson.  There are a number of much shorter
     primers to get you started (e.g. &lt;a href="http://zmjones.com/make/"&gt;#1&lt;/a&gt;,
-    &lt;a href="https://bost.ocks.org/mike/make/"&gt;#2&lt;/a&gt;, &lt;a href="http://kbroman.org/minimal_make/"&gt;#3&lt;/a&gt;).&amp;#160;&lt;a class="footnote-backref" href="#fnref-shorter-tutorials" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;a href="https://bost.ocks.org/mike/make/"&gt;#2&lt;/a&gt;, &lt;a href="http://kbroman.org/minimal_make/"&gt;#3&lt;/a&gt;).&amp;#160;&lt;a class="footnote-backref" href="#fnref:shorter-tutorials" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-xkcd-refs"&gt;
+&lt;li id="fn:xkcd-refs"&gt;
 &lt;p&gt;Randall Munroe does not agree.
     Relevant XKCDs: &lt;a href="https://xkcd.com/1205/"&gt;#1&lt;/a&gt;,
-    &lt;a href="https://xkcd.com/1319/"&gt;#2&lt;/a&gt;, and &lt;a href="https://xkcd.com/974/"&gt;#3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-xkcd-refs" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;a href="https://xkcd.com/1319/"&gt;#2&lt;/a&gt;, and &lt;a href="https://xkcd.com/974/"&gt;#3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:xkcd-refs" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-cook-ref"&gt;
-&lt;p&gt;John Cook makes &lt;a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/"&gt;this argument&lt;/a&gt; on his blog.&amp;#160;&lt;a class="footnote-backref" href="#fnref-cook-ref" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:cook-ref"&gt;
+&lt;p&gt;John Cook makes &lt;a href="http://www.johndcook.com/blog/2015/12/22/automate-to-save-mental-energy-not-time/"&gt;this argument&lt;/a&gt; on his blog.&amp;#160;&lt;a class="footnote-backref" href="#fnref:cook-ref" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-bootstrap-idea"&gt;
+&lt;li id="fn:bootstrap-idea"&gt;
 &lt;p&gt;Even better, you could write a recipe to download those files
-    on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref-bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref:bootstrap-idea" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Software carpentry instructor training</title><link href="https://bsmith89.github.io/blog/instructor-survival.html" rel="alternate"></link><published>2016-05-30T12:00:00-04:00</published><updated>2016-05-31T12:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2016-05-30:/blog/instructor-survival.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Edit (2016-05-31): Added a hypothesis for why my results differ somewhat from
@@ -2029,7 +2029,7 @@ Instead, you must first replace all 4-space indents with a tab character.&lt;/em
 &lt;p&gt;For most projects with moderate to intense data analysis you should
 consider using &lt;em&gt;Make&lt;/em&gt;.
 Some day I'll write a post telling you why, but for now check out
-&lt;a href="http://zmjones.com/make/"&gt;this post&lt;/a&gt; by Zachary M. Jones&lt;sup id="fnref-similar-title"&gt;&lt;a class="footnote-ref" href="#fn-similar-title"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;a href="http://zmjones.com/make/"&gt;this post&lt;/a&gt; by Zachary M. Jones&lt;sup id="fnref:similar-title"&gt;&lt;a class="footnote-ref" href="#fn:similar-title" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.
 If you're already convinced, or just want to see what it's all about, read on.&lt;/p&gt;
 &lt;p&gt;This post is the clone of a tutorial that I wrote for Titus Brown's
 week-long &lt;a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html"&gt;Bioinformatics Workshop&lt;/a&gt; at UC Davis's Bodega
@@ -2044,7 +2044,7 @@ Instead, you must first replace all 4-space indents with a tab character.&lt;/em
 &lt;p&gt;For most projects with moderate to intense data analysis you should
 consider using &lt;em&gt;Make&lt;/em&gt;.
 Some day I'll write a post telling you why, but for now check out
-&lt;a href="http://zmjones.com/make/"&gt;this post&lt;/a&gt; by Zachary M. Jones&lt;sup id="fnref-similar-title"&gt;&lt;a class="footnote-ref" href="#fn-similar-title"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;a href="http://zmjones.com/make/"&gt;this post&lt;/a&gt; by Zachary M. Jones&lt;sup id="fnref:similar-title"&gt;&lt;a class="footnote-ref" href="#fn:similar-title" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.
 If you're already convinced, or just want to see what it's all about, read on.&lt;/p&gt;
 &lt;p&gt;This post is the clone of a tutorial that I wrote for Titus Brown's
 week-long &lt;a href="https://dib-training.readthedocs.org/en/pub/2016-02-08-bodega.html"&gt;Bioinformatics Workshop&lt;/a&gt; at UC Davis's Bodega
@@ -2343,7 +2343,7 @@ and add the following:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;We have now written the simplest, non-trivial Makefile&lt;sup id="fnref-makefile-name"&gt;&lt;a class="footnote-ref" href="#fn-makefile-name"&gt;2&lt;/a&gt;&lt;/sup&gt;.
+&lt;p&gt;We have now written the simplest, non-trivial Makefile&lt;sup id="fnref:makefile-name"&gt;&lt;a class="footnote-ref" href="#fn:makefile-name" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.
 It is pretty reminiscent of one of the lines from our master script.
 It is a good bet that you can figure out what this Makefile does.&lt;/p&gt;
 &lt;p&gt;Be sure to notice a few syntactical items.&lt;/p&gt;
@@ -2397,7 +2397,7 @@ let's use &lt;em&gt;Make&lt;/em&gt; to execute it.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;By default, &lt;em&gt;Make&lt;/em&gt; prints the recipes that it executes&lt;sup id="fnref-makefile-identification"&gt;&lt;a class="footnote-ref" href="#fn-makefile-identification"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;By default, &lt;em&gt;Make&lt;/em&gt; prints the recipes that it executes&lt;sup id="fnref:makefile-identification"&gt;&lt;a class="footnote-ref" href="#fn:makefile-identification" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Let's see if we got what we expected.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;head -5 isles.dat
 &lt;/pre&gt;&lt;/div&gt;
@@ -2708,7 +2708,7 @@ target of a rule, respectively.
 In &lt;em&gt;Make&lt;/em&gt;, variables are referenced with a leading dollar sign symbol.
 While we can also define our own variables,
 &lt;em&gt;Make&lt;/em&gt; &lt;em&gt;automatically&lt;/em&gt; defines a number of variables, like the ones
-I've just shown you&lt;sup id="fnref-auto-vars"&gt;&lt;a class="footnote-ref" href="#fn-auto-vars"&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+I've just shown you&lt;sup id="fnref:auto-vars"&gt;&lt;a class="footnote-ref" href="#fn:auto-vars" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Therefore&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
     rm -rf zipf_results/
@@ -2816,7 +2816,7 @@ splitting the list over three lines, instead of one very long line.
 Also notice that we assigned to the variable with "&lt;code&gt;:=&lt;/code&gt;".
 This is generally a Good Idea;
 Assigning with a normal equals sign can result in non-intuitive behavior for
-reasons that we will not be talking about&lt;sup id="fnref-var-assign"&gt;&lt;a class="footnote-ref" href="#fn-var-assign"&gt;5&lt;/a&gt;&lt;/sup&gt;.
+reasons that we will not be talking about&lt;sup id="fnref:var-assign"&gt;&lt;a class="footnote-ref" href="#fn:var-assign" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt;.
 Finally, notice that the items in our list are separated by &lt;em&gt;whitespace&lt;/em&gt;,
 not commas.
 Prerequisite lists were the same way; this is just how lists of things work in
@@ -3250,26 +3250,26 @@ all of the changes in a commit.&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-similar-title"&gt;
+&lt;li id="fn:similar-title"&gt;
 &lt;p&gt;I swear I didn't know about that post when I titled my tutorial.
-Great minds think alike?&amp;#160;&lt;a class="footnote-backref" href="#fnref-similar-title" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+Great minds think alike?&amp;#160;&lt;a class="footnote-backref" href="#fnref:similar-title" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-makefile-name"&gt;
+&lt;li id="fn:makefile-name"&gt;
 &lt;p&gt;While several other filenames will work, it is a Good Idea to
-always call your Makefile &lt;code&gt;Makefile&lt;/code&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref-makefile-name" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+always call your Makefile &lt;code&gt;Makefile&lt;/code&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref:makefile-name" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-makefile-identification"&gt;
+&lt;li id="fn:makefile-identification"&gt;
 &lt;p&gt;Notice that we didn't tell &lt;em&gt;Make&lt;/em&gt; to use
 &lt;code&gt;Makefile&lt;/code&gt;.  When you run &lt;code&gt;make&lt;/code&gt;, the program automatically looks in
-several places for your Makefile.&amp;#160;&lt;a class="footnote-backref" href="#fnref-makefile-identification" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+several places for your Makefile.&amp;#160;&lt;a class="footnote-backref" href="#fnref:makefile-identification" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-auto-vars"&gt;
-&lt;p&gt;See https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html].&amp;#160;&lt;a class="footnote-backref" href="#fnref-auto-vars" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:auto-vars"&gt;
+&lt;p&gt;See https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html].&amp;#160;&lt;a class="footnote-backref" href="#fnref:auto-vars" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-var-assign"&gt;
+&lt;li id="fn:var-assign"&gt;
 &lt;p&gt;Variables are complicated in &lt;em&gt;Make&lt;/em&gt;.
 Read the extensive [documentation][man-var] about variable assignment.
-[man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref-var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+[man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref:var-assign" rev="footnote" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>Not all carbs are bad</title><link href="https://bsmith89.github.io/blog/fiber-butyrate-life.html" rel="alternate"></link><published>2015-10-27T21:30:00-04:00</published><updated>2015-10-27T21:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2015-10-27:/blog/fiber-butyrate-life.html</id><summary type="html">&lt;p&gt;&lt;em&gt;This brief post was written as a popular science article for a class on
@@ -3397,8 +3397,8 @@ I thought I'd also take the opportunity to comment on the material at large:
 what worked for me and what didn't.
 What started as an email quickly ballooned into this blog post.&lt;/p&gt;
 &lt;p&gt;To be explicit, I was teaching from the state of the repository at the time of
-the workshop&lt;sup id="fnref-repo-state"&gt;&lt;a class="footnote-ref" href="#fn-repo-state"&gt;1&lt;/a&gt;&lt;/sup&gt; .&lt;/p&gt;
-&lt;p&gt;With this as my first workshop&lt;sup id="fnref-unprepared"&gt;&lt;a class="footnote-ref" href="#fn-unprepared"&gt;2&lt;/a&gt;&lt;/sup&gt;, I (incorrectly) thought
+the workshop&lt;sup id="fnref:repo-state"&gt;&lt;a class="footnote-ref" href="#fn:repo-state" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; .&lt;/p&gt;
+&lt;p&gt;With this as my first workshop&lt;sup id="fnref:unprepared"&gt;&lt;a class="footnote-ref" href="#fn:unprepared" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, I (incorrectly) thought
 I could teach all of the topics straight through.
 By the time it became apparent that this wasn't going to work,
 adapting the first day's material had to be done on the fly.
@@ -3451,7 +3451,7 @@ Is there a reason we use these data?&lt;/p&gt;
 I didn't feel like I had to cut anything out.
 However, for-loop syntax was not explicitly covered early in the lesson plan.
 It wasn't until I realized I had gotten ahead of myself that we talked about
-loop variables, iterables&lt;sup id="fnref-iterables"&gt;&lt;a class="footnote-ref" href="#fn-iterables"&gt;3&lt;/a&gt;&lt;/sup&gt;, and the indented code-block.&lt;/p&gt;
+loop variables, iterables&lt;sup id="fnref:iterables"&gt;&lt;a class="footnote-ref" href="#fn:iterables" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;, and the indented code-block.&lt;/p&gt;
 &lt;p&gt;I also thought the segue from Topic 1 to 2 was a bit weak.
 This was a theme throughout, mixing the inflammation data with much simpler
 stuff (e.g. looping over short strings and lists).
@@ -3493,7 +3493,7 @@ objectives, steps in explaining difficult concepts, and pre-picked
 understanding/challenge questions.
 The exercise of writing an outline of learning objectives before the class was
 very helpful, and something I intend to repeat before future workshops.&lt;/p&gt;
-&lt;p&gt;If I remember correctly&lt;sup id="fnref-metamemory"&gt;&lt;a class="footnote-ref" href="#fn-metamemory"&gt;4&lt;/a&gt;&lt;/sup&gt;, the second day I started once again with
+&lt;p&gt;If I remember correctly&lt;sup id="fnref:metamemory"&gt;&lt;a class="footnote-ref" href="#fn:metamemory" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, the second day I started once again with
 functions, and largely based the lesson on the material in
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html"&gt;the topic&lt;/a&gt;.
 The temperature conversion formulas were an effective motivator for this
@@ -3544,7 +3544,7 @@ transform the program into a command-line script that would operate as a
 UNIX-style filter.
 I remember Greg Wilson teaching Python scripting (along with Bash and SQL)
 that way during my first workshop (as a &lt;em&gt;learner&lt;/em&gt;!) at MSU
-in May 2012&lt;sup id="fnref-swc-msu"&gt;&lt;a class="footnote-ref" href="#fn-swc-msu"&gt;6&lt;/a&gt;&lt;/sup&gt;.
+in May 2012&lt;sup id="fnref:swc-msu"&gt;&lt;a class="footnote-ref" href="#fn:swc-msu" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;.
 This &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/10-cmdline.html"&gt;last topic&lt;/a&gt; seemed like a worthwhile mini-capstone,
 since it would reintroduce ideas from the Bash lesson the day before,
 and we could version-control our work with git.
@@ -3577,29 +3577,29 @@ having a "default" subset would have been helpful.&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-repo-state"&gt;
+&lt;li id="fn:repo-state"&gt;
 &lt;p&gt;&lt;a href="https://github.com/swcarpentry/python-novice-inflammation/tree/76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a"&gt;&lt;code&gt;76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a&lt;/code&gt;&lt;/a&gt;: still the
-HEAD as of this writing.&amp;#160;&lt;a class="footnote-backref" href="#fnref-repo-state" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+HEAD as of this writing.&amp;#160;&lt;a class="footnote-backref" href="#fnref:repo-state" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-unprepared"&gt;
-&lt;p&gt;and being insufficiently prepared&amp;#160;&lt;a class="footnote-backref" href="#fnref-unprepared" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:unprepared"&gt;
+&lt;p&gt;and being insufficiently prepared&amp;#160;&lt;a class="footnote-backref" href="#fnref:unprepared" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-iterables"&gt;
+&lt;li id="fn:iterables"&gt;
 &lt;p&gt;Actually, we talked about getting values from lists and how
-strings are like lists, rather than about iterables in general.&amp;#160;&lt;a class="footnote-backref" href="#fnref-iterables" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+strings are like lists, rather than about iterables in general.&amp;#160;&lt;a class="footnote-backref" href="#fnref:iterables" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-metamemory"&gt;
+&lt;li id="fn:metamemory"&gt;
 &lt;p&gt;Despite the fact that I have those notes, I actually don't
 remember the details of that day's lesson as well.
 I wonder if there's some weird metamemory thing going on
-e.g. &lt;a href="http://www.sciencemag.org/content/333/6043/776.abstract"&gt;this&lt;/a&gt; (unfortunately paywalled).&amp;#160;&lt;a class="footnote-backref" href="#fnref-metamemory" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+e.g. &lt;a href="http://www.sciencemag.org/content/333/6043/776.abstract"&gt;this&lt;/a&gt; (unfortunately paywalled).&amp;#160;&lt;a class="footnote-backref" href="#fnref:metamemory" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-photo-credit"&gt;
-&lt;p&gt;Photo credit: Amy Hodge (&lt;a href="https://creativecommons.org/licenses/by/2.0/"&gt;CC-BY&lt;/a&gt;)&amp;#160;&lt;a class="footnote-backref" href="#fnref-photo-credit" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:photo-credit"&gt;
+&lt;p&gt;Photo credit: Amy Hodge (&lt;a href="https://creativecommons.org/licenses/by/2.0/"&gt;CC-BY&lt;/a&gt;)&amp;#160;&lt;a class="footnote-backref" href="#fnref:photo-credit" rev="footnote" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-swc-msu"&gt;
+&lt;li id="fn:swc-msu"&gt;
 &lt;p&gt;The site for this historic event can still be found
-&lt;a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/"&gt;here&lt;/a&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref-swc-msu" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/"&gt;here&lt;/a&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref:swc-msu" rev="footnote" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="mistakes"></category><category term="python"></category></entry><entry><title>Do bacterial species exist?</title><link href="https://bsmith89.github.io/blog/microbial-species.html" rel="alternate"></link><published>2013-08-06T18:30:00-04:00</published><updated>2013-08-06T18:30:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-08-06:/blog/microbial-species.html</id><summary type="html">&lt;p&gt;Any of my friends or colleagues who have had the "pleasure" of talking about
@@ -3966,7 +3966,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -3981,7 +3981,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -4072,7 +4072,7 @@ Heaven knows I need that.&lt;/p&gt;
 updates).  Largely, this is because I'm shamelessly mirroring Titus's well
 trafficked blog by using a nifty python application called
 &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
-&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref-hover-disc"&gt;&lt;a class="footnote-ref" href="#fn-hover-disc"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi.&lt;/p&gt;
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc" rel="footnote"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi.&lt;/p&gt;
 &lt;p&gt;This is mostly a test post and a chance to get some real content on my
 brand-new blog.&lt;/p&gt;
 &lt;p&gt;Inspired by
@@ -4089,22 +4089,22 @@ Heaven knows I need that.&lt;/p&gt;
 updates).  Largely, this is because I'm shamelessly mirroring Titus's well
 trafficked blog by using a nifty python application called
 &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
-&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref-hover-disc"&gt;&lt;a class="footnote-ref" href="#fn-hover-disc"&gt;1&lt;/a&gt;&lt;/sup&gt; as my registrar) and $35/year for hosting
-(tiny, shared server with &lt;a href="http://asmallorange.com/?ref_id=lTryoX47YjmF"&gt;A Small Orange&lt;/a&gt;&lt;sup id="fnref-aso-disc"&gt;&lt;a class="footnote-ref" href="#fn-aso-disc"&gt;2&lt;/a&gt;&lt;/sup&gt;,
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; as my registrar) and $35/year for hosting
+(tiny, shared server with &lt;a href="http://asmallorange.com/?ref_id=lTryoX47YjmF"&gt;A Small Orange&lt;/a&gt;&lt;sup id="fnref:aso-disc"&gt;&lt;a class="footnote-ref" href="#fn:aso-disc" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;,
 I really had no financial excuse to not do this.&lt;/p&gt;
 &lt;p&gt;Wish me luck!&lt;/p&gt;
 &lt;p&gt;-Byron&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
-&lt;li id="fn-hover-disc"&gt;
+&lt;li id="fn:hover-disc"&gt;
 &lt;p&gt;DISCLOSURE: That's a referral link.  I'll get $2 in credit
-  each time one of you nerds signs up.&amp;#160;&lt;a class="footnote-backref" href="#fnref-hover-disc" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+  each time one of you nerds signs up.&amp;#160;&lt;a class="footnote-backref" href="#fnref:hover-disc" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-aso-disc"&gt;
+&lt;li id="fn:aso-disc"&gt;
 &lt;p&gt;That, too, is a referral link.
   My handlers told me to also suggest
-  that you use the coupon code 'FRIENDME' for 15% off.&amp;#160;&lt;a class="footnote-backref" href="#fnref-aso-disc" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+  that you use the coupon code 'FRIENDME' for 15% off.&amp;#160;&lt;a class="footnote-backref" href="#fnref:aso-disc" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="hosting"></category><category term="blog"></category></entry></feed>

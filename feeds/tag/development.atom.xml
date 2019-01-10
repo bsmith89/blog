@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - development</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/development.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2016-03-04T10:00:00-05:00</updated><entry><title>PyMake I: Another GNU Make clone</title><link href="https://bsmith89.github.io/blog/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-05-07:/blog/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - development</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/development.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2016-03-04T10:00:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>PyMake I: Another GNU Make clone</title><link href="https://bsmith89.github.io/blog/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-05-07:/blog/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
 &lt;a href="http://github.com/bsmith89/pymake/"&gt;PyMake&lt;/a&gt;.  I'll post the link to Part II
 here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -20,7 +20,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/make-analysis.html"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="https://bsmith89.github.io/blog/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
