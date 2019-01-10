@@ -15,14 +15,14 @@ VENV ?= .venv
 export VIRTUAL_ENV := $(abspath ${VENV})
 export PATH := ${VIRTUAL_ENV}/bin:${PATH}
 
-BASEDIR = ${CURDIR}
+INPUTDIR = content
+OUTPUTDIR_DEV = output_dev
+OUTPUTDIR_PUB = output_pub
+OUTPUTDIR_GH = output_gh
 
-INPUTDIR = ${BASEDIR}/content
-OUTPUTDIR_DEV = ${BASEDIR}/output_dev
-OUTPUTDIR_PUB = ${BASEDIR}/output_pub
-
-CONFFILE = ${BASEDIR}/pelicanconf.py
-PUBLISHCONF = ${BASEDIR}/publishconf.py
+CONFFILE = pelicanconf.py
+PUBLISHCONF = publishconf.py
+GHCONF = githubconf.py
 
 SSH_HOST = webhost
 GH_BRANCH = gh-pages
@@ -61,26 +61,30 @@ ${OUTPUTDIR_PUB}: ${INPUTDIR}/**/*
 	@rm -rf $@
 	${PELICAN} ${INPUTDIR} -D -o $@ -s ${PUBLISHCONF} ${PELICANOPTS}
 
+${OUTPUTDIR_GH}: ${INPUTDIR}/**/*
+	@rm -rf $@
+	${PELICAN} ${INPUTDIR} -D -o $@ -s ${GHCONF} ${PELICANOPTS}
+
 html: ${OUTPUTDIR_DEV}
 
 publish: ${OUTPUTDIR_PUB}
 
 devserver:
 ifdef PORT
-	${BASEDIR}/develop_server.sh restart ${PORT}
+	./develop_server.sh restart ${PORT}
 else
-	${BASEDIR}/develop_server.sh restart
+	./develop_server.sh restart
 endif
 
 stopserver:
-	${BASEDIR}/develop_server.sh stop
+	./develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 rsync_upload: ${OUTPUTDIR_PUB}
 	rsync -e "ssh -p ${SSH_PORT}" -P -rvzc --delete ${OUTPUTDIR_PUB}/ ${SSH_HOST}:${SSH_TARGET_DIR} --cvs-exclude
 
-github_upload: ${OUTPUTDIR_PUB}
-	ghp-import -m "Generate Pelican site" -b ${GH_BRANCH} ${OUTPUTDIR_PUB}
+github_upload: ${OUTPUTDIR_GH}
+	ghp-import -m "Generate Pelican site" -b ${GH_BRANCH} ${OUTPUTDIR_GH}
 	git push origin ${GH_BRANCH}
 
 upload:
