@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - hosting</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/hosting.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2015-08-14T10:00:00-04:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Hello World!</title><link href="https://bsmith89.github.io/blog/initial-commit.html" rel="alternate"></link><published>2013-05-05T22:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-05-05:/blog/initial-commit.html</id><summary type="html">&lt;p&gt;Hi.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - hosting</title><link href="//bsmith89.github.io/blog/" rel="alternate"></link><link href="//bsmith89.github.io/blog/feeds/tag/hosting.atom.xml" rel="self"></link><id>//bsmith89.github.io/blog/</id><updated>2015-08-14T10:00:00-04:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Hello World!</title><link href="//bsmith89.github.io/blog/initial-commit.html" rel="alternate"></link><published>2013-05-05T22:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2013-05-05:/blog/initial-commit.html</id><summary type="html">&lt;p&gt;Hi.&lt;/p&gt;
 &lt;p&gt;This is mostly a test post and a chance to get some real content on my
 brand-new blog.&lt;/p&gt;
 &lt;p&gt;Inspired by
@@ -16,7 +16,7 @@ Heaven knows I need that.&lt;/p&gt;
 updates).  Largely, this is because I'm shamelessly mirroring Titus's well
 trafficked blog by using a nifty python application called
 &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
-&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc" rel="footnote"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi.&lt;/p&gt;
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc"&gt;1 …&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi.&lt;/p&gt;
 &lt;p&gt;This is mostly a test post and a chance to get some real content on my
 brand-new blog.&lt;/p&gt;
 &lt;p&gt;Inspired by
@@ -33,8 +33,8 @@ Heaven knows I need that.&lt;/p&gt;
 updates).  Largely, this is because I'm shamelessly mirroring Titus's well
 trafficked blog by using a nifty python application called
 &lt;a href="http://getpelican.com"&gt;Pelican&lt;/a&gt;.  And at $15/year for the domain (using
-&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; as my registrar) and $35/year for hosting
-(tiny, shared server with &lt;a href="http://asmallorange.com/?ref_id=lTryoX47YjmF"&gt;A Small Orange&lt;/a&gt;&lt;sup id="fnref:aso-disc"&gt;&lt;a class="footnote-ref" href="#fn:aso-disc" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;,
+&lt;a href="https://hover.com/JRw4YQne"&gt;Hover&lt;/a&gt;&lt;sup id="fnref:hover-disc"&gt;&lt;a class="footnote-ref" href="#fn:hover-disc"&gt;1&lt;/a&gt;&lt;/sup&gt; as my registrar) and $35/year for hosting
+(tiny, shared server with &lt;a href="http://asmallorange.com/?ref_id=lTryoX47YjmF"&gt;A Small Orange&lt;/a&gt;&lt;sup id="fnref:aso-disc"&gt;&lt;a class="footnote-ref" href="#fn:aso-disc"&gt;2&lt;/a&gt;&lt;/sup&gt;,
 I really had no financial excuse to not do this.&lt;/p&gt;
 &lt;p&gt;Wish me luck!&lt;/p&gt;
 &lt;p&gt;-Byron&lt;/p&gt;
@@ -43,12 +43,12 @@ I really had no financial excuse to not do this.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li id="fn:hover-disc"&gt;
 &lt;p&gt;DISCLOSURE: That's a referral link.  I'll get $2 in credit
-  each time one of you nerds signs up.&amp;#160;&lt;a class="footnote-backref" href="#fnref:hover-disc" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+  each time one of you nerds signs up.&amp;#160;&lt;a class="footnote-backref" href="#fnref:hover-disc" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:aso-disc"&gt;
 &lt;p&gt;That, too, is a referral link.
   My handlers told me to also suggest
-  that you use the coupon code 'FRIENDME' for 15% off.&amp;#160;&lt;a class="footnote-backref" href="#fnref:aso-disc" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+  that you use the coupon code 'FRIENDME' for 15% off.&amp;#160;&lt;a class="footnote-backref" href="#fnref:aso-disc" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="meta"></category><category term="pelican"></category><category term="website"></category><category term="hosting"></category><category term="blog"></category></entry></feed>

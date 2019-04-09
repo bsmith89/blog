@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - mistakes</title><link href="https://bsmith89.github.io/blog/" rel="alternate"></link><link href="https://bsmith89.github.io/blog/feeds/tag/mistakes.atom.xml" rel="self"></link><id>https://bsmith89.github.io/blog/</id><updated>2015-08-14T10:00:00-04:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>First time teaching Python to novices</title><link href="https://bsmith89.github.io/blog/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2015-08-12:/blog/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - mistakes</title><link href="//bsmith89.github.io/blog/" rel="alternate"></link><link href="//bsmith89.github.io/blog/feeds/tag/mistakes.atom.xml" rel="self"></link><id>//bsmith89.github.io/blog/</id><updated>2015-08-14T10:00:00-04:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>First time teaching Python to novices</title><link href="//bsmith89.github.io/blog/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2015-08-12:/blog/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
 a Software Carpentry &lt;a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/"&gt;workshop&lt;/a&gt; at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
 Jennifer taught the shell (Bash) and version control with Git,
@@ -39,8 +39,8 @@ I thought I'd also take the opportunity to comment on the material at large:
 what worked for me and what didn't.
 What started as an email quickly ballooned into this blog post.&lt;/p&gt;
 &lt;p&gt;To be explicit, I was teaching from the state of the repository at the time of
-the workshop&lt;sup id="fnref:repo-state"&gt;&lt;a class="footnote-ref" href="#fn:repo-state" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; .&lt;/p&gt;
-&lt;p&gt;With this as my first workshop&lt;sup id="fnref:unprepared"&gt;&lt;a class="footnote-ref" href="#fn:unprepared" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;, I (incorrectly) thought
+the workshop&lt;sup id="fnref:repo-state"&gt;&lt;a class="footnote-ref" href="#fn:repo-state"&gt;1&lt;/a&gt;&lt;/sup&gt; .&lt;/p&gt;
+&lt;p&gt;With this as my first workshop&lt;sup id="fnref:unprepared"&gt;&lt;a class="footnote-ref" href="#fn:unprepared"&gt;2&lt;/a&gt;&lt;/sup&gt;, I (incorrectly) thought
 I could teach all of the topics straight through.
 By the time it became apparent that this wasn't going to work,
 adapting the first day's material had to be done on the fly.
@@ -93,7 +93,7 @@ Is there a reason we use these data?&lt;/p&gt;
 I didn't feel like I had to cut anything out.
 However, for-loop syntax was not explicitly covered early in the lesson plan.
 It wasn't until I realized I had gotten ahead of myself that we talked about
-loop variables, iterables&lt;sup id="fnref:iterables"&gt;&lt;a class="footnote-ref" href="#fn:iterables" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;, and the indented code-block.&lt;/p&gt;
+loop variables, iterables&lt;sup id="fnref:iterables"&gt;&lt;a class="footnote-ref" href="#fn:iterables"&gt;3&lt;/a&gt;&lt;/sup&gt;, and the indented code-block.&lt;/p&gt;
 &lt;p&gt;I also thought the segue from Topic 1 to 2 was a bit weak.
 This was a theme throughout, mixing the inflammation data with much simpler
 stuff (e.g. looping over short strings and lists).
@@ -135,7 +135,7 @@ objectives, steps in explaining difficult concepts, and pre-picked
 understanding/challenge questions.
 The exercise of writing an outline of learning objectives before the class was
 very helpful, and something I intend to repeat before future workshops.&lt;/p&gt;
-&lt;p&gt;If I remember correctly&lt;sup id="fnref:metamemory"&gt;&lt;a class="footnote-ref" href="#fn:metamemory" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt;, the second day I started once again with
+&lt;p&gt;If I remember correctly&lt;sup id="fnref:metamemory"&gt;&lt;a class="footnote-ref" href="#fn:metamemory"&gt;4&lt;/a&gt;&lt;/sup&gt;, the second day I started once again with
 functions, and largely based the lesson on the material in
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html"&gt;the topic&lt;/a&gt;.
 The temperature conversion formulas were an effective motivator for this
@@ -153,7 +153,7 @@ I think the explicit approach worked well for the learners in this workshop.
 Since we were covering functions anyway, it wasn't hard to get a multi-level
 traceback.
 Syntax errors also combined nicely with learning function definition syntax.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="https://bsmith89.github.io/blog/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//bsmith89.github.io/blog/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Somewhere in the process of talking about functions we got sidetracked with
 &lt;code&gt;open()&lt;/code&gt;.
 I was surprised to see that the lesson plans have only limited discussion of
@@ -186,7 +186,7 @@ transform the program into a command-line script that would operate as a
 UNIX-style filter.
 I remember Greg Wilson teaching Python scripting (along with Bash and SQL)
 that way during my first workshop (as a &lt;em&gt;learner&lt;/em&gt;!) at MSU
-in May 2012&lt;sup id="fnref:swc-msu"&gt;&lt;a class="footnote-ref" href="#fn:swc-msu" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt;.
+in May 2012&lt;sup id="fnref:swc-msu"&gt;&lt;a class="footnote-ref" href="#fn:swc-msu"&gt;6&lt;/a&gt;&lt;/sup&gt;.
 This &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/10-cmdline.html"&gt;last topic&lt;/a&gt; seemed like a worthwhile mini-capstone,
 since it would reintroduce ideas from the Bash lesson the day before,
 and we could version-control our work with git.
@@ -221,27 +221,27 @@ having a "default" subset would have been helpful.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li id="fn:repo-state"&gt;
 &lt;p&gt;&lt;a href="https://github.com/swcarpentry/python-novice-inflammation/tree/76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a"&gt;&lt;code&gt;76e3ea24406e4b8d684c9b45f3c5fd33e23ac71a&lt;/code&gt;&lt;/a&gt;: still the
-HEAD as of this writing.&amp;#160;&lt;a class="footnote-backref" href="#fnref:repo-state" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+HEAD as of this writing.&amp;#160;&lt;a class="footnote-backref" href="#fnref:repo-state" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:unprepared"&gt;
-&lt;p&gt;and being insufficiently prepared&amp;#160;&lt;a class="footnote-backref" href="#fnref:unprepared" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and being insufficiently prepared&amp;#160;&lt;a class="footnote-backref" href="#fnref:unprepared" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:iterables"&gt;
 &lt;p&gt;Actually, we talked about getting values from lists and how
-strings are like lists, rather than about iterables in general.&amp;#160;&lt;a class="footnote-backref" href="#fnref:iterables" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+strings are like lists, rather than about iterables in general.&amp;#160;&lt;a class="footnote-backref" href="#fnref:iterables" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:metamemory"&gt;
 &lt;p&gt;Despite the fact that I have those notes, I actually don't
 remember the details of that day's lesson as well.
 I wonder if there's some weird metamemory thing going on
-e.g. &lt;a href="http://www.sciencemag.org/content/333/6043/776.abstract"&gt;this&lt;/a&gt; (unfortunately paywalled).&amp;#160;&lt;a class="footnote-backref" href="#fnref:metamemory" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+e.g. &lt;a href="http://www.sciencemag.org/content/333/6043/776.abstract"&gt;this&lt;/a&gt; (unfortunately paywalled).&amp;#160;&lt;a class="footnote-backref" href="#fnref:metamemory" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:photo-credit"&gt;
-&lt;p&gt;Photo credit: Amy Hodge (&lt;a href="https://creativecommons.org/licenses/by/2.0/"&gt;CC-BY&lt;/a&gt;)&amp;#160;&lt;a class="footnote-backref" href="#fnref:photo-credit" rev="footnote" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Photo credit: Amy Hodge (&lt;a href="https://creativecommons.org/licenses/by/2.0/"&gt;CC-BY&lt;/a&gt;)&amp;#160;&lt;a class="footnote-backref" href="#fnref:photo-credit" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:swc-msu"&gt;
 &lt;p&gt;The site for this historic event can still be found
-&lt;a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/"&gt;here&lt;/a&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref:swc-msu" rev="footnote" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="https://web.archive.org/web/20120514195748/http://software-carpentry.org/boot-camps/michigan-state-university-may-2012/"&gt;here&lt;/a&gt;.&amp;#160;&lt;a class="footnote-backref" href="#fnref:swc-msu" title="Jump back to footnote 6 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="mistakes"></category><category term="python"></category></entry></feed>
