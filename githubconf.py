@@ -8,4 +8,4 @@ import sys
 sys.path.append(os.curdir)
 from publishconf import *
 
-SITEURL = "https://bsmith89.github.io/blog"
+SITEURL = "//bsmith89.github.io/blog"

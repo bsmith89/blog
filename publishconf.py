@@ -8,7 +8,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = "http://blog.byronjsmith.com"
+SITEURL = "//blog.byronjsmith.com"
 DISQUS_SITENAME = "byronjsmithblog"
 GOOGLE_ANALYTICS = "UA-40659359-2"
 
