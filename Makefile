@@ -64,6 +64,7 @@ ${OUTPUTDIR_PUB}: ${INPUTDIR}/**/*
 ${OUTPUTDIR_GH}: ${INPUTDIR}/**/*
 	@rm -rf $@
 	${PELICAN} ${INPUTDIR} -D -o $@ -s ${GHCONF} ${PELICANOPTS}
+	echo 'blog.byronjsmith.com' > ${OUTPUTDIR_GH}/CNAME
 
 html: ${OUTPUTDIR_DEV}
 
