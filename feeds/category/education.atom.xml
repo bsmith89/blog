@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Education</title><link href="//bsmith89.github.io/blog/" rel="alternate"></link><link href="//bsmith89.github.io/blog/feeds/category/education.atom.xml" rel="self"></link><id>//bsmith89.github.io/blog/</id><updated>2017-01-01T18:30:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Teaching Python by the (Note)Book</title><link href="//bsmith89.github.io/blog/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2017-01-01:/blog/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - Education</title><link href="//blog.byronjsmith.com/" rel="alternate"></link><link href="//blog.byronjsmith.com/feeds/category/education.atom.xml" rel="self"></link><id>//blog.byronjsmith.com/</id><updated>2017-01-01T18:30:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Teaching Python by the (Note)Book</title><link href="//blog.byronjsmith.com/python-lesson-balance.html" rel="alternate"></link><published>2017-01-01T18:30:00-05:00</published><updated>2017-01-01T18:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2017-01-01:/python-lesson-balance.html</id><summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; I tried out a &lt;a href="https://gist.github.com/bsmith89/5eeb9e7da35bd6b8bf28ae884f6478ff"&gt;modified Python lesson&lt;/a&gt;
 and I think it was successful at balancing learner motivation with teaching
 foundational (and sometimes boring) concepts.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways, &lt;a href="https://software-carpentry.org"&gt;teaching Python to scientists&lt;/a&gt;
@@ -69,7 +69,7 @@ are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref:inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn:inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="//bsmith89.github.io/blog/Education/swc-python-lesson.md"&gt;written previously&lt;/a&gt; about my experience
+I have &lt;a href="//blog.byronjsmith.com/Education/swc-python-lesson.md"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -158,7 +158,7 @@ as a Jupyter notebook.
 In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="//bsmith89.github.io/blog/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="//blog.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
 &lt;p&gt;I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
 lines of code.
@@ -228,7 +228,7 @@ If you're feeling brave, please try it out and let me know how it goes!&lt;/p&gt
 &lt;p&gt;HEAD at &lt;a href="https://github.com/swcarpentry/python-novice-gapminder/tree/e303e6a9d309bdcbcfb370c8125b7792d4096968"&gt;e303e6a9d3&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:gapminder-commit" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>First time teaching Python to novices</title><link href="//bsmith89.github.io/blog/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:bsmith89.github.io,2015-08-12:/blog/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
+&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="python"></category><category term="jupyter"></category></entry><entry><title>First time teaching Python to novices</title><link href="//blog.byronjsmith.com/swc-python-lesson.html" rel="alternate"></link><published>2015-08-12T01:00:00-04:00</published><updated>2015-08-14T10:00:00-04:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2015-08-12:/swc-python-lesson.html</id><summary type="html">&lt;p&gt;This July I co-instructed with &lt;a href="https://impactstory.org/JenniferShelton"&gt;Jennifer Shelton&lt;/a&gt;
 a Software Carpentry &lt;a href="http://i5k-kinbre-script-share.github.io/2015-07-23-stanford/"&gt;workshop&lt;/a&gt; at Stanford University,
 targeted to researchers with genomic or evolutionary datasets.
 Jennifer taught the shell (Bash) and version control with Git,
@@ -382,7 +382,7 @@ I think the explicit approach worked well for the learners in this workshop.
 Since we were covering functions anyway, it wasn't hard to get a multi-level
 traceback.
 Syntax errors also combined nicely with learning function definition syntax.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//bsmith89.github.io/blog/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//blog.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Somewhere in the process of talking about functions we got sidetracked with
 &lt;code&gt;open()&lt;/code&gt;.
 I was surprised to see that the lesson plans have only limited discussion of
