@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//blog.byronjsmith.com/</link><description>A blog of the new microbiology.</description><lastBuildDate>Fri, 18 May 2018 11:00:00 -0400</lastBuildDate><item><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link>//blog.byronjsmith.com/acarbose-longevity-preprint.html</link><description>&lt;!--
+<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//blog.byronjsmith.com/</link><description>A blog of the new microbiology.</description><lastBuildDate>Thu, 20 Jun 2019 15:00:00 -0400</lastBuildDate><item><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link>//blog.byronjsmith.com/acarbose-longevity-preprint.html</link><description>&lt;!--
 ## Introduction
 --&gt;
 
@@ -7,6 +7,9 @@
 &lt;a href="https://doi.org/10.1101/311456"&gt;preprint of our latest manuscript to the bioRxiv&lt;/a&gt;,
 as well as submitted it for peer review to the open access journal Microbiome.
 I'll update this note if and when it gets accepted.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Edit 2019-06-20: Our submission to Microbiome was tranferred to BMC
+Microbiology, and was finally accepted (more than a full year in review!).
+&lt;a href="https://doi.org/10.1186/s12866-019-1494-7"&gt;Check it out in print&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;These days it seems like the only research more over-hyped than
 "microbiome" is &lt;em&gt;longevity-enhancement&lt;/em&gt;.
 It is therefore with some trepidation that I have released into this world of
@@ -16,9 +19,7 @@ enhanced longevity in acarbose-treated mice."&lt;/p&gt;
 &lt;p&gt;Previous work (done by my co-authors on this paper as well as others) has
 conclusively demonstrated that treatment with the anti-diabetic drug acarbose
 &lt;a href="https://doi.org/10.1111/acel.12170"&gt;substantially increases lifespan in mice&lt;/a&gt; (&lt;a href="https://doi.org/10.1111/acel.12496"&gt;also&lt;/a&gt;).
-The magnitude of the effect in males&amp;mdash;where it's the most
-pronounced&amp;mdash;puts it on par with rapamycin and 17-&amp;alpha;-estradiol, two
-drugs that have gotten heavy interest from the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 01 May 2018 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.byronjsmith.com,2018-05-01:/acarbose-longevity-preprint.html</guid><category>microbiome</category><category>acarbose</category><category>preprint</category><category>SCFAs</category><category>longevity</category><category>open science</category></item><item><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link>//blog.byronjsmith.com/snakemake-analysis.html</link><description>&lt;p&gt;In many areas of natural and social science, as well as engineering, data
+The magnitude of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Tue, 01 May 2018 12:00:00 -0400</pubDate><guid isPermaLink="false">tag:blog.byronjsmith.com,2018-05-01:/acarbose-longevity-preprint.html</guid><category>microbiome</category><category>acarbose</category><category>preprint</category><category>SCFAs</category><category>longevity</category><category>open science</category></item><item><title>Tutorial: Reproducible data analysis pipelines using Snakemake</title><link>//blog.byronjsmith.com/snakemake-analysis.html</link><description>&lt;p&gt;In many areas of natural and social science, as well as engineering, data
 analysis involves a series of transformations: filtering, aggregating,
 comparing to theoretical models, culminating in the visualization and
 communication of results.
