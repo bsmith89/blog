@@ -3,7 +3,7 @@ title: Changes to the gut microbiome resulting from acarbose treatment are assoc
 subtitle: New preprint posted to the bioRxiv
 date: 2018-05-01 12:00
 tags: microbiome, acarbose, preprint, SCFAs, longevity, open science
-modified: 2018-05-18 11:00
+modified: 2019-06-20 15:00
 ...
 
 <!--
@@ -16,6 +16,13 @@ as well as submitted it for peer review to the open access journal Microbiome.
 I'll update this note if and when it gets accepted._
 
 [preprint]: https://doi.org/10.1101/311456
+
+_Edit 2019-06-20: Our submission to Microbiome was tranferred to BMC
+Microbiology, and was finally accepted (more than a full year in review!).
+[Check it out in print][publication]._
+
+[publication]: https://doi.org/10.1186/s12866-019-1494-7
+
 
 These days it seems like the only research more over-hyped than
 "microbiome" is _longevity-enhancement_.
