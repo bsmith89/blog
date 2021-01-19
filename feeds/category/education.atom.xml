@@ -69,7 +69,7 @@ are difficult for the instructor to diagnose and iterate beyond.&lt;/p&gt;
 &lt;h1&gt;State of the Python lesson&lt;/h1&gt;
 &lt;p&gt;As of this writing, the current default Python lesson for Software Carpentry is
 &lt;a href="http://swcarpentry.github.io/python-novice-inflammation/"&gt;"Novice Inflammation"&lt;/a&gt;&lt;sup id="fnref:inflammation-commit"&gt;&lt;a class="footnote-ref" href="#fn:inflammation-commit"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-I have &lt;a href="//blog.byronjsmith.com/Education/Education/swc-python-lesson.md"&gt;written previously&lt;/a&gt; about my experience
+I have &lt;a href="//blog.byronjsmith.com/swc-python-lesson.html"&gt;written previously&lt;/a&gt; about my experience
 with the lesson, and have not been shy with my criticism.
 There is a &lt;em&gt;lot&lt;/em&gt; to be positive about in the composition of Inflammation.
 It has been an effective approach to teaching Python to what at this point
@@ -158,7 +158,7 @@ as a Jupyter notebook.
 In particular, the notebook includes code to generate a fairly involved
 figure telling a story about the relationship between per-capita GDP and
 life-expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="//blog.byronjsmith.com/Education/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="An example visualization of the gapminder data." src="//blog.byronjsmith.com/static/images/gapminder-analysis.png"&gt;&lt;/p&gt;
 &lt;p&gt;I started the second day by having learners download and run this notebook,
 demonstrating the quality of analyses they could produce with fewer than 100
 lines of code.
@@ -382,7 +382,7 @@ I think the explicit approach worked well for the learners in this workshop.
 Since we were covering functions anyway, it wasn't hard to get a multi-level
 traceback.
 Syntax errors also combined nicely with learning function definition syntax.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//blog.byronjsmith.com/Education/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The author dissecting an attribute error.5" src="//blog.byronjsmith.com/static/images/swc-stanford-byron.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Somewhere in the process of talking about functions we got sidetracked with
 &lt;code&gt;open()&lt;/code&gt;.
 I was surprised to see that the lesson plans have only limited discussion of

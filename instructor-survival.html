@@ -316,7 +316,7 @@ blog by Erin Becker.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Days between certification and first teaching&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<p><img alt="Histogram of days between certification and first teaching." src="//blog.byronjsmith.com/Data/static/images/swc-survival-taught-first-hist.png"></p>
+<p><img alt="Histogram of days between certification and first teaching." src="//blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png"></p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> of </span><span class="si">{}</span><span class="s2"> instructors have not yet taught.&quot;</span>
           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="o">~</span><span class="n">data</span><span class="o">.</span><span class="n">has_taught</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)))</span>
 </code></pre></div>
@@ -362,7 +362,7 @@ this "baseline" curve represents the mean of annual means.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Fraction instructors not taught&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<p><img alt="Survival curve of days to teaching for the first time" src="//blog.byronjsmith.com/Data/static/images/swc-survival-taught-first-curve.png"></p>
+<p><img alt="Survival curve of days to teaching for the first time" src="//blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png"></p>
 <p>The key figure in survival analysis is the survival curve, or its derivative
 the hazard function.
 Survival curves plot the number or percentage of individuals who have not yet
@@ -428,7 +428,7 @@ Can we predict the time after first teaching that it takes to teach again?</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Fraction instructors not taught second time&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<p><img alt="Survival curve of days to teaching a second time after having taught once" src="//blog.byronjsmith.com/Data/static/images/swc-survival-taught-second-curve.png"></p>
+<p><img alt="Survival curve of days to teaching a second time after having taught once" src="//blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png"></p>
 <p>The baseline survival curve reflects expectations for a theoretical individual
 who taught immediately upon being certified (day 0).
 For these folks, we expect 50% to teach again within 100 days, and almost 80%

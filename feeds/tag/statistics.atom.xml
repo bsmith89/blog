@@ -169,7 +169,7 @@ blog by Erin Becker.&lt;/p&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Days between certification and first teaching&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="Histogram of days between certification and first teaching." src="//blog.byronjsmith.com/Data/static/images/swc-survival-taught-first-hist.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Histogram of days between certification and first teaching." src="//blog.byronjsmith.com/static/images/swc-survival-taught-first-hist.png"&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{}&lt;/span&gt;&lt;span class="s2"&gt; of &lt;/span&gt;&lt;span class="si"&gt;{}&lt;/span&gt;&lt;span class="s2"&gt; instructors have not yet taught.&amp;quot;&lt;/span&gt;
           &lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;has_taught&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -215,7 +215,7 @@ this "baseline" curve represents the mean of annual means.&lt;/p&gt;
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Fraction instructors not taught&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="Survival curve of days to teaching for the first time" src="//blog.byronjsmith.com/Data/static/images/swc-survival-taught-first-curve.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Survival curve of days to teaching for the first time" src="//blog.byronjsmith.com/static/images/swc-survival-taught-first-curve.png"&gt;&lt;/p&gt;
 &lt;p&gt;The key figure in survival analysis is the survival curve, or its derivative
 the hazard function.
 Survival curves plot the number or percentage of individuals who have not yet
@@ -281,7 +281,7 @@ Can we predict the time after first teaching that it takes to teach again?&lt;/p
 &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Fraction instructors not taught second time&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img alt="Survival curve of days to teaching a second time after having taught once" src="//blog.byronjsmith.com/Data/static/images/swc-survival-taught-second-curve.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Survival curve of days to teaching a second time after having taught once" src="//blog.byronjsmith.com/static/images/swc-survival-taught-second-curve.png"&gt;&lt;/p&gt;
 &lt;p&gt;The baseline survival curve reflects expectations for a theoretical individual
 who taught immediately upon being certified (day 0).
 For these folks, we expect 50% to teach again within 100 days, and almost 80%
