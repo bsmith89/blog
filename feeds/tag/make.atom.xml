@@ -1,11 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - make</title><link href="//blog.byronjsmith.com/" rel="alternate"></link><link href="//blog.byronjsmith.com/feeds/tag/make.atom.xml" rel="self"></link><id>//blog.byronjsmith.com/</id><updated>2017-11-21T09:30:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Take five minutes to simplify your life with Make</title><link href="//blog.byronjsmith.com/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-06-14:/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Deep Ecology - make</title><link href="//blog.byronjsmith.com/" rel="alternate"></link><link href="//blog.byronjsmith.com/feeds/tag/make.atom.xml" rel="self"></link><id>//blog.byronjsmith.com/</id><updated>2021-01-19T12:00:00-05:00</updated><subtitle>A blog of the new microbiology.</subtitle><entry><title>Things I'm Glad I Learned</title><link href="//blog.byronjsmith.com/things-im-glad-i-learned.html" rel="alternate"></link><published>2021-01-18T18:00:00-05:00</published><updated>2021-01-19T12:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2021-01-18:/things-im-glad-i-learned.html</id><summary type="html">&lt;!--
+_(
+Before starting, I've decided two things about this post that I think are
+important.
+(1) I'm going to publish it by 18:00 this evening,
+and (2) I'll keep updating it as I think of new things to add.
+)_
+
+--&gt;
+
+&lt;p&gt;&lt;em&gt;(WARNING: This post has not yet been revised. It may therefore
+contain all kinds of typos, spelling errors, grammatical issues, and
+delusions of wisdom, writing ability, and grandeur.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This post is a WORK IN PROGRESS and is intended as a living document&amp;mdash;a
+gratitude journal of sorts&amp;mdash;of some things that I'm glad I learned (and
+often wish I had learned earlier).
+I expect many of the items on this list will be relevant to computation
+biology, but that may change in the future.&lt;/p&gt;
+&lt;p&gt;The big idea is that there are undoubtedly things that someone will tell me
+about in the coming decade that I'm going to be grateful to have learned.
+This list is my chance to "pay it backwards", as it were; maybe someone
+else will be grateful for something they first heard about here.&lt;/p&gt;
+&lt;p&gt;It may also double as an inspo list for future posts.&lt;/p&gt;
+&lt;p&gt;My goal …&lt;/p&gt;</summary><content type="html">&lt;!--
+_(
+Before starting, I've decided two things about this post that I think are
+important.
+(1) I'm going to publish it by 18:00 this evening,
+and (2) I'll keep updating it as I think of new things to add.
+)_
+
+--&gt;
+
+&lt;p&gt;&lt;em&gt;(WARNING: This post has not yet been revised. It may therefore
+contain all kinds of typos, spelling errors, grammatical issues, and
+delusions of wisdom, writing ability, and grandeur.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This post is a WORK IN PROGRESS and is intended as a living document&amp;mdash;a
+gratitude journal of sorts&amp;mdash;of some things that I'm glad I learned (and
+often wish I had learned earlier).
+I expect many of the items on this list will be relevant to computation
+biology, but that may change in the future.&lt;/p&gt;
+&lt;p&gt;The big idea is that there are undoubtedly things that someone will tell me
+about in the coming decade that I'm going to be grateful to have learned.
+This list is my chance to "pay it backwards", as it were; maybe someone
+else will be grateful for something they first heard about here.&lt;/p&gt;
+&lt;p&gt;It may also double as an inspo list for future posts.&lt;/p&gt;
+&lt;p&gt;My goal is to write a small blurb for each item, explaining what it is,
+why I'm grateful for it, how it connects to other items,
+when I learned about it, and who I have to thank for learning about
+it originally.
+Beyond that, I'll likely leave further discovery up to the reader.
+I may add additional links in future edits.&lt;/p&gt;
+&lt;h2&gt;Computing&lt;/h2&gt;
+&lt;h3&gt;Dependency Graphs (e.g. GNU Make, Snakemake)&lt;/h3&gt;
+&lt;h3&gt;Probabilistic Programming (e.g. PyMC3, Pyro)&lt;/h3&gt;
+&lt;h3&gt;Containers (e.g. Docker, Singularity)&lt;/h3&gt;
+&lt;p&gt;The newest item on this list (as of December 2020)!&lt;/p&gt;
+&lt;p&gt;I think the Docker/Singularity combo may have finally solved all of my
+software installation problems. Lol.&lt;/p&gt;
+&lt;p&gt;This is a hard one to assign thank, because containerization has been
+marketed to me by probably five different people since 2013 or so.
+Very grateful that I finally picked it up in 2020!&lt;/p&gt;
+&lt;h3&gt;Command-line / UNIX&lt;/h3&gt;
+&lt;p&gt;I'm thankful that I have a glue environment, the UNIX command-line,
+for all of my computational work.
+Working with a command-line interace (CLI) is foundational for all of the
+other headings in this "Computing" section.
+I'm (as of now) not including Vim as a separate item, but it really is the
+combination of Bash and (Neo)Vim that I'm most grateful for in my work.&lt;/p&gt;
+&lt;p&gt;I'm not sure who to thank for this one. Maybe Google, because they sent me a
+free Chromebook in the early days (which I used extensively for college
+work until the wi-fi broke...).
+It was hacking around on that Chromebook's terminal that got me into Linux,
+and ultimately resulted in me replacing Windows with Ubuntu on my main laptop.&lt;/p&gt;
+&lt;p&gt;I probably wouldn't be the scientist that I am now if it weren't for that
+experience.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://xkcd.com/519/"&gt;Relevant XKCD&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;p&gt;Anything that I'm capable of programming, I'm capable of programming in Python.&lt;/p&gt;
+&lt;p&gt;I'm glad that I know at least one language very well.
+I think it makes me a
+better teacher (of Python, but also of other languages).
+I think it makes
+it easier for me to learn new languages and programming concepts.
+And I almost never need to decide what language to work in when I'm
+doing something complicated; it's always Python.&lt;/p&gt;
+&lt;p&gt;Thanks for introducing me to Python goes to Dr. John Hayes, a postdoc
+(neuroscientist) I worked with briefly while I was doing undergraduate research
+in Margaret Saha's Lab at The College of William &amp;amp; Mary.&lt;/p&gt;
+&lt;h3&gt;Functional Programming&lt;/h3&gt;
+&lt;p&gt;I'm a solid Haskell beginner (maybe intermediate depending on who you ask).
+I don't do any of my work in Haskell (although I'm often wondering if there are
+opportunites).
+On the other hand, almost all of my programming is in a functional style.
+I think (without any empirical evidence) I've probably saved myself a lot of
+pain by (trying to):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Never reuse variable names for different things&lt;/li&gt;
+&lt;li&gt;Avoid mutation ("in the large")&lt;/li&gt;
+&lt;li&gt;Use higher-level programming instead of conditionals to control program flow&lt;/li&gt;
+&lt;li&gt;Keep side-effects away from core logic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Version Control (e.g. Git)&lt;/h3&gt;
+&lt;h3&gt;Plain-text&lt;/h3&gt;
+&lt;h3&gt;Jupyter notebooks&lt;/h3&gt;
+&lt;p&gt;...but only for prototyping and interactive work; never for reproducible
+automation.
+Notebooks are a core part of my workflow, and the exploratory data analysis
+phase of my work is very much done in the Jupyter environment.
+On the other hand, my love of workflow managers like Snakemake means that
+I try to keep interactive work at the "tips" of my data processing DAG.
+Notebooks are a great place to do prototyping, but the second I need the
+resulting data for a downstream step it's probably time to convert it to a
+script.&lt;/p&gt;
+&lt;h2&gt;Biology&lt;/h2&gt;
+&lt;h3&gt;Organic Chemistry&lt;/h3&gt;
+&lt;p&gt;I think having first-principles knowledge about how biology is built out of
+chemistry has served me very well.&lt;/p&gt;
+&lt;p&gt;Not sure there's much more for me to say than that.&lt;/p&gt;
+&lt;h3&gt;Neutral Evolution&lt;/h3&gt;
+&lt;p&gt;Not everything is adaptive (e.g. I'm 99% sure eye color doesn't affect survival
+or reproduction.)
+It's incredibly infuriating to see so many Appeals to Natural Selection
+(a new logical fallacy I'm naming here first, 2021-01-18) in our
+general discourse.
+To my eye, it's all B.S.&lt;/p&gt;
+&lt;p&gt;Introduced to me by/on: unknown.&lt;/p&gt;
+&lt;h3&gt;Spandrils&lt;/h3&gt;
+&lt;p&gt;Not everything that seems adaptive, even when there's evidence for convergent
+evolution, actually is.
+Some traits are a natural consequence of physical reality.
+This is important to more than just snails;
+it's probably a part of the answer to e.g. "why do animals have such fancy
+microbiomes?"&lt;/p&gt;
+&lt;p&gt;If I had to guess, I learned about spandrils first in my evolutionary biology
+class in college.
+I'm sure I can figure out who taught that class if I dig into my emails,
+but I'm going to put that off for another day.&lt;/p&gt;
+&lt;h3&gt;Microbial Communities&lt;/h3&gt;
+&lt;p&gt;I have no doubt that the research I did in high school with Dr. May Voytek at
+the USGS (in 2006 and 2007) was one of the most important experiences for my
+career development.
+I was enthralled then&amp;mdash;as I am now&amp;mdash;with the ways in which microbial
+metabolisms can combine in complex communities to perform immensely important
+processes.&lt;/p&gt;
+&lt;h2&gt;Statistics&lt;/h2&gt;
+&lt;h3&gt;Graphical Models&lt;/h3&gt;
+&lt;p&gt;My introduction to graphical models was really an introduction to maximum
+likelihood estimation and structural equation modeling taught by Colin Kremer
+and TODO during two sessions of ELME ("Enhanced Linkages between Mathematics and Ecology")
+at Kellogg Biological Station in the summer of 2012.&lt;/p&gt;
+&lt;h3&gt;Bayesian Statistics&lt;/h3&gt;
+&lt;p&gt;It's not the elegance of Bayes's Rule that I'm enamoured with;
+it's how Bayesian statistics &lt;em&gt;democratizes&lt;/em&gt; inference (e.g. the Inference
+Button).
+If you have a data generating model and some data, you can make
+logically consistent statements about it's parameters.
+&lt;em&gt;And&lt;/em&gt; you get propagation of uncertainty for free!
+How cool is that??&lt;/p&gt;
+&lt;p&gt;The first material impact on my understanding of Bayesian stats
+was probably in Statistics for Ecologists (was that the name?),
+taught by Dr. Ian Dworkin at Michigan State University.
+ELME also played a key role in me picking up what Dr. Dworkin was putting
+down, although I still only got a whiff of the importance.
+It was probably another 4+ years before I learned enough basics to
+start calling myself a Bayesian (see PyMC3).&lt;/p&gt;
+&lt;h3&gt;Causal Inference&lt;/h3&gt;
+&lt;h2&gt;Teaching&lt;/h2&gt;
+&lt;h3&gt;Learning Objectives / Concept Inventories&lt;/h3&gt;
+&lt;h3&gt;Flipped Classroom&lt;/h3&gt;
+&lt;h3&gt;Expert Bias&lt;/h3&gt;
+&lt;h3&gt;Learning By Teaching&lt;/h3&gt;
+&lt;p&gt;For me (and undoubtedly many other people to), I learn something the best
+when I have to teach it.
+This served me very well during my undergraduate genetics class when
+Nishant Kishore and I would cram the night before a test by me "teaching" him
+the material to the extent that I had understood it.&lt;/p&gt;
+&lt;p&gt;This compounds with other ideas in pedagogy, like Expert Bias and flipped
+classrooms.&lt;/p&gt;
+&lt;h2&gt;Life&lt;/h2&gt;
+&lt;h3&gt;Growth Mindset&lt;/h3&gt;
+&lt;p&gt;It feels incredibly powerful to see ones current self as just a single stage
+in the development of their full capabilities.&lt;/p&gt;
+&lt;p&gt;I think I really first learned this in Multivariate Calculus my sophomore
+year; I distinctly remember how gratifying it was to go from absolutely zero
+understanding to a B-minus on the final; a bad grade relative to my other
+classes but I'm very proud of it nonetheless.&lt;/p&gt;
+&lt;h3&gt;Deficit Model of Persuasion&lt;/h3&gt;
+&lt;p&gt;People who disagree with you about the way the world works often have all the
+same facts as you do.
+We don't convince people of our world view by giving them more facts.&lt;/p&gt;
+&lt;p&gt;I find this depressing. But on the flip side you &lt;em&gt;can&lt;/em&gt; be much more effective
+at persuasion by doing two key things (to my limited understanding):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Share your emotional reasons for your beliefs
+  (e.g. I'm super &lt;strong&gt;excited&lt;/strong&gt; to be able to travel and hug my parents again
+  after they and I are vaccinated.
+  I've been &lt;strong&gt;scared&lt;/strong&gt; about their safety, and vaccination feels like an
+  opportunity for &lt;strong&gt;optimism&lt;/strong&gt;.)&lt;/li&gt;
+&lt;li&gt;Demonstrate that their community shares that belief.
+  This is usually done by making them part of &lt;em&gt;your&lt;/em&gt; community.
+  (I think it's really great that our family/college/neighborhood has really
+  come together to get everyone vaccinated.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is obviously key for science communication.&lt;/p&gt;
+&lt;h3&gt;Privelege&lt;/h3&gt;
+&lt;p&gt;Recognizing my advantages has been really helpful in building empathy for
+disadvantaged groups in the world.
+I want everyone to have the same access and opportunities for success and
+contribution that I have had.&lt;/p&gt;
+&lt;p&gt;I probably internalized this sense circa 2015...ish.
+Not sure if there's any one person to thank.&lt;/p&gt;
+&lt;h3&gt;Talking About Yourself (e.g. "I feel..." Language)&lt;/h3&gt;
+&lt;p&gt;I think that my interpersonal relationships have been bolstered by
+a mutual ability to focus what we say on &lt;em&gt;our&lt;/em&gt; needs and feelings instead
+of claiming some objective sense of reality.&lt;/p&gt;
+&lt;p&gt;I can say with some certainty that communication is much more likely to
+transition into a fight (not communication) when I break this rule.&lt;/p&gt;
+&lt;h3&gt;Cognitive Biases&lt;/h3&gt;
+&lt;p&gt;Especially the "Fundamental Attribution Error".&lt;/p&gt;
+&lt;p&gt;Mostly because I am also subject to all of the same biases, but also
+because it helps me to understand peoples' behavior, even at large scales.&lt;/p&gt;
+&lt;h3&gt;Profit and Monopoly&lt;/h3&gt;
+&lt;p&gt;I think I have a hobbiest's understanding of economic theory.
+As I understand it, in an idealized world (perfect market efficiency) no
+producer should be able to make a marginal profit in the long run.
+Obviously this is not really the case, since e.g. doctors are making
+great money for their time.
+I think it's fascinating that in many (most?) cases where value is being
+captured by a small group of people this can be assigned to some sort of
+monopoly power.
+For instance doctors have the AMA controlling the supply of medical labor,
+Genentech has various patents and corporate secrets, and ISPs have
+both cartel power and huge barriers to entry in most regions.&lt;/p&gt;
+&lt;p&gt;Monopolies aren't all evil (left as an exercise to the reader).
+Appropriately regulating these monopolies seems like a key
+role of governments.&lt;/p&gt;
+&lt;h3&gt;Intentional Communities&lt;/h3&gt;
+&lt;p&gt;In this millenium, many people (including me) are suffering from less community
+than the previous one.
+This would appear to be due to geographic mobility (loss of family and
+friends), secularization, an extended youth, etc.&lt;/p&gt;
+&lt;p&gt;I think it has been empowering to realize that we can choose to have those
+communities if we're willing to work for it.
+Intentional communities (a.k.a. communes, kibbutzim) prove it, and give me
+something to aspire to.&lt;/p&gt;
+&lt;h3&gt;Getting Things Done (GTD)&lt;/h3&gt;
+&lt;p&gt;I don't actually use the GTD system, so &lt;/p&gt;
+&lt;h3&gt;Rituals&lt;/h3&gt;</content><category term="Misc."></category><category term="education"></category><category term="open science"></category><category term="computation biology"></category><category term="biology"></category><category term="snakemake"></category><category term="make"></category><category term="pymc3"></category><category term="bayesian"></category></entry><entry><title>Take five minutes to simplify your life with Make</title><link href="//blog.byronjsmith.com/makefile-shortcuts.html" rel="alternate"></link><published>2016-06-14T12:00:00-04:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-06-14:/makefile-shortcuts.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -23,7 +271,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -48,7 +296,7 @@ script.&lt;/p&gt;
 &lt;h2&gt;The default makefile&lt;/h2&gt;
 &lt;p&gt;TL;DR: All of the code in this post is available as a &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here's what a minimal makefile might look like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;Usage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     make &lt;span class="nb"&gt;help&lt;/span&gt;                   show this message
@@ -103,8 +351,7 @@ script.&lt;/p&gt;
     rm -rf &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
 &lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;help&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;-&lt;span class="n"&gt;jupter&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you want to start using it right away, download the &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;gist&lt;/a&gt;,
 which includes a couple of other necessary files.
@@ -113,7 +360,7 @@ up.&lt;/p&gt;
 &lt;p&gt;But let's break it down so you can see how it's made and why it's awesome.&lt;/p&gt;
 &lt;p&gt;From the top!&lt;/p&gt;
 &lt;h2&gt;A help message for your project&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;Usage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     make &lt;span class="nb"&gt;help&lt;/span&gt;                   show this message
@@ -131,8 +378,7 @@ up.&lt;/p&gt;
 
 &lt;span class="nf"&gt;help&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$$&lt;/span&gt;PROJECT_HELP_MSG
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The top of our makefile is a help message.
 Running the traditional invocation &lt;code&gt;make help&lt;/code&gt; will call that recipe and we'll
@@ -147,10 +393,9 @@ a handy cheatsheet.&lt;/p&gt;
 nifty trick to auto-generate these help messages,
 keeping documentation and recipes together in your makefile.&lt;/p&gt;
 &lt;h2&gt;Streamline git setup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;.git&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;.git&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     git init
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Every project should be &lt;a href="https://dx.doi.org/10.1186/1751-0473-8-7"&gt;version controlled&lt;/a&gt;.
 I prefer git, but the makefile can probably be adapted for Mercurial,
@@ -159,7 +404,7 @@ This recipe is so simple as to appear useless (since &lt;code&gt;make .git&lt;/c
 to type than &lt;code&gt;git init&lt;/code&gt;) but we use the directory &lt;code&gt;.git/&lt;/code&gt; as an
 &lt;a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html"&gt;order-only prerequisite&lt;/a&gt;
 for the next recipe:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
     git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
         drop_jupyter_output.sh
     git config --local filter.dropoutput_jupyter.smudge cat
@@ -170,8 +415,7 @@ for the next recipe:&lt;/p&gt;
         merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
     git config --local &lt;span class="se"&gt;\&lt;/span&gt;
         merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Git configuration is &lt;em&gt;just&lt;/em&gt; annoying enough that I often put it off for a new
 project.
@@ -179,11 +423,10 @@ With this recipe I don't have to!&lt;/p&gt;
 &lt;p&gt;There are three parts to the configuration above;
 customize it for how you use git.&lt;/p&gt;
 &lt;h3&gt;Drop Jupyter Notebook output&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
     ./drop_jupyter_output.sh
 git config --local filter.dropoutput_jupyter.smudge cat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I set up a &lt;a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes"&gt;clean/smudge filter&lt;/a&gt; for my Jupyter notebooks.
 Outputs of analysis should generally not be version controlled,
@@ -198,51 +441,46 @@ notebook you'll have to re-execute all of the cells to get the results.&lt;/p&gt
 First, &lt;code&gt;.gitattributes&lt;/code&gt; which is a tab-separated file mapping filename patterns
 to special git configuration.
 The first line in that file should be the following.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*.ipynb filter=dropoutput_jupyter
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;*.ipynb filter=dropoutput_jupyter&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(That's a tab after &lt;code&gt;*.ipynb&lt;/code&gt;.)&lt;/p&gt;
 &lt;p&gt;The second file is the filter &lt;code&gt;drop_jupyter_output.sh&lt;/code&gt;,
 which needs to be executable.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
 &lt;span class="c1"&gt;# run `chmod +x drop_jupyter_output.sh` to make it executable.&lt;/span&gt;
 
 &lt;span class="nv"&gt;file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;mktemp&lt;span class="k"&gt;)&lt;/span&gt;
 cat &amp;lt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &amp;gt;&lt;span class="nv"&gt;$file&lt;/span&gt;
 jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled&lt;span class="o"&gt;=&lt;/span&gt;True &lt;span class="se"&gt;\&lt;/span&gt;
     &lt;span class="nv"&gt;$file&lt;/span&gt; --stdout &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/dev/null
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Display tabs as four spaces&lt;/h3&gt;
 &lt;p&gt;I also configure &lt;code&gt;less&lt;/code&gt; to show four spaces for tabs.
 This makes &lt;code&gt;git diff&lt;/code&gt;-ing my makefile much easier on the eyes.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Smart &lt;code&gt;diff&lt;/code&gt;s for tabular data&lt;/h3&gt;
 &lt;p&gt;Since git considers changes on a per-line basis, looking at
 &lt;code&gt;diff&lt;/code&gt;s of comma-delimited and tab-delimited files can get obnoxious.
 The program &lt;a href="http://paulfitz.github.io/daff/"&gt;&lt;code&gt;daff&lt;/code&gt;&lt;/a&gt; fixes this problem.&lt;/p&gt;
 &lt;p&gt;We'll configure git to use &lt;code&gt;daff&lt;/code&gt; for all tabular files.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --local &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local &lt;span class="se"&gt;\&lt;/span&gt;
     diff.daff-csv.command &lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
 git config --local &lt;span class="se"&gt;\&lt;/span&gt;
     merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
 git config --local &lt;span class="se"&gt;\&lt;/span&gt;
     merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Just like the output filter for Jupyter notebooks, we need to associate
 this configuration with CSVs and TSVs in our &lt;code&gt;.gitattributes&lt;/code&gt; file by adding
 the following two lines.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*.[tc]sv diff=daff-csv
-*.[tc]sv merge=daff-csv
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;diff&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;merge&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;Automatic python virtual environments&lt;/h2&gt;
 &lt;p&gt;There are plenty of &lt;a href="https://www.davidfischer.name/2010/04/why-you-should-be-using-pip-and-virtualenv/"&gt;reasons&lt;/a&gt; to sandbox your python environments.
@@ -251,7 +489,7 @@ you'll appreciate these recipes to automate creating them and updating
 packages.&lt;/p&gt;
 &lt;p&gt;If you don't use python/pip, these recipes can be swapped out for other
 sandboxing systems.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; .venv
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; .venv
 &lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;abspath &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/bin:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
@@ -260,8 +498,7 @@ sandboxing systems.&lt;/p&gt;
 
 &lt;span class="nf"&gt;python-reqs&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;requirements&lt;/span&gt;.&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;}
     pip install --upgrade -r requirements.pip
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In the top block, we first set a variable &lt;code&gt;VENV&lt;/code&gt; to be the location of our
 virtual environment.
@@ -286,18 +523,16 @@ And, if you discipline yourself to make all changes to your execution
 environment in this way, you'll have a permanently up-to-date record of your
 system requirements.&lt;/p&gt;
 &lt;h2&gt;Single-command project setup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this meta-target a simple &lt;code&gt;make setup&lt;/code&gt; will have our new project
 configured and ready to go.
 This is particularly useful if you work on multiple machines:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:username/project.git
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone git@github.com:username/project.git
 &lt;span class="nb"&gt;cd&lt;/span&gt; project
 make setup
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;is all it takes to get up and running.&lt;/p&gt;
 &lt;h2&gt;Launch your tools without the hassle&lt;/h2&gt;
@@ -305,17 +540,15 @@ make setup
 With this recipe (and the &lt;code&gt;PATH&lt;/code&gt; we export above) I don't have to remember
 to activate my virtual environment or invoke specific configuration files
 when I launch a server.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;start-jupyter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;start-jupyter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;jupyter_notebook_config.py
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Put whatever you'd like into the &lt;a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html"&gt;config file&lt;/a&gt;.
 I like to keep my notebooks in a subdirectory, so my invocation is a little different:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;ipynb/jupyter_notebook_config.py &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;ipynb/jupyter_notebook_config.py &lt;span class="se"&gt;\&lt;/span&gt;
     --notebook-dir&lt;span class="o"&gt;=&lt;/span&gt;ipynb/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And my configuration automatically changes the working directory to
 the project root when launching a new notebook.&lt;/p&gt;
@@ -323,12 +556,11 @@ the project root when launching a new notebook.&lt;/p&gt;
 The same general idea works for any other software you can start from the shell.
 No need to remember any of the obnoxious command-line flags.&lt;/p&gt;
 &lt;h2&gt;Quick cleanup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
 
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rm -rf &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;A ubiquitous target for &lt;em&gt;Make&lt;/em&gt; is &lt;code&gt;clean&lt;/code&gt; to tidy up the repository.
 With this makefile, run &lt;code&gt;make clean&lt;/code&gt; to remove all the &lt;code&gt;*.pyc&lt;/code&gt; files.
@@ -371,7 +603,7 @@ run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&g
     on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref:bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="//blog.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
+&lt;/div&gt;</content><category term="Computing"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry><entry><title>Tutorial: Reproducible bioinformatics pipelines using GNU Make</title><link href="//blog.byronjsmith.com/make-analysis.html" rel="alternate"></link><published>2016-03-04T12:00:00-05:00</published><updated>2017-11-21T09:30:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2016-03-04:/make-analysis.html</id><summary type="html">&lt;p&gt;&lt;em&gt;WARNING: Because of the Markdown rendering of this blog, tab characters
 have been replaced with 4 spaces in code blocks.
 For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; when copied directly from
 the post.
@@ -435,53 +667,47 @@ Ubuntu Server 14.04 LTS image and a "m3.medium" instance.
 If you would like to use Windows, Git-Bash (packaged with Git for Windows)
 is probably your best bet, although it has not been tested on that platform.&lt;/p&gt;
 &lt;p&gt;For this lesson we will be using an already prepared set of files.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;curl https://codeload.github.com/bsmith89/make-example/tar.gz/v1.0-snap &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl https://codeload.github.com/bsmith89/make-example/tar.gz/v1.0-snap &lt;span class="se"&gt;\&lt;/span&gt;
     &amp;gt; make-example-1.0-snap.tgz
 tar -xzf make-example-1.0-snap.tgz
 &lt;span class="nb"&gt;cd&lt;/span&gt; make-example-1.0-snap
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Let's take a look at the files we will be working with:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get update
 sudo apt-get install tree
 tree
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The &lt;code&gt;tree&lt;/code&gt; command produces a handy tree-diagram of the directory.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;.
-├── books
-│   ├── abyss.txt
-│   ├── isles.txt
-│   ├── last.txt
-│   ├── LICENSE_TEXTS.md
-│   └── sierra.txt
-├── LICENSE.md
-├── matplotlibrc
-├── plotcount.py
-├── README.md
-└── wordcount.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;
+&lt;span class="err"&gt;│&lt;/span&gt;   &lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;span class="err"&gt;│&lt;/span&gt;   &lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;span class="err"&gt;│&lt;/span&gt;   &lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="k"&gt;last&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;span class="err"&gt;│&lt;/span&gt;   &lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;LICENSE_TEXTS&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;md&lt;/span&gt;
+&lt;span class="err"&gt;│&lt;/span&gt;   &lt;span class="err"&gt;└──&lt;/span&gt; &lt;span class="n"&gt;sierra&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;LICENSE&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;md&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;matplotlibrc&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;plotcount&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
+&lt;span class="err"&gt;├──&lt;/span&gt; &lt;span class="n"&gt;README&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;md&lt;/span&gt;
+&lt;span class="err"&gt;└──&lt;/span&gt; &lt;span class="n"&gt;wordcount&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
 
-1 directory, 10 files
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;directory&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Be sure that you also have &lt;em&gt;Python 3&lt;/em&gt;, &lt;em&gt;Git&lt;/em&gt;, and &lt;em&gt;GNU Make&lt;/em&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install python3 git make
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install python3 git make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Configure git.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --global user.name &lt;span class="s2"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --global user.name &lt;span class="s2"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
 git config --global user.email you@example.com
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Install matplotlib.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install python3-matplotlib
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install python3-matplotlib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;Motivation&lt;/h1&gt;
 &lt;p&gt;(Estimated time: 30 minutes)&lt;/p&gt;
@@ -498,53 +724,46 @@ and have prepared several Python scripts that together make up our
 analysis pipeline.&lt;/p&gt;
 &lt;p&gt;Before we begin, add a README to your project describing what we intend
 to do.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nano README.md
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;nano README.md
 &lt;span class="c1"&gt;# Describe what you&amp;#39;re going to do. (e.g. &amp;quot;Test Zipf&amp;#39;s Law&amp;quot;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The first step is to count the frequency of each word in the book.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./wordcount.py books/isles.txt isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./wordcount.py books/isles.txt isles.dat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(The leading '&lt;code&gt;./&lt;/code&gt;' is required so that Bash knows we're executing
 a file in the current directory rather than a command in our path.)&lt;/p&gt;
 &lt;p&gt;Let's take a quick peek at the result.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;head -5 isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;head -5 isles.dat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;shows us the top 5 lines in the output file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;the 3822    6.7371760973
-of  2460    4.33632998414
-and 1723    3.03719372466
-to  1479    2.60708619778
-a   1308    2.30565838181
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;the 3822    6.7371760973&lt;/span&gt;
+&lt;span class="err"&gt;of  2460    4.33632998414&lt;/span&gt;
+&lt;span class="err"&gt;and 1723    3.03719372466&lt;/span&gt;
+&lt;span class="err"&gt;to  1479    2.60708619778&lt;/span&gt;
+&lt;span class="err"&gt;a   1308    2.30565838181&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Each row shows the word itself, the number of occurrences of that
 word, and the number of occurrences as a percentage of the total
 number of words in the text file.&lt;/p&gt;
 &lt;p&gt;We can do the same thing for a different book:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./wordcount.py books/abyss.txt abyss.dat
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./wordcount.py books/abyss.txt abyss.dat
 head -5 abyss.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Finally, let's visualize the results.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./plotcount.py isles.dat ascii
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./plotcount.py isles.dat ascii
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The &lt;code&gt;ascii&lt;/code&gt; argument has been added so that we get a text-based
 bar-plot printed to the screen.&lt;/p&gt;
 &lt;p&gt;The script is also able to render a graphical bar-plot using matplotlib
 and save the figure to a given file.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./plotcount.py isles.dat isles.png
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./plotcount.py isles.dat isles.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Together these scripts implement a common workflow:&lt;/p&gt;
 &lt;ol&gt;
@@ -563,7 +782,7 @@ seconds.&lt;/p&gt;
 &lt;p&gt;The most common solution to the tedium of data processing is to write
 a master script that runs the whole pipeline from start to finish.&lt;/p&gt;
 &lt;p&gt;We can make a new file, &lt;code&gt;run_pipeline.sh&lt;/code&gt; that contains:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
 &lt;span class="c1"&gt;# USAGE: bash run_pipeline.sh&lt;/span&gt;
 &lt;span class="c1"&gt;# to produce plots for isles and abyss.&lt;/span&gt;
 
@@ -579,8 +798,7 @@ mkdir zipf_results
 mv isles.dat abyss.dat isles.png abyss.png zipf_results/
 tar -czf zipf_results.tgz zipf_results
 rm -r zipf_results
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This master script solved several problems in computational reproducibility:&lt;/p&gt;
 &lt;ol&gt;
@@ -593,30 +811,28 @@ rm -r zipf_results
     it'll (probably) stay that way.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;To continue with the Good Ideas, let's put everything under version control.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git init
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git init
 git add README.md
 git commit -m &lt;span class="s2"&gt;&amp;quot;Starting a new project.&amp;quot;&lt;/span&gt;
 git add wordcount.py plotcount.py matplotlibrc
 git commit -m &lt;span class="s2"&gt;&amp;quot;Write scripts to test Zipf&amp;#39;s law.&amp;quot;&lt;/span&gt;
 git add run_pipeline.sh
 git commit -m &lt;span class="s2"&gt;&amp;quot;Write a master script to run the pipeline.&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Notice that we didn't version control any of the products of our analysis.
 We'll talk more about this at the end of the tutorial.&lt;/p&gt;
 &lt;p&gt;A master script is a good start, but it has a few shortcomings.&lt;/p&gt;
 &lt;p&gt;Let's imagine that we adjusted the width of the bars in our plot
 produced by &lt;code&gt;plotcount.py&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nano plotcount.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;nano plotcount.py
 &lt;span class="c1"&gt;# In the definition of plot_word_counts replace:&lt;/span&gt;
 &lt;span class="c1"&gt;#    width = 1.0&lt;/span&gt;
 &lt;span class="c1"&gt;# with:&lt;/span&gt;
 &lt;span class="c1"&gt;#    width = 0.8&lt;/span&gt;
 git add plotcount.py
 git commit -m &lt;span class="s2"&gt;&amp;quot;Fix the bar width.&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now we want to recreate our figures.
 We &lt;em&gt;could&lt;/em&gt; just &lt;code&gt;bash run_pipeline.sh&lt;/code&gt; again.
@@ -626,7 +842,7 @@ The word counting routine hasn't changed; we shouldn't need to recreate
 those files.&lt;/p&gt;
 &lt;p&gt;Alternatively, we could manually rerun the plotting for each word-count file
 and recreate the tarball.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; file in *.dat&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;for&lt;/span&gt; file in *.dat&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
     ./plotcount.py &lt;span class="nv"&gt;$file&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;file&lt;/span&gt;&lt;span class="p"&gt;/.dat/.png&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 &lt;span class="k"&gt;done&lt;/span&gt;
 
@@ -635,14 +851,13 @@ mkdir zipf_results
 mv isles.dat abyss.dat isles.png abyss.png zipf_results/
 tar -czf zipf_results.tgz zipf_results
 rm -r zipf_results
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;But then we don't get many of the benefits of having a master script in
 the first place.&lt;/p&gt;
 &lt;p&gt;Another popular option is to comment out a subset of the lines in
 &lt;code&gt;run_pipeline.sh&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
 &lt;span class="c1"&gt;# USAGE: bash run_pipeline.sh&lt;/span&gt;
 &lt;span class="c1"&gt;# to produce plots for isles and abyss.&lt;/span&gt;
 
@@ -659,8 +874,7 @@ mkdir zipf_results
 mv isles.dat abyss.dat isles.png abyss.png zipf_results/
 tar -czf zipf_results.tgz zipf_results
 rm -r zipf_results
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Followed by &lt;code&gt;bash run_pipeline.sh&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;But this process, and subsequently undoing it,
@@ -688,10 +902,9 @@ to another (e.g. &lt;em&gt;raw data&lt;/em&gt; &amp;#8594; &lt;em&gt;word counts
 &lt;p&gt;Let's get started writing a description of our analysis for &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Open up a file called &lt;code&gt;Makefile&lt;/code&gt; in your editor of choice (e.g. &lt;code&gt;nano Makefile&lt;/code&gt;)
 and add the following:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;isles.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;isles.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
     ./wordcount.py books/isles.txt isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;We have now written the simplest, non-trivial Makefile&lt;sup id="fnref:makefile-name"&gt;&lt;a class="footnote-ref" href="#fn:makefile-name"&gt;2&lt;/a&gt;&lt;/sup&gt;.
 It is pretty reminiscent of one of the lines from our master script.
@@ -725,40 +938,34 @@ Right now our Makefile describes a pretty simple &lt;strong&gt;dependency graph&
 &lt;/blockquote&gt;
 &lt;p&gt;where the "&amp;#8594;" is pointing from requirements to targets.&lt;/p&gt;
 &lt;p&gt;Don't forget to commit:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add Makefile
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add Makefile
 git commit -m &lt;span class="s2"&gt;&amp;quot;Start converting master script into a Makefile.&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;Running &lt;em&gt;Make&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;Now that we have a (currently incomplete) description of our pipeline,
 let's use &lt;em&gt;Make&lt;/em&gt; to execute it.&lt;/p&gt;
 &lt;p&gt;First, remove the previously generated files.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rm *.dat *.png
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rm *.dat *.png
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make isles.dat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see the following print to the terminal:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./wordcount.py books/isles.txt isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;./wordcount.py books/isles.txt isles.dat&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;By default, &lt;em&gt;Make&lt;/em&gt; prints the recipes that it executes&lt;sup id="fnref:makefile-identification"&gt;&lt;a class="footnote-ref" href="#fn:makefile-identification"&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Let's see if we got what we expected.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;head -5 isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;head -5 isles.dat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The first 5 lines of that file should look exactly like before.&lt;/p&gt;
 &lt;h2&gt;Rerunning &lt;em&gt;Make&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;Let's try running &lt;em&gt;Make&lt;/em&gt; the same way again.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make isles.dat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This time, instead of executing the same recipe,
 &lt;em&gt;Make&lt;/em&gt; prints &lt;code&gt;make: Nothing to be done for 'isles.dat'.&lt;/code&gt;&lt;/p&gt;
@@ -774,10 +981,9 @@ This can be another &lt;em&gt;Make&lt;/em&gt; gotcha, so keep it in mind.&lt;/p&
 &lt;p&gt;If you want to induce the original behavior, you just have to
 change the modification time of &lt;code&gt;books/isles.txt&lt;/code&gt; so that it is newer
 than &lt;code&gt;isles.dat&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;touch books/isles.txt
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;touch books/isles.txt
 make isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The original behavior is restored.&lt;/p&gt;
 &lt;p&gt;Sometimes you just want &lt;em&gt;Make&lt;/em&gt; to tell you what it thinks about the current
@@ -790,17 +996,16 @@ it will assume that you want to build the first target in the Makefile.&lt;/p&gt
 &lt;h2&gt;More recipes&lt;/h2&gt;
 &lt;p&gt;Now that &lt;em&gt;Make&lt;/em&gt; knows how to build &lt;code&gt;isles.dat&lt;/code&gt;,
 we can add a rule for plotting those results.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;isles.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;isles.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt;
     ./plotcount.py isles.dat isles.png
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The dependency graph now looks like:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;books/isles.txt&lt;/code&gt; &amp;#8594; &lt;code&gt;isles.dat&lt;/code&gt; &amp;#8594; &lt;code&gt;isles.png&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Let's add a few more recipes to our Makefile.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;abyss.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;abyss.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
     ./wordcount.py books/abyss.txt abyss.dat
 
 &lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
@@ -809,14 +1014,12 @@ we can add a rule for plotting those results.&lt;/p&gt;
     cp isles.dat abyss.dat isles.png abyss.png zipf_results/
     tar -czf zipf_results.tgz zipf_results/
     rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And commit the changes.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add Makefile
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add Makefile
 git commit -m &lt;span class="s2"&gt;&amp;quot;Add recipes for abyss counts, isles plotting, and the final archive.&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Here the recipe for &lt;code&gt;zipf_results.tgz&lt;/code&gt; involves running a series of
 shell commands.
@@ -835,25 +1038,23 @@ any return an error.&lt;/p&gt;
 &lt;p&gt;Once you've written a recipe for &lt;code&gt;abyss.png&lt;/code&gt; you should be able to
 run &lt;code&gt;make zipf_results.tgz&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Let's delete all of our files and try it out.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rm abyss.* isles.*
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rm abyss.* isles.*
 make zipf_results.tgz
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You should get the something like the following output
 (the order may be different)
 to your terminal:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./wordcount.py books/abyss.txt abyss.dat
-./wordcount.py books/isles.txt isles.dat
-./plotcount.py abyss.dat abyss.png
-./plotcount.py isles.dat isles.png
-rm -rf zipf_results/
-mkdir zipf_results/
-cp isles.dat abyss.dat isles.png abyss.png zipf_results/
-tar -czf zipf_results.tgz zipf_results/
-rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;./wordcount.py books/abyss.txt abyss.dat&lt;/span&gt;
+&lt;span class="err"&gt;./wordcount.py books/isles.txt isles.dat&lt;/span&gt;
+&lt;span class="err"&gt;./plotcount.py abyss.dat abyss.png&lt;/span&gt;
+&lt;span class="err"&gt;./plotcount.py isles.dat isles.png&lt;/span&gt;
+&lt;span class="err"&gt;rm -rf zipf_results/&lt;/span&gt;
+&lt;span class="err"&gt;mkdir zipf_results/&lt;/span&gt;
+&lt;span class="err"&gt;cp isles.dat abyss.dat isles.png abyss.png zipf_results/&lt;/span&gt;
+&lt;span class="err"&gt;tar -czf zipf_results.tgz zipf_results/&lt;/span&gt;
+&lt;span class="err"&gt;rm -r zipf_results/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Since you asked for &lt;code&gt;zipf_results.tgz&lt;/code&gt; &lt;em&gt;Make&lt;/em&gt; looked first for that file.
 Not finding it, &lt;em&gt;Make&lt;/em&gt; looked for its prerequisites.
@@ -863,24 +1064,21 @@ Once those were finished it was able to make &lt;code&gt;abyss.png&lt;/code&gt; 
 &lt;code&gt;isles.png&lt;/code&gt;, before finally building &lt;code&gt;zipf_results.tgz&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You may also have gotten an additional line in your output similar to the
 following.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rm abyss.dat isles.dat abyss.png isles.png
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;rm abyss.dat isles.dat abyss.png isles.png&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Because you only asked for &lt;code&gt;zipf_results.tgz&lt;/code&gt;, &lt;em&gt;Make&lt;/em&gt; thinks its doing
 you a favor by deleting the intermediate files.
 As computational biologists we know to never trust our analyses until they've
 been tested and intermediate files are a valuable audit trail.
 To prevent the default behavior, add the following to your Makefile.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;.SECONDARY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;.SECONDARY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now remove the outputs and rerun your pipeline.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;rm zipf_results.tgz *.dat *.png
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rm zipf_results.tgz *.dat *.png
 make zipf_results.tgz
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code&gt;.SECONDARY&lt;/code&gt; is one of a handful of &lt;strong&gt;special targets&lt;/strong&gt; used to control &lt;em&gt;Make&lt;/em&gt;'s
 behavior.&lt;/p&gt;
@@ -889,34 +1087,30 @@ behavior.&lt;/p&gt;
 &lt;p&gt;What happens if you &lt;code&gt;touch abyss.dat&lt;/code&gt; and
 then &lt;code&gt;make zipf_results.tgz&lt;/code&gt;?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add Makefile
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add Makefile
 git commit -m &lt;span class="s2"&gt;&amp;quot;Finish translating pipeline script to a Makefile.&amp;quot;&lt;/span&gt;
 git status
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Notice all the files that &lt;em&gt;Git&lt;/em&gt; wants to be tracking?
 Like before, we're not going to version control any of the intermediate
 or final products of our pipeline.
 To reflect this fact add a &lt;code&gt;.gitignore&lt;/code&gt; file:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*.dat
-*.png
-zipf_results.tgz
-LICENSE.md
-&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;*.dat&lt;/span&gt;
+&lt;span class="err"&gt;*.png&lt;/span&gt;
+&lt;span class="err"&gt;zipf_results.tgz&lt;/span&gt;
+&lt;span class="err"&gt;LICENSE.md&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add .gitignore
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add .gitignore
 git commit -m &lt;span class="s2"&gt;&amp;quot;Have git ignore intermediate data files.&amp;quot;&lt;/span&gt;
 git status
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;Phony targets&lt;/h2&gt;
 &lt;p&gt;Sometimes its nice to have targets that don't refer to actual files.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;zipf_results&lt;/span&gt;.&lt;span class="n"&gt;tgz&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;zipf_results&lt;/span&gt;.&lt;span class="n"&gt;tgz&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Even though this rule doesn't have a recipe, it does have prerequisites.
 Now, when you run &lt;code&gt;make all&lt;/code&gt; &lt;em&gt;Make&lt;/em&gt; will do what it needs to to bring
@@ -926,10 +1120,9 @@ since the first recipe is what is built by default
 when no other target is passed as an argument.&lt;/p&gt;
 &lt;p&gt;Another traditional target is "&lt;code&gt;clean&lt;/code&gt;".
 Add the following to your Makefile.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rm --force *.dat *.png zipf_results.tgz
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Running &lt;code&gt;make clean&lt;/code&gt; will now remove all of the cruft.&lt;/p&gt;
 &lt;p&gt;Watch out, though!&lt;/p&gt;
@@ -945,23 +1138,21 @@ Instead, make sees that there is already a file named "&lt;code&gt;clean&lt;/cod
 since this file is newer than all of its prerequisites (there are none),
 &lt;em&gt;Make&lt;/em&gt; decides there's nothing left to do.&lt;/p&gt;
 &lt;p&gt;To avoid this problem add the following to your Makefile.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This special target tells &lt;em&gt;Make&lt;/em&gt; to assume that the targets "all", and "clean"
 are &lt;em&gt;not&lt;/em&gt; real files;
 they're &lt;strong&gt;phony&lt;/strong&gt; targets.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add Makefile
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add Makefile
 git commit -m &lt;span class="s2"&gt;&amp;quot;Added &amp;#39;all&amp;#39; and &amp;#39;clean&amp;#39; recipes.&amp;quot;&lt;/span&gt;
 rm clean
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h1&gt;&lt;em&gt;Make&lt;/em&gt; features&lt;/h1&gt;
 &lt;p&gt;(Estimated time: 45 minutes)&lt;/p&gt;
 &lt;p&gt;Right now our Makefile looks like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;# Dummy targets&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# Dummy targets&lt;/span&gt;
 &lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;zipf_results&lt;/span&gt;.&lt;span class="n"&gt;tgz&lt;/span&gt;
 
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
@@ -990,8 +1181,7 @@ rm clean
     cp isles.dat abyss.dat isles.png abyss.png zipf_results/
     tar -czf zipf_results.tgz zipf_results/
     rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Looks good, don't you think?
 Notice the added comments, starting with the "&lt;code&gt;#&lt;/code&gt;" character just like in
@@ -1010,10 +1200,9 @@ from every step in the analysis.
 These are like informal "USAGE:" documentation for our scripts.&lt;/p&gt;
 &lt;h2&gt;Parallel &lt;em&gt;Make&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;And check this out!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make clean
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make clean
 make --jobs
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Did you see it?
 The &lt;code&gt;--jobs&lt;/code&gt; flag (just "&lt;code&gt;-j&lt;/code&gt;" works too) tells &lt;em&gt;Make&lt;/em&gt; to run recipes in
@@ -1040,16 +1229,14 @@ but &lt;em&gt;Make&lt;/em&gt; is perfectly capable of doing so.&lt;/p&gt;
 &lt;p&gt;One overly repetitive part of our Makefile:
 Targets and prerequisites are in both the header &lt;em&gt;and&lt;/em&gt; the recipe of each rule.&lt;/p&gt;
 &lt;p&gt;It turns out, that&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;isles.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;isles.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
     ./wordcount.py books/isles.txt isles.dat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;can be rewritten as&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;isles.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;isles.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/&lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;txt&lt;/span&gt;
     ./wordcount.py $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Here we've replaced the prerequisite "&lt;code&gt;books/isles.txt&lt;/code&gt;" in the recipe
 with "&lt;code&gt;$^&lt;/code&gt;" and the target "&lt;code&gt;isles.dat&lt;/code&gt;" with "&lt;code&gt;$@&lt;/code&gt;".
@@ -1060,24 +1247,22 @@ While we can also define our own variables,
 &lt;em&gt;Make&lt;/em&gt; &lt;em&gt;automatically&lt;/em&gt; defines a number of variables, like the ones
 I've just shown you&lt;sup id="fnref:auto-vars"&gt;&lt;a class="footnote-ref" href="#fn:auto-vars"&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Therefore&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
     rm -rf zipf_results/
     mkdir zipf_results/
     cp isles.dat abyss.dat isles.png abyss.png zipf_results/
     tar -czf zipf_results.tgz zipf_results/
     rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;can now be rewritten as&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;dat&lt;/span&gt; &lt;span class="n"&gt;isles&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt; &lt;span class="n"&gt;abyss&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
     rm -rf zipf_results/
     mkdir zipf_results/
     cp $^ zipf_results/
     tar -czf &lt;span class="nv"&gt;$@&lt;/span&gt; zipf_results/
     rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;That's a little less cluttered,
 and still perfectly understandable once you know what the variables mean.&lt;/p&gt;
@@ -1086,9 +1271,10 @@ and still perfectly understandable once you know what the variables mean.&lt;/p&
 &lt;p&gt;```bash
 make clean
 make isles.dat
-``````````
-&lt;!--Those extra backticks are because of Vim syntax highlighting.--&gt;&lt;/p&gt;
+``````````&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;!--Those extra backticks are because of Vim syntax highlighting.--&gt;
+
 &lt;p&gt;You should get the same output as last time.
 Internally, &lt;em&gt;Make&lt;/em&gt; replaced "&lt;code&gt;$@&lt;/code&gt;" with "&lt;code&gt;isles.dat&lt;/code&gt;"
 and "&lt;code&gt;$^&lt;/code&gt;" with "&lt;code&gt;books/isles.txt&lt;/code&gt;"
@@ -1105,10 +1291,9 @@ We have nearly identical recipes for &lt;code&gt;abyss.dat&lt;/code&gt; and &lt;
 &lt;p&gt;It turns out we can replace &lt;em&gt;both&lt;/em&gt; of those rules with just one rule,
 by telling &lt;em&gt;Make&lt;/em&gt; about the relationships between filename &lt;em&gt;patterns&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;A "pattern rule" looks like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;%.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;%.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
     countwords.py $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Here we've replaced the book name with a percent sign, "&lt;code&gt;%&lt;/code&gt;".
 The "&lt;code&gt;%&lt;/code&gt;" is called the &lt;strong&gt;stem&lt;/strong&gt;
@@ -1147,11 +1332,10 @@ with a single pattern rule.&lt;/p&gt;
 &lt;p&gt;Not all variables in a makefile are of the automatic variety.
 Users can define their own, as well.&lt;/p&gt;
 &lt;p&gt;Add this lines at the top of your makefile:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;ARCHIVED&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; isles.dat isles.png &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;ARCHIVED&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; isles.dat isles.png &lt;span class="se"&gt;\&lt;/span&gt;
             abyss.dat abyss.png &lt;span class="se"&gt;\&lt;/span&gt;
             sierra.dat sierra.png
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Just like many other languages,
 in makefiles "&lt;code&gt;\&lt;/code&gt;" is a line-continuation character.
@@ -1174,20 +1358,18 @@ makefiles.
 If you included commas they would be considered parts of the filenames.&lt;/p&gt;
 &lt;p&gt;Using this variable we can replace the prerequisites of &lt;code&gt;zipf_results.tgz&lt;/code&gt;.
 That rule would now be:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;ARCHIVED&lt;/span&gt;}
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;zipf_results.tgz&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;ARCHIVED&lt;/span&gt;}
     rm -rf zipf_results/
     mkdir zipf_results/
     cp $^ zipf_results/
     tar -czf &lt;span class="nv"&gt;$@&lt;/span&gt; zipf_results/
     rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;We can also use &lt;code&gt;${ARCHIVED}&lt;/code&gt; to simplify our cleanup rule.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rm --force &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;ARCHIVED&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; zipf_results.tgz
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
 &lt;h4&gt;Try it&lt;/h4&gt;
@@ -1226,10 +1408,9 @@ are changing too.&lt;/p&gt;
 &lt;em&gt;Scripts should be prerequisites too.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Let's edit the pattern rule for &lt;code&gt;%.png&lt;/code&gt; to include &lt;code&gt;plotcounts.py&lt;/code&gt;
 as a prerequisites.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;%.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;plotcounts&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; %.&lt;span class="n"&gt;dat&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;%.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;plotcounts&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; %.&lt;span class="n"&gt;dat&lt;/span&gt;
     ./$^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The header makes sense, but that's a strange looking recipe:
 just two automatic variables.&lt;/p&gt;
@@ -1256,53 +1437,48 @@ if you had more than three steps?
 Let's move some stuff around to make our project easier to navigate.&lt;/p&gt;
 &lt;h3&gt;Store scripts in &lt;code&gt;scripts/&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;First we'll stow away the scripts.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir scripts/
-mv plotcounts.py wordcount.py scripts/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;mkdir scripts/&lt;/span&gt;
+&lt;span class="err"&gt;mv plotcounts.py wordcount.py scripts/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;We also need to update our Makefile to reflect the change:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;%.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;countwords&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;%.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;countwords&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
     ./$^ &lt;span class="nv"&gt;$@&lt;/span&gt;
 
 &lt;span class="nf"&gt;%.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;plotcounts&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; %.&lt;span class="n"&gt;dat&lt;/span&gt;
     ./$^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;becomes:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;%.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;countwords&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;%.dat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;countwords&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
     $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
 
 &lt;span class="nf"&gt;%.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;plotcounts&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; %.&lt;span class="n"&gt;dat&lt;/span&gt;
     $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;That's a little more verbose, but it is now explicit
 that &lt;code&gt;countwords.py&lt;/code&gt; and &lt;code&gt;plotcount.py&lt;/code&gt; are scripts.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Git&lt;/em&gt; should have no problem with the move once you tell it which files
 to be aware of.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add countwords.py plotcounts.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add countwords.py plotcounts.py
 git add scripts/countwords.py scripts/plotcounts.py
 git add Makefile
 git commit -m &lt;span class="s2"&gt;&amp;quot;Move scripts into a subdirectory.&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Great!  From here on, when we add new scripts to our analysis they won't
 clutter up our project root.&lt;/p&gt;
 &lt;h3&gt;"Hide" intermediate files in &lt;code&gt;data/&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Speaking of clutter, what are we gonna do about all of these intermediate files!?
 Put 'em in a subdirectory!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir data/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir data/
 mv *.tsv data/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And then fix up your Makefile.
 Adjust the relevant lines to look like this.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;# ...&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# ...&lt;/span&gt;
 
 &lt;span class="nv"&gt;ARCHIVED&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; data/isles.dat isles.png &lt;span class="se"&gt;\&lt;/span&gt;
             data/abyss.dat abyss.png &lt;span class="se"&gt;\&lt;/span&gt;
@@ -1316,25 +1492,22 @@ Adjust the relevant lines to look like this.&lt;/p&gt;
 &lt;span class="nf"&gt;%.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;plotcounts&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;/%.&lt;span class="n"&gt;dat&lt;/span&gt;
 
 &lt;span class="c"&gt;# ...&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Thanks to our &lt;code&gt;ARCHIVED&lt;/code&gt; variable, making these changes is pretty simple.&lt;/p&gt;
 &lt;p&gt;We have to make one more change if we don't want &lt;em&gt;Git&lt;/em&gt; to bother us about
 untracked files.
 Update your &lt;code&gt;.gitignore&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;data/*.dat
-*.png
-zipf_results.tgz
-LICENSE.md
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;data/*.dat&lt;/span&gt;
+&lt;span class="err"&gt;*.png&lt;/span&gt;
+&lt;span class="err"&gt;zipf_results.tgz&lt;/span&gt;
+&lt;span class="err"&gt;LICENSE.md&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now commit your changes.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add Makefile
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add Makefile
 git add .gitignore
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Simple!&lt;/p&gt;
 &lt;h3&gt;Output finished products to &lt;code&gt;fig/&lt;/code&gt;&lt;/h3&gt;
@@ -1381,10 +1554,9 @@ you can also &lt;code&gt;make clean&lt;/code&gt; followed by &lt;code&gt;make al
 works.&lt;/p&gt;
 &lt;p&gt;You might want to update your "&lt;code&gt;clean&lt;/code&gt;" recipe to remove all the junk
 like so:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rm -f data/* fig/*
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Be sure to commit all of your changes.&lt;/p&gt;
 &lt;h3&gt;Infix processing hints&lt;/h3&gt;
@@ -1399,9 +1571,8 @@ will read the mixedcase input file and write all lowercase to
 the output file.&lt;/p&gt;
 &lt;p&gt;We can add this to our pipeline.
 We know the recipe is going to look like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;tr &amp;#39;[&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;upper&lt;/span&gt;:]&amp;#39; &amp;#39;[:&lt;span class="n"&gt;lower&lt;/span&gt;:]&amp;#39; &amp;lt; $^ &amp;gt; $@
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;tr &amp;#39;[&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;upper&lt;/span&gt;:]&amp;#39; &amp;#39;[:&lt;span class="n"&gt;lower&lt;/span&gt;:]&amp;#39; &amp;lt; $^ &amp;gt; $@
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
 &lt;h4&gt;Challenge&lt;/h4&gt;
@@ -1413,10 +1584,9 @@ but what did you opt to name the target?&lt;/p&gt;
 &lt;code&gt;[bookname].txt&lt;/code&gt;, one in &lt;code&gt;books/&lt;/code&gt; and one in &lt;code&gt;data/&lt;/code&gt;.
 Probably not the easiest to differentiate.&lt;/p&gt;
 &lt;p&gt;A better option is to use a more descriptive filename.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;data/%.lower.txt&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;data/%.lower.txt&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
     tr &lt;span class="s1"&gt;&amp;#39;[:upper:]&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;[:lower:]&amp;#39;&lt;/span&gt; &amp;lt; $^ &amp;gt; &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;By including an &lt;strong&gt;infix&lt;/strong&gt; of &lt;code&gt;.lower.&lt;/code&gt; in our filename it's easy to
 see that one file is a lowercase version of the mixedcase original.
@@ -1426,25 +1596,23 @@ and the names will be a self-documenting record of its origins.&lt;/p&gt;
 &lt;p&gt;For reasons which may be apparent in a minute, let's also make a dummy
 preprocessing step which will just copy the books verbatim into our
 &lt;code&gt;data/&lt;/code&gt; directory.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;data/%.txt&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;data/%.txt&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;books&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
     cp $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And, in the spirit of infixes, we'll rename &lt;code&gt;data/%.tsv&lt;/code&gt; to be more descriptive.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;data/%.counts.tsv&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;wordcount&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;data/%.counts.tsv&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;wordcount&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;/%.&lt;span class="n"&gt;txt&lt;/span&gt;
     $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
 
 &lt;span class="nf"&gt;fig/%.counts.png&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scripts&lt;/span&gt;/&lt;span class="n"&gt;plotcount&lt;/span&gt;.&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;/%.&lt;span class="n"&gt;counts&lt;/span&gt;.&lt;span class="n"&gt;tsv&lt;/span&gt;
     $^ &lt;span class="nv"&gt;$@&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Our Makefile now documents explicitly that we require a tab-delimited table of
 word counts in order to generate the plot,
 whereas before any &lt;code&gt;.tsv&lt;/code&gt; file would suggest a word-plot was possible.&lt;/p&gt;
 &lt;p&gt;Here's the &lt;em&gt;full&lt;/em&gt; Makefile:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;ARCHIVED&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; data/isles.lower.counts.tsv data/abyss.lower.counts.tsv &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;ARCHIVED&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; data/isles.lower.counts.tsv data/abyss.lower.counts.tsv &lt;span class="se"&gt;\&lt;/span&gt;
             data/sierra.lower.counts.tsv fig/isles.lower.counts.png &lt;span class="se"&gt;\&lt;/span&gt;
             fig/abyss.lower.counts.png fig/sierra.lower.counts.png
 
@@ -1478,8 +1646,7 @@ whereas before any &lt;code&gt;.tsv&lt;/code&gt; file would suggest a word-plot 
     cp $^ zipf_results/
     tar -czf &lt;span class="nv"&gt;$@&lt;/span&gt; zipf_results/
     rm -r zipf_results/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Our filenames are certainly more verbose now, but in exchange we get:&lt;/p&gt;
 &lt;ol&gt;
@@ -1487,11 +1654,10 @@ whereas before any &lt;code&gt;.tsv&lt;/code&gt; file would suggest a word-plot 
 &lt;li&gt;more flexible development&lt;/li&gt;
 &lt;li&gt;and something else, too...&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make clean
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make clean
 make fig/abyss.lower.counts.png
 make fig/abyss.counts.png
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;What happened there?
 We just built two different barplots, one for our analysis &lt;em&gt;with&lt;/em&gt; the
@@ -1512,14 +1678,13 @@ reason about independent of your code.
 Let's make just such a dataset.
 Let's write a book!&lt;/p&gt;
 &lt;p&gt;Into a file called &lt;code&gt;books/test.txt&lt;/code&gt; add something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;My Book
-By Me
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;My&lt;/span&gt; &lt;span class="n"&gt;Book&lt;/span&gt;
+&lt;span class="k"&gt;By&lt;/span&gt; &lt;span class="n"&gt;Me&lt;/span&gt;
 
-This is a book that I wrote.
+&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;book&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;wrote&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
 
-The END
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;span class="n"&gt;The&lt;/span&gt; &lt;span class="k"&gt;END&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;We don't need software to count all of the words in this book, and
 we can probably imagine exactly what a barplot of the count would look like.
@@ -1527,20 +1692,18 @@ If the actual result doesn't look like we expected,
 then there's probably something wrong with our analysis.
 Testing your scripts with this tiny book is computationally cheap, too.&lt;/p&gt;
 &lt;p&gt;Let's try it out!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make fig/test.lower.counts.png
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;make fig/test.lower.counts.png
 less data/test.lower.counts.tsv
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Does your counts data match what you expected?&lt;/p&gt;
 &lt;p&gt;We should run this test for just about every change we make,
 to our scripts or to our Makefile.
 We're going to do that a &lt;em&gt;lot&lt;/em&gt; so we'll make it as easy as possible.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;fig&lt;/span&gt;/&lt;span class="n"&gt;test&lt;/span&gt;.&lt;span class="n"&gt;lower&lt;/span&gt;.&lt;span class="n"&gt;counts&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;fig&lt;/span&gt;/&lt;span class="n"&gt;test&lt;/span&gt;.&lt;span class="n"&gt;lower&lt;/span&gt;.&lt;span class="n"&gt;counts&lt;/span&gt;.&lt;span class="n"&gt;png&lt;/span&gt;
 
 &lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt; &lt;span class="n"&gt;all&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You could even add the &lt;code&gt;test&lt;/code&gt; phony target as the first thing in your Makefile.
 That way just calling &lt;code&gt;make&lt;/code&gt; will run your tests.&lt;/p&gt;
@@ -1550,11 +1713,10 @@ That way just calling &lt;code&gt;make&lt;/code&gt; will run your tests.&lt;/p&g
 the outputs of your test run.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Commit your changes, including &lt;code&gt;books/test.txt&lt;/code&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add Makefile
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git add Makefile
 git add -f books/test.txt
 git commit -m &lt;span class="s2"&gt;&amp;quot;Add pipeline testing recipe and book.&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;Review: version control&lt;/h2&gt;
 &lt;p&gt;We have been following three guiding principles in our use of version
@@ -1618,17 +1780,16 @@ several places for your Makefile.&amp;#160;&lt;a class="footnote-backref" href="
 &lt;/li&gt;
 &lt;li id="fn:var-assign"&gt;
 &lt;p&gt;Variables are complicated in &lt;em&gt;Make&lt;/em&gt;.
-Read the extensive [documentation][man-var] about variable assignment.
-[man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&amp;#160;&lt;a class="footnote-backref" href="#fnref:var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+Read the extensive &lt;a href="https://www.gnu.org/software/make/manual/html_node/Using-Variables.html"&gt;documentation&lt;/a&gt; about variable assignment.&amp;#160;&lt;a class="footnote-backref" href="#fnref:var-assign" title="Jump back to footnote 5 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="//blog.byronjsmith.com/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-07:/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
+&lt;/div&gt;</content><category term="Computing"></category><category term="software-carpentry"></category><category term="teaching"></category><category term="programming"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="software"></category></entry><entry><title>PyMake I: Another GNU Make clone</title><link href="//blog.byronjsmith.com/pymake-0.html" rel="alternate"></link><published>2013-05-07T19:00:00-04:00</published><updated>2016-03-04T10:00:00-05:00</updated><author><name>Byron J. Smith</name></author><id>tag:blog.byronjsmith.com,2013-05-07:/pymake-0.html</id><summary type="html">&lt;p&gt;(Edit 1): &lt;s&gt;&lt;em&gt;This is the first of two posts about my program
 &lt;a href="http://github.com/bsmith89/pymake/"&gt;PyMake&lt;/a&gt;.  I'll post the link to Part II
 here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -1643,7 +1804,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -1717,4 +1878,4 @@ fixed some glaring problems.  Whatever.  The point is I want to share
 the world; what better stage exists for its introduction than this blog, which
 absolutely no one reads?&lt;/p&gt;
 &lt;p&gt;...Yeah, I'll probably post it to &lt;a href="http://reddit.com/r/python"&gt;/r/python&lt;/a&gt; too.&lt;/p&gt;
-&lt;p&gt;Tune in for Part II, in which I explain why &lt;em&gt;you&lt;/em&gt; should use my software.&lt;/p&gt;</content><category term="python"></category><category term="software"></category><category term="development"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category></entry></feed>
+&lt;p&gt;Tune in for Part II, in which I explain why &lt;em&gt;you&lt;/em&gt; should use my software.&lt;/p&gt;</content><category term="Computing"></category><category term="python"></category><category term="software"></category><category term="development"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category></entry></feed>

@@ -5,7 +5,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -23,7 +23,7 @@ For this reason, &lt;strong&gt;the makefile code will not work&lt;/strong&gt; wh
 the post.
 Instead, you must first replace all 4-space indents with a tab character.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;em&gt;GNU Make&lt;/em&gt; to automate my data processing pipelines.
-I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
+I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; &lt;sup id="fnref:shorter-tutorials"&gt;&lt;a class="footnote-ref" href="#fn:shorter-tutorials"&gt;1&lt;/a&gt;&lt;/sup&gt; for novices on the
 basics of using &lt;em&gt;Make&lt;/em&gt; for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -48,7 +48,7 @@ script.&lt;/p&gt;
 &lt;h2&gt;The default makefile&lt;/h2&gt;
 &lt;p&gt;TL;DR: All of the code in this post is available as a &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;gist&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here's what a minimal makefile might look like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;Usage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     make &lt;span class="nb"&gt;help&lt;/span&gt;                   show this message
@@ -103,8 +103,7 @@ script.&lt;/p&gt;
     rm -rf &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
 &lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;help&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;-&lt;span class="n"&gt;jupter&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you want to start using it right away, download the &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;gist&lt;/a&gt;,
 which includes a couple of other necessary files.
@@ -113,7 +112,7 @@ up.&lt;/p&gt;
 &lt;p&gt;But let's break it down so you can see how it's made and why it's awesome.&lt;/p&gt;
 &lt;p&gt;From the top!&lt;/p&gt;
 &lt;h2&gt;A help message for your project&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;Usage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     make &lt;span class="nb"&gt;help&lt;/span&gt;                   show this message
@@ -131,8 +130,7 @@ up.&lt;/p&gt;
 
 &lt;span class="nf"&gt;help&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$$&lt;/span&gt;PROJECT_HELP_MSG
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The top of our makefile is a help message.
 Running the traditional invocation &lt;code&gt;make help&lt;/code&gt; will call that recipe and we'll
@@ -147,10 +145,9 @@ a handy cheatsheet.&lt;/p&gt;
 nifty trick to auto-generate these help messages,
 keeping documentation and recipes together in your makefile.&lt;/p&gt;
 &lt;h2&gt;Streamline git setup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;.git&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;.git&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     git init
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Every project should be &lt;a href="https://dx.doi.org/10.1186/1751-0473-8-7"&gt;version controlled&lt;/a&gt;.
 I prefer git, but the makefile can probably be adapted for Mercurial,
@@ -159,7 +156,7 @@ This recipe is so simple as to appear useless (since &lt;code&gt;make .git&lt;/c
 to type than &lt;code&gt;git init&lt;/code&gt;) but we use the directory &lt;code&gt;.git/&lt;/code&gt; as an
 &lt;a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html"&gt;order-only prerequisite&lt;/a&gt;
 for the next recipe:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
     git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
         drop_jupyter_output.sh
     git config --local filter.dropoutput_jupyter.smudge cat
@@ -170,8 +167,7 @@ for the next recipe:&lt;/p&gt;
         merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
     git config --local &lt;span class="se"&gt;\&lt;/span&gt;
         merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Git configuration is &lt;em&gt;just&lt;/em&gt; annoying enough that I often put it off for a new
 project.
@@ -179,11 +175,10 @@ With this recipe I don't have to!&lt;/p&gt;
 &lt;p&gt;There are three parts to the configuration above;
 customize it for how you use git.&lt;/p&gt;
 &lt;h3&gt;Drop Jupyter Notebook output&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
     ./drop_jupyter_output.sh
 git config --local filter.dropoutput_jupyter.smudge cat
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I set up a &lt;a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes"&gt;clean/smudge filter&lt;/a&gt; for my Jupyter notebooks.
 Outputs of analysis should generally not be version controlled,
@@ -198,51 +193,46 @@ notebook you'll have to re-execute all of the cells to get the results.&lt;/p&gt
 First, &lt;code&gt;.gitattributes&lt;/code&gt; which is a tab-separated file mapping filename patterns
 to special git configuration.
 The first line in that file should be the following.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*.ipynb filter=dropoutput_jupyter
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;*.ipynb filter=dropoutput_jupyter&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(That's a tab after &lt;code&gt;*.ipynb&lt;/code&gt;.)&lt;/p&gt;
 &lt;p&gt;The second file is the filter &lt;code&gt;drop_jupyter_output.sh&lt;/code&gt;,
 which needs to be executable.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env bash&lt;/span&gt;
 &lt;span class="c1"&gt;# run `chmod +x drop_jupyter_output.sh` to make it executable.&lt;/span&gt;
 
 &lt;span class="nv"&gt;file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;mktemp&lt;span class="k"&gt;)&lt;/span&gt;
 cat &amp;lt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &amp;gt;&lt;span class="nv"&gt;$file&lt;/span&gt;
 jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled&lt;span class="o"&gt;=&lt;/span&gt;True &lt;span class="se"&gt;\&lt;/span&gt;
     &lt;span class="nv"&gt;$file&lt;/span&gt; --stdout &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/dev/null
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Display tabs as four spaces&lt;/h3&gt;
 &lt;p&gt;I also configure &lt;code&gt;less&lt;/code&gt; to show four spaces for tabs.
 This makes &lt;code&gt;git diff&lt;/code&gt;-ing my makefile much easier on the eyes.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Smart &lt;code&gt;diff&lt;/code&gt;s for tabular data&lt;/h3&gt;
 &lt;p&gt;Since git considers changes on a per-line basis, looking at
 &lt;code&gt;diff&lt;/code&gt;s of comma-delimited and tab-delimited files can get obnoxious.
 The program &lt;a href="http://paulfitz.github.io/daff/"&gt;&lt;code&gt;daff&lt;/code&gt;&lt;/a&gt; fixes this problem.&lt;/p&gt;
 &lt;p&gt;We'll configure git to use &lt;code&gt;daff&lt;/code&gt; for all tabular files.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git config --local &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local &lt;span class="se"&gt;\&lt;/span&gt;
     diff.daff-csv.command &lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
 git config --local &lt;span class="se"&gt;\&lt;/span&gt;
     merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
 git config --local &lt;span class="se"&gt;\&lt;/span&gt;
     merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Just like the output filter for Jupyter notebooks, we need to associate
 this configuration with CSVs and TSVs in our &lt;code&gt;.gitattributes&lt;/code&gt; file by adding
 the following two lines.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*.[tc]sv diff=daff-csv
-*.[tc]sv merge=daff-csv
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;diff&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;merge&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;Automatic python virtual environments&lt;/h2&gt;
 &lt;p&gt;There are plenty of &lt;a href="https://www.davidfischer.name/2010/04/why-you-should-be-using-pip-and-virtualenv/"&gt;reasons&lt;/a&gt; to sandbox your python environments.
@@ -251,7 +241,7 @@ you'll appreciate these recipes to automate creating them and updating
 packages.&lt;/p&gt;
 &lt;p&gt;If you don't use python/pip, these recipes can be swapped out for other
 sandboxing systems.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; .venv
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; .venv
 &lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;abspath &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
 &lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/bin:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
@@ -260,8 +250,7 @@ sandboxing systems.&lt;/p&gt;
 
 &lt;span class="nf"&gt;python-reqs&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;requirements&lt;/span&gt;.&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;}
     pip install --upgrade -r requirements.pip
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In the top block, we first set a variable &lt;code&gt;VENV&lt;/code&gt; to be the location of our
 virtual environment.
@@ -286,18 +275,16 @@ And, if you discipline yourself to make all changes to your execution
 environment in this way, you'll have a permanently up-to-date record of your
 system requirements.&lt;/p&gt;
 &lt;h2&gt;Single-command project setup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this meta-target a simple &lt;code&gt;make setup&lt;/code&gt; will have our new project
 configured and ready to go.
 This is particularly useful if you work on multiple machines:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:username/project.git
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone git@github.com:username/project.git
 &lt;span class="nb"&gt;cd&lt;/span&gt; project
 make setup
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;is all it takes to get up and running.&lt;/p&gt;
 &lt;h2&gt;Launch your tools without the hassle&lt;/h2&gt;
@@ -305,17 +292,15 @@ make setup
 With this recipe (and the &lt;code&gt;PATH&lt;/code&gt; we export above) I don't have to remember
 to activate my virtual environment or invoke specific configuration files
 when I launch a server.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;start-jupyter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;start-jupyter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;jupyter_notebook_config.py
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Put whatever you'd like into the &lt;a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html"&gt;config file&lt;/a&gt;.
 I like to keep my notebooks in a subdirectory, so my invocation is a little different:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;ipynb/jupyter_notebook_config.py &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;ipynb/jupyter_notebook_config.py &lt;span class="se"&gt;\&lt;/span&gt;
     --notebook-dir&lt;span class="o"&gt;=&lt;/span&gt;ipynb/
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And my configuration automatically changes the working directory to
 the project root when launching a new notebook.&lt;/p&gt;
@@ -323,12 +308,11 @@ the project root when launching a new notebook.&lt;/p&gt;
 The same general idea works for any other software you can start from the shell.
 No need to remember any of the obnoxious command-line flags.&lt;/p&gt;
 &lt;h2&gt;Quick cleanup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
 
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rm -rf &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;A ubiquitous target for &lt;em&gt;Make&lt;/em&gt; is &lt;code&gt;clean&lt;/code&gt; to tidy up the repository.
 With this makefile, run &lt;code&gt;make clean&lt;/code&gt; to remove all the &lt;code&gt;*.pyc&lt;/code&gt; files.
@@ -371,4 +355,4 @@ run &lt;code&gt;make setup&lt;/code&gt;, and let me know what you think!&lt;/p&g
     on &lt;code&gt;make setup&lt;/code&gt;!&amp;#160;&lt;a class="footnote-backref" href="#fnref:bootstrap-idea" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry></feed>
+&lt;/div&gt;</content><category term="Computing"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category><category term="protips"></category><category term="git"></category><category term="venv"></category><category term="python"></category></entry></feed>

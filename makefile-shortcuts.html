@@ -187,7 +187,7 @@ For this reason, <strong>the makefile code will not work</strong> when copied di
 the post.
 Instead, you must first replace all 4-space indents with a tab character.</em></p>
 <p>I use <em>GNU Make</em> to automate my data processing pipelines.
-I've written a <a href="//blog.byronjsmith.com/Computing/make-analysis.md">tutorial</a> <sup id="fnref:shorter-tutorials"><a class="footnote-ref" href="#fn:shorter-tutorials">1</a></sup> for novices on the
+I've written a <a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md">tutorial</a> <sup id="fnref:shorter-tutorials"><a class="footnote-ref" href="#fn:shorter-tutorials">1</a></sup> for novices on the
 basics of using <em>Make</em> for reproducible analysis and I think that everyone who
 writes more than one script, or runs more than one shell command to process
 their data can benefit from automating that process.
@@ -212,7 +212,7 @@ script.</p>
 <h2>The default makefile</h2>
 <p>TL;DR: All of the code in this post is available as a <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">gist</a>.</p>
 <p>Here's what a minimal makefile might look like:</p>
-<div class="highlight"><pre><span></span><span class="cp">define PROJECT_HELP_MSG</span>
+<div class="highlight"><pre><span></span><code><span class="cp">define PROJECT_HELP_MSG</span>
 
 <span class="nf">Usage</span><span class="o">:</span>
     make <span class="nb">help</span>                   show this message
@@ -267,8 +267,7 @@ script.</p>
     rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
 
 <span class="nf">.PHONY</span><span class="o">:</span> <span class="n">help</span> <span class="n">git</span>-<span class="n">config</span> <span class="n">start</span>-<span class="n">jupter</span> <span class="n">python</span>-<span class="n">reqs</span> <span class="n">setup</span> <span class="n">clean</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>If you want to start using it right away, download the <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">gist</a>,
 which includes a couple of other necessary files.
@@ -277,7 +276,7 @@ up.</p>
 <p>But let's break it down so you can see how it's made and why it's awesome.</p>
 <p>From the top!</p>
 <h2>A help message for your project</h2>
-<div class="highlight"><pre><span></span><span class="cp">define PROJECT_HELP_MSG</span>
+<div class="highlight"><pre><span></span><code><span class="cp">define PROJECT_HELP_MSG</span>
 
 <span class="nf">Usage</span><span class="o">:</span>
     make <span class="nb">help</span>                   show this message
@@ -295,8 +294,7 @@ up.</p>
 
 <span class="nf">help</span><span class="o">:</span>
     <span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG
-</pre></div>
-
+</code></pre></div>
 
 <p>The top of our makefile is a help message.
 Running the traditional invocation <code>make help</code> will call that recipe and we'll
@@ -311,10 +309,9 @@ a handy cheatsheet.</p>
 nifty trick to auto-generate these help messages,
 keeping documentation and recipes together in your makefile.</p>
 <h2>Streamline git setup</h2>
-<div class="highlight"><pre><span></span><span class="nf">.git</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><code><span class="nf">.git</span><span class="o">:</span>
     git init
-</pre></div>
-
+</code></pre></div>
 
 <p>Every project should be <a href="https://dx.doi.org/10.1186/1751-0473-8-7">version controlled</a>.
 I prefer git, but the makefile can probably be adapted for Mercurial,
@@ -323,7 +320,7 @@ This recipe is so simple as to appear useless (since <code>make .git</code> is n
 to type than <code>git init</code>) but we use the directory <code>.git/</code> as an
 <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html">order-only prerequisite</a>
 for the next recipe:</p>
-<div class="highlight"><pre><span></span><span class="nf">git-config</span><span class="o">:</span> <span class="p">|</span> .<span class="n">git</span> 
+<div class="highlight"><pre><span></span><code><span class="nf">git-config</span><span class="o">:</span> <span class="p">|</span> .<span class="n">git</span> 
     git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
         drop_jupyter_output.sh
     git config --local filter.dropoutput_jupyter.smudge cat
@@ -334,8 +331,7 @@ for the next recipe:</p>
         merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
     git config --local <span class="se">\</span>
         merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Git configuration is <em>just</em> annoying enough that I often put it off for a new
 project.
@@ -343,11 +339,10 @@ With this recipe I don't have to!</p>
 <p>There are three parts to the configuration above;
 customize it for how you use git.</p>
 <h3>Drop Jupyter Notebook output</h3>
-<div class="highlight"><pre><span></span>git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
+<div class="highlight"><pre><span></span><code>git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
     ./drop_jupyter_output.sh
 git config --local filter.dropoutput_jupyter.smudge cat
-</pre></div>
-
+</code></pre></div>
 
 <p>I set up a <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes">clean/smudge filter</a> for my Jupyter notebooks.
 Outputs of analysis should generally not be version controlled,
@@ -362,51 +357,46 @@ notebook you'll have to re-execute all of the cells to get the results.</p>
 First, <code>.gitattributes</code> which is a tab-separated file mapping filename patterns
 to special git configuration.
 The first line in that file should be the following.</p>
-<div class="highlight"><pre><span></span>*.ipynb filter=dropoutput_jupyter
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">*.ipynb filter=dropoutput_jupyter</span>
+</code></pre></div>
 
 <p>(That's a tab after <code>*.ipynb</code>.)</p>
 <p>The second file is the filter <code>drop_jupyter_output.sh</code>,
 which needs to be executable.</p>
-<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
 <span class="c1"># run `chmod +x drop_jupyter_output.sh` to make it executable.</span>
 
 <span class="nv">file</span><span class="o">=</span><span class="k">$(</span>mktemp<span class="k">)</span>
 cat &lt;<span class="p">&amp;</span><span class="m">0</span> &gt;<span class="nv">$file</span>
 jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled<span class="o">=</span>True <span class="se">\</span>
     <span class="nv">$file</span> --stdout <span class="m">2</span>&gt;/dev/null
-</pre></div>
-
+</code></pre></div>
 
 <h3>Display tabs as four spaces</h3>
 <p>I also configure <code>less</code> to show four spaces for tabs.
 This makes <code>git diff</code>-ing my makefile much easier on the eyes.</p>
-<div class="highlight"><pre><span></span>git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
+</code></pre></div>
 
 <h3>Smart <code>diff</code>s for tabular data</h3>
 <p>Since git considers changes on a per-line basis, looking at
 <code>diff</code>s of comma-delimited and tab-delimited files can get obnoxious.
 The program <a href="http://paulfitz.github.io/daff/"><code>daff</code></a> fixes this problem.</p>
 <p>We'll configure git to use <code>daff</code> for all tabular files.</p>
-<div class="highlight"><pre><span></span>git config --local <span class="se">\</span>
+<div class="highlight"><pre><span></span><code>git config --local <span class="se">\</span>
     diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
 git config --local <span class="se">\</span>
     merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
 git config --local <span class="se">\</span>
     merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Just like the output filter for Jupyter notebooks, we need to associate
 this configuration with CSVs and TSVs in our <code>.gitattributes</code> file by adding
 the following two lines.</p>
-<div class="highlight"><pre><span></span>*.[tc]sv diff=daff-csv
-*.[tc]sv merge=daff-csv
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="o">*</span><span class="p">.</span><span class="o">[</span><span class="n">tc</span><span class="o">]</span><span class="n">sv</span><span class="w"> </span><span class="n">diff</span><span class="o">=</span><span class="n">daff</span><span class="o">-</span><span class="n">csv</span><span class="w"></span>
+<span class="o">*</span><span class="p">.</span><span class="o">[</span><span class="n">tc</span><span class="o">]</span><span class="n">sv</span><span class="w"> </span><span class="k">merge</span><span class="o">=</span><span class="n">daff</span><span class="o">-</span><span class="n">csv</span><span class="w"></span>
+</code></pre></div>
 
 <h2>Automatic python virtual environments</h2>
 <p>There are plenty of <a href="https://www.davidfischer.name/2010/04/why-you-should-be-using-pip-and-virtualenv/">reasons</a> to sandbox your python environments.
@@ -415,7 +405,7 @@ you'll appreciate these recipes to automate creating them and updating
 packages.</p>
 <p>If you don't use python/pip, these recipes can be swapped out for other
 sandboxing systems.</p>
-<div class="highlight"><pre><span></span><span class="nv">VENV</span> <span class="o">=</span> .venv
+<div class="highlight"><pre><span></span><code><span class="nv">VENV</span> <span class="o">=</span> .venv
 <span class="k">export </span><span class="nv">VIRTUAL_ENV</span> <span class="o">:=</span> <span class="k">$(</span>abspath <span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="k">)</span>
 <span class="k">export </span><span class="nv">PATH</span> <span class="o">:=</span> <span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
 
@@ -424,8 +414,7 @@ sandboxing systems.</p>
 
 <span class="nf">python-reqs</span><span class="o">:</span> <span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
     pip install --upgrade -r requirements.pip
-</pre></div>
-
+</code></pre></div>
 
 <p>In the top block, we first set a variable <code>VENV</code> to be the location of our
 virtual environment.
@@ -450,18 +439,16 @@ And, if you discipline yourself to make all changes to your execution
 environment in this way, you'll have a permanently up-to-date record of your
 system requirements.</p>
 <h2>Single-command project setup</h2>
-<div class="highlight"><pre><span></span><span class="nf">setup</span><span class="o">:</span> ${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="nf">setup</span><span class="o">:</span> ${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
+</code></pre></div>
 
 <p>With this meta-target a simple <code>make setup</code> will have our new project
 configured and ready to go.
 This is particularly useful if you work on multiple machines:</p>
-<div class="highlight"><pre><span></span>git clone git@github.com:username/project.git
+<div class="highlight"><pre><span></span><code>git clone git@github.com:username/project.git
 <span class="nb">cd</span> project
 make setup
-</pre></div>
-
+</code></pre></div>
 
 <p>is all it takes to get up and running.</p>
 <h2>Launch your tools without the hassle</h2>
@@ -469,17 +456,15 @@ make setup
 With this recipe (and the <code>PATH</code> we export above) I don't have to remember
 to activate my virtual environment or invoke specific configuration files
 when I launch a server.</p>
-<div class="highlight"><pre><span></span><span class="nf">start-jupyter</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><code><span class="nf">start-jupyter</span><span class="o">:</span>
     jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
-</pre></div>
-
+</code></pre></div>
 
 <p>Put whatever you'd like into the <a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html">config file</a>.
 I like to keep my notebooks in a subdirectory, so my invocation is a little different:</p>
-<div class="highlight"><pre><span></span>jupyter notebook --config<span class="o">=</span>ipynb/jupyter_notebook_config.py <span class="se">\</span>
+<div class="highlight"><pre><span></span><code>jupyter notebook --config<span class="o">=</span>ipynb/jupyter_notebook_config.py <span class="se">\</span>
     --notebook-dir<span class="o">=</span>ipynb/
-</pre></div>
-
+</code></pre></div>
 
 <p>And my configuration automatically changes the working directory to
 the project root when launching a new notebook.</p>
@@ -487,12 +472,11 @@ the project root when launching a new notebook.</p>
 The same general idea works for any other software you can start from the shell.
 No need to remember any of the obnoxious command-line flags.</p>
 <h2>Quick cleanup</h2>
-<div class="highlight"><pre><span></span><span class="nv">CLEANUP</span> <span class="o">=</span> *.pyc
+<div class="highlight"><pre><span></span><code><span class="nv">CLEANUP</span> <span class="o">=</span> *.pyc
 
 <span class="nf">clean</span><span class="o">:</span>
     rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>A ubiquitous target for <em>Make</em> is <code>clean</code> to tidy up the repository.
 With this makefile, run <code>make clean</code> to remove all the <code>*.pyc</code> files.

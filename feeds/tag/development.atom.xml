@@ -5,7 +5,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -20,7 +20,7 @@ here when I've written it.&lt;/em&gt;&lt;/s&gt;
 &lt;em&gt;While I still agree with some of the many of the views expressed in
 this piece, I have changed my thinking on Makefiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;(Edit 2): &lt;s&gt;&lt;em&gt;I'll post a new post about the topic when I take the time to write it.&lt;/em&gt;&lt;/s&gt;
-&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
+&lt;em&gt;I've written a &lt;a href="//blog.byronjsmith.com/Computing/Computing/make-analysis.md"&gt;tutorial&lt;/a&gt; on using _Make&lt;/em&gt; for reproducible data
 analysis_.&lt;/p&gt;
 &lt;p&gt;I am an aspiring but unskilled (not yet skilled?) computer geek.
 You can observe this for yourself by watching me fumble my way through
@@ -94,4 +94,4 @@ fixed some glaring problems.  Whatever.  The point is I want to share
 the world; what better stage exists for its introduction than this blog, which
 absolutely no one reads?&lt;/p&gt;
 &lt;p&gt;...Yeah, I'll probably post it to &lt;a href="http://reddit.com/r/python"&gt;/r/python&lt;/a&gt; too.&lt;/p&gt;
-&lt;p&gt;Tune in for Part II, in which I explain why &lt;em&gt;you&lt;/em&gt; should use my software.&lt;/p&gt;</content><category term="python"></category><category term="software"></category><category term="development"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category></entry></feed>
+&lt;p&gt;Tune in for Part II, in which I explain why &lt;em&gt;you&lt;/em&gt; should use my software.&lt;/p&gt;</content><category term="Computing"></category><category term="python"></category><category term="software"></category><category term="development"></category><category term="make"></category><category term="pipelines"></category><category term="bioinformatics"></category></entry></feed>

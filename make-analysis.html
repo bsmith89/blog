@@ -230,53 +230,47 @@ Ubuntu Server 14.04 LTS image and a "m3.medium" instance.
 If you would like to use Windows, Git-Bash (packaged with Git for Windows)
 is probably your best bet, although it has not been tested on that platform.</p>
 <p>For this lesson we will be using an already prepared set of files.</p>
-<div class="highlight"><pre><span></span>curl https://codeload.github.com/bsmith89/make-example/tar.gz/v1.0-snap <span class="se">\</span>
+<div class="highlight"><pre><span></span><code>curl https://codeload.github.com/bsmith89/make-example/tar.gz/v1.0-snap <span class="se">\</span>
     &gt; make-example-1.0-snap.tgz
 tar -xzf make-example-1.0-snap.tgz
 <span class="nb">cd</span> make-example-1.0-snap
-</pre></div>
-
+</code></pre></div>
 
 <p>Let's take a look at the files we will be working with:</p>
-<div class="highlight"><pre><span></span>sudo apt-get update
+<div class="highlight"><pre><span></span><code>sudo apt-get update
 sudo apt-get install tree
 tree
-</pre></div>
-
+</code></pre></div>
 
 <p>The <code>tree</code> command produces a handy tree-diagram of the directory.</p>
-<div class="highlight"><pre><span></span>.
-├── books
-│   ├── abyss.txt
-│   ├── isles.txt
-│   ├── last.txt
-│   ├── LICENSE_TEXTS.md
-│   └── sierra.txt
-├── LICENSE.md
-├── matplotlibrc
-├── plotcount.py
-├── README.md
-└── wordcount.py
+<div class="highlight"><pre><span></span><code><span class="p">.</span>
+<span class="err">├──</span> <span class="n">books</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">abyss</span><span class="p">.</span><span class="n">txt</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">isles</span><span class="p">.</span><span class="n">txt</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="k">last</span><span class="p">.</span><span class="n">txt</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">LICENSE_TEXTS</span><span class="p">.</span><span class="n">md</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">sierra</span><span class="p">.</span><span class="n">txt</span>
+<span class="err">├──</span> <span class="n">LICENSE</span><span class="p">.</span><span class="n">md</span>
+<span class="err">├──</span> <span class="n">matplotlibrc</span>
+<span class="err">├──</span> <span class="n">plotcount</span><span class="p">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">README</span><span class="p">.</span><span class="n">md</span>
+<span class="err">└──</span> <span class="n">wordcount</span><span class="p">.</span><span class="n">py</span>
 
-1 directory, 10 files
-</pre></div>
-
+<span class="mi">1</span> <span class="n">directory</span><span class="p">,</span> <span class="mi">10</span> <span class="n">files</span>
+</code></pre></div>
 
 <p>Be sure that you also have <em>Python 3</em>, <em>Git</em>, and <em>GNU Make</em>.</p>
-<div class="highlight"><pre><span></span>sudo apt-get install python3 git make
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>sudo apt-get install python3 git make
+</code></pre></div>
 
 <p>Configure git.</p>
-<div class="highlight"><pre><span></span>git config --global user.name <span class="s2">&quot;Your Name&quot;</span>
+<div class="highlight"><pre><span></span><code>git config --global user.name <span class="s2">&quot;Your Name&quot;</span>
 git config --global user.email you@example.com
-</pre></div>
-
+</code></pre></div>
 
 <p>Install matplotlib.</p>
-<div class="highlight"><pre><span></span>sudo apt-get install python3-matplotlib
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>sudo apt-get install python3-matplotlib
+</code></pre></div>
 
 <h1>Motivation</h1>
 <p>(Estimated time: 30 minutes)</p>
@@ -293,53 +287,46 @@ and have prepared several Python scripts that together make up our
 analysis pipeline.</p>
 <p>Before we begin, add a README to your project describing what we intend
 to do.</p>
-<div class="highlight"><pre><span></span>nano README.md
+<div class="highlight"><pre><span></span><code>nano README.md
 <span class="c1"># Describe what you&#39;re going to do. (e.g. &quot;Test Zipf&#39;s Law&quot;)</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>The first step is to count the frequency of each word in the book.</p>
-<div class="highlight"><pre><span></span>./wordcount.py books/isles.txt isles.dat
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>./wordcount.py books/isles.txt isles.dat
+</code></pre></div>
 
 <p>(The leading '<code>./</code>' is required so that Bash knows we're executing
 a file in the current directory rather than a command in our path.)</p>
 <p>Let's take a quick peek at the result.</p>
-<div class="highlight"><pre><span></span>head -5 isles.dat
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>head -5 isles.dat
+</code></pre></div>
 
 <p>shows us the top 5 lines in the output file:</p>
-<div class="highlight"><pre><span></span>the 3822    6.7371760973
-of  2460    4.33632998414
-and 1723    3.03719372466
-to  1479    2.60708619778
-a   1308    2.30565838181
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">the 3822    6.7371760973</span>
+<span class="err">of  2460    4.33632998414</span>
+<span class="err">and 1723    3.03719372466</span>
+<span class="err">to  1479    2.60708619778</span>
+<span class="err">a   1308    2.30565838181</span>
+</code></pre></div>
 
 <p>Each row shows the word itself, the number of occurrences of that
 word, and the number of occurrences as a percentage of the total
 number of words in the text file.</p>
 <p>We can do the same thing for a different book:</p>
-<div class="highlight"><pre><span></span>./wordcount.py books/abyss.txt abyss.dat
+<div class="highlight"><pre><span></span><code>./wordcount.py books/abyss.txt abyss.dat
 head -5 abyss.dat
-</pre></div>
-
+</code></pre></div>
 
 <p>Finally, let's visualize the results.</p>
-<div class="highlight"><pre><span></span>./plotcount.py isles.dat ascii
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>./plotcount.py isles.dat ascii
+</code></pre></div>
 
 <p>The <code>ascii</code> argument has been added so that we get a text-based
 bar-plot printed to the screen.</p>
 <p>The script is also able to render a graphical bar-plot using matplotlib
 and save the figure to a given file.</p>
-<div class="highlight"><pre><span></span>./plotcount.py isles.dat isles.png
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>./plotcount.py isles.dat isles.png
+</code></pre></div>
 
 <p>Together these scripts implement a common workflow:</p>
 <ol>
@@ -358,7 +345,7 @@ seconds.</p>
 <p>The most common solution to the tedium of data processing is to write
 a master script that runs the whole pipeline from start to finish.</p>
 <p>We can make a new file, <code>run_pipeline.sh</code> that contains:</p>
-<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
 <span class="c1"># USAGE: bash run_pipeline.sh</span>
 <span class="c1"># to produce plots for isles and abyss.</span>
 
@@ -374,8 +361,7 @@ mkdir zipf_results
 mv isles.dat abyss.dat isles.png abyss.png zipf_results/
 tar -czf zipf_results.tgz zipf_results
 rm -r zipf_results
-</pre></div>
-
+</code></pre></div>
 
 <p>This master script solved several problems in computational reproducibility:</p>
 <ol>
@@ -388,30 +374,28 @@ rm -r zipf_results
     it'll (probably) stay that way.</li>
 </ol>
 <p>To continue with the Good Ideas, let's put everything under version control.</p>
-<div class="highlight"><pre><span></span>git init
+<div class="highlight"><pre><span></span><code>git init
 git add README.md
 git commit -m <span class="s2">&quot;Starting a new project.&quot;</span>
 git add wordcount.py plotcount.py matplotlibrc
 git commit -m <span class="s2">&quot;Write scripts to test Zipf&#39;s law.&quot;</span>
 git add run_pipeline.sh
 git commit -m <span class="s2">&quot;Write a master script to run the pipeline.&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Notice that we didn't version control any of the products of our analysis.
 We'll talk more about this at the end of the tutorial.</p>
 <p>A master script is a good start, but it has a few shortcomings.</p>
 <p>Let's imagine that we adjusted the width of the bars in our plot
 produced by <code>plotcount.py</code>.</p>
-<div class="highlight"><pre><span></span>nano plotcount.py
+<div class="highlight"><pre><span></span><code>nano plotcount.py
 <span class="c1"># In the definition of plot_word_counts replace:</span>
 <span class="c1">#    width = 1.0</span>
 <span class="c1"># with:</span>
 <span class="c1">#    width = 0.8</span>
 git add plotcount.py
 git commit -m <span class="s2">&quot;Fix the bar width.&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Now we want to recreate our figures.
 We <em>could</em> just <code>bash run_pipeline.sh</code> again.
@@ -421,7 +405,7 @@ The word counting routine hasn't changed; we shouldn't need to recreate
 those files.</p>
 <p>Alternatively, we could manually rerun the plotting for each word-count file
 and recreate the tarball.</p>
-<div class="highlight"><pre><span></span><span class="k">for</span> file in *.dat<span class="p">;</span> <span class="k">do</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> file in *.dat<span class="p">;</span> <span class="k">do</span>
     ./plotcount.py <span class="nv">$file</span> <span class="si">${</span><span class="nv">file</span><span class="p">/.dat/.png</span><span class="si">}</span>
 <span class="k">done</span>
 
@@ -430,14 +414,13 @@ mkdir zipf_results
 mv isles.dat abyss.dat isles.png abyss.png zipf_results/
 tar -czf zipf_results.tgz zipf_results
 rm -r zipf_results
-</pre></div>
-
+</code></pre></div>
 
 <p>But then we don't get many of the benefits of having a master script in
 the first place.</p>
 <p>Another popular option is to comment out a subset of the lines in
 <code>run_pipeline.sh</code>:</p>
-<div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
 <span class="c1"># USAGE: bash run_pipeline.sh</span>
 <span class="c1"># to produce plots for isles and abyss.</span>
 
@@ -454,8 +437,7 @@ mkdir zipf_results
 mv isles.dat abyss.dat isles.png abyss.png zipf_results/
 tar -czf zipf_results.tgz zipf_results
 rm -r zipf_results
-</pre></div>
-
+</code></pre></div>
 
 <p>Followed by <code>bash run_pipeline.sh</code>.</p>
 <p>But this process, and subsequently undoing it,
@@ -483,10 +465,9 @@ to another (e.g. <em>raw data</em> &#8594; <em>word counts</em> &#8594; <em>???<
 <p>Let's get started writing a description of our analysis for <em>Make</em>.</p>
 <p>Open up a file called <code>Makefile</code> in your editor of choice (e.g. <code>nano Makefile</code>)
 and add the following:</p>
-<div class="highlight"><pre><span></span><span class="nf">isles.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">isles</span>.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">isles.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">isles</span>.<span class="n">txt</span>
     ./wordcount.py books/isles.txt isles.dat
-</pre></div>
-
+</code></pre></div>
 
 <p>We have now written the simplest, non-trivial Makefile<sup id="fnref:makefile-name"><a class="footnote-ref" href="#fn:makefile-name">2</a></sup>.
 It is pretty reminiscent of one of the lines from our master script.
@@ -520,40 +501,34 @@ Right now our Makefile describes a pretty simple <strong>dependency graph</stron
 </blockquote>
 <p>where the "&#8594;" is pointing from requirements to targets.</p>
 <p>Don't forget to commit:</p>
-<div class="highlight"><pre><span></span>git add Makefile
+<div class="highlight"><pre><span></span><code>git add Makefile
 git commit -m <span class="s2">&quot;Start converting master script into a Makefile.&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <h2>Running <em>Make</em></h2>
 <p>Now that we have a (currently incomplete) description of our pipeline,
 let's use <em>Make</em> to execute it.</p>
 <p>First, remove the previously generated files.</p>
-<div class="highlight"><pre><span></span>rm *.dat *.png
-</pre></div>
+<div class="highlight"><pre><span></span><code>rm *.dat *.png
+</code></pre></div>
 
-
-<div class="highlight"><pre><span></span>make isles.dat
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>make isles.dat
+</code></pre></div>
 
 <p>You should see the following print to the terminal:</p>
-<div class="highlight"><pre><span></span>./wordcount.py books/isles.txt isles.dat
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">./wordcount.py books/isles.txt isles.dat</span>
+</code></pre></div>
 
 <p>By default, <em>Make</em> prints the recipes that it executes<sup id="fnref:makefile-identification"><a class="footnote-ref" href="#fn:makefile-identification">3</a></sup>.</p>
 <p>Let's see if we got what we expected.</p>
-<div class="highlight"><pre><span></span>head -5 isles.dat
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>head -5 isles.dat
+</code></pre></div>
 
 <p>The first 5 lines of that file should look exactly like before.</p>
 <h2>Rerunning <em>Make</em></h2>
 <p>Let's try running <em>Make</em> the same way again.</p>
-<div class="highlight"><pre><span></span>make isles.dat
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>make isles.dat
+</code></pre></div>
 
 <p>This time, instead of executing the same recipe,
 <em>Make</em> prints <code>make: Nothing to be done for 'isles.dat'.</code></p>
@@ -569,10 +544,9 @@ This can be another <em>Make</em> gotcha, so keep it in mind.</p>
 <p>If you want to induce the original behavior, you just have to
 change the modification time of <code>books/isles.txt</code> so that it is newer
 than <code>isles.dat</code>.</p>
-<div class="highlight"><pre><span></span>touch books/isles.txt
+<div class="highlight"><pre><span></span><code>touch books/isles.txt
 make isles.dat
-</pre></div>
-
+</code></pre></div>
 
 <p>The original behavior is restored.</p>
 <p>Sometimes you just want <em>Make</em> to tell you what it thinks about the current
@@ -585,17 +559,16 @@ it will assume that you want to build the first target in the Makefile.</p>
 <h2>More recipes</h2>
 <p>Now that <em>Make</em> knows how to build <code>isles.dat</code>,
 we can add a rule for plotting those results.</p>
-<div class="highlight"><pre><span></span><span class="nf">isles.png</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span>
+<div class="highlight"><pre><span></span><code><span class="nf">isles.png</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span>
     ./plotcount.py isles.dat isles.png
-</pre></div>
-
+</code></pre></div>
 
 <p>The dependency graph now looks like:</p>
 <blockquote>
 <p><code>books/isles.txt</code> &#8594; <code>isles.dat</code> &#8594; <code>isles.png</code></p>
 </blockquote>
 <p>Let's add a few more recipes to our Makefile.</p>
-<div class="highlight"><pre><span></span><span class="nf">abyss.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">abyss</span>.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">abyss.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">abyss</span>.<span class="n">txt</span>
     ./wordcount.py books/abyss.txt abyss.dat
 
 <span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
@@ -604,14 +577,12 @@ we can add a rule for plotting those results.</p>
     cp isles.dat abyss.dat isles.png abyss.png zipf_results/
     tar -czf zipf_results.tgz zipf_results/
     rm -r zipf_results/
-</pre></div>
-
+</code></pre></div>
 
 <p>And commit the changes.</p>
-<div class="highlight"><pre><span></span>git add Makefile
+<div class="highlight"><pre><span></span><code>git add Makefile
 git commit -m <span class="s2">&quot;Add recipes for abyss counts, isles plotting, and the final archive.&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Here the recipe for <code>zipf_results.tgz</code> involves running a series of
 shell commands.
@@ -630,25 +601,23 @@ any return an error.</p>
 <p>Once you've written a recipe for <code>abyss.png</code> you should be able to
 run <code>make zipf_results.tgz</code>.</p>
 <p>Let's delete all of our files and try it out.</p>
-<div class="highlight"><pre><span></span>rm abyss.* isles.*
+<div class="highlight"><pre><span></span><code>rm abyss.* isles.*
 make zipf_results.tgz
-</pre></div>
-
+</code></pre></div>
 
 <p>You should get the something like the following output
 (the order may be different)
 to your terminal:</p>
-<div class="highlight"><pre><span></span>./wordcount.py books/abyss.txt abyss.dat
-./wordcount.py books/isles.txt isles.dat
-./plotcount.py abyss.dat abyss.png
-./plotcount.py isles.dat isles.png
-rm -rf zipf_results/
-mkdir zipf_results/
-cp isles.dat abyss.dat isles.png abyss.png zipf_results/
-tar -czf zipf_results.tgz zipf_results/
-rm -r zipf_results/
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">./wordcount.py books/abyss.txt abyss.dat</span>
+<span class="err">./wordcount.py books/isles.txt isles.dat</span>
+<span class="err">./plotcount.py abyss.dat abyss.png</span>
+<span class="err">./plotcount.py isles.dat isles.png</span>
+<span class="err">rm -rf zipf_results/</span>
+<span class="err">mkdir zipf_results/</span>
+<span class="err">cp isles.dat abyss.dat isles.png abyss.png zipf_results/</span>
+<span class="err">tar -czf zipf_results.tgz zipf_results/</span>
+<span class="err">rm -r zipf_results/</span>
+</code></pre></div>
 
 <p>Since you asked for <code>zipf_results.tgz</code> <em>Make</em> looked first for that file.
 Not finding it, <em>Make</em> looked for its prerequisites.
@@ -658,24 +627,21 @@ Once those were finished it was able to make <code>abyss.png</code> and
 <code>isles.png</code>, before finally building <code>zipf_results.tgz</code>.</p>
 <p>You may also have gotten an additional line in your output similar to the
 following.</p>
-<div class="highlight"><pre><span></span>rm abyss.dat isles.dat abyss.png isles.png
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">rm abyss.dat isles.dat abyss.png isles.png</span>
+</code></pre></div>
 
 <p>Because you only asked for <code>zipf_results.tgz</code>, <em>Make</em> thinks its doing
 you a favor by deleting the intermediate files.
 As computational biologists we know to never trust our analyses until they've
 been tested and intermediate files are a valuable audit trail.
 To prevent the default behavior, add the following to your Makefile.</p>
-<div class="highlight"><pre><span></span><span class="nf">.SECONDARY</span><span class="o">:</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="nf">.SECONDARY</span><span class="o">:</span>
+</code></pre></div>
 
 <p>Now remove the outputs and rerun your pipeline.</p>
-<div class="highlight"><pre><span></span>rm zipf_results.tgz *.dat *.png
+<div class="highlight"><pre><span></span><code>rm zipf_results.tgz *.dat *.png
 make zipf_results.tgz
-</pre></div>
-
+</code></pre></div>
 
 <p><code>.SECONDARY</code> is one of a handful of <strong>special targets</strong> used to control <em>Make</em>'s
 behavior.</p>
@@ -684,34 +650,30 @@ behavior.</p>
 <p>What happens if you <code>touch abyss.dat</code> and
 then <code>make zipf_results.tgz</code>?</p>
 </blockquote>
-<div class="highlight"><pre><span></span>git add Makefile
+<div class="highlight"><pre><span></span><code>git add Makefile
 git commit -m <span class="s2">&quot;Finish translating pipeline script to a Makefile.&quot;</span>
 git status
-</pre></div>
-
+</code></pre></div>
 
 <p>Notice all the files that <em>Git</em> wants to be tracking?
 Like before, we're not going to version control any of the intermediate
 or final products of our pipeline.
 To reflect this fact add a <code>.gitignore</code> file:</p>
-<div class="highlight"><pre><span></span>*.dat
-*.png
-zipf_results.tgz
-LICENSE.md
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">*.dat</span>
+<span class="err">*.png</span>
+<span class="err">zipf_results.tgz</span>
+<span class="err">LICENSE.md</span>
+</code></pre></div>
 
-
-<div class="highlight"><pre><span></span>git add .gitignore
+<div class="highlight"><pre><span></span><code>git add .gitignore
 git commit -m <span class="s2">&quot;Have git ignore intermediate data files.&quot;</span>
 git status
-</pre></div>
-
+</code></pre></div>
 
 <h2>Phony targets</h2>
 <p>Sometimes its nice to have targets that don't refer to actual files.</p>
-<div class="highlight"><pre><span></span><span class="nf">all</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span> <span class="n">zipf_results</span>.<span class="n">tgz</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="nf">all</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span> <span class="n">zipf_results</span>.<span class="n">tgz</span>
+</code></pre></div>
 
 <p>Even though this rule doesn't have a recipe, it does have prerequisites.
 Now, when you run <code>make all</code> <em>Make</em> will do what it needs to to bring
@@ -721,10 +683,9 @@ since the first recipe is what is built by default
 when no other target is passed as an argument.</p>
 <p>Another traditional target is "<code>clean</code>".
 Add the following to your Makefile.</p>
-<div class="highlight"><pre><span></span><span class="nf">clean</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><code><span class="nf">clean</span><span class="o">:</span>
     rm --force *.dat *.png zipf_results.tgz
-</pre></div>
-
+</code></pre></div>
 
 <p>Running <code>make clean</code> will now remove all of the cruft.</p>
 <p>Watch out, though!</p>
@@ -740,23 +701,21 @@ Instead, make sees that there is already a file named "<code>clean</code>" and,
 since this file is newer than all of its prerequisites (there are none),
 <em>Make</em> decides there's nothing left to do.</p>
 <p>To avoid this problem add the following to your Makefile.</p>
-<div class="highlight"><pre><span></span><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">all</span> <span class="n">clean</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">all</span> <span class="n">clean</span>
+</code></pre></div>
 
 <p>This special target tells <em>Make</em> to assume that the targets "all", and "clean"
 are <em>not</em> real files;
 they're <strong>phony</strong> targets.</p>
-<div class="highlight"><pre><span></span>git add Makefile
+<div class="highlight"><pre><span></span><code>git add Makefile
 git commit -m <span class="s2">&quot;Added &#39;all&#39; and &#39;clean&#39; recipes.&quot;</span>
 rm clean
-</pre></div>
-
+</code></pre></div>
 
 <h1><em>Make</em> features</h1>
 <p>(Estimated time: 45 minutes)</p>
 <p>Right now our Makefile looks like this:</p>
-<div class="highlight"><pre><span></span><span class="c"># Dummy targets</span>
+<div class="highlight"><pre><span></span><code><span class="c"># Dummy targets</span>
 <span class="nf">all</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span> <span class="n">zipf_results</span>.<span class="n">tgz</span>
 
 <span class="nf">clean</span><span class="o">:</span>
@@ -785,8 +744,7 @@ rm clean
     cp isles.dat abyss.dat isles.png abyss.png zipf_results/
     tar -czf zipf_results.tgz zipf_results/
     rm -r zipf_results/
-</pre></div>
-
+</code></pre></div>
 
 <p>Looks good, don't you think?
 Notice the added comments, starting with the "<code>#</code>" character just like in
@@ -805,10 +763,9 @@ from every step in the analysis.
 These are like informal "USAGE:" documentation for our scripts.</p>
 <h2>Parallel <em>Make</em></h2>
 <p>And check this out!</p>
-<div class="highlight"><pre><span></span>make clean
+<div class="highlight"><pre><span></span><code>make clean
 make --jobs
-</pre></div>
-
+</code></pre></div>
 
 <p>Did you see it?
 The <code>--jobs</code> flag (just "<code>-j</code>" works too) tells <em>Make</em> to run recipes in
@@ -835,16 +792,14 @@ but <em>Make</em> is perfectly capable of doing so.</p>
 <p>One overly repetitive part of our Makefile:
 Targets and prerequisites are in both the header <em>and</em> the recipe of each rule.</p>
 <p>It turns out, that</p>
-<div class="highlight"><pre><span></span><span class="nf">isles.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">isles</span>.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">isles.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">isles</span>.<span class="n">txt</span>
     ./wordcount.py books/isles.txt isles.dat
-</pre></div>
-
+</code></pre></div>
 
 <p>can be rewritten as</p>
-<div class="highlight"><pre><span></span><span class="nf">isles.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">isles</span>.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">isles.dat</span><span class="o">:</span> <span class="n">books</span>/<span class="n">isles</span>.<span class="n">txt</span>
     ./wordcount.py $^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Here we've replaced the prerequisite "<code>books/isles.txt</code>" in the recipe
 with "<code>$^</code>" and the target "<code>isles.dat</code>" with "<code>$@</code>".
@@ -855,24 +810,22 @@ While we can also define our own variables,
 <em>Make</em> <em>automatically</em> defines a number of variables, like the ones
 I've just shown you<sup id="fnref:auto-vars"><a class="footnote-ref" href="#fn:auto-vars">4</a></sup>.</p>
 <p>Therefore</p>
-<div class="highlight"><pre><span></span><span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
+<div class="highlight"><pre><span></span><code><span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
     rm -rf zipf_results/
     mkdir zipf_results/
     cp isles.dat abyss.dat isles.png abyss.png zipf_results/
     tar -czf zipf_results.tgz zipf_results/
     rm -r zipf_results/
-</pre></div>
-
+</code></pre></div>
 
 <p>can now be rewritten as</p>
-<div class="highlight"><pre><span></span><span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
+<div class="highlight"><pre><span></span><code><span class="nf">zipf_results.tgz</span><span class="o">:</span> <span class="n">isles</span>.<span class="n">dat</span> <span class="n">abyss</span>.<span class="n">dat</span> <span class="n">isles</span>.<span class="n">png</span> <span class="n">abyss</span>.<span class="n">png</span>
     rm -rf zipf_results/
     mkdir zipf_results/
     cp $^ zipf_results/
     tar -czf <span class="nv">$@</span> zipf_results/
     rm -r zipf_results/
-</pre></div>
-
+</code></pre></div>
 
 <p>That's a little less cluttered,
 and still perfectly understandable once you know what the variables mean.</p>
@@ -881,9 +834,10 @@ and still perfectly understandable once you know what the variables mean.</p>
 <p>```bash
 make clean
 make isles.dat
-``````````
-<!--Those extra backticks are because of Vim syntax highlighting.--></p>
+``````````</p>
 </blockquote>
+<!--Those extra backticks are because of Vim syntax highlighting.-->
+
 <p>You should get the same output as last time.
 Internally, <em>Make</em> replaced "<code>$@</code>" with "<code>isles.dat</code>"
 and "<code>$^</code>" with "<code>books/isles.txt</code>"
@@ -900,10 +854,9 @@ We have nearly identical recipes for <code>abyss.dat</code> and <code>isles.dat<
 <p>It turns out we can replace <em>both</em> of those rules with just one rule,
 by telling <em>Make</em> about the relationships between filename <em>patterns</em>.</p>
 <p>A "pattern rule" looks like this:</p>
-<div class="highlight"><pre><span></span><span class="nf">%.dat</span><span class="o">:</span> <span class="n">books</span>/%.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">%.dat</span><span class="o">:</span> <span class="n">books</span>/%.<span class="n">txt</span>
     countwords.py $^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Here we've replaced the book name with a percent sign, "<code>%</code>".
 The "<code>%</code>" is called the <strong>stem</strong>
@@ -942,11 +895,10 @@ with a single pattern rule.</p>
 <p>Not all variables in a makefile are of the automatic variety.
 Users can define their own, as well.</p>
 <p>Add this lines at the top of your makefile:</p>
-<div class="highlight"><pre><span></span><span class="nv">ARCHIVED</span> <span class="o">:=</span> isles.dat isles.png <span class="se">\</span>
+<div class="highlight"><pre><span></span><code><span class="nv">ARCHIVED</span> <span class="o">:=</span> isles.dat isles.png <span class="se">\</span>
             abyss.dat abyss.png <span class="se">\</span>
             sierra.dat sierra.png
-</pre></div>
-
+</code></pre></div>
 
 <p>Just like many other languages,
 in makefiles "<code>\</code>" is a line-continuation character.
@@ -969,20 +921,18 @@ makefiles.
 If you included commas they would be considered parts of the filenames.</p>
 <p>Using this variable we can replace the prerequisites of <code>zipf_results.tgz</code>.
 That rule would now be:</p>
-<div class="highlight"><pre><span></span><span class="nf">zipf_results.tgz</span><span class="o">:</span> ${<span class="n">ARCHIVED</span>}
+<div class="highlight"><pre><span></span><code><span class="nf">zipf_results.tgz</span><span class="o">:</span> ${<span class="n">ARCHIVED</span>}
     rm -rf zipf_results/
     mkdir zipf_results/
     cp $^ zipf_results/
     tar -czf <span class="nv">$@</span> zipf_results/
     rm -r zipf_results/
-</pre></div>
-
+</code></pre></div>
 
 <p>We can also use <code>${ARCHIVED}</code> to simplify our cleanup rule.</p>
-<div class="highlight"><pre><span></span><span class="nf">clean</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><code><span class="nf">clean</span><span class="o">:</span>
     rm --force <span class="si">${</span><span class="nv">ARCHIVED</span><span class="si">}</span> zipf_results.tgz
-</pre></div>
-
+</code></pre></div>
 
 <blockquote>
 <h4>Try it</h4>
@@ -1021,10 +971,9 @@ are changing too.</p>
 <em>Scripts should be prerequisites too.</em></p>
 <p>Let's edit the pattern rule for <code>%.png</code> to include <code>plotcounts.py</code>
 as a prerequisites.</p>
-<div class="highlight"><pre><span></span><span class="nf">%.png</span><span class="o">:</span> <span class="n">plotcounts</span>.<span class="n">py</span> %.<span class="n">dat</span>
+<div class="highlight"><pre><span></span><code><span class="nf">%.png</span><span class="o">:</span> <span class="n">plotcounts</span>.<span class="n">py</span> %.<span class="n">dat</span>
     ./$^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>The header makes sense, but that's a strange looking recipe:
 just two automatic variables.</p>
@@ -1051,53 +1000,48 @@ if you had more than three steps?
 Let's move some stuff around to make our project easier to navigate.</p>
 <h3>Store scripts in <code>scripts/</code></h3>
 <p>First we'll stow away the scripts.</p>
-<div class="highlight"><pre><span></span>mkdir scripts/
-mv plotcounts.py wordcount.py scripts/
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">mkdir scripts/</span>
+<span class="err">mv plotcounts.py wordcount.py scripts/</span>
+</code></pre></div>
 
 <p>We also need to update our Makefile to reflect the change:</p>
-<div class="highlight"><pre><span></span><span class="nf">%.dat</span><span class="o">:</span> <span class="n">countwords</span>.<span class="n">py</span> <span class="n">books</span>/%.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">%.dat</span><span class="o">:</span> <span class="n">countwords</span>.<span class="n">py</span> <span class="n">books</span>/%.<span class="n">txt</span>
     ./$^ <span class="nv">$@</span>
 
 <span class="nf">%.png</span><span class="o">:</span> <span class="n">plotcounts</span>.<span class="n">py</span> %.<span class="n">dat</span>
     ./$^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>becomes:</p>
-<div class="highlight"><pre><span></span><span class="nf">%.dat</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">countwords</span>.<span class="n">py</span> <span class="n">books</span>/%.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">%.dat</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">countwords</span>.<span class="n">py</span> <span class="n">books</span>/%.<span class="n">txt</span>
     $^ <span class="nv">$@</span>
 
 <span class="nf">%.png</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">plotcounts</span>.<span class="n">py</span> %.<span class="n">dat</span>
     $^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>That's a little more verbose, but it is now explicit
 that <code>countwords.py</code> and <code>plotcount.py</code> are scripts.</p>
 <p><em>Git</em> should have no problem with the move once you tell it which files
 to be aware of.</p>
-<div class="highlight"><pre><span></span>git add countwords.py plotcounts.py
+<div class="highlight"><pre><span></span><code>git add countwords.py plotcounts.py
 git add scripts/countwords.py scripts/plotcounts.py
 git add Makefile
 git commit -m <span class="s2">&quot;Move scripts into a subdirectory.&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Great!  From here on, when we add new scripts to our analysis they won't
 clutter up our project root.</p>
 <h3>"Hide" intermediate files in <code>data/</code></h3>
 <p>Speaking of clutter, what are we gonna do about all of these intermediate files!?
 Put 'em in a subdirectory!</p>
-<div class="highlight"><pre><span></span>mkdir data/
+<div class="highlight"><pre><span></span><code>mkdir data/
 mv *.tsv data/
-</pre></div>
-
+</code></pre></div>
 
 <p>And then fix up your Makefile.
 Adjust the relevant lines to look like this.</p>
-<div class="highlight"><pre><span></span><span class="c"># ...</span>
+<div class="highlight"><pre><span></span><code><span class="c"># ...</span>
 
 <span class="nv">ARCHIVED</span> <span class="o">:=</span> data/isles.dat isles.png <span class="se">\</span>
             data/abyss.dat abyss.png <span class="se">\</span>
@@ -1111,25 +1055,22 @@ Adjust the relevant lines to look like this.</p>
 <span class="nf">%.png</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">plotcounts</span>.<span class="n">py</span> <span class="n">data</span>/%.<span class="n">dat</span>
 
 <span class="c"># ...</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Thanks to our <code>ARCHIVED</code> variable, making these changes is pretty simple.</p>
 <p>We have to make one more change if we don't want <em>Git</em> to bother us about
 untracked files.
 Update your <code>.gitignore</code>.</p>
-<div class="highlight"><pre><span></span>data/*.dat
-*.png
-zipf_results.tgz
-LICENSE.md
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">data/*.dat</span>
+<span class="err">*.png</span>
+<span class="err">zipf_results.tgz</span>
+<span class="err">LICENSE.md</span>
+</code></pre></div>
 
 <p>Now commit your changes.</p>
-<div class="highlight"><pre><span></span>git add Makefile
+<div class="highlight"><pre><span></span><code>git add Makefile
 git add .gitignore
-</pre></div>
-
+</code></pre></div>
 
 <p>Simple!</p>
 <h3>Output finished products to <code>fig/</code></h3>
@@ -1176,10 +1117,9 @@ you can also <code>make clean</code> followed by <code>make all</code> to check 
 works.</p>
 <p>You might want to update your "<code>clean</code>" recipe to remove all the junk
 like so:</p>
-<div class="highlight"><pre><span></span><span class="nf">clean</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><code><span class="nf">clean</span><span class="o">:</span>
     rm -f data/* fig/*
-</pre></div>
-
+</code></pre></div>
 
 <p>Be sure to commit all of your changes.</p>
 <h3>Infix processing hints</h3>
@@ -1194,9 +1134,8 @@ will read the mixedcase input file and write all lowercase to
 the output file.</p>
 <p>We can add this to our pipeline.
 We know the recipe is going to look like this:</p>
-<div class="highlight"><pre><span></span><span class="nf">tr &#39;[</span><span class="o">:</span><span class="n">upper</span>:]&#39; &#39;[:<span class="n">lower</span>:]&#39; &lt; $^ &gt; $@
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="nf">tr &#39;[</span><span class="o">:</span><span class="n">upper</span>:]&#39; &#39;[:<span class="n">lower</span>:]&#39; &lt; $^ &gt; $@
+</code></pre></div>
 
 <blockquote>
 <h4>Challenge</h4>
@@ -1208,10 +1147,9 @@ but what did you opt to name the target?</p>
 <code>[bookname].txt</code>, one in <code>books/</code> and one in <code>data/</code>.
 Probably not the easiest to differentiate.</p>
 <p>A better option is to use a more descriptive filename.</p>
-<div class="highlight"><pre><span></span><span class="nf">data/%.lower.txt</span><span class="o">:</span> <span class="n">books</span>/%.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">data/%.lower.txt</span><span class="o">:</span> <span class="n">books</span>/%.<span class="n">txt</span>
     tr <span class="s1">&#39;[:upper:]&#39;</span> <span class="s1">&#39;[:lower:]&#39;</span> &lt; $^ &gt; <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>By including an <strong>infix</strong> of <code>.lower.</code> in our filename it's easy to
 see that one file is a lowercase version of the mixedcase original.
@@ -1221,25 +1159,23 @@ and the names will be a self-documenting record of its origins.</p>
 <p>For reasons which may be apparent in a minute, let's also make a dummy
 preprocessing step which will just copy the books verbatim into our
 <code>data/</code> directory.</p>
-<div class="highlight"><pre><span></span><span class="nf">data/%.txt</span><span class="o">:</span> <span class="n">books</span>/%.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">data/%.txt</span><span class="o">:</span> <span class="n">books</span>/%.<span class="n">txt</span>
     cp $^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>And, in the spirit of infixes, we'll rename <code>data/%.tsv</code> to be more descriptive.</p>
-<div class="highlight"><pre><span></span><span class="nf">data/%.counts.tsv</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">wordcount</span>.<span class="n">py</span> <span class="n">data</span>/%.<span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nf">data/%.counts.tsv</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">wordcount</span>.<span class="n">py</span> <span class="n">data</span>/%.<span class="n">txt</span>
     $^ <span class="nv">$@</span>
 
 <span class="nf">fig/%.counts.png</span><span class="o">:</span> <span class="n">scripts</span>/<span class="n">plotcount</span>.<span class="n">py</span> <span class="n">data</span>/%.<span class="n">counts</span>.<span class="n">tsv</span>
     $^ <span class="nv">$@</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Our Makefile now documents explicitly that we require a tab-delimited table of
 word counts in order to generate the plot,
 whereas before any <code>.tsv</code> file would suggest a word-plot was possible.</p>
 <p>Here's the <em>full</em> Makefile:</p>
-<div class="highlight"><pre><span></span><span class="nv">ARCHIVED</span> <span class="o">:=</span> data/isles.lower.counts.tsv data/abyss.lower.counts.tsv <span class="se">\</span>
+<div class="highlight"><pre><span></span><code><span class="nv">ARCHIVED</span> <span class="o">:=</span> data/isles.lower.counts.tsv data/abyss.lower.counts.tsv <span class="se">\</span>
             data/sierra.lower.counts.tsv fig/isles.lower.counts.png <span class="se">\</span>
             fig/abyss.lower.counts.png fig/sierra.lower.counts.png
 
@@ -1273,8 +1209,7 @@ whereas before any <code>.tsv</code> file would suggest a word-plot was possible
     cp $^ zipf_results/
     tar -czf <span class="nv">$@</span> zipf_results/
     rm -r zipf_results/
-</pre></div>
-
+</code></pre></div>
 
 <p>Our filenames are certainly more verbose now, but in exchange we get:</p>
 <ol>
@@ -1282,11 +1217,10 @@ whereas before any <code>.tsv</code> file would suggest a word-plot was possible
 <li>more flexible development</li>
 <li>and something else, too...</li>
 </ol>
-<div class="highlight"><pre><span></span>make clean
+<div class="highlight"><pre><span></span><code>make clean
 make fig/abyss.lower.counts.png
 make fig/abyss.counts.png
-</pre></div>
-
+</code></pre></div>
 
 <p>What happened there?
 We just built two different barplots, one for our analysis <em>with</em> the
@@ -1307,14 +1241,13 @@ reason about independent of your code.
 Let's make just such a dataset.
 Let's write a book!</p>
 <p>Into a file called <code>books/test.txt</code> add something like this:</p>
-<div class="highlight"><pre><span></span>My Book
-By Me
+<div class="highlight"><pre><span></span><code><span class="n">My</span> <span class="n">Book</span>
+<span class="k">By</span> <span class="n">Me</span>
 
-This is a book that I wrote.
+<span class="n">This</span> <span class="k">is</span> <span class="n">a</span> <span class="n">book</span> <span class="n">that</span> <span class="n">I</span> <span class="n">wrote</span><span class="p">.</span>
 
-The END
-</pre></div>
-
+<span class="n">The</span> <span class="k">END</span>
+</code></pre></div>
 
 <p>We don't need software to count all of the words in this book, and
 we can probably imagine exactly what a barplot of the count would look like.
@@ -1322,20 +1255,18 @@ If the actual result doesn't look like we expected,
 then there's probably something wrong with our analysis.
 Testing your scripts with this tiny book is computationally cheap, too.</p>
 <p>Let's try it out!</p>
-<div class="highlight"><pre><span></span>make fig/test.lower.counts.png
+<div class="highlight"><pre><span></span><code>make fig/test.lower.counts.png
 less data/test.lower.counts.tsv
-</pre></div>
-
+</code></pre></div>
 
 <p>Does your counts data match what you expected?</p>
 <p>We should run this test for just about every change we make,
 to our scripts or to our Makefile.
 We're going to do that a <em>lot</em> so we'll make it as easy as possible.</p>
-<div class="highlight"><pre><span></span><span class="nf">test</span><span class="o">:</span> <span class="n">fig</span>/<span class="n">test</span>.<span class="n">lower</span>.<span class="n">counts</span>.<span class="n">png</span>
+<div class="highlight"><pre><span></span><code><span class="nf">test</span><span class="o">:</span> <span class="n">fig</span>/<span class="n">test</span>.<span class="n">lower</span>.<span class="n">counts</span>.<span class="n">png</span>
 
 <span class="nf">.PHONY</span><span class="o">:</span> <span class="n">test</span> <span class="n">clean</span> <span class="n">all</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>You could even add the <code>test</code> phony target as the first thing in your Makefile.
 That way just calling <code>make</code> will run your tests.</p>
@@ -1345,11 +1276,10 @@ That way just calling <code>make</code> will run your tests.</p>
 the outputs of your test run.</p>
 </blockquote>
 <p>Commit your changes, including <code>books/test.txt</code>.</p>
-<div class="highlight"><pre><span></span>git add Makefile
+<div class="highlight"><pre><span></span><code>git add Makefile
 git add -f books/test.txt
 git commit -m <span class="s2">&quot;Add pipeline testing recipe and book.&quot;</span>
-</pre></div>
-
+</code></pre></div>
 
 <h2>Review: version control</h2>
 <p>We have been following three guiding principles in our use of version
@@ -1413,8 +1343,7 @@ several places for your Makefile.&#160;<a class="footnote-backref" href="#fnref:
 </li>
 <li id="fn:var-assign">
 <p>Variables are complicated in <em>Make</em>.
-Read the extensive [documentation][man-var] about variable assignment.
-[man-var]: https://www.gnu.org/software/make/manual/html_node/Using-Variables.html&#160;<a class="footnote-backref" href="#fnref:var-assign" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+Read the extensive <a href="https://www.gnu.org/software/make/manual/html_node/Using-Variables.html">documentation</a> about variable assignment.&#160;<a class="footnote-backref" href="#fnref:var-assign" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

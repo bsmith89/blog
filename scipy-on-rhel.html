@@ -181,7 +181,7 @@ high-performance compute cluster at The University of Michigan.</p>
 (if you know, please tell me), <code>SciPy</code> has <em>always</em> given me a
 "BlasNotFoundError" when installing on the Red Hat Enterprise Linux distros
 commonly used on academic clusters.</p>
-<div class="highlight"><pre><span></span><span class="gp">&gt;</span> pip install scipy
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;</span> pip install scipy
 <span class="go">Downloading/unpacking scipy</span>
 <span class="go">  Downloading scipy-0.12.0.zip (10.2MB): 100% 10.2MB downloaded</span>
 <span class="go">...</span>
@@ -190,8 +190,7 @@ commonly used on academic clusters.</p>
 <span class="go">    Directories to search for the libraries can be specified in the</span>
 <span class="go">    numpy/distutils/site.cfg file (section [blas]) or by setting</span>
 <span class="go">    the BLAS environment variable.</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>I <em>know</em> BLAS and LAPACK are installed as shared libraries: at Michigan State
 University I had to load the respective modules, but at UMich they're right
@@ -204,7 +203,7 @@ same error.</p>
 just in case it helps someone else.  My solution was found on Stack Overflow
 (surprise, surprise): The accepted answer to
 <a href="http://stackoverflow.com/q/7496547/848121">this</a> question.</p>
-<div class="highlight"><pre><span></span>mkdir -p ~/.local/src/
+<div class="highlight"><pre><span></span><code>mkdir -p ~/.local/src/
 <span class="nb">cd</span> ~/.local/src/
 wget -O BLAS.tgz http://www.netlib.org/blas/blas.tgz
 tar -xzf BLAS.tgz
@@ -233,8 +232,7 @@ git clone https://github.com/scipy/scipy.git
 python setup.py build --fcompiler gnu95
 python setup.py install
 <span class="c1"># Assuming you&#39;re already in the virtualenv you want to install to.</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>I don't know which other systems this will work on, but it does successfully
 install SciPy for me.  On Python 3.3.2, running the unit tests give me
