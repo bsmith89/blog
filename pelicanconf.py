@@ -32,7 +32,8 @@ GITHUB_POSITION = 'right'
 
 # Blogroll {{{2
 LINKS =  [('Living in an Ivory Basement', 'http://ivory.idyll.org/blog/'),
-          ('The Endeavor', 'http://www.johndcook.com/blog/'),
+          ('The Endeavor', 'https://www.johndcook.com/blog/'),
+          ('Andrew Gelman (and others)', 'https://statmodeling.stat.columbia.edu/'),
          ]
 
 # Social widget
