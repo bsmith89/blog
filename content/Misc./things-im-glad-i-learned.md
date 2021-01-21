@@ -2,7 +2,7 @@
 title: Things I'm Glad I Learned
 subtitle: Skills, concepts, techniques, and models
 date: 2021-01-18 18:00
-tags: open science, biology, computational biology, education
+tags: software-carpentry, teaching, python, programming, open science, microbiome, rant, evolution, pipelines, software, git, containers
 modified: 2021-01-21 12:00
 ...
 
