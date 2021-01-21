@@ -24,7 +24,7 @@ author: Byron J. Smith
   For more information about how and why I put this blog together check out my
   [first post][first-post].
 
-  [first-post]: {static}/Misc./initial-commit.md
+  [first-post]: {filename}/Misc./initial-commit.md
 
   <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
     <img alt="Creative Commons License"

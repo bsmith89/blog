@@ -76,7 +76,7 @@ It has been an effective approach to teaching Python to what at this point
 must be several thousand workshop attendees.
 
 [inflammation-lesson]: http://swcarpentry.github.io/python-novice-inflammation/
-[previous-experience]: {static}/Education/swc-python-lesson.md
+[previous-experience]: {filename}/Education/swc-python-lesson.md
 [^inflammation-commit]: HEAD at
     [030f3fbd30](https://github.com/swcarpentry/python-novice-inflammation/tree/030f3fbd3006cea06e42bbd14a62ddb33098b9f6)
 

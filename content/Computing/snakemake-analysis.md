@@ -19,7 +19,7 @@ In the past I've [evangelized extensively for GNU Make][makefile-shortcuts],
 which takes advantage of this graph representation to enable incremental builds
 and parallelization.
 
-[makefile-shortcuts]: {static}/Computing/makefile-shortcuts.md
+[makefile-shortcuts]: {filename}/Computing/makefile-shortcuts.md
 
 _Snakemake_ is a next-generation tool based on this concept and designed
 specifically for bioinformatics and other complex, computationally
@@ -36,7 +36,7 @@ The original (and therefore this lesson as well) is inspired by the
 [Software Carpentry _Make_ lesson][swc-make],
 to which I am also a contributor.
 
-[make-tutorial]: {static}/Computing/make-analysis.md
+[make-tutorial]: {filename}/Computing/make-analysis.md
 [swc-make]: https://swcarpentry.github.io/make-novice/
 
 Some prior experience with the command line is assumed, and learners are

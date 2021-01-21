@@ -19,7 +19,7 @@ their data can benefit from automating that process.
 [I'm][kbroman-tutorial] [not][bostock-tutorial]
 [alone][zmjones-tutorial].
 
-[bjs-tutorial]: {static}/Computing/make-analysis.md
+[bjs-tutorial]: {filename}/Computing/make-analysis.md
 [zmjones-tutorial]: http://zmjones.com/make/
 [bostock-tutorial]: https://bost.ocks.org/mike/make/
 [kbroman-tutorial]: http://kbroman.org/minimal_make/

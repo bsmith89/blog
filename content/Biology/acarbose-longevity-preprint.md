@@ -76,7 +76,7 @@ fatty acids (SCFAs)&mdash;then this could result in improved health and,
 ultimately, longevity.
 
 ![Concept diagram: our alternative model for acarbose's effect on longevity.
-](static/images/longev_concept.png)
+]({static}/static/images/longev_concept.png)
 
 ## Features and limitations of our study
 
