@@ -6,7 +6,7 @@ tags: software-carpentry, teaching, python, programming, open science, microbiom
 modified: 2021-01-21 12:00
 ...
 
-_(WARNING: This post has not yet been revised. It therefore
+_(WARNING: This post was written with haste and therefore
 contains all kinds of typos, spelling errors, grammatical issues, and
 delusions of grandeur, wisdom, and writing ability.)_
 
