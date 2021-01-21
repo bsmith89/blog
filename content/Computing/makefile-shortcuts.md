@@ -1,7 +1,7 @@
 ---
 title: Take five minutes to simplify your life with <em>Make</em>
 date: 2016-06-14 12:00
-tags: make, pipelines, bioinformatics, protips, git, venv, python
+tags: make, pipelines, bioinformatics, protips, git, containers, python
 modified: 2017-11-21 09:30
 ...
 
