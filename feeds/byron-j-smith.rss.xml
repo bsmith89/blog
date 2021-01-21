@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//blog.byronjsmith.com/</link><description>A blog of the new microbiology.</description><lastBuildDate>Tue, 19 Jan 2021 12:00:00 -0500</lastBuildDate><item><title>Things I'm Glad I Learned</title><link>//blog.byronjsmith.com/things-im-glad-i-learned.html</link><description>&lt;!--
-_(
-Before starting, I've decided two things about this post that I think are
-important.
-(1) I'm going to publish it by 18:00 this evening,
-and (2) I'll keep updating it as I think of new things to add.
-)_
-
---&gt;
-
-&lt;p&gt;&lt;em&gt;(WARNING: This post has not yet been revised. It may therefore
-contain all kinds of typos, spelling errors, grammatical issues, and
-delusions of wisdom, writing ability, and grandeur.)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This post is a WORK IN PROGRESS and is intended as a living document&amp;mdash;a
-gratitude journal of sorts&amp;mdash;of some things that I'm glad I learned (and
-often wish I had learned earlier).
+<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//blog.byronjsmith.com/</link><description>A blog of the new microbiology.</description><lastBuildDate>Thu, 21 Jan 2021 12:00:00 -0500</lastBuildDate><item><title>Things I'm Glad I Learned</title><link>//blog.byronjsmith.com/things-im-glad-i-learned.html</link><description>&lt;p&gt;&lt;em&gt;(WARNING: This post has not yet been revised. It therefore
+contains all kinds of typos, spelling errors, grammatical issues, and
+delusions of grandeur, wisdom, and writing ability.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This post is intended as a living document&amp;mdash;a
+gratitude journal of sorts&amp;mdash;of some things that I'm glad I learned.
 I expect many of the items on this list will be relevant to computation
 biology, but that may change in the future.&lt;/p&gt;
-&lt;p&gt;The big idea is that there are undoubtedly things that someone will tell me
-about in the coming decade that I'm going to be grateful to have learned.
-This list is my chance to "pay it backwards", as it were; maybe someone
-else will be grateful for something they first heard about here.&lt;/p&gt;
-&lt;p&gt;It may also double as an inspo list for future posts.&lt;/p&gt;
-&lt;p&gt;My goal …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Mon, 18 Jan 2021 18:00:00 -0500</pubDate><guid isPermaLink="false">tag:blog.byronjsmith.com,2021-01-18:/things-im-glad-i-learned.html</guid><category>Misc.</category><category>education</category><category>open science</category><category>computation biology</category><category>biology</category><category>snakemake</category><category>make</category><category>pymc3</category><category>bayesian</category></item><item><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link>//blog.byronjsmith.com/acarbose-longevity-preprint.html</link><description>&lt;!--
+&lt;p&gt;The big idea is that for every item on this list I am (A) glad that
+someone introduced me to it,
+and (B) think more people should know about it.
+This post is my chance to "pay it backwards", as it were;
+maybe someone else will be grateful for something they find for the first time
+on this list.&lt;/p&gt;
+&lt;p&gt;It may also double as an inspiration list for future posts.&lt;/p&gt;
+&lt;p&gt;My goal is to write a small blurb for each …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Mon, 18 Jan 2021 18:00:00 -0500</pubDate><guid isPermaLink="false">tag:blog.byronjsmith.com,2021-01-18:/things-im-glad-i-learned.html</guid><category>Misc.</category><category>open science</category><category>biology</category><category>computational biology</category><category>education</category></item><item><title>Changes to the gut microbiome resulting from acarbose treatment are associated with increased longevity in mice</title><link>//blog.byronjsmith.com/acarbose-longevity-preprint.html</link><description>&lt;!--
 ## Introduction
 --&gt;
 
