@@ -108,6 +108,108 @@ Articles tagged <em>python</em>
       <article class="entry">
         <header>
           <h1 class="headline">
+            <a href="//blog.byronjsmith.com/dirichlet-multinomial-example.html"
+               rel="bookmark"
+               title="Permalink to 'The Dirichlet-Multinomial in PyMC3'">
+              The Dirichlet-Multinomial in PyMC3
+            </a>
+          </h1>
+          <h3 id="page-subtitle" class="headline subtitle">
+            Modeling Overdispersion in Compositional Count Data
+          </h3>
+        </header>
+<footer class="article-info">
+
+  <div class="published">
+    <span class="info-tag">published:</span>
+    <span class="info-value" itemprop="datePublished">
+      <abbr title="2021-01-29 14:00:00-05:00">
+        Friday, January 29, 2021
+      </abbr>
+    </span>
+  </div>
+
+
+
+  <div class="category">
+    <span class="info-tag">category:</span>
+    <span class="info-value" itemprop="articleSection">
+      <a href="//blog.byronjsmith.com/category/data.html">
+        Data
+      </a>
+    </span>
+  </div>
+
+  <div class="tags">
+    <span class="info-tag">tags:</span>
+    <span class="info-value" itemprop="keywords">
+      <ul class="article-tag-list">
+        <li>
+          <a href="//blog.byronjsmith.com/tag/pymc3.html">
+            pymc3
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/bayesian.html">
+            bayesian
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/tutorial.html">
+            tutorial
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/python.html">
+            python
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/statistics.html">
+            statistics
+          </a>
+        </li>
+      </ul>
+    </span>
+  </div><!-- /.tags -->
+
+</footer>
+        <div class="article-content">
+          <p><em>Having just spent a few too many hours
+<a href="https://github.com/pymc-devs/pymc3/pull/4373">working on the Dirichlet-multinomial distribution</a>
+in <a href="https://github.com/pymc-devs/pymc3">PyMC3</a>,
+I thought I'd convert the demo notebook
+<a href="https://github.com/pymc-devs/pymc-examples/pull/18">I also contributed</a>
+into a blog post.</em></p>
+<p>This example (exported and minimally edited from a Jupyter Notebook)
+demonstrates the use of a Dirichlet mixture of
+multinomials (a.k.a
+<a href="https://en.wikipedia.org/wiki/Dirichlet-multinomial_distribution">Dirichlet-multinomial</a>
+or DM) to model categorical count data.  Models like this one are important in
+a variety of areas, including natural language processing, ecology,
+bioinformatics, and more.</p>
+<p>The Dirichlet-multinomial can be understood as draws from a <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">Multinomial
+distribution</a> where
+each sample has a slightly different probability vector, which is itself drawn
+from a common <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet
+distribution</a>.  This
+contrasts with the Multinomial distribution, which assumes that all
+observations arise from a single fixed probability vector.  This enables the
+Dirichlet-multinomial to accommodate more variable (a.k.a, over-dispersed)
+count data than the Multinomial.</p>
+<p>Other examples of over-dispersed count distributions are the …</p>
+          <div class="read-more">
+            <a href="//blog.byronjsmith.com/dirichlet-multinomial-example.html">
+              ...More
+            </a>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="entry">
+        <header>
+          <h1 class="headline">
             <a href="//blog.byronjsmith.com/things-im-glad-i-learned.html"
                rel="bookmark"
                title="Permalink to 'Things I'm Glad I Learned'">
@@ -218,9 +320,9 @@ Articles tagged <em>python</em>
 
 </footer>
         <div class="article-content">
-          <p><em>(WARNING: This post was written with haste and therefore
+          <p><em>WARNING: This post was written with haste and therefore
 contains all kinds of typos, spelling errors, grammatical issues, and
-delusions of grandeur, wisdom, and writing ability.)</em></p>
+delusions of grandeur, wisdom, and writing ability.</em></p>
 <p>This post is intended as a living document&mdash;a
 gratitude journal of sorts&mdash;of some things that I'm glad I learned.
 I expect many of the items on this list will be relevant to computation

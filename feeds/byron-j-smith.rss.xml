@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//blog.byronjsmith.com/</link><description>A blog of the new microbiology.</description><lastBuildDate>Thu, 21 Jan 2021 12:00:00 -0500</lastBuildDate><item><title>Things I'm Glad I Learned</title><link>//blog.byronjsmith.com/things-im-glad-i-learned.html</link><description>&lt;p&gt;&lt;em&gt;(WARNING: This post was written with haste and therefore
+<rss version="2.0"><channel><title>Deep Ecology - Byron J. Smith</title><link>//blog.byronjsmith.com/</link><description>A blog of the new microbiology.</description><lastBuildDate>Fri, 29 Jan 2021 14:00:00 -0500</lastBuildDate><item><title>The Dirichlet-Multinomial in PyMC3</title><link>//blog.byronjsmith.com/dirichlet-multinomial-example.html</link><description>&lt;p&gt;&lt;em&gt;Having just spent a few too many hours
+&lt;a href="https://github.com/pymc-devs/pymc3/pull/4373"&gt;working on the Dirichlet-multinomial distribution&lt;/a&gt;
+in &lt;a href="https://github.com/pymc-devs/pymc3"&gt;PyMC3&lt;/a&gt;,
+I thought I'd convert the demo notebook
+&lt;a href="https://github.com/pymc-devs/pymc-examples/pull/18"&gt;I also contributed&lt;/a&gt;
+into a blog post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This example (exported and minimally edited from a Jupyter Notebook)
+demonstrates the use of a Dirichlet mixture of
+multinomials (a.k.a
+&lt;a href="https://en.wikipedia.org/wiki/Dirichlet-multinomial_distribution"&gt;Dirichlet-multinomial&lt;/a&gt;
+or DM) to model categorical count data.  Models like this one are important in
+a variety of areas, including natural language processing, ecology,
+bioinformatics, and more.&lt;/p&gt;
+&lt;p&gt;The Dirichlet-multinomial can be understood as draws from a &lt;a href="https://en.wikipedia.org/wiki/Multinomial_distribution"&gt;Multinomial
+distribution&lt;/a&gt; where
+each sample has a slightly different probability vector, which is itself drawn
+from a common &lt;a href="https://en.wikipedia.org/wiki/Dirichlet_distribution"&gt;Dirichlet
+distribution&lt;/a&gt;.  This
+contrasts with the Multinomial distribution, which assumes that all
+observations arise from a single fixed probability vector.  This enables the
+Dirichlet-multinomial to accommodate more variable (a.k.a, over-dispersed)
+count data than the Multinomial.&lt;/p&gt;
+&lt;p&gt;Other examples of over-dispersed count distributions are the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Byron J. Smith</dc:creator><pubDate>Fri, 29 Jan 2021 14:00:00 -0500</pubDate><guid isPermaLink="false">tag:blog.byronjsmith.com,2021-01-29:/dirichlet-multinomial-example.html</guid><category>Data</category><category>pymc3</category><category>bayesian</category><category>tutorial</category><category>python</category><category>statistics</category></item><item><title>Things I'm Glad I Learned</title><link>//blog.byronjsmith.com/things-im-glad-i-learned.html</link><description>&lt;p&gt;&lt;em&gt;WARNING: This post was written with haste and therefore
 contains all kinds of typos, spelling errors, grammatical issues, and
-delusions of grandeur, wisdom, and writing ability.)&lt;/em&gt;&lt;/p&gt;
+delusions of grandeur, wisdom, and writing ability.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This post is intended as a living document&amp;mdash;a
 gratitude journal of sorts&amp;mdash;of some things that I'm glad I learned.
 I expect many of the items on this list will be relevant to computation

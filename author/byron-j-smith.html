@@ -110,6 +110,108 @@ Articles by
       <article class="entry">
         <header>
           <h1 class="headline">
+            <a href="//blog.byronjsmith.com/dirichlet-multinomial-example.html"
+               rel="bookmark"
+               title="Permalink to 'The Dirichlet-Multinomial in PyMC3'">
+              The Dirichlet-Multinomial in PyMC3
+            </a>
+          </h1>
+          <h3 id="page-subtitle" class="headline subtitle">
+            Modeling Overdispersion in Compositional Count Data
+          </h3>
+        </header>
+<footer class="article-info">
+
+  <div class="published">
+    <span class="info-tag">published:</span>
+    <span class="info-value" itemprop="datePublished">
+      <abbr title="2021-01-29 14:00:00-05:00">
+        Friday, January 29, 2021
+      </abbr>
+    </span>
+  </div>
+
+
+
+  <div class="category">
+    <span class="info-tag">category:</span>
+    <span class="info-value" itemprop="articleSection">
+      <a href="//blog.byronjsmith.com/category/data.html">
+        Data
+      </a>
+    </span>
+  </div>
+
+  <div class="tags">
+    <span class="info-tag">tags:</span>
+    <span class="info-value" itemprop="keywords">
+      <ul class="article-tag-list">
+        <li>
+          <a href="//blog.byronjsmith.com/tag/pymc3.html">
+            pymc3
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/bayesian.html">
+            bayesian
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/tutorial.html">
+            tutorial
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/python.html">
+            python
+          </a>
+        </li>
+        <li>
+          <a href="//blog.byronjsmith.com/tag/statistics.html">
+            statistics
+          </a>
+        </li>
+      </ul>
+    </span>
+  </div><!-- /.tags -->
+
+</footer>
+        <div class="article-content">
+          <p><em>Having just spent a few too many hours
+<a href="https://github.com/pymc-devs/pymc3/pull/4373">working on the Dirichlet-multinomial distribution</a>
+in <a href="https://github.com/pymc-devs/pymc3">PyMC3</a>,
+I thought I'd convert the demo notebook
+<a href="https://github.com/pymc-devs/pymc-examples/pull/18">I also contributed</a>
+into a blog post.</em></p>
+<p>This example (exported and minimally edited from a Jupyter Notebook)
+demonstrates the use of a Dirichlet mixture of
+multinomials (a.k.a
+<a href="https://en.wikipedia.org/wiki/Dirichlet-multinomial_distribution">Dirichlet-multinomial</a>
+or DM) to model categorical count data.  Models like this one are important in
+a variety of areas, including natural language processing, ecology,
+bioinformatics, and more.</p>
+<p>The Dirichlet-multinomial can be understood as draws from a <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">Multinomial
+distribution</a> where
+each sample has a slightly different probability vector, which is itself drawn
+from a common <a href="https://en.wikipedia.org/wiki/Dirichlet_distribution">Dirichlet
+distribution</a>.  This
+contrasts with the Multinomial distribution, which assumes that all
+observations arise from a single fixed probability vector.  This enables the
+Dirichlet-multinomial to accommodate more variable (a.k.a, over-dispersed)
+count data than the Multinomial.</p>
+<p>Other examples of over-dispersed count distributions are the …</p>
+          <div class="read-more">
+            <a href="//blog.byronjsmith.com/dirichlet-multinomial-example.html">
+              ...More
+            </a>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li>
+      <article class="entry">
+        <header>
+          <h1 class="headline">
             <a href="//blog.byronjsmith.com/things-im-glad-i-learned.html"
                rel="bookmark"
                title="Permalink to 'Things I'm Glad I Learned'">
@@ -220,9 +322,9 @@ Articles by
 
 </footer>
         <div class="article-content">
-          <p><em>(WARNING: This post was written with haste and therefore
+          <p><em>WARNING: This post was written with haste and therefore
 contains all kinds of typos, spelling errors, grammatical issues, and
-delusions of grandeur, wisdom, and writing ability.)</em></p>
+delusions of grandeur, wisdom, and writing ability.</em></p>
 <p>This post is intended as a living document&mdash;a
 gratitude journal of sorts&mdash;of some things that I'm glad I learned.
 I expect many of the items on this list will be relevant to computation
@@ -1063,570 +1165,12 @@ to fit into the two half-day session we allotted it.</p>
         </div>
       </article>
     </li>
-    <li>
-      <article class="entry">
-        <header>
-          <h1 class="headline">
-            <a href="//blog.byronjsmith.com/microbial-species.html"
-               rel="bookmark"
-               title="Permalink to 'Do bacterial species exist?'">
-              Do bacterial species exist?
-            </a>
-          </h1>
-        </header>
-<footer class="article-info">
-
-  <div class="published">
-    <span class="info-tag">published:</span>
-    <span class="info-value" itemprop="datePublished">
-      <abbr title="2013-08-06 18:30:00-04:00">
-        Tuesday, August 6, 2013
-      </abbr>
-    </span>
-  </div>
-
-
-
-  <div class="category">
-    <span class="info-tag">category:</span>
-    <span class="info-value" itemprop="articleSection">
-      <a href="//blog.byronjsmith.com/category/biology.html">
-        Biology
-      </a>
-    </span>
-  </div>
-
-  <div class="tags">
-    <span class="info-tag">tags:</span>
-    <span class="info-value" itemprop="keywords">
-      <ul class="article-tag-list">
-        <li>
-          <a href="//blog.byronjsmith.com/tag/microbiology.html">
-            microbiology
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/species.html">
-            species
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/semantics.html">
-            semantics
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/rant.html">
-            rant
-          </a>
-        </li>
-      </ul>
-    </span>
-  </div><!-- /.tags -->
-
-</footer>
-        <div class="article-content">
-          <p>Any of my friends or colleagues who have had the "pleasure" of talking about
-science with me for more than a few hours know that I am prepared, at the drop
-of a hat, to rant extensively about several standing debates in biology which I
-consider merely semantic.  For instance:</p>
-<blockquote>
-<p><strong>Q</strong>: Are viruses alive?</p>
-<p><strong>A</strong>: <em>Who CARES!?</em>  Viruses do what they do.  Cellular organisms do
-something else. What difference does it make if we decide to allow our
-middle-schoolers to draw little dotted lines around animals, bacteria, <em>and</em>
-viruses?  And I don't even want to <em>hear</em> the word "prion".</p>
-</blockquote>
-<p>I have a similar level of disdain for people who try to decide on a single
-definition for "species".   Ultimately I am a pluralist: the definition should
-be tailored to the scientific question.  Paleontologists, you have your
-morphological species concept, because what <em>else</em> do stony
-fossils allow?  Are you studying speciation …</p>
-          <div class="read-more">
-            <a href="//blog.byronjsmith.com/microbial-species.html">
-              ...More
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="entry">
-        <header>
-          <h1 class="headline">
-            <a href="//blog.byronjsmith.com/fork-this-blog.html"
-               rel="bookmark"
-               title="Permalink to 'You, too, can host this website'">
-              You, too, can host this website
-            </a>
-          </h1>
-        </header>
-<footer class="article-info">
-
-  <div class="published">
-    <span class="info-tag">published:</span>
-    <span class="info-value" itemprop="datePublished">
-      <abbr title="2013-07-13 17:00:00-04:00">
-        Saturday, July 13, 2013
-      </abbr>
-    </span>
-  </div>
-
-
-
-  <div class="category">
-    <span class="info-tag">category:</span>
-    <span class="info-value" itemprop="articleSection">
-      <a href="//blog.byronjsmith.com/category/misc.html">
-        Misc.
-      </a>
-    </span>
-  </div>
-
-  <div class="tags">
-    <span class="info-tag">tags:</span>
-    <span class="info-value" itemprop="keywords">
-      <ul class="article-tag-list">
-        <li>
-          <a href="//blog.byronjsmith.com/tag/open-source.html">
-            open-source
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/meta.html">
-            meta
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/pelican.html">
-            pelican
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/website.html">
-            website
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/blog.html">
-            blog
-          </a>
-        </li>
-      </ul>
-    </span>
-  </div><!-- /.tags -->
-
-</footer>
-        <div class="article-content">
-          <p>Loyal readers of this blog (of which I am sure there are exactly zero)
-might have noticed that things are looking a little different since yesterday.
-That's because I've finally developed my own <a href="http://getpelican.com">Pelican</a> theme
-to the point that it's functional, and not too embaressing to look at.</p>
-<p>It doesn't appear <em>too</em> different—it's certainly still inspired by the
-<a href="https://github.com/getpelican/pelican-themes/tree/master/notmyidea-cms">sample theme</a>—but now I understand 95% of the code, instead of 5%.
-My goal was to simplify the template files and css to the point that I could
-customize just about anything with a minimum of work.  I also attempted to
-maintain compatability with all of the configuration options supported by the
-default theme.</p>
-<p>Not that I know why you would want to, but you can read and copy the
-<a href="https://github.com/bsmith89/blog">content and configuration files</a> on Github.  The
-<a href="https://github.com/bsmith89/blog-theme">theme source code</a> is there as well.</p>
-<p>By putting everything up on Github …</p>
-          <div class="read-more">
-            <a href="//blog.byronjsmith.com/fork-this-blog.html">
-              ...More
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="entry">
-        <header>
-          <h1 class="headline">
-            <a href="//blog.byronjsmith.com/the-enemy-of-my-enemy.html"
-               rel="bookmark"
-               title="Permalink to 'Even pathogens hate a cheater'">
-              Even pathogens hate a cheater
-            </a>
-          </h1>
-        </header>
-<footer class="article-info">
-
-  <div class="published">
-    <span class="info-tag">published:</span>
-    <span class="info-value" itemprop="datePublished">
-      <abbr title="2013-06-19 12:00:00-04:00">
-        Wednesday, June 19, 2013
-      </abbr>
-    </span>
-  </div>
-
-
-
-  <div class="category">
-    <span class="info-tag">category:</span>
-    <span class="info-value" itemprop="articleSection">
-      <a href="//blog.byronjsmith.com/category/biology.html">
-        Biology
-      </a>
-    </span>
-  </div>
-
-  <div class="tags">
-    <span class="info-tag">tags:</span>
-    <span class="info-value" itemprop="keywords">
-      <ul class="article-tag-list">
-        <li>
-          <a href="//blog.byronjsmith.com/tag/microbiology.html">
-            microbiology
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/cheaters.html">
-            cheaters
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/evolution.html">
-            evolution
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/pathogens.html">
-            pathogens
-          </a>
-        </li>
-      </ul>
-    </span>
-  </div><!-- /.tags -->
-
-</footer>
-        <div class="article-content">
-          <p><em>I would like to apologize for the long delay since my last post.  The excuse
-(I keep telling myself) is that, having already written too many computational
-articles, it was time to prove that I could write about biology too.
-Unfortunately I'm not nearly as good at reading the literature as I should be.
-Anyway, it's done.  You can stop complaining now.</em></p>
-<p>One barrier to engineering bacteria for biofuel production or any other human
-endeavor is that evolutionary rates are scaled by population sizes and growth
-rates.  For an organism with massive population sizes (trillions of individuals
-or more) and doubling times on the order of hours, evolution can occur quite
-quickly.  Genetic variants within the population which are capable of growing
-faster will quickly take over.  For an organism which is, for example, wasting
-a huge fraction of its energy producing your future gasoline, you can bet this
-months …</p>
-          <div class="read-more">
-            <a href="//blog.byronjsmith.com/the-enemy-of-my-enemy.html">
-              ...More
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="entry">
-        <header>
-          <h1 class="headline">
-            <a href="//blog.byronjsmith.com/scipy-on-rhel.html"
-               rel="bookmark"
-               title="Permalink to 'Compiling SciPy on RHEL6'">
-              Compiling SciPy on RHEL6
-            </a>
-          </h1>
-        </header>
-<footer class="article-info">
-
-  <div class="published">
-    <span class="info-tag">published:</span>
-    <span class="info-value" itemprop="datePublished">
-      <abbr title="2013-05-20 12:00:00-04:00">
-        Monday, May 20, 2013
-      </abbr>
-    </span>
-  </div>
-
-
-
-  <div class="category">
-    <span class="info-tag">category:</span>
-    <span class="info-value" itemprop="articleSection">
-      <a href="//blog.byronjsmith.com/category/computing.html">
-        Computing
-      </a>
-    </span>
-  </div>
-
-  <div class="tags">
-    <span class="info-tag">tags:</span>
-    <span class="info-value" itemprop="keywords">
-      <ul class="article-tag-list">
-        <li>
-          <a href="//blog.byronjsmith.com/tag/python.html">
-            python
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/hpc.html">
-            hpc
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/software.html">
-            software
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/scipy.html">
-            scipy
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/linux.html">
-            linux
-          </a>
-        </li>
-      </ul>
-    </span>
-  </div><!-- /.tags -->
-
-</footer>
-        <div class="article-content">
-          <p>Within the past two years I've discovered something interesting about myself
-(...actually really, <em>really</em> boring about myself):
-I can be happily entertained for hours on end setting up my
-computational environment <em>just</em> right.  I find that it gives me a similar
-type of satisfaction to cataloguing my music collection.  I guess you could
-call it a hobby.</p>
-<p>Usually this entails installing the usual suspects (<code>NumPy</code>, <code>Pandas</code>,
-<code>IPython</code>, <code>matplotlib</code>, etc.) in a python
-<a href="http://www.virtualenv.org/en/latest/">virtual environment</a>.
-When I'm particularly into it (which is always), I'll also compile the python
-distribution itself.  I've had several opportunities to indulge this pasttime,
-most recently in setting up my research pipeline on the
-<a href="http://cac.engin.umich.edu/resources/systems/flux">Flux</a>
-high-performance compute cluster at The University of Michigan.</p>
-<p>Installing <code>NumPy</code> is usually no trouble at all, but for some reason
-(if you know, please tell me), <code>SciPy</code> has <em>always</em> given me a
-"BlasNotFoundError" when installing on the Red Hat Enterprise Linux distros …</p>
-          <div class="read-more">
-            <a href="//blog.byronjsmith.com/scipy-on-rhel.html">
-              ...More
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="entry">
-        <header>
-          <h1 class="headline">
-            <a href="//blog.byronjsmith.com/pymake-0.html"
-               rel="bookmark"
-               title="Permalink to 'PyMake I: Another GNU Make clone'">
-              PyMake I: Another GNU Make clone
-            </a>
-          </h1>
-        </header>
-<footer class="article-info">
-
-  <div class="published">
-    <span class="info-tag">published:</span>
-    <span class="info-value" itemprop="datePublished">
-      <abbr title="2013-05-07 19:00:00-04:00">
-        Tuesday, May 7, 2013
-      </abbr>
-    </span>
-  </div>
-
-  <div class="modified">
-    <span class="info-tag">edited:</span>
-    <span class="info-value" itemprop="dateModified">
-      <abbr title="2016-03-04 10:00:00-05:00">
-        March 4, 2016, 10:00
-      </abbr>
-    </span>
-  </div>
-
-
-  <div class="category">
-    <span class="info-tag">category:</span>
-    <span class="info-value" itemprop="articleSection">
-      <a href="//blog.byronjsmith.com/category/computing.html">
-        Computing
-      </a>
-    </span>
-  </div>
-
-  <div class="tags">
-    <span class="info-tag">tags:</span>
-    <span class="info-value" itemprop="keywords">
-      <ul class="article-tag-list">
-        <li>
-          <a href="//blog.byronjsmith.com/tag/python.html">
-            python
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/software.html">
-            software
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/development.html">
-            development
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/make.html">
-            make
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/pipelines.html">
-            pipelines
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/bioinformatics.html">
-            bioinformatics
-          </a>
-        </li>
-      </ul>
-    </span>
-  </div><!-- /.tags -->
-
-</footer>
-        <div class="article-content">
-          <p>(Edit 1): <s><em>This is the first of two posts about my program
-<a href="http://github.com/bsmith89/pymake/">PyMake</a>.  I'll post the link to Part II
-here when I've written it.</em></s>
-<em>While I still agree with some of the many of the views expressed in
-this piece, I have changed my thinking on Makefiles.</em></p>
-<p>(Edit 2): <s><em>I'll post a new post about the topic when I take the time to write it.</em></s>
-<em>I've written a <a href="//blog.byronjsmith.com/make-analysis.html">tutorial</a> on using _Make</em> for reproducible data
-analysis_.</p>
-<p>I am an aspiring but unskilled (not yet skilled?) computer geek.
-You can observe this for yourself by watching me fumble my way through
-<a href="https://github.com/bsmith89/dotfiles"><code>vim</code> configuration</a>,
-multi-threading/processing in Python, and <code>git</code> merges.</p>
-<p>Rarely do I actually feel like my products are worth sharing with
-the wider world.  The only reason I have a GitHub account is personal
-convenience and absolute confidence that no one else will ever look at it
-besides me …</p>
-          <div class="read-more">
-            <a href="//blog.byronjsmith.com/pymake-0.html">
-              ...More
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li>
-      <article class="entry">
-        <header>
-          <h1 class="headline">
-            <a href="//blog.byronjsmith.com/initial-commit.html"
-               rel="bookmark"
-               title="Permalink to 'Hello World!'">
-              Hello World!
-            </a>
-          </h1>
-        </header>
-<footer class="article-info">
-
-  <div class="published">
-    <span class="info-tag">published:</span>
-    <span class="info-value" itemprop="datePublished">
-      <abbr title="2013-05-05 22:00:00-04:00">
-        Sunday, May 5, 2013
-      </abbr>
-    </span>
-  </div>
-
-  <div class="modified">
-    <span class="info-tag">edited:</span>
-    <span class="info-value" itemprop="dateModified">
-      <abbr title="2015-08-14 10:00:00-04:00">
-        August 14, 2015, 10:00
-      </abbr>
-    </span>
-  </div>
-
-
-  <div class="category">
-    <span class="info-tag">category:</span>
-    <span class="info-value" itemprop="articleSection">
-      <a href="//blog.byronjsmith.com/category/misc.html">
-        Misc.
-      </a>
-    </span>
-  </div>
-
-  <div class="tags">
-    <span class="info-tag">tags:</span>
-    <span class="info-value" itemprop="keywords">
-      <ul class="article-tag-list">
-        <li>
-          <a href="//blog.byronjsmith.com/tag/meta.html">
-            meta
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/pelican.html">
-            pelican
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/website.html">
-            website
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/hosting.html">
-            hosting
-          </a>
-        </li>
-        <li>
-          <a href="//blog.byronjsmith.com/tag/blog.html">
-            blog
-          </a>
-        </li>
-      </ul>
-    </span>
-  </div><!-- /.tags -->
-
-</footer>
-        <div class="article-content">
-          <p>Hi.</p>
-<p>This is mostly a test post and a chance to get some real content on my
-brand-new blog.</p>
-<p>Inspired by
-<a href="http://ivory.idyll.org/blog/advice-to-graduate-students.html">C. Titus Brown</a>'s
-tireless pressure to make more graduate student clones of himself—and the
-fact that a pretty damn good domain name was still available—I started this
-website/blog over the weekend.</p>
-<p>I hope that it will turn into a place for me to share my
-excitement and views on microbiology, microbial ecology, mathematical
-ecology, bioinformatics, python, (very) amateur software development,
-etc.  But I will be satisfied if it turns out to just be writing practice.
-Heaven knows I need that.</p>
-<p>In case you're curious, setup took me about 3 hours (plus some waiting for DNS
-updates).  Largely, this is because I'm shamelessly mirroring Titus's well
-trafficked blog by using a nifty python application called
-<a href="http://getpelican.com">Pelican</a>.  And at $15/year for the domain (using
-<a href="https://hover.com/JRw4YQne">Hover</a><sup id="fnref:hover-disc"><a class="footnote-ref" href="#fn:hover-disc">1 …</a></sup></p>
-          <div class="read-more">
-            <a href="//blog.byronjsmith.com/initial-commit.html">
-              ...More
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
   </ol>
 <p class="paginator">
-	Page 1 / 1
+	Page 1 / 2
+	<a href="//blog.byronjsmith.com/author/byron-j-smith2.html">
+		&raquo;
+	</a>
 </p>
 
 
