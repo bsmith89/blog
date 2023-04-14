@@ -33,7 +33,7 @@ high-performance compute cluster at The University of Michigan.&lt;/p&gt;
 (if you know, please tell me), &lt;code&gt;SciPy&lt;/code&gt; has &lt;em&gt;always&lt;/em&gt; given me a
 "BlasNotFoundError" when installing on the Red Hat Enterprise Linux distros
 commonly used on academic clusters.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;&amp;gt;&lt;/span&gt; pip install scipy
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="go"&gt;&amp;gt; pip install scipy&lt;/span&gt;
 &lt;span class="go"&gt;Downloading/unpacking scipy&lt;/span&gt;
 &lt;span class="go"&gt;  Downloading scipy-0.12.0.zip (10.2MB): 100% 10.2MB downloaded&lt;/span&gt;
 &lt;span class="go"&gt;...&lt;/span&gt;
@@ -55,34 +55,34 @@ same error.&lt;/p&gt;
 just in case it helps someone else.  My solution was found on Stack Overflow
 (surprise, surprise): The accepted answer to
 &lt;a href="http://stackoverflow.com/q/7496547/848121"&gt;this&lt;/a&gt; question.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p ~/.local/src/
-&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/src/
-wget -O BLAS.tgz http://www.netlib.org/blas/blas.tgz
-tar -xzf BLAS.tgz
-&lt;span class="nb"&gt;cd&lt;/span&gt; BLAS
-gfortran -O3 -std&lt;span class="o"&gt;=&lt;/span&gt;legacy -m64 -fno-second-underscore -fPIC -c *.f
-ar r libfblas.a *.o
-ranlib libfblas.a
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;BLAS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PWD&lt;/span&gt;/libfblas.a
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir&lt;span class="w"&gt; &lt;/span&gt;-p&lt;span class="w"&gt; &lt;/span&gt;~/.local/src/
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/.local/src/
+wget&lt;span class="w"&gt; &lt;/span&gt;-O&lt;span class="w"&gt; &lt;/span&gt;BLAS.tgz&lt;span class="w"&gt; &lt;/span&gt;http://www.netlib.org/blas/blas.tgz
+tar&lt;span class="w"&gt; &lt;/span&gt;-xzf&lt;span class="w"&gt; &lt;/span&gt;BLAS.tgz
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;BLAS
+gfortran&lt;span class="w"&gt; &lt;/span&gt;-O3&lt;span class="w"&gt; &lt;/span&gt;-std&lt;span class="o"&gt;=&lt;/span&gt;legacy&lt;span class="w"&gt; &lt;/span&gt;-m64&lt;span class="w"&gt; &lt;/span&gt;-fno-second-underscore&lt;span class="w"&gt; &lt;/span&gt;-fPIC&lt;span class="w"&gt; &lt;/span&gt;-c&lt;span class="w"&gt; &lt;/span&gt;*.f
+ar&lt;span class="w"&gt; &lt;/span&gt;r&lt;span class="w"&gt; &lt;/span&gt;libfblas.a&lt;span class="w"&gt; &lt;/span&gt;*.o
+ranlib&lt;span class="w"&gt; &lt;/span&gt;libfblas.a
+&lt;span class="nb"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;BLAS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PWD&lt;/span&gt;/libfblas.a
 
-&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/src/
-wget -O LAPACK.tgz http://www.netlib.org/lapack/lapack.tgz
-tar -xzf LAPACK.tgz
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/.local/src/
+wget&lt;span class="w"&gt; &lt;/span&gt;-O&lt;span class="w"&gt; &lt;/span&gt;LAPACK.tgz&lt;span class="w"&gt; &lt;/span&gt;http://www.netlib.org/lapack/lapack.tgz
+tar&lt;span class="w"&gt; &lt;/span&gt;-xzf&lt;span class="w"&gt; &lt;/span&gt;LAPACK.tgz
 &lt;span class="c1"&gt;# The resulting directory may be named lapack-&amp;lt;version&amp;gt;/&lt;/span&gt;
 &lt;span class="c1"&gt;# the following assumes that it&amp;#39;s named LAPACK/&lt;/span&gt;
-&lt;span class="nb"&gt;cd&lt;/span&gt; LAPACK
-cp INSTALL/make.inc.gfortran make.inc
-vim make.inc
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;LAPACK
+cp&lt;span class="w"&gt; &lt;/span&gt;INSTALL/make.inc.gfortran&lt;span class="w"&gt; &lt;/span&gt;make.inc
+vim&lt;span class="w"&gt; &lt;/span&gt;make.inc
 &lt;span class="c1"&gt;# Change OPTS = -O2 to OPTS = -O2 -fPIC&lt;/span&gt;
 &lt;span class="c1"&gt;# Change NOOPT = -O0 to NOOPT = -O0 -fPIC&lt;/span&gt;
-make lapacklib
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LAPACK&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PWD&lt;/span&gt;/libflapack.a
+make&lt;span class="w"&gt; &lt;/span&gt;lapacklib
+&lt;span class="nb"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;LAPACK&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PWD&lt;/span&gt;/libflapack.a
 
-&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.local/src/
-git clone https://github.com/scipy/scipy.git
-&lt;span class="nb"&gt;cd&lt;/span&gt; scipy
-python setup.py build --fcompiler gnu95
-python setup.py install
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;~/.local/src/
+git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;https://github.com/scipy/scipy.git
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;scipy
+python&lt;span class="w"&gt; &lt;/span&gt;setup.py&lt;span class="w"&gt; &lt;/span&gt;build&lt;span class="w"&gt; &lt;/span&gt;--fcompiler&lt;span class="w"&gt; &lt;/span&gt;gnu95
+python&lt;span class="w"&gt; &lt;/span&gt;setup.py&lt;span class="w"&gt; &lt;/span&gt;install
 &lt;span class="c1"&gt;# Assuming you&amp;#39;re already in the virtualenv you want to install to.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 

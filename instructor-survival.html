@@ -189,7 +189,7 @@ estimates.
 Instead, the absence of an event for an individual during the study is useful
 information that contributes to the precise estimation of rates.</p>
 <p>Let's grab the Software Carpentry data and take a look.</p>
-<div class="highlight"><pre><span></span><code>curl -O http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w"> </span>http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
 </code></pre></div>
 
 <p>Now in Python:</p>
@@ -208,17 +208,17 @@ information that contributes to the precise estimation of rates.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">raw_data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="err">      Person   Certified      Taught</span>
-<span class="err">1781   11268  2016-03-16         NaN</span>
-<span class="err">1782   11278  2016-03-29         NaN</span>
-<span class="err">1783   11280  2016-04-19         NaN</span>
-<span class="err">1784   11292  2016-02-29         NaN</span>
-<span class="err">1785   11293  2016-03-01         NaN</span>
-<span class="err">1558   11294  2016-04-25  2016-04-18</span>
-<span class="err">1557   11294  2016-04-25  2016-02-02</span>
-<span class="err">1559   11295  2016-04-25  2016-02-02</span>
-<span class="err">1786   11298  2016-04-21         NaN</span>
-<span class="err">1787   11311  2016-04-19         NaN</span>
+<div class="highlight"><pre><span></span><code>      Person   Certified      Taught
+1781   11268  2016-03-16         NaN
+1782   11278  2016-03-29         NaN
+1783   11280  2016-04-19         NaN
+1784   11292  2016-02-29         NaN
+1785   11293  2016-03-01         NaN
+1558   11294  2016-04-25  2016-04-18
+1557   11294  2016-04-25  2016-02-02
+1559   11295  2016-04-25  2016-02-02
+1786   11298  2016-04-21         NaN
+1787   11311  2016-04-19         NaN
 </code></pre></div>
 
 <p>This data is arranged as three columns: a ID number for each person,
@@ -253,13 +253,13 @@ split-apply-combine functionality.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="err">         certified  taught_count taught_first taught_second</span>
-<span class="err">Person</span>
-<span class="err">48      2014-05-04             1   2014-09-11           NaN</span>
-<span class="err">75      2013-07-20            15   2013-03-20    2013-03-24</span>
-<span class="err">85      2014-12-23             4   2015-03-06    2015-06-17</span>
-<span class="err">87      2013-11-25             4   2014-05-12    2015-03-20</span>
-<span class="err">135     2015-02-03             1   2015-09-03           NaN</span>
+<div class="highlight"><pre><span></span><code>         certified  taught_count taught_first taught_second
+Person
+48      2014-05-04             1   2014-09-11           NaN
+75      2013-07-20            15   2013-03-20    2013-03-24
+85      2014-12-23             4   2015-03-06    2015-06-17
+87      2013-11-25             4   2014-05-12    2015-03-20
+135     2015-02-03             1   2015-09-03           NaN
 </code></pre></div>
 
 <p>And some calculations</p>
@@ -291,13 +291,13 @@ For now, I'll use June 1st since I know the data was from May.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[[</span><span class="s1">&#39;time_to_taught_first&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="err">        time_to_taught_first</span>
-<span class="err">Person</span>
-<span class="err">48                     130.0</span>
-<span class="err">75                    -122.0</span>
-<span class="err">85                      73.0</span>
-<span class="err">87                     168.0</span>
-<span class="err">135                    212.0</span>
+<div class="highlight"><pre><span></span><code>        time_to_taught_first
+Person
+48                     130.0
+75                    -122.0
+85                      73.0
+87                     168.0
+135                    212.0
 </code></pre></div>
 
 <p>Some people (Person 75, for instance) taught their first workshop before they
@@ -383,20 +383,20 @@ might predict that these instructors will never teach.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">fit1</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="err">                                   Results: PHReg</span>
-<span class="err">====================================================================================</span>
-<span class="c">Model:                       PH Reg                        Sample size:          474</span>
-<span class="err">Dependent variable:          time_to_taught_first          Num. events:          246</span>
-<span class="c">Ties:                        Breslow</span>
-<span class="err">------------------------------------------------------------------------------------</span>
-<span class="err">                                log HR log HR SE   HR      t    P&gt;|t|  [0.025 0.975]</span>
-<span class="err">------------------------------------------------------------------------------------</span>
-<span class="err">C(year_certified, Sum)[S.2012]  0.1382    0.5705 1.1482  0.2422 0.8086 0.3753 3.5124</span>
-<span class="err">C(year_certified, Sum)[S.2013]  0.2230    0.2268 1.2498  0.9830 0.3256 0.8012 1.9493</span>
-<span class="err">C(year_certified, Sum)[S.2014] -0.1383    0.1789 0.8708 -0.7732 0.4394 0.6132 1.2366</span>
-<span class="err">C(year_certified, Sum)[S.2015]  0.0205    0.1730 1.0207  0.1183 0.9058 0.7272 1.4327</span>
-<span class="err">====================================================================================</span>
-<span class="err">Confidence intervals are for the hazard ratios</span>
+<div class="highlight"><pre><span></span><code><span class="w">                                   </span><span class="n">Results</span><span class="p">:</span><span class="w"> </span><span class="n">PHReg</span>
+<span class="o">====================================================================================</span>
+<span class="n">Model</span><span class="p">:</span><span class="w">                       </span><span class="n">PH</span><span class="w"> </span><span class="n">Reg</span><span class="w">                        </span><span class="n">Sample</span><span class="w"> </span><span class="n">size</span><span class="p">:</span><span class="w">          </span><span class="mi">474</span>
+<span class="n">Dependent</span><span class="w"> </span><span class="n">variable</span><span class="p">:</span><span class="w">          </span><span class="n">time_to_taught_first</span><span class="w">          </span><span class="n">Num</span><span class="o">.</span><span class="w"> </span><span class="n">events</span><span class="p">:</span><span class="w">          </span><span class="mi">246</span>
+<span class="n">Ties</span><span class="p">:</span><span class="w">                        </span><span class="n">Breslow</span>
+<span class="o">------------------------------------------------------------------------------------</span>
+<span class="w">                                </span><span class="nb">log</span><span class="w"> </span><span class="n">HR</span><span class="w"> </span><span class="nb">log</span><span class="w"> </span><span class="n">HR</span><span class="w"> </span><span class="n">SE</span><span class="w">   </span><span class="n">HR</span><span class="w">      </span><span class="n">t</span><span class="w">    </span><span class="n">P</span><span class="o">&gt;|</span><span class="n">t</span><span class="o">|</span><span class="w">  </span><span class="p">[</span><span class="mf">0.025</span><span class="w"> </span><span class="mf">0.975</span><span class="p">]</span>
+<span class="o">------------------------------------------------------------------------------------</span>
+<span class="n">C</span><span class="p">(</span><span class="n">year_certified</span><span class="p">,</span><span class="w"> </span><span class="n">Sum</span><span class="p">)[</span><span class="n">S</span><span class="o">.</span><span class="mi">2012</span><span class="p">]</span><span class="w">  </span><span class="mf">0.1382</span><span class="w">    </span><span class="mf">0.5705</span><span class="w"> </span><span class="mf">1.1482</span><span class="w">  </span><span class="mf">0.2422</span><span class="w"> </span><span class="mf">0.8086</span><span class="w"> </span><span class="mf">0.3753</span><span class="w"> </span><span class="mf">3.5124</span>
+<span class="n">C</span><span class="p">(</span><span class="n">year_certified</span><span class="p">,</span><span class="w"> </span><span class="n">Sum</span><span class="p">)[</span><span class="n">S</span><span class="o">.</span><span class="mi">2013</span><span class="p">]</span><span class="w">  </span><span class="mf">0.2230</span><span class="w">    </span><span class="mf">0.2268</span><span class="w"> </span><span class="mf">1.2498</span><span class="w">  </span><span class="mf">0.9830</span><span class="w"> </span><span class="mf">0.3256</span><span class="w"> </span><span class="mf">0.8012</span><span class="w"> </span><span class="mf">1.9493</span>
+<span class="n">C</span><span class="p">(</span><span class="n">year_certified</span><span class="p">,</span><span class="w"> </span><span class="n">Sum</span><span class="p">)[</span><span class="n">S</span><span class="o">.</span><span class="mi">2014</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="mf">0.1383</span><span class="w">    </span><span class="mf">0.1789</span><span class="w"> </span><span class="mf">0.8708</span><span class="w"> </span><span class="o">-</span><span class="mf">0.7732</span><span class="w"> </span><span class="mf">0.4394</span><span class="w"> </span><span class="mf">0.6132</span><span class="w"> </span><span class="mf">1.2366</span>
+<span class="n">C</span><span class="p">(</span><span class="n">year_certified</span><span class="p">,</span><span class="w"> </span><span class="n">Sum</span><span class="p">)[</span><span class="n">S</span><span class="o">.</span><span class="mi">2015</span><span class="p">]</span><span class="w">  </span><span class="mf">0.0205</span><span class="w">    </span><span class="mf">0.1730</span><span class="w"> </span><span class="mf">1.0207</span><span class="w">  </span><span class="mf">0.1183</span><span class="w"> </span><span class="mf">0.9058</span><span class="w"> </span><span class="mf">0.7272</span><span class="w"> </span><span class="mf">1.4327</span>
+<span class="o">====================================================================================</span>
+<span class="n">Confidence</span><span class="w"> </span><span class="n">intervals</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">hazard</span><span class="w"> </span><span class="n">ratios</span>
 </code></pre></div>
 
 <p>We see no significant deviation from the average year for any of the 4 years of
@@ -438,17 +438,17 @@ again.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">fit2</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="err">                              Results: PHReg</span>
-<span class="err">==========================================================================</span>
-<span class="c">Model:                  PH Reg                        Sample size:     246</span>
-<span class="err">Dependent variable:     time_between_first_second     Num. events:     131</span>
-<span class="c">Ties:                   Breslow</span>
-<span class="err">--------------------------------------------------------------------------</span>
-<span class="err">                      log HR log HR SE   HR      t    P&gt;|t|  [0.025 0.975]</span>
-<span class="err">--------------------------------------------------------------------------</span>
-<span class="err">time_to_taught_first -0.0045    0.0010 0.9955 -4.3474 0.0000 0.9935 0.9975</span>
-<span class="err">==========================================================================</span>
-<span class="err">Confidence intervals are for the hazard ratios</span>
+<div class="highlight"><pre><span></span><code><span class="w">                              </span><span class="n">Results</span><span class="p">:</span><span class="w"> </span><span class="n">PHReg</span>
+<span class="o">==========================================================================</span>
+<span class="n">Model</span><span class="p">:</span><span class="w">                  </span><span class="n">PH</span><span class="w"> </span><span class="n">Reg</span><span class="w">                        </span><span class="n">Sample</span><span class="w"> </span><span class="n">size</span><span class="p">:</span><span class="w">     </span><span class="mi">246</span>
+<span class="n">Dependent</span><span class="w"> </span><span class="n">variable</span><span class="p">:</span><span class="w">     </span><span class="n">time_between_first_second</span><span class="w">     </span><span class="n">Num</span><span class="o">.</span><span class="w"> </span><span class="n">events</span><span class="p">:</span><span class="w">     </span><span class="mi">131</span>
+<span class="n">Ties</span><span class="p">:</span><span class="w">                   </span><span class="n">Breslow</span>
+<span class="o">--------------------------------------------------------------------------</span>
+<span class="w">                      </span><span class="nb">log</span><span class="w"> </span><span class="n">HR</span><span class="w"> </span><span class="nb">log</span><span class="w"> </span><span class="n">HR</span><span class="w"> </span><span class="n">SE</span><span class="w">   </span><span class="n">HR</span><span class="w">      </span><span class="n">t</span><span class="w">    </span><span class="n">P</span><span class="o">&gt;|</span><span class="n">t</span><span class="o">|</span><span class="w">  </span><span class="p">[</span><span class="mf">0.025</span><span class="w"> </span><span class="mf">0.975</span><span class="p">]</span>
+<span class="o">--------------------------------------------------------------------------</span>
+<span class="n">time_to_taught_first</span><span class="w"> </span><span class="o">-</span><span class="mf">0.0045</span><span class="w">    </span><span class="mf">0.0010</span><span class="w"> </span><span class="mf">0.9955</span><span class="w"> </span><span class="o">-</span><span class="mf">4.3474</span><span class="w"> </span><span class="mf">0.0000</span><span class="w"> </span><span class="mf">0.9935</span><span class="w"> </span><span class="mf">0.9975</span>
+<span class="o">==========================================================================</span>
+<span class="n">Confidence</span><span class="w"> </span><span class="n">intervals</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">hazard</span><span class="w"> </span><span class="n">ratios</span>
 </code></pre></div>
 
 <p>We find a highly significant effect of time-to-first-teaching.</p>

@@ -51,58 +51,58 @@ script.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;Usage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    make &lt;span class="nb"&gt;help&lt;/span&gt;                   show this message
-    make clean                  remove intermediate files &lt;span class="o"&gt;(&lt;/span&gt;see CLEANUP&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;help&lt;/span&gt;&lt;span class="w"&gt;                   &lt;/span&gt;show&lt;span class="w"&gt; &lt;/span&gt;this&lt;span class="w"&gt; &lt;/span&gt;message
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;clean&lt;span class="w"&gt;                  &lt;/span&gt;remove&lt;span class="w"&gt; &lt;/span&gt;intermediate&lt;span class="w"&gt; &lt;/span&gt;files&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;see&lt;span class="w"&gt; &lt;/span&gt;CLEANUP&lt;span class="o"&gt;)&lt;/span&gt;
 
-    make &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;                make a virtualenv in the base directory &lt;span class="o"&gt;(&lt;/span&gt;see VENV&lt;span class="o"&gt;)&lt;/span&gt;
-    make python-reqs            install python packages in requirements.pip
-    make git-config             &lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; git configuration
-    make setup                  git init&lt;span class="p"&gt;;&lt;/span&gt; make python-reqs git-config
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="w"&gt;                &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;a&lt;span class="w"&gt; &lt;/span&gt;virtualenv&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;the&lt;span class="w"&gt; &lt;/span&gt;base&lt;span class="w"&gt; &lt;/span&gt;directory&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;see&lt;span class="w"&gt; &lt;/span&gt;VENV&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;python-reqs&lt;span class="w"&gt;            &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;packages&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;requirements.pip
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;git-config&lt;span class="w"&gt;             &lt;/span&gt;&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;local&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;configuration
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;setup&lt;span class="w"&gt;                  &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;init&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;python-reqs&lt;span class="w"&gt; &lt;/span&gt;git-config
 
-    make start-jupyter          launch a jupyter server from the &lt;span class="nb"&gt;local&lt;/span&gt; virtualenv
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;start-jupyter&lt;span class="w"&gt;          &lt;/span&gt;launch&lt;span class="w"&gt; &lt;/span&gt;a&lt;span class="w"&gt; &lt;/span&gt;jupyter&lt;span class="w"&gt; &lt;/span&gt;server&lt;span class="w"&gt; &lt;/span&gt;from&lt;span class="w"&gt; &lt;/span&gt;the&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;local&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;virtualenv
 
 &lt;span class="cp"&gt;endef&lt;/span&gt;
-&lt;span class="k"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PROJECT_HELP_MSG&lt;/span&gt;
+&lt;span class="k"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;help&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$$&lt;/span&gt;PROJECT_HELP_MSG &lt;span class="p"&gt;|&lt;/span&gt; less
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$$&lt;/span&gt;PROJECT_HELP_MSG&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;less
 
 &lt;span class="nf"&gt;.git&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    git init
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;init
 
-&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
-    git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
-        drop_jupyter_output.sh
-    git config --local filter.dropoutput_jupyter.smudge cat
-    git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
-    git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-        diff.daff-csv.command &lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
-    git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-        merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
-    git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-        merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
+&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;filter.dropoutput_jupyter.clean&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;drop_jupyter_output.sh
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;filter.dropoutput_jupyter.smudge&lt;span class="w"&gt; &lt;/span&gt;cat
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;core.page&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;diff.daff-csv.command&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;merge.daff-csv.name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;merge.daff-csv.driver&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
 
-&lt;span class="nv"&gt;VENV&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; .venv
-&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;abspath &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/bin:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;.venv
+&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;abspath&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/bin:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
 &lt;span class="nf"&gt;${VENV}&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    python3 -m venv &lt;span class="nv"&gt;$@&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;python3&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;
 
-&lt;span class="nf"&gt;python-reqs&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;requirements&lt;/span&gt;.&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;}
-    pip install --upgrade -r requirements.pip
+&lt;span class="nf"&gt;python-reqs&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;.&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;}
+&lt;span class="w"&gt;    &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--upgrade&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;requirements.pip
 
-&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
 
 &lt;span class="nf"&gt;start-jupyter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;jupyter_notebook_config.py
+&lt;span class="w"&gt;    &lt;/span&gt;jupyter&lt;span class="w"&gt; &lt;/span&gt;notebook&lt;span class="w"&gt; &lt;/span&gt;--config&lt;span class="o"&gt;=&lt;/span&gt;jupyter_notebook_config.py
 
-&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
+&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;*.pyc
 
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    rm -rf &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;rm&lt;span class="w"&gt; &lt;/span&gt;-rf&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
-&lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;help&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;-&lt;span class="n"&gt;jupter&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
+&lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;help&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt;-&lt;span class="n"&gt;jupter&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;setup&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you want to start using it right away, download the &lt;a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2"&gt;gist&lt;/a&gt;,
@@ -115,21 +115,21 @@ up.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;define PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;Usage&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    make &lt;span class="nb"&gt;help&lt;/span&gt;                   show this message
-    make clean                  remove intermediate files &lt;span class="o"&gt;(&lt;/span&gt;see CLEANUP&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;help&lt;/span&gt;&lt;span class="w"&gt;                   &lt;/span&gt;show&lt;span class="w"&gt; &lt;/span&gt;this&lt;span class="w"&gt; &lt;/span&gt;message
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;clean&lt;span class="w"&gt;                  &lt;/span&gt;remove&lt;span class="w"&gt; &lt;/span&gt;intermediate&lt;span class="w"&gt; &lt;/span&gt;files&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;see&lt;span class="w"&gt; &lt;/span&gt;CLEANUP&lt;span class="o"&gt;)&lt;/span&gt;
 
-    make git-config             &lt;span class="nb"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;local&lt;/span&gt; git configuration
-    make &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;                make a virtualenv in the base directory &lt;span class="o"&gt;(&lt;/span&gt;see VENV&lt;span class="o"&gt;)&lt;/span&gt;
-    make python-reqs            install python packages in requirements.pip
-    make setup                  git init&lt;span class="p"&gt;;&lt;/span&gt; make python-reqs git-config
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;git-config&lt;span class="w"&gt;             &lt;/span&gt;&lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;local&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;configuration
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="w"&gt;                &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;a&lt;span class="w"&gt; &lt;/span&gt;virtualenv&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;the&lt;span class="w"&gt; &lt;/span&gt;base&lt;span class="w"&gt; &lt;/span&gt;directory&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;see&lt;span class="w"&gt; &lt;/span&gt;VENV&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;python-reqs&lt;span class="w"&gt;            &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;python&lt;span class="w"&gt; &lt;/span&gt;packages&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;requirements.pip
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;setup&lt;span class="w"&gt;                  &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;init&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;python-reqs&lt;span class="w"&gt; &lt;/span&gt;git-config
 
-    make start-jupyter          launch a jupyter server from the &lt;span class="nb"&gt;local&lt;/span&gt; virtualenv
+&lt;span class="w"&gt;    &lt;/span&gt;make&lt;span class="w"&gt; &lt;/span&gt;start-jupyter&lt;span class="w"&gt;          &lt;/span&gt;launch&lt;span class="w"&gt; &lt;/span&gt;a&lt;span class="w"&gt; &lt;/span&gt;jupyter&lt;span class="w"&gt; &lt;/span&gt;server&lt;span class="w"&gt; &lt;/span&gt;from&lt;span class="w"&gt; &lt;/span&gt;the&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;local&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;virtualenv
 
 &lt;span class="cp"&gt;endef&lt;/span&gt;
-&lt;span class="k"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PROJECT_HELP_MSG&lt;/span&gt;
+&lt;span class="k"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;PROJECT_HELP_MSG&lt;/span&gt;
 
 &lt;span class="nf"&gt;help&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$$&lt;/span&gt;PROJECT_HELP_MSG
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$$&lt;/span&gt;PROJECT_HELP_MSG
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The top of our makefile is a help message.
@@ -146,7 +146,7 @@ nifty trick to auto-generate these help messages,
 keeping documentation and recipes together in your makefile.&lt;/p&gt;
 &lt;h2&gt;Streamline git setup&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;.git&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    git init
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;init
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Every project should be &lt;a href="https://dx.doi.org/10.1186/1751-0473-8-7"&gt;version controlled&lt;/a&gt;.
@@ -156,17 +156,17 @@ This recipe is so simple as to appear useless (since &lt;code&gt;make .git&lt;/c
 to type than &lt;code&gt;git init&lt;/code&gt;) but we use the directory &lt;code&gt;.git/&lt;/code&gt; as an
 &lt;a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html"&gt;order-only prerequisite&lt;/a&gt;
 for the next recipe:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
-    git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
-        drop_jupyter_output.sh
-    git config --local filter.dropoutput_jupyter.smudge cat
-    git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
-    git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-        diff.daff-csv.command &lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
-    git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-        merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
-    git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-        merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;git-config&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt; 
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;filter.dropoutput_jupyter.clean&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;drop_jupyter_output.sh
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;filter.dropoutput_jupyter.smudge&lt;span class="w"&gt; &lt;/span&gt;cat
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;core.page&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;diff.daff-csv.command&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;merge.daff-csv.name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;merge.daff-csv.driver&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Git configuration is &lt;em&gt;just&lt;/em&gt; annoying enough that I often put it off for a new
@@ -175,9 +175,9 @@ With this recipe I don't have to!&lt;/p&gt;
 &lt;p&gt;There are three parts to the configuration above;
 customize it for how you use git.&lt;/p&gt;
 &lt;h3&gt;Drop Jupyter Notebook output&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local filter.dropoutput_jupyter.clean &lt;span class="se"&gt;\&lt;/span&gt;
-    ./drop_jupyter_output.sh
-git config --local filter.dropoutput_jupyter.smudge cat
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;filter.dropoutput_jupyter.clean&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;./drop_jupyter_output.sh
+git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;filter.dropoutput_jupyter.smudge&lt;span class="w"&gt; &lt;/span&gt;cat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I set up a &lt;a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes"&gt;clean/smudge filter&lt;/a&gt; for my Jupyter notebooks.
@@ -193,7 +193,7 @@ notebook you'll have to re-execute all of the cells to get the results.&lt;/p&gt
 First, &lt;code&gt;.gitattributes&lt;/code&gt; which is a tab-separated file mapping filename patterns
 to special git configuration.
 The first line in that file should be the following.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;*.ipynb filter=dropoutput_jupyter&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;*.ipynb filter=dropoutput_jupyter
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;(That's a tab after &lt;code&gt;*.ipynb&lt;/code&gt;.)&lt;/p&gt;
@@ -203,15 +203,15 @@ which needs to be executable.&lt;/p&gt;
 &lt;span class="c1"&gt;# run `chmod +x drop_jupyter_output.sh` to make it executable.&lt;/span&gt;
 
 &lt;span class="nv"&gt;file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;mktemp&lt;span class="k"&gt;)&lt;/span&gt;
-cat &amp;lt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt; &amp;gt;&lt;span class="nv"&gt;$file&lt;/span&gt;
-jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled&lt;span class="o"&gt;=&lt;/span&gt;True &lt;span class="se"&gt;\&lt;/span&gt;
-    &lt;span class="nv"&gt;$file&lt;/span&gt; --stdout &lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/dev/null
+cat&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;&lt;span class="p"&gt;&amp;amp;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&lt;span class="nv"&gt;$file&lt;/span&gt;
+jupyter&lt;span class="w"&gt; &lt;/span&gt;nbconvert&lt;span class="w"&gt; &lt;/span&gt;--to&lt;span class="w"&gt; &lt;/span&gt;notebook&lt;span class="w"&gt; &lt;/span&gt;--ClearOutputPreprocessor.enabled&lt;span class="o"&gt;=&lt;/span&gt;True&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;$file&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;--stdout&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&amp;gt;/dev/null
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Display tabs as four spaces&lt;/h3&gt;
 &lt;p&gt;I also configure &lt;code&gt;less&lt;/code&gt; to show four spaces for tabs.
 This makes &lt;code&gt;git diff&lt;/code&gt;-ing my makefile much easier on the eyes.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local core.page &lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;core.page&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;less -x4&amp;#39;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3&gt;Smart &lt;code&gt;diff&lt;/code&gt;s for tabular data&lt;/h3&gt;
@@ -219,19 +219,19 @@ This makes &lt;code&gt;git diff&lt;/code&gt;-ing my makefile much easier on the 
 &lt;code&gt;diff&lt;/code&gt;s of comma-delimited and tab-delimited files can get obnoxious.
 The program &lt;a href="http://paulfitz.github.io/daff/"&gt;&lt;code&gt;daff&lt;/code&gt;&lt;/a&gt; fixes this problem.&lt;/p&gt;
 &lt;p&gt;We'll configure git to use &lt;code&gt;daff&lt;/code&gt; for all tabular files.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-    diff.daff-csv.command &lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
-git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-    merge.daff-csv.name &lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
-git config --local &lt;span class="se"&gt;\&lt;/span&gt;
-    merge.daff-csv.driver &lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;diff.daff-csv.command&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py diff --git&amp;quot;&lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;merge.daff-csv.name&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py tabular merge&amp;quot;&lt;/span&gt;
+git&lt;span class="w"&gt; &lt;/span&gt;config&lt;span class="w"&gt; &lt;/span&gt;--local&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;merge.daff-csv.driver&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;daff.py merge --output %A %O %A %B&amp;quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Just like the output filter for Jupyter notebooks, we need to associate
 this configuration with CSVs and TSVs in our &lt;code&gt;.gitattributes&lt;/code&gt; file by adding
 the following two lines.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;diff&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;merge&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;diff&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;
+&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;tc&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="n"&gt;sv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;merge&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;daff&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;csv&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h2&gt;Automatic python virtual environments&lt;/h2&gt;
@@ -241,15 +241,15 @@ you'll appreciate these recipes to automate creating them and updating
 packages.&lt;/p&gt;
 &lt;p&gt;If you don't use python/pip, these recipes can be swapped out for other
 sandboxing systems.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; .venv
-&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;abspath &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/bin:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;.venv
+&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;abspath&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;VIRTUAL_ENV&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;/bin:&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 
 &lt;span class="nf"&gt;${VENV}&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    python3 -m venv &lt;span class="nv"&gt;$@&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;python3&lt;span class="w"&gt; &lt;/span&gt;-m&lt;span class="w"&gt; &lt;/span&gt;venv&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;
 
-&lt;span class="nf"&gt;python-reqs&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;requirements&lt;/span&gt;.&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;}
-    pip install --upgrade -r requirements.pip
+&lt;span class="nf"&gt;python-reqs&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;.&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;}
+&lt;span class="w"&gt;    &lt;/span&gt;pip&lt;span class="w"&gt; &lt;/span&gt;install&lt;span class="w"&gt; &lt;/span&gt;--upgrade&lt;span class="w"&gt; &lt;/span&gt;-r&lt;span class="w"&gt; &lt;/span&gt;requirements.pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In the top block, we first set a variable &lt;code&gt;VENV&lt;/code&gt; to be the location of our
@@ -275,15 +275,15 @@ And, if you discipline yourself to make all changes to your execution
 environment in this way, you'll have a permanently up-to-date record of your
 system requirements.&lt;/p&gt;
 &lt;h2&gt;Single-command project setup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; ${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;${&lt;span class="n"&gt;VENV&lt;/span&gt;} &lt;span class="n"&gt;python&lt;/span&gt;-&lt;span class="n"&gt;reqs&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;-&lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; .&lt;span class="n"&gt;git&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this meta-target a simple &lt;code&gt;make setup&lt;/code&gt; will have our new project
 configured and ready to go.
 This is particularly useful if you work on multiple machines:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone git@github.com:username/project.git
-&lt;span class="nb"&gt;cd&lt;/span&gt; project
-make setup
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git&lt;span class="w"&gt; &lt;/span&gt;clone&lt;span class="w"&gt; &lt;/span&gt;git@github.com:username/project.git
+&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;project
+make&lt;span class="w"&gt; &lt;/span&gt;setup
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;is all it takes to get up and running.&lt;/p&gt;
@@ -293,13 +293,13 @@ With this recipe (and the &lt;code&gt;PATH&lt;/code&gt; we export above) I don't
 to activate my virtual environment or invoke specific configuration files
 when I launch a server.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nf"&gt;start-jupyter&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;jupyter_notebook_config.py
+&lt;span class="w"&gt;    &lt;/span&gt;jupyter&lt;span class="w"&gt; &lt;/span&gt;notebook&lt;span class="w"&gt; &lt;/span&gt;--config&lt;span class="o"&gt;=&lt;/span&gt;jupyter_notebook_config.py
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Put whatever you'd like into the &lt;a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html"&gt;config file&lt;/a&gt;.
 I like to keep my notebooks in a subdirectory, so my invocation is a little different:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jupyter notebook --config&lt;span class="o"&gt;=&lt;/span&gt;ipynb/jupyter_notebook_config.py &lt;span class="se"&gt;\&lt;/span&gt;
-    --notebook-dir&lt;span class="o"&gt;=&lt;/span&gt;ipynb/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jupyter&lt;span class="w"&gt; &lt;/span&gt;notebook&lt;span class="w"&gt; &lt;/span&gt;--config&lt;span class="o"&gt;=&lt;/span&gt;ipynb/jupyter_notebook_config.py&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;--notebook-dir&lt;span class="o"&gt;=&lt;/span&gt;ipynb/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And my configuration automatically changes the working directory to
@@ -308,10 +308,10 @@ the project root when launching a new notebook.&lt;/p&gt;
 The same general idea works for any other software you can start from the shell.
 No need to remember any of the obnoxious command-line flags.&lt;/p&gt;
 &lt;h2&gt;Quick cleanup&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; *.pyc
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;*.pyc
 
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    rm -rf &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;rm&lt;span class="w"&gt; &lt;/span&gt;-rf&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CLEANUP&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;A ubiquitous target for &lt;em&gt;Make&lt;/em&gt; is &lt;code&gt;clean&lt;/code&gt; to tidy up the repository.

@@ -238,63 +238,63 @@ and have prepared several Python scripts that together make up our
 analysis pipeline.</p>
 <p>The <code>tree</code> command produces a handy tree-diagram of the directory.
 (You may not have this program installed on your computer.)</p>
-<div class="highlight"><pre><span></span><code><span class="p">.</span>
-<span class="err">├──</span> <span class="n">analysis</span><span class="p">.</span><span class="n">sh</span>
-<span class="err">├──</span> <span class="n">books</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">LICENSE_TEXTS</span><span class="p">.</span><span class="n">md</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">abyss</span><span class="p">.</span><span class="n">txt</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="n">isles</span><span class="p">.</span><span class="n">txt</span>
-<span class="err">│</span>   <span class="err">├──</span> <span class="k">last</span><span class="p">.</span><span class="n">txt</span>
-<span class="err">│</span>   <span class="err">└──</span> <span class="n">sierra</span><span class="p">.</span><span class="n">txt</span>
-<span class="err">├──</span> <span class="n">matplotlibrc</span>
-<span class="err">├──</span> <span class="n">requirements</span><span class="p">.</span><span class="n">pip</span>
-<span class="err">└──</span> <span class="n">scripts</span>
-    <span class="err">├──</span> <span class="n">plotcount</span><span class="p">.</span><span class="n">py</span>
-    <span class="err">└──</span> <span class="n">wordcount</span><span class="p">.</span><span class="n">py</span>
+<div class="highlight"><pre><span></span><code>.
+├── analysis.sh
+├── books
+│   ├── LICENSE_TEXTS.md
+│   ├── abyss.txt
+│   ├── isles.txt
+│   ├── last.txt
+│   └── sierra.txt
+├── matplotlibrc
+├── requirements.pip
+└── scripts
+    ├── plotcount.py
+    └── wordcount.py
 
-<span class="mi">2</span> <span class="n">directories</span><span class="p">,</span> <span class="mi">10</span> <span class="n">files</span>
+2 directories, 10 files
 </code></pre></div>
 
 <p>Here you see that we're starting with a well designed project directory.
 The raw data (books) are stored in their own directory, and scripts have
 informative names.</p>
 <p>Let's take a look at our raw data</p>
-<div class="highlight"><pre><span></span><code>head books/isles.txt
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>books/isles.txt
 </code></pre></div>
 
 <p>Our first step is to count the frequency of each word in a book.</p>
-<div class="highlight"><pre><span></span><code>scripts/wordcount.py books/isles.txt isles.tsv
+<div class="highlight"><pre><span></span><code>scripts/wordcount.py<span class="w"> </span>books/isles.txt<span class="w"> </span>isles.tsv
 </code></pre></div>
 
 <p>Let's take a quick peek at the result.</p>
-<div class="highlight"><pre><span></span><code>head -5 isles.tsv
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-5<span class="w"> </span>isles.tsv
 </code></pre></div>
 
 <p>shows us the top 5 lines in the output file:</p>
-<div class="highlight"><pre><span></span><code><span class="err">the 3822    6.7371760973</span>
-<span class="err">of  2460    4.33632998414</span>
-<span class="err">and 1723    3.03719372466</span>
-<span class="err">to  1479    2.60708619778</span>
-<span class="err">a   1308    2.30565838181</span>
+<div class="highlight"><pre><span></span><code>the 3822    6.7371760973
+of  2460    4.33632998414
+and 1723    3.03719372466
+to  1479    2.60708619778
+a   1308    2.30565838181
 </code></pre></div>
 
 <p>Each row shows the word itself, the number of occurrences of that
 word, and the number of occurrences as a percentage of the total
 number of words in the text file.</p>
 <p>We can do the same thing for a different book:</p>
-<div class="highlight"><pre><span></span><code>scripts/wordcount.py books/abyss.txt abyss.tsv
-head -5 abyss.tsv
+<div class="highlight"><pre><span></span><code>scripts/wordcount.py<span class="w"> </span>books/abyss.txt<span class="w"> </span>abyss.tsv
+head<span class="w"> </span>-5<span class="w"> </span>abyss.tsv
 </code></pre></div>
 
 <p>Finally, let's visualize the results.</p>
-<div class="highlight"><pre><span></span><code>scripts/plotcount.py isles.tsv ascii
+<div class="highlight"><pre><span></span><code>scripts/plotcount.py<span class="w"> </span>isles.tsv<span class="w"> </span>ascii
 </code></pre></div>
 
 <p>The <code>ascii</code> argument has been added so that we get a text-based
 bar-plot printed to the screen.</p>
 <p>The script is also able to render a graphical bar-plot using matplotlib
 and save the figure to a named file.</p>
-<div class="highlight"><pre><span></span><code>scripts/plotcount.py isles.tsv isles.png
+<div class="highlight"><pre><span></span><code>scripts/plotcount.py<span class="w"> </span>isles.tsv<span class="w"> </span>isles.png
 </code></pre></div>
 
 <p>Together these scripts implement a common workflow:</p>
@@ -318,18 +318,18 @@ a master script that runs the whole pipeline from start to finish.</p>
 <span class="c1"># USAGE: bash analysis.sh</span>
 <span class="c1"># to produce plots for isles and abyss.</span>
 
-scripts/wordcount.py books/isles.txt isles.tsv
-scripts/wordcount.py books/abyss.txt abyss.tsv
+scripts/wordcount.py<span class="w"> </span>books/isles.txt<span class="w"> </span>isles.tsv
+scripts/wordcount.py<span class="w"> </span>books/abyss.txt<span class="w"> </span>abyss.tsv
 
-scripts/plotcount.py isles.tsv isles.png
-scripts/plotcount.py abyss.tsv abyss.png
+scripts/plotcount.py<span class="w"> </span>isles.tsv<span class="w"> </span>isles.png
+scripts/plotcount.py<span class="w"> </span>abyss.tsv<span class="w"> </span>abyss.png
 
 <span class="c1"># Archive the results.</span>
-rm -rf zipf_results
-mkdir zipf_results
-cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/
-tar -czf zipf_results.tgz zipf_results
-rm -r zipf_results
+rm<span class="w"> </span>-rf<span class="w"> </span>zipf_results
+mkdir<span class="w"> </span>zipf_results
+cp<span class="w"> </span>isles.tsv<span class="w"> </span>abyss.tsv<span class="w"> </span>isles.png<span class="w"> </span>abyss.png<span class="w"> </span>zipf_results/
+tar<span class="w"> </span>-czf<span class="w"> </span>zipf_results.tgz<span class="w"> </span>zipf_results
+rm<span class="w"> </span>-r<span class="w"> </span>zipf_results
 </code></pre></div>
 
 <p>This master script solved several problems in computational reproducibility:</p>
@@ -356,15 +356,15 @@ The word counting routine hasn't changed; we shouldn't need to recreate
 those files.</p>
 <p>Alternatively, we could manually rerun the plotting for each word-count file
 and recreate the archive.</p>
-<div class="highlight"><pre><span></span><code><span class="k">for</span> file in *.tsv<span class="p">;</span> <span class="k">do</span>
-    scripts/plotcount.py <span class="nv">$file</span> <span class="si">${</span><span class="nv">file</span><span class="p">/.tsv/.png</span><span class="si">}</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>*.tsv<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span>scripts/plotcount.py<span class="w"> </span><span class="nv">$file</span><span class="w"> </span><span class="si">${</span><span class="nv">file</span><span class="p">/.tsv/.png</span><span class="si">}</span>
 <span class="k">done</span>
 
-rm -rf zipf_results
-mkdir zipf_results
-cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/
-tar -czf zipf_results.tgz zipf_results
-rm -r zipf_results
+rm<span class="w"> </span>-rf<span class="w"> </span>zipf_results
+mkdir<span class="w"> </span>zipf_results
+cp<span class="w"> </span>isles.tsv<span class="w"> </span>abyss.tsv<span class="w"> </span>isles.png<span class="w"> </span>abyss.png<span class="w"> </span>zipf_results/
+tar<span class="w"> </span>-czf<span class="w"> </span>zipf_results.tgz<span class="w"> </span>zipf_results
+rm<span class="w"> </span>-r<span class="w"> </span>zipf_results
 </code></pre></div>
 
 <p>But by then we've nullified many of the benefits of having a master script in
@@ -379,15 +379,15 @@ the first place.</p>
 <span class="c1">#scripts/wordcount.py isles.txt isles.tsv</span>
 <span class="c1">#scripts/wordcount.py abyss.txt abyss.tsv</span>
 
-scripts/plotcount.py isles.tsv isles.png
-scripts/plotcount.py abyss.tsv abyss.png
+scripts/plotcount.py<span class="w"> </span>isles.tsv<span class="w"> </span>isles.png
+scripts/plotcount.py<span class="w"> </span>abyss.tsv<span class="w"> </span>abyss.png
 
 <span class="c1"># Archive the results.</span>
-rm -rf zipf_results
-mkdir zipf_results
-cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/
-tar -czf zipf_results.tgz zipf_results
-rm -r zipf_results
+rm<span class="w"> </span>-rf<span class="w"> </span>zipf_results
+mkdir<span class="w"> </span>zipf_results
+cp<span class="w"> </span>isles.tsv<span class="w"> </span>abyss.tsv<span class="w"> </span>isles.png<span class="w"> </span>abyss.png<span class="w"> </span>zipf_results/
+tar<span class="w"> </span>-czf<span class="w"> </span>zipf_results.tgz<span class="w"> </span>zipf_results
+rm<span class="w"> </span>-r<span class="w"> </span>zipf_results
 </code></pre></div>
 
 <p>Followed by <code>bash analysis.sh</code>.</p>
@@ -428,10 +428,10 @@ tools, and it is worth considering other options, including:</p>
 <h2>Writing and Running Snakefiles [10 minutes]</h2>
 <p>Let's get started writing a description of our analysis for <em>Snakemake</em>.</p>
 <p>Open up a file called <code>Snakefile</code> in your editor and add the following:</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule wordcount_isles:</span>
-<span class="err">    input: &quot;books/isles.txt&quot;</span>
-<span class="err">    output: &quot;isles.tsv&quot;</span>
-<span class="err">    shell: &quot;scripts/wordcount.py books/isles.txt isles.tsv&quot;</span>
+<div class="highlight"><pre><span></span><code>rule wordcount_isles:
+    input: &quot;books/isles.txt&quot;
+    output: &quot;isles.tsv&quot;
+    shell: &quot;scripts/wordcount.py books/isles.txt isles.tsv&quot;
 </code></pre></div>
 
 <p>We have now written the simplest, non-trivial snakefile.
@@ -469,39 +469,39 @@ Right now our Snakefile describes a pretty simple <strong>dependency graph</stro
 <p>Now that we have a (currently incomplete) description of our pipeline,
 let's use <em>Snakemake</em> to execute it.</p>
 <p>First, remove the previously generated files.</p>
-<div class="highlight"><pre><span></span><code>rm *.tsv *.png zipf_results.tgz
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>*.tsv<span class="w"> </span>*.png<span class="w"> </span>zipf_results.tgz
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>snakemake isles.tsv
+<div class="highlight"><pre><span></span><code>snakemake<span class="w"> </span>isles.tsv
 </code></pre></div>
 
 <p>You should see the following print to the terminal:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Provided</span> <span class="n">cores</span><span class="p">:</span> <span class="mi">1</span>
-<span class="n">Rules</span> <span class="n">claiming</span> <span class="k">more</span> <span class="n">threads</span> <span class="n">will</span> <span class="n">be</span> <span class="n">scaled</span> <span class="n">down</span><span class="p">.</span>
-<span class="n">Job</span> <span class="n">counts</span><span class="p">:</span>
-        <span class="k">count</span>   <span class="n">jobs</span>
-        <span class="mi">1</span>       <span class="n">wordcount_isles</span>
-        <span class="mi">1</span>
+<div class="highlight"><pre><span></span><code>Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+        count   jobs
+        1       wordcount_isles
+        1
 
-<span class="k">rule</span> <span class="n">wordcount_isles</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="n">books</span><span class="o">/</span><span class="n">isles</span><span class="p">.</span><span class="n">txt</span>
-    <span class="k">output</span><span class="p">:</span> <span class="n">isles</span><span class="p">.</span><span class="n">tsv</span>
-    <span class="n">jobid</span><span class="p">:</span> <span class="mi">0</span>
+rule wordcount_isles:
+    input: books/isles.txt
+    output: isles.tsv
+    jobid: 0
 
-<span class="n">Finished</span> <span class="n">job</span> <span class="mi">0</span><span class="p">.</span>
-<span class="mi">1</span> <span class="k">of</span> <span class="mi">1</span> <span class="n">steps</span> <span class="p">(</span><span class="mi">100</span><span class="o">%</span><span class="p">)</span> <span class="n">done</span>
+Finished job 0.
+1 of 1 steps (100%) done
 </code></pre></div>
 
 <p>By default, <em>Snakemake</em> prints a summary of the recipes that it
 executes.</p>
 <p>Let's see if we got what we expected.</p>
-<div class="highlight"><pre><span></span><code>head -5 isles.tsv
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-5<span class="w"> </span>isles.tsv
 </code></pre></div>
 
 <p>The first 5 lines of that file should look exactly like before.</p>
 <h3>Re-running Snakemake</h3>
 <p>Let's try running <em>Snakemake</em> the same way again.</p>
-<div class="highlight"><pre><span></span><code>snakemake isles.tsv
+<div class="highlight"><pre><span></span><code>snakemake<span class="w"> </span>isles.tsv
 </code></pre></div>
 
 <p>This time, instead of executing the same recipe,
@@ -518,8 +518,8 @@ This can be another <em>Snakemake</em> gotcha, so keep it in mind.</p>
 <p>If you want to induce the original behavior, you only have to
 change the modification time of <code>books/isles.txt</code> so that it is newer
 than <code>isles.tsv</code>.</p>
-<div class="highlight"><pre><span></span><code>touch books/isles.txt
-snakemake isles.tsv
+<div class="highlight"><pre><span></span><code>touch<span class="w"> </span>books/isles.txt
+snakemake<span class="w"> </span>isles.tsv
 </code></pre></div>
 
 <p>The original behavior is restored.</p>
@@ -534,10 +534,10 @@ snakefile.</p>
 <h2>Expanding our Snakefile with more recipes (and challenge) [20 minutes]</h2>
 <p>Now that <em>Make</em> knows how to build <code>isles.tsv</code>,
 we can add a rule for plotting those results.</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule plotcount_isles:</span>
-<span class="err">    input: &quot;isles.tsv&quot;</span>
-<span class="err">    output: &quot;isles.png&quot;</span>
-<span class="err">    shell: &quot;scripts/plotcount.py isles.tsv isles.png&quot;</span>
+<div class="highlight"><pre><span></span><code>rule plotcount_isles:
+    input: &quot;isles.tsv&quot;
+    output: &quot;isles.png&quot;
+    shell: &quot;scripts/plotcount.py isles.tsv isles.png&quot;
 </code></pre></div>
 
 <p>The dependency graph now looks like:</p>
@@ -545,22 +545,22 @@ we can add a rule for plotting those results.</p>
 <p><code>books/isles.txt</code> &#8594; <code>isles.tsv</code> &#8594; <code>isles.png</code></p>
 </blockquote>
 <p>Let's add a few more recipes to our Snakefile.</p>
-<div class="highlight"><pre><span></span><code><span class="k">rule</span> <span class="n">wordcount_abyss</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;books/abyss.txt&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;abyss.tsv&quot;</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="ss">&quot;scripts/wordcount.py books/abyss.txt abyss.tsv&quot;</span>
+<div class="highlight"><pre><span></span><code>rule wordcount_abyss:
+    input: &quot;books/abyss.txt&quot;
+    output: &quot;abyss.tsv&quot;
+    shell: &quot;scripts/wordcount.py books/abyss.txt abyss.tsv&quot;
 
-<span class="k">rule</span> <span class="n">archive_results</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;isles.tsv&quot;</span><span class="p">,</span> <span class="ss">&quot;abyss.tsv&quot;</span><span class="p">,</span> <span class="ss">&quot;isles.png&quot;</span><span class="p">,</span> <span class="ss">&quot;abyss.png&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;zipf_results.tgz&quot;</span>
-    <span class="n">shell</span><span class="p">:</span>
-        <span class="ss">&quot;&quot;&quot;</span>
-<span class="ss">        rm -rf zipf_results/</span>
-<span class="ss">        mkdir zipf_results/</span>
-<span class="ss">        cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/</span>
-<span class="ss">        tar -czf zipf_results.tgz zipf_results/</span>
-<span class="ss">        rm -r zipf_results/</span>
-<span class="ss">        &quot;&quot;&quot;</span>
+rule archive_results:
+    input: &quot;isles.tsv&quot;, &quot;abyss.tsv&quot;, &quot;isles.png&quot;, &quot;abyss.png&quot;
+    output: &quot;zipf_results.tgz&quot;
+    shell:
+        &quot;&quot;&quot;
+        rm -rf zipf_results/
+        mkdir zipf_results/
+        cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/
+        tar -czf zipf_results.tgz zipf_results/
+        rm -r zipf_results/
+        &quot;&quot;&quot;
 </code></pre></div>
 
 <p>Here the recipe for <code>zipf_results.tgz</code> takes multiple input files,
@@ -581,63 +581,63 @@ any return an error.</p>
 <p>Once you've written a recipe for <code>abyss.png</code> you should be able to
 run <code>snakemake zipf_results.tgz</code>.</p>
 <p>Let's delete all of our files and try it out.</p>
-<div class="highlight"><pre><span></span><code>rm abyss.* isles.*
-snakemake zipf_results.tgz
+<div class="highlight"><pre><span></span><code>rm<span class="w"> </span>abyss.*<span class="w"> </span>isles.*
+snakemake<span class="w"> </span>zipf_results.tgz
 </code></pre></div>
 
 <p>You should get the something like the following output
 (the order may be different)
 to your terminal:</p>
-<div class="highlight"><pre><span></span><code><span class="n">Provided</span> <span class="n">cores</span><span class="p">:</span> <span class="mi">1</span>
-<span class="n">Rules</span> <span class="n">claiming</span> <span class="k">more</span> <span class="n">threads</span> <span class="n">will</span> <span class="n">be</span> <span class="n">scaled</span> <span class="n">down</span><span class="p">.</span>
-<span class="n">Job</span> <span class="n">counts</span><span class="p">:</span>
-        <span class="k">count</span>   <span class="n">jobs</span>
-        <span class="mi">1</span>       <span class="n">archive_results</span>
-        <span class="mi">1</span>       <span class="n">plotcount_abyss</span>
-        <span class="mi">1</span>       <span class="n">plotcount_isles</span>
-        <span class="mi">1</span>       <span class="n">wordcount_abyss</span>
-        <span class="mi">1</span>       <span class="n">wordcount_isles</span>
-        <span class="mi">5</span>
+<div class="highlight"><pre><span></span><code>Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+        count   jobs
+        1       archive_results
+        1       plotcount_abyss
+        1       plotcount_isles
+        1       wordcount_abyss
+        1       wordcount_isles
+        5
 
-<span class="k">rule</span> <span class="n">wordcount_abyss</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="n">books</span><span class="o">/</span><span class="n">abyss</span><span class="p">.</span><span class="n">txt</span>
-    <span class="k">output</span><span class="p">:</span> <span class="n">abyss</span><span class="p">.</span><span class="n">tsv</span>
-    <span class="n">jobid</span><span class="p">:</span> <span class="mi">1</span>
+rule wordcount_abyss:
+    input: books/abyss.txt
+    output: abyss.tsv
+    jobid: 1
 
-<span class="n">Finished</span> <span class="n">job</span> <span class="mi">1</span><span class="p">.</span>
-<span class="mi">1</span> <span class="k">of</span> <span class="mi">5</span> <span class="n">steps</span> <span class="p">(</span><span class="mi">20</span><span class="o">%</span><span class="p">)</span> <span class="n">done</span>
+Finished job 1.
+1 of 5 steps (20%) done
 
-<span class="k">rule</span> <span class="n">wordcount_isles</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="n">books</span><span class="o">/</span><span class="n">abyss</span><span class="p">.</span><span class="n">txt</span>
-    <span class="k">output</span><span class="p">:</span> <span class="n">abyss</span><span class="p">.</span><span class="n">tsv</span>
-    <span class="n">jobid</span><span class="p">:</span> <span class="mi">2</span>
+rule wordcount_isles:
+    input: books/abyss.txt
+    output: abyss.tsv
+    jobid: 2
 
-<span class="n">Finished</span> <span class="n">job</span> <span class="mi">2</span><span class="p">.</span>
-<span class="mi">2</span> <span class="k">of</span> <span class="mi">5</span> <span class="n">steps</span> <span class="p">(</span><span class="mi">40</span><span class="o">%</span><span class="p">)</span> <span class="n">done</span>
+Finished job 2.
+2 of 5 steps (40%) done
 
-<span class="k">rule</span> <span class="n">plotcount_abyss</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="n">abyss</span><span class="p">.</span><span class="n">tsv</span>
-    <span class="k">output</span><span class="p">:</span> <span class="n">abyss</span><span class="p">.</span><span class="n">png</span>
-    <span class="n">jobid</span><span class="p">:</span> <span class="mi">4</span>
+rule plotcount_abyss:
+    input: abyss.tsv
+    output: abyss.png
+    jobid: 4
 
-<span class="n">Finished</span> <span class="n">job</span> <span class="mi">4</span><span class="p">.</span>
-<span class="mi">3</span> <span class="k">of</span> <span class="mi">5</span> <span class="n">steps</span> <span class="p">(</span><span class="mi">60</span><span class="o">%</span><span class="p">)</span> <span class="n">done</span>
+Finished job 4.
+3 of 5 steps (60%) done
 
-<span class="k">rule</span> <span class="n">plotcount_isles</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="n">isles</span><span class="p">.</span><span class="n">tsv</span>
-    <span class="k">output</span><span class="p">:</span> <span class="n">isles</span><span class="p">.</span><span class="n">png</span>
-    <span class="n">jobid</span><span class="p">:</span> <span class="mi">3</span>
+rule plotcount_isles:
+    input: isles.tsv
+    output: isles.png
+    jobid: 3
 
-<span class="n">Finished</span> <span class="n">job</span> <span class="mi">3</span><span class="p">.</span>
-<span class="mi">4</span> <span class="k">of</span> <span class="mi">5</span> <span class="n">steps</span> <span class="p">(</span><span class="mi">80</span><span class="o">%</span><span class="p">)</span> <span class="n">done</span>
+Finished job 3.
+4 of 5 steps (80%) done
 
-<span class="k">rule</span> <span class="n">archive_results</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="n">isles</span><span class="p">.</span><span class="n">tsv</span><span class="p">,</span> <span class="n">abyss</span><span class="p">.</span><span class="n">tsv</span><span class="p">,</span> <span class="n">isles</span><span class="p">.</span><span class="n">png</span><span class="p">,</span> <span class="n">abyss</span><span class="p">.</span><span class="n">png</span>
-    <span class="k">output</span><span class="p">:</span> <span class="n">zipf_results</span><span class="p">.</span><span class="n">tgz</span>
-    <span class="n">jobid</span><span class="p">:</span> <span class="mi">0</span>
+rule archive_results:
+    input: isles.tsv, abyss.tsv, isles.png, abyss.png
+    output: zipf_results.tgz
+    jobid: 0
 
-<span class="n">Finished</span> <span class="n">job</span> <span class="mi">0</span><span class="p">.</span>
-<span class="mi">5</span> <span class="k">of</span> <span class="mi">5</span> <span class="n">steps</span> <span class="p">(</span><span class="mi">100</span><span class="o">%</span><span class="p">)</span> <span class="n">done</span>
+Finished job 0.
+5 of 5 steps (100%) done
 </code></pre></div>
 
 <p>Since you asked for <code>zipf_results.tgz</code> <em>Snakemake</em> looked first for that file.
@@ -653,8 +653,8 @@ then <code>snakemake zipf_results.tgz</code>?</p>
 </blockquote>
 <h2>Running Snakemake in parallel</h2>
 <p>And check this out!</p>
-<div class="highlight"><pre><span></span><code>snakemake clean
-snakemake --threads <span class="m">2</span>
+<div class="highlight"><pre><span></span><code>snakemake<span class="w"> </span>clean
+snakemake<span class="w"> </span>--threads<span class="w"> </span><span class="m">2</span>
 </code></pre></div>
 
 <p>Did you see it?
@@ -668,8 +668,8 @@ If you've got a bunch of independent branches in your analysis, this can
 greatly speed up your build process.</p>
 <h3>Phony targets</h3>
 <p>Sometimes we want to build a bunch of different files simultaneously.</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule all:</span>
-<span class="err">    input: &quot;isles.png&quot;, &quot;abyss.png&quot;</span>
+<div class="highlight"><pre><span></span><code>rule all:
+    input: &quot;isles.png&quot;, &quot;abyss.png&quot;
 </code></pre></div>
 
 <p>Even though this rule doesn't have a recipe, it does have prerequisites.
@@ -680,8 +680,8 @@ since the first recipe is what is built by default
 when no other target is passed as an argument.</p>
 <p>Another traditional target is "<code>clean</code>".
 Add the following to your snakefile.</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule clean:</span>
-<span class="err">    shell: &quot;rm --force *.tsv *.png zipf_results.tgz&quot;</span>
+<div class="highlight"><pre><span></span><code>rule clean:
+    shell: &quot;rm --force *.tsv *.png zipf_results.tgz&quot;
 </code></pre></div>
 
 <p>Running <code>snakemake clean</code> will now remove all of the cruft.</p>
@@ -690,47 +690,47 @@ Add the following to your snakefile.</p>
 get one we've been hiding in the oven the whole time:
 <code>cp .extra/Snakefile.1 Snakefile</code>)</p>
 <p>Right now, our snakefile looks like this:</p>
-<div class="highlight"><pre><span></span><code><span class="o">#</span> <span class="n">Dummy</span> <span class="n">targets</span>
-<span class="k">rule</span> <span class="k">all</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;isles.png&quot;</span><span class="p">,</span> <span class="ss">&quot;abyss.png&quot;</span>
+<div class="highlight"><pre><span></span><code># Dummy targets
+rule all:
+    input: &quot;isles.png&quot;, &quot;abyss.png&quot;
 
-<span class="k">rule</span> <span class="n">clean</span><span class="p">:</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="ss">&quot;rm --force *.tsv *.png zipf_results.tgz&quot;</span>
+rule clean:
+    shell: &quot;rm --force *.tsv *.png zipf_results.tgz&quot;
 
-<span class="o">#</span> <span class="n">Analysis</span>
-<span class="k">rule</span> <span class="n">wordcount_isles</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;books/isles.txt&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;isles.tsv&quot;</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="ss">&quot;scripts/wordcount.py books/isles.txt isles.tsv&quot;</span>
+# Analysis
+rule wordcount_isles:
+    input: &quot;books/isles.txt&quot;
+    output: &quot;isles.tsv&quot;
+    shell: &quot;scripts/wordcount.py books/isles.txt isles.tsv&quot;
 
-<span class="k">rule</span> <span class="n">wordcount_abyss</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;books/abyss.txt&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;abyss.tsv&quot;</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="ss">&quot;scripts/wordcount.py books/abyss.txt abyss.tsv&quot;</span>
+rule wordcount_abyss:
+    input: &quot;books/abyss.txt&quot;
+    output: &quot;abyss.tsv&quot;
+    shell: &quot;scripts/wordcount.py books/abyss.txt abyss.tsv&quot;
 
-<span class="o">#</span> <span class="n">Plotting</span>
-<span class="k">rule</span> <span class="n">plotcount_isles</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;isles.tsv&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;isles.png&quot;</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="ss">&quot;scripts/plotcount.py isles.tsv isles.png&quot;</span>
+# Plotting
+rule plotcount_isles:
+    input: &quot;isles.tsv&quot;
+    output: &quot;isles.png&quot;
+    shell: &quot;scripts/plotcount.py isles.tsv isles.png&quot;
 
-<span class="k">rule</span> <span class="n">plotcount_abyss</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;abyss.tsv&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;abyss.png&quot;</span>
-    <span class="n">shell</span><span class="p">:</span> <span class="ss">&quot;scripts/plotcount.py abyss.tsv abyss.png&quot;</span>
+rule plotcount_abyss:
+    input: &quot;abyss.tsv&quot;
+    output: &quot;abyss.png&quot;
+    shell: &quot;scripts/plotcount.py abyss.tsv abyss.png&quot;
 
-<span class="o">#</span> <span class="n">Deliverables</span>
-<span class="k">rule</span> <span class="n">archive_results</span><span class="p">:</span>
-    <span class="k">input</span><span class="p">:</span> <span class="ss">&quot;isles.tsv&quot;</span><span class="p">,</span> <span class="ss">&quot;abyss.tsv&quot;</span><span class="p">,</span> <span class="ss">&quot;isles.png&quot;</span><span class="p">,</span> <span class="ss">&quot;abyss.png&quot;</span>
-    <span class="k">output</span><span class="p">:</span> <span class="ss">&quot;zipf_results.tgz&quot;</span>
-    <span class="n">shell</span><span class="p">:</span>
-        <span class="ss">&quot;&quot;&quot;</span>
-<span class="ss">        rm -rf zipf_results/</span>
-<span class="ss">        mkdir zipf_results/</span>
-<span class="ss">        cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/</span>
-<span class="ss">        tar -czf zipf_results.tgz zipf_results/</span>
-<span class="ss">        rm -r zipf_results/</span>
-<span class="ss">        &quot;&quot;&quot;</span>
+# Deliverables
+rule archive_results:
+    input: &quot;isles.tsv&quot;, &quot;abyss.tsv&quot;, &quot;isles.png&quot;, &quot;abyss.png&quot;
+    output: &quot;zipf_results.tgz&quot;
+    shell:
+        &quot;&quot;&quot;
+        rm -rf zipf_results/
+        mkdir zipf_results/
+        cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/
+        tar -czf zipf_results.tgz zipf_results/
+        rm -r zipf_results/
+        &quot;&quot;&quot;
 </code></pre></div>
 
 <p>Looks good, don't you think?
@@ -755,7 +755,7 @@ Officially we talk about the relationships between files as a Directed Acyclic
 Graph (DAG).
 While earlier we took the time to diagram our DAG by hand, <em>Snakemake</em>
 has tools for plotting this network automatically.</p>
-<div class="highlight"><pre><span></span><code>snakemake --dag zipf_results.tgz <span class="p">|</span> dot -Tpng &gt; dag.png
+<div class="highlight"><pre><span></span><code>snakemake<span class="w"> </span>--dag<span class="w"> </span>zipf_results.tgz<span class="w"> </span><span class="p">|</span><span class="w"> </span>dot<span class="w"> </span>-Tpng<span class="w"> </span>&gt;<span class="w"> </span>dag.png
 </code></pre></div>
 
 <p>Open that file and check it out.</p>
@@ -782,17 +782,17 @@ but <em>Snakemake</em> is perfectly capable of doing so.</p>
 <p>One overly repetitive part of our Snakefile:
 Inputs and outputs are in both the header <em>and</em> the recipe of each rule.</p>
 <p>It turns out, that</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule wordcount_isles:</span>
-<span class="err">    input: &quot;books/isles.txt&quot;</span>
-<span class="err">    output: &quot;isles.tsv&quot;</span>
-<span class="err">    shell: &quot;scripts/wordcount.py books/isles.txt isles.tsv&quot;</span>
+<div class="highlight"><pre><span></span><code>rule wordcount_isles:
+    input: &quot;books/isles.txt&quot;
+    output: &quot;isles.tsv&quot;
+    shell: &quot;scripts/wordcount.py books/isles.txt isles.tsv&quot;
 </code></pre></div>
 
 <p>Can be rewritten as</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule wordcount_isles:</span>
-<span class="err">    input: &quot;books/isles.txt&quot;</span>
-<span class="err">    output: &quot;isles.tsv&quot;</span>
-<span class="err">    shell: &quot;scripts/wordcount.py {input} {output}&quot;</span>
+<div class="highlight"><pre><span></span><code>rule wordcount_isles:
+    input: &quot;books/isles.txt&quot;
+    output: &quot;isles.tsv&quot;
+    shell: &quot;scripts/wordcount.py {input} {output}&quot;
 </code></pre></div>
 
 <p>Here we've replaced the input "<code>books/isles.txt</code>" in the recipe
@@ -804,31 +804,31 @@ and are replaced with the value of that variable at runtime.
 If you are familiar with modern Python format strings, that's where the syntax
 comes from.</p>
 <p>Likewise</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule archive_results:</span>
-<span class="err">    input: &quot;isles.tsv&quot;, &quot;abyss.tsv&quot;, &quot;isles.png&quot;, &quot;abyss.png&quot;</span>
-<span class="err">    output: &quot;zipf_results.tgz&quot;</span>
-<span class="err">    shell:</span>
-<span class="err">        &quot;&quot;&quot;</span>
-<span class="err">        rm -rf zipf_results/</span>
-<span class="err">        mkdir zipf_results/</span>
-<span class="err">        cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/</span>
-<span class="err">        tar -czf zipf_results.tgz zipf_results/</span>
-<span class="err">        rm -r zipf_results/</span>
-<span class="err">        &quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code>rule archive_results:
+    input: &quot;isles.tsv&quot;, &quot;abyss.tsv&quot;, &quot;isles.png&quot;, &quot;abyss.png&quot;
+    output: &quot;zipf_results.tgz&quot;
+    shell:
+        &quot;&quot;&quot;
+        rm -rf zipf_results/
+        mkdir zipf_results/
+        cp isles.tsv abyss.tsv isles.png abyss.png zipf_results/
+        tar -czf zipf_results.tgz zipf_results/
+        rm -r zipf_results/
+        &quot;&quot;&quot;
 </code></pre></div>
 
 <p>can now be rewritten as</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule archive_results:</span>
-<span class="err">    input: &quot;isles.tsv&quot;, &quot;abyss.tsv&quot;, &quot;isles.png&quot;, &quot;abyss.png&quot;</span>
-<span class="err">    output: &quot;zipf_results.tgz&quot;</span>
-<span class="err">    shell:</span>
-<span class="err">        &quot;&quot;&quot;</span>
-<span class="err">        rm -rf zipf_results/</span>
-<span class="err">        mkdir zipf_results/</span>
-<span class="err">        cp {input} zipf_results/</span>
-<span class="err">        tar -czf {output} zipf_results/</span>
-<span class="err">        rm -r zipf_results/</span>
-<span class="err">        &quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code>rule archive_results:
+    input: &quot;isles.tsv&quot;, &quot;abyss.tsv&quot;, &quot;isles.png&quot;, &quot;abyss.png&quot;
+    output: &quot;zipf_results.tgz&quot;
+    shell:
+        &quot;&quot;&quot;
+        rm -rf zipf_results/
+        mkdir zipf_results/
+        cp {input} zipf_results/
+        tar -czf {output} zipf_results/
+        rm -r zipf_results/
+        &quot;&quot;&quot;
 </code></pre></div>
 
 <p>That's a little less cluttered,
@@ -861,10 +861,10 @@ We have nearly identical recipes for <code>abyss.tsv</code> and <code>isles.tsv<
 by telling <em>Snakemake</em> about the relationships between filenames with
 <em>wildcards</em>.</p>
 <p>Using wildcards looks like this</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule wordcount:</span>
-<span class="err">    input: &quot;books/{name}.txt&quot;</span>
-<span class="err">    output: &quot;{name}.tsv&quot;</span>
-<span class="err">    shell: &quot;scripts/wordcount.py {input} {output}&quot;</span>
+<div class="highlight"><pre><span></span><code>rule wordcount:
+    input: &quot;books/{name}.txt&quot;
+    output: &quot;{name}.tsv&quot;
+    shell: &quot;scripts/wordcount.py {input} {output}&quot;
 </code></pre></div>
 
 <p>Here we've replaced the book name with "<code>{name}</code>".
@@ -919,12 +919,12 @@ are changing too.</p>
 Scripts should be considered inputs too!</p>
 <p>Let's edit the rule for <code>{name}.png</code> to include <code>plotcount.py</code>
 as an input.</p>
-<div class="highlight"><pre><span></span><code><span class="err">rule plotcount:</span>
-<span class="err">    input:</span>
-<span class="err">        script=&quot;scripts/plotcount.py&quot;,</span>
-<span class="err">        data=&quot;{name}.tsv&quot;</span>
-<span class="err">    output: &quot;{name}.png&quot;</span>
-<span class="err">    shell: &quot;{input.script} {input.data} {output}&quot;</span>
+<div class="highlight"><pre><span></span><code>rule plotcount:
+    input:
+        script=&quot;scripts/plotcount.py&quot;,
+        data=&quot;{name}.tsv&quot;
+    output: &quot;{name}.png&quot;
+    shell: &quot;{input.script} {input.data} {output}&quot;
 </code></pre></div>
 
 <p>Here we've assigned names to our two inputs.</p>

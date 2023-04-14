@@ -976,7 +976,7 @@ estimates.
 Instead, the absence of an event for an individual during the study is useful
 information that contributes to the precise estimation of rates.&lt;/p&gt;
 &lt;p&gt;Let's grab the Software Carpentry data and take a look.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl -O http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;curl&lt;span class="w"&gt; &lt;/span&gt;-O&lt;span class="w"&gt; &lt;/span&gt;http://software-carpentry.org/files/2016/05/teaching-stats-2016-05.csv
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now in Python:&lt;/p&gt;
@@ -995,17 +995,17 @@ information that contributes to the precise estimation of rates.&lt;/p&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;raw_data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;      Person   Certified      Taught&lt;/span&gt;
-&lt;span class="err"&gt;1781   11268  2016-03-16         NaN&lt;/span&gt;
-&lt;span class="err"&gt;1782   11278  2016-03-29         NaN&lt;/span&gt;
-&lt;span class="err"&gt;1783   11280  2016-04-19         NaN&lt;/span&gt;
-&lt;span class="err"&gt;1784   11292  2016-02-29         NaN&lt;/span&gt;
-&lt;span class="err"&gt;1785   11293  2016-03-01         NaN&lt;/span&gt;
-&lt;span class="err"&gt;1558   11294  2016-04-25  2016-04-18&lt;/span&gt;
-&lt;span class="err"&gt;1557   11294  2016-04-25  2016-02-02&lt;/span&gt;
-&lt;span class="err"&gt;1559   11295  2016-04-25  2016-02-02&lt;/span&gt;
-&lt;span class="err"&gt;1786   11298  2016-04-21         NaN&lt;/span&gt;
-&lt;span class="err"&gt;1787   11311  2016-04-19         NaN&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;      Person   Certified      Taught
+1781   11268  2016-03-16         NaN
+1782   11278  2016-03-29         NaN
+1783   11280  2016-04-19         NaN
+1784   11292  2016-02-29         NaN
+1785   11293  2016-03-01         NaN
+1558   11294  2016-04-25  2016-04-18
+1557   11294  2016-04-25  2016-02-02
+1559   11295  2016-04-25  2016-02-02
+1786   11298  2016-04-21         NaN
+1787   11311  2016-04-19         NaN
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This data is arranged as three columns: a ID number for each person,
@@ -1040,13 +1040,13 @@ split-apply-combine functionality.&lt;/p&gt;
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;         certified  taught_count taught_first taught_second&lt;/span&gt;
-&lt;span class="err"&gt;Person&lt;/span&gt;
-&lt;span class="err"&gt;48      2014-05-04             1   2014-09-11           NaN&lt;/span&gt;
-&lt;span class="err"&gt;75      2013-07-20            15   2013-03-20    2013-03-24&lt;/span&gt;
-&lt;span class="err"&gt;85      2014-12-23             4   2015-03-06    2015-06-17&lt;/span&gt;
-&lt;span class="err"&gt;87      2013-11-25             4   2014-05-12    2015-03-20&lt;/span&gt;
-&lt;span class="err"&gt;135     2015-02-03             1   2015-09-03           NaN&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;         certified  taught_count taught_first taught_second
+Person
+48      2014-05-04             1   2014-09-11           NaN
+75      2013-07-20            15   2013-03-20    2013-03-24
+85      2014-12-23             4   2015-03-06    2015-06-17
+87      2013-11-25             4   2014-05-12    2015-03-20
+135     2015-02-03             1   2015-09-03           NaN
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And some calculations&lt;/p&gt;
@@ -1078,13 +1078,13 @@ For now, I'll use June 1st since I know the data was from May.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;time_to_taught_first&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;        time_to_taught_first&lt;/span&gt;
-&lt;span class="err"&gt;Person&lt;/span&gt;
-&lt;span class="err"&gt;48                     130.0&lt;/span&gt;
-&lt;span class="err"&gt;75                    -122.0&lt;/span&gt;
-&lt;span class="err"&gt;85                      73.0&lt;/span&gt;
-&lt;span class="err"&gt;87                     168.0&lt;/span&gt;
-&lt;span class="err"&gt;135                    212.0&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;        time_to_taught_first
+Person
+48                     130.0
+75                    -122.0
+85                      73.0
+87                     168.0
+135                    212.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Some people (Person 75, for instance) taught their first workshop before they
@@ -1170,20 +1170,20 @@ might predict that these instructors will never teach.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fit1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;                                   Results: PHReg&lt;/span&gt;
-&lt;span class="err"&gt;====================================================================================&lt;/span&gt;
-&lt;span class="c"&gt;Model:                       PH Reg                        Sample size:          474&lt;/span&gt;
-&lt;span class="err"&gt;Dependent variable:          time_to_taught_first          Num. events:          246&lt;/span&gt;
-&lt;span class="c"&gt;Ties:                        Breslow&lt;/span&gt;
-&lt;span class="err"&gt;------------------------------------------------------------------------------------&lt;/span&gt;
-&lt;span class="err"&gt;                                log HR log HR SE   HR      t    P&amp;gt;|t|  [0.025 0.975]&lt;/span&gt;
-&lt;span class="err"&gt;------------------------------------------------------------------------------------&lt;/span&gt;
-&lt;span class="err"&gt;C(year_certified, Sum)[S.2012]  0.1382    0.5705 1.1482  0.2422 0.8086 0.3753 3.5124&lt;/span&gt;
-&lt;span class="err"&gt;C(year_certified, Sum)[S.2013]  0.2230    0.2268 1.2498  0.9830 0.3256 0.8012 1.9493&lt;/span&gt;
-&lt;span class="err"&gt;C(year_certified, Sum)[S.2014] -0.1383    0.1789 0.8708 -0.7732 0.4394 0.6132 1.2366&lt;/span&gt;
-&lt;span class="err"&gt;C(year_certified, Sum)[S.2015]  0.0205    0.1730 1.0207  0.1183 0.9058 0.7272 1.4327&lt;/span&gt;
-&lt;span class="err"&gt;====================================================================================&lt;/span&gt;
-&lt;span class="err"&gt;Confidence intervals are for the hazard ratios&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;                                   &lt;/span&gt;&lt;span class="n"&gt;Results&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;PHReg&lt;/span&gt;
+&lt;span class="o"&gt;====================================================================================&lt;/span&gt;
+&lt;span class="n"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;                       &lt;/span&gt;&lt;span class="n"&gt;PH&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Reg&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;&lt;span class="n"&gt;Sample&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="mi"&gt;474&lt;/span&gt;
+&lt;span class="n"&gt;Dependent&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="n"&gt;time_to_taught_first&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="n"&gt;Num&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;events&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;          &lt;/span&gt;&lt;span class="mi"&gt;246&lt;/span&gt;
+&lt;span class="n"&gt;Ties&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;&lt;span class="n"&gt;Breslow&lt;/span&gt;
+&lt;span class="o"&gt;------------------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="w"&gt;                                &lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HR&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HR&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;SE&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;HR&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;P&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;0.025&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.975&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;------------------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year_certified&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sum&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2012&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.1382&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;0.5705&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.1482&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.2422&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.8086&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.3753&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;3.5124&lt;/span&gt;
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year_certified&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sum&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.2230&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;0.2268&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.2498&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.9830&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.3256&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.8012&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.9493&lt;/span&gt;
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year_certified&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sum&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.1383&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;0.1789&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.8708&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.7732&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.4394&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.6132&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.2366&lt;/span&gt;
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;year_certified&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Sum&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2015&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.0205&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;0.1730&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.0207&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="mf"&gt;0.1183&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.9058&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.7272&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;1.4327&lt;/span&gt;
+&lt;span class="o"&gt;====================================================================================&lt;/span&gt;
+&lt;span class="n"&gt;Confidence&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;intervals&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;are&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hazard&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ratios&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;We see no significant deviation from the average year for any of the 4 years of
@@ -1225,17 +1225,17 @@ again.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;fit2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;summary&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;                              Results: PHReg&lt;/span&gt;
-&lt;span class="err"&gt;==========================================================================&lt;/span&gt;
-&lt;span class="c"&gt;Model:                  PH Reg                        Sample size:     246&lt;/span&gt;
-&lt;span class="err"&gt;Dependent variable:     time_between_first_second     Num. events:     131&lt;/span&gt;
-&lt;span class="c"&gt;Ties:                   Breslow&lt;/span&gt;
-&lt;span class="err"&gt;--------------------------------------------------------------------------&lt;/span&gt;
-&lt;span class="err"&gt;                      log HR log HR SE   HR      t    P&amp;gt;|t|  [0.025 0.975]&lt;/span&gt;
-&lt;span class="err"&gt;--------------------------------------------------------------------------&lt;/span&gt;
-&lt;span class="err"&gt;time_to_taught_first -0.0045    0.0010 0.9955 -4.3474 0.0000 0.9935 0.9975&lt;/span&gt;
-&lt;span class="err"&gt;==========================================================================&lt;/span&gt;
-&lt;span class="err"&gt;Confidence intervals are for the hazard ratios&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt;                              &lt;/span&gt;&lt;span class="n"&gt;Results&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;PHReg&lt;/span&gt;
+&lt;span class="o"&gt;==========================================================================&lt;/span&gt;
+&lt;span class="n"&gt;Model&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;                  &lt;/span&gt;&lt;span class="n"&gt;PH&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Reg&lt;/span&gt;&lt;span class="w"&gt;                        &lt;/span&gt;&lt;span class="n"&gt;Sample&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;246&lt;/span&gt;
+&lt;span class="n"&gt;Dependent&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="n"&gt;time_between_first_second&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="n"&gt;Num&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;events&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="mi"&gt;131&lt;/span&gt;
+&lt;span class="n"&gt;Ties&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;                   &lt;/span&gt;&lt;span class="n"&gt;Breslow&lt;/span&gt;
+&lt;span class="o"&gt;--------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="w"&gt;                      &lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HR&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;HR&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;SE&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="n"&gt;HR&lt;/span&gt;&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;P&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mf"&gt;0.025&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.975&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="o"&gt;--------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="n"&gt;time_to_taught_first&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.0045&lt;/span&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="mf"&gt;0.0010&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.9955&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;4.3474&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.0000&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.9935&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.9975&lt;/span&gt;
+&lt;span class="o"&gt;==========================================================================&lt;/span&gt;
+&lt;span class="n"&gt;Confidence&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;intervals&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;are&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hazard&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ratios&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;We find a highly significant effect of time-to-first-teaching.&lt;/p&gt;

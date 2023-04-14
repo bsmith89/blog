@@ -215,58 +215,58 @@ script.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">define PROJECT_HELP_MSG</span>
 
 <span class="nf">Usage</span><span class="o">:</span>
-    make <span class="nb">help</span>                   show this message
-    make clean                  remove intermediate files <span class="o">(</span>see CLEANUP<span class="o">)</span>
+<span class="w">    </span>make<span class="w"> </span><span class="nb">help</span><span class="w">                   </span>show<span class="w"> </span>this<span class="w"> </span>message
+<span class="w">    </span>make<span class="w"> </span>clean<span class="w">                  </span>remove<span class="w"> </span>intermediate<span class="w"> </span>files<span class="w"> </span><span class="o">(</span>see<span class="w"> </span>CLEANUP<span class="o">)</span>
 
-    make <span class="si">${</span><span class="nv">VENV</span><span class="si">}</span>                make a virtualenv in the base directory <span class="o">(</span>see VENV<span class="o">)</span>
-    make python-reqs            install python packages in requirements.pip
-    make git-config             <span class="nb">set</span> <span class="nb">local</span> git configuration
-    make setup                  git init<span class="p">;</span> make python-reqs git-config
+<span class="w">    </span>make<span class="w"> </span><span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="w">                </span>make<span class="w"> </span>a<span class="w"> </span>virtualenv<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>base<span class="w"> </span>directory<span class="w"> </span><span class="o">(</span>see<span class="w"> </span>VENV<span class="o">)</span>
+<span class="w">    </span>make<span class="w"> </span>python-reqs<span class="w">            </span>install<span class="w"> </span>python<span class="w"> </span>packages<span class="w"> </span><span class="k">in</span><span class="w"> </span>requirements.pip
+<span class="w">    </span>make<span class="w"> </span>git-config<span class="w">             </span><span class="nb">set</span><span class="w"> </span><span class="nb">local</span><span class="w"> </span>git<span class="w"> </span>configuration
+<span class="w">    </span>make<span class="w"> </span>setup<span class="w">                  </span>git<span class="w"> </span>init<span class="p">;</span><span class="w"> </span>make<span class="w"> </span>python-reqs<span class="w"> </span>git-config
 
-    make start-jupyter          launch a jupyter server from the <span class="nb">local</span> virtualenv
+<span class="w">    </span>make<span class="w"> </span>start-jupyter<span class="w">          </span>launch<span class="w"> </span>a<span class="w"> </span>jupyter<span class="w"> </span>server<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span><span class="nb">local</span><span class="w"> </span>virtualenv
 
 <span class="cp">endef</span>
-<span class="k">export</span> <span class="nv">PROJECT_HELP_MSG</span>
+<span class="k">export</span><span class="w"> </span><span class="nv">PROJECT_HELP_MSG</span>
 
 <span class="nf">help</span><span class="o">:</span>
-    <span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG <span class="p">|</span> less
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$$</span>PROJECT_HELP_MSG<span class="w"> </span><span class="p">|</span><span class="w"> </span>less
 
 <span class="nf">.git</span><span class="o">:</span>
-    git init
+<span class="w">    </span>git<span class="w"> </span>init
 
-<span class="nf">git-config</span><span class="o">:</span> <span class="p">|</span> .<span class="n">git</span> 
-    git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
-        drop_jupyter_output.sh
-    git config --local filter.dropoutput_jupyter.smudge cat
-    git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
-    git config --local <span class="se">\</span>
-        diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
-    git config --local <span class="se">\</span>
-        merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
-    git config --local <span class="se">\</span>
-        merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
+<span class="nf">git-config</span><span class="o">:</span><span class="w"> </span><span class="p">|</span> .<span class="n">git</span> 
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>filter.dropoutput_jupyter.clean<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>drop_jupyter_output.sh
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>filter.dropoutput_jupyter.smudge<span class="w"> </span>cat
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>core.page<span class="w"> </span><span class="s1">&#39;less -x4&#39;</span>
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>diff.daff-csv.command<span class="w"> </span><span class="s2">&quot;daff.py diff --git&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>merge.daff-csv.name<span class="w"> </span><span class="s2">&quot;daff.py tabular merge&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>merge.daff-csv.driver<span class="w"> </span><span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
 
-<span class="nv">VENV</span> <span class="o">=</span> .venv
-<span class="k">export </span><span class="nv">VIRTUAL_ENV</span> <span class="o">:=</span> <span class="k">$(</span>abspath <span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="k">)</span>
-<span class="k">export </span><span class="nv">PATH</span> <span class="o">:=</span> <span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
+<span class="nv">VENV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>.venv
+<span class="k">export </span><span class="nv">VIRTUAL_ENV</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="k">$(</span>abspath<span class="w"> </span><span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="k">)</span>
+<span class="k">export </span><span class="nv">PATH</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
 
 <span class="nf">${VENV}</span><span class="o">:</span>
-    python3 -m venv <span class="nv">$@</span>
+<span class="w">    </span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span><span class="nv">$@</span>
 
-<span class="nf">python-reqs</span><span class="o">:</span> <span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
-    pip install --upgrade -r requirements.pip
+<span class="nf">python-reqs</span><span class="o">:</span><span class="w"> </span><span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
+<span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>requirements.pip
 
-<span class="nf">setup</span><span class="o">:</span> ${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
+<span class="nf">setup</span><span class="o">:</span><span class="w"> </span>${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
 
 <span class="nf">start-jupyter</span><span class="o">:</span>
-    jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
+<span class="w">    </span>jupyter<span class="w"> </span>notebook<span class="w"> </span>--config<span class="o">=</span>jupyter_notebook_config.py
 
-<span class="nv">CLEANUP</span> <span class="o">=</span> *.pyc
+<span class="nv">CLEANUP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>*.pyc
 
 <span class="nf">clean</span><span class="o">:</span>
-    rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
+<span class="w">    </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
 
-<span class="nf">.PHONY</span><span class="o">:</span> <span class="n">help</span> <span class="n">git</span>-<span class="n">config</span> <span class="n">start</span>-<span class="n">jupter</span> <span class="n">python</span>-<span class="n">reqs</span> <span class="n">setup</span> <span class="n">clean</span>
+<span class="nf">.PHONY</span><span class="o">:</span><span class="w"> </span><span class="n">help</span> <span class="n">git</span>-<span class="n">config</span> <span class="n">start</span>-<span class="n">jupter</span> <span class="n">python</span>-<span class="n">reqs</span> <span class="n">setup</span> <span class="n">clean</span>
 </code></pre></div>
 
 <p>If you want to start using it right away, download the <a href="https://gist.github.com/bsmith89/c6811893c1cbd2a72cc1d144a197bef2">gist</a>,
@@ -279,21 +279,21 @@ up.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">define PROJECT_HELP_MSG</span>
 
 <span class="nf">Usage</span><span class="o">:</span>
-    make <span class="nb">help</span>                   show this message
-    make clean                  remove intermediate files <span class="o">(</span>see CLEANUP<span class="o">)</span>
+<span class="w">    </span>make<span class="w"> </span><span class="nb">help</span><span class="w">                   </span>show<span class="w"> </span>this<span class="w"> </span>message
+<span class="w">    </span>make<span class="w"> </span>clean<span class="w">                  </span>remove<span class="w"> </span>intermediate<span class="w"> </span>files<span class="w"> </span><span class="o">(</span>see<span class="w"> </span>CLEANUP<span class="o">)</span>
 
-    make git-config             <span class="nb">set</span> <span class="nb">local</span> git configuration
-    make <span class="si">${</span><span class="nv">VENV</span><span class="si">}</span>                make a virtualenv in the base directory <span class="o">(</span>see VENV<span class="o">)</span>
-    make python-reqs            install python packages in requirements.pip
-    make setup                  git init<span class="p">;</span> make python-reqs git-config
+<span class="w">    </span>make<span class="w"> </span>git-config<span class="w">             </span><span class="nb">set</span><span class="w"> </span><span class="nb">local</span><span class="w"> </span>git<span class="w"> </span>configuration
+<span class="w">    </span>make<span class="w"> </span><span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="w">                </span>make<span class="w"> </span>a<span class="w"> </span>virtualenv<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>base<span class="w"> </span>directory<span class="w"> </span><span class="o">(</span>see<span class="w"> </span>VENV<span class="o">)</span>
+<span class="w">    </span>make<span class="w"> </span>python-reqs<span class="w">            </span>install<span class="w"> </span>python<span class="w"> </span>packages<span class="w"> </span><span class="k">in</span><span class="w"> </span>requirements.pip
+<span class="w">    </span>make<span class="w"> </span>setup<span class="w">                  </span>git<span class="w"> </span>init<span class="p">;</span><span class="w"> </span>make<span class="w"> </span>python-reqs<span class="w"> </span>git-config
 
-    make start-jupyter          launch a jupyter server from the <span class="nb">local</span> virtualenv
+<span class="w">    </span>make<span class="w"> </span>start-jupyter<span class="w">          </span>launch<span class="w"> </span>a<span class="w"> </span>jupyter<span class="w"> </span>server<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span><span class="nb">local</span><span class="w"> </span>virtualenv
 
 <span class="cp">endef</span>
-<span class="k">export</span> <span class="nv">PROJECT_HELP_MSG</span>
+<span class="k">export</span><span class="w"> </span><span class="nv">PROJECT_HELP_MSG</span>
 
 <span class="nf">help</span><span class="o">:</span>
-    <span class="nb">echo</span> <span class="nv">$$</span>PROJECT_HELP_MSG
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$$</span>PROJECT_HELP_MSG
 </code></pre></div>
 
 <p>The top of our makefile is a help message.
@@ -310,7 +310,7 @@ nifty trick to auto-generate these help messages,
 keeping documentation and recipes together in your makefile.</p>
 <h2>Streamline git setup</h2>
 <div class="highlight"><pre><span></span><code><span class="nf">.git</span><span class="o">:</span>
-    git init
+<span class="w">    </span>git<span class="w"> </span>init
 </code></pre></div>
 
 <p>Every project should be <a href="https://dx.doi.org/10.1186/1751-0473-8-7">version controlled</a>.
@@ -320,17 +320,17 @@ This recipe is so simple as to appear useless (since <code>make .git</code> is n
 to type than <code>git init</code>) but we use the directory <code>.git/</code> as an
 <a href="https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html">order-only prerequisite</a>
 for the next recipe:</p>
-<div class="highlight"><pre><span></span><code><span class="nf">git-config</span><span class="o">:</span> <span class="p">|</span> .<span class="n">git</span> 
-    git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
-        drop_jupyter_output.sh
-    git config --local filter.dropoutput_jupyter.smudge cat
-    git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
-    git config --local <span class="se">\</span>
-        diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
-    git config --local <span class="se">\</span>
-        merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
-    git config --local <span class="se">\</span>
-        merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nf">git-config</span><span class="o">:</span><span class="w"> </span><span class="p">|</span> .<span class="n">git</span> 
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>filter.dropoutput_jupyter.clean<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>drop_jupyter_output.sh
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>filter.dropoutput_jupyter.smudge<span class="w"> </span>cat
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>core.page<span class="w"> </span><span class="s1">&#39;less -x4&#39;</span>
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>diff.daff-csv.command<span class="w"> </span><span class="s2">&quot;daff.py diff --git&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>merge.daff-csv.name<span class="w"> </span><span class="s2">&quot;daff.py tabular merge&quot;</span>
+<span class="w">    </span>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>merge.daff-csv.driver<span class="w"> </span><span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
 </code></pre></div>
 
 <p>Git configuration is <em>just</em> annoying enough that I often put it off for a new
@@ -339,9 +339,9 @@ With this recipe I don't have to!</p>
 <p>There are three parts to the configuration above;
 customize it for how you use git.</p>
 <h3>Drop Jupyter Notebook output</h3>
-<div class="highlight"><pre><span></span><code>git config --local filter.dropoutput_jupyter.clean <span class="se">\</span>
-    ./drop_jupyter_output.sh
-git config --local filter.dropoutput_jupyter.smudge cat
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>filter.dropoutput_jupyter.clean<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>./drop_jupyter_output.sh
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>filter.dropoutput_jupyter.smudge<span class="w"> </span>cat
 </code></pre></div>
 
 <p>I set up a <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes">clean/smudge filter</a> for my Jupyter notebooks.
@@ -357,7 +357,7 @@ notebook you'll have to re-execute all of the cells to get the results.</p>
 First, <code>.gitattributes</code> which is a tab-separated file mapping filename patterns
 to special git configuration.
 The first line in that file should be the following.</p>
-<div class="highlight"><pre><span></span><code><span class="err">*.ipynb filter=dropoutput_jupyter</span>
+<div class="highlight"><pre><span></span><code>*.ipynb filter=dropoutput_jupyter
 </code></pre></div>
 
 <p>(That's a tab after <code>*.ipynb</code>.)</p>
@@ -367,15 +367,15 @@ which needs to be executable.</p>
 <span class="c1"># run `chmod +x drop_jupyter_output.sh` to make it executable.</span>
 
 <span class="nv">file</span><span class="o">=</span><span class="k">$(</span>mktemp<span class="k">)</span>
-cat &lt;<span class="p">&amp;</span><span class="m">0</span> &gt;<span class="nv">$file</span>
-jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled<span class="o">=</span>True <span class="se">\</span>
-    <span class="nv">$file</span> --stdout <span class="m">2</span>&gt;/dev/null
+cat<span class="w"> </span>&lt;<span class="p">&amp;</span><span class="m">0</span><span class="w"> </span>&gt;<span class="nv">$file</span>
+jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>notebook<span class="w"> </span>--ClearOutputPreprocessor.enabled<span class="o">=</span>True<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span><span class="nv">$file</span><span class="w"> </span>--stdout<span class="w"> </span><span class="m">2</span>&gt;/dev/null
 </code></pre></div>
 
 <h3>Display tabs as four spaces</h3>
 <p>I also configure <code>less</code> to show four spaces for tabs.
 This makes <code>git diff</code>-ing my makefile much easier on the eyes.</p>
-<div class="highlight"><pre><span></span><code>git config --local core.page <span class="s1">&#39;less -x4&#39;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>core.page<span class="w"> </span><span class="s1">&#39;less -x4&#39;</span>
 </code></pre></div>
 
 <h3>Smart <code>diff</code>s for tabular data</h3>
@@ -383,19 +383,19 @@ This makes <code>git diff</code>-ing my makefile much easier on the eyes.</p>
 <code>diff</code>s of comma-delimited and tab-delimited files can get obnoxious.
 The program <a href="http://paulfitz.github.io/daff/"><code>daff</code></a> fixes this problem.</p>
 <p>We'll configure git to use <code>daff</code> for all tabular files.</p>
-<div class="highlight"><pre><span></span><code>git config --local <span class="se">\</span>
-    diff.daff-csv.command <span class="s2">&quot;daff.py diff --git&quot;</span>
-git config --local <span class="se">\</span>
-    merge.daff-csv.name <span class="s2">&quot;daff.py tabular merge&quot;</span>
-git config --local <span class="se">\</span>
-    merge.daff-csv.driver <span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>diff.daff-csv.command<span class="w"> </span><span class="s2">&quot;daff.py diff --git&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>merge.daff-csv.name<span class="w"> </span><span class="s2">&quot;daff.py tabular merge&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>merge.daff-csv.driver<span class="w"> </span><span class="s2">&quot;daff.py merge --output %A %O %A %B&quot;</span>
 </code></pre></div>
 
 <p>Just like the output filter for Jupyter notebooks, we need to associate
 this configuration with CSVs and TSVs in our <code>.gitattributes</code> file by adding
 the following two lines.</p>
-<div class="highlight"><pre><span></span><code><span class="o">*</span><span class="p">.</span><span class="o">[</span><span class="n">tc</span><span class="o">]</span><span class="n">sv</span><span class="w"> </span><span class="n">diff</span><span class="o">=</span><span class="n">daff</span><span class="o">-</span><span class="n">csv</span><span class="w"></span>
-<span class="o">*</span><span class="p">.</span><span class="o">[</span><span class="n">tc</span><span class="o">]</span><span class="n">sv</span><span class="w"> </span><span class="k">merge</span><span class="o">=</span><span class="n">daff</span><span class="o">-</span><span class="n">csv</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="o">*</span><span class="p">.</span><span class="o">[</span><span class="n">tc</span><span class="o">]</span><span class="n">sv</span><span class="w"> </span><span class="n">diff</span><span class="o">=</span><span class="n">daff</span><span class="o">-</span><span class="n">csv</span>
+<span class="o">*</span><span class="p">.</span><span class="o">[</span><span class="n">tc</span><span class="o">]</span><span class="n">sv</span><span class="w"> </span><span class="k">merge</span><span class="o">=</span><span class="n">daff</span><span class="o">-</span><span class="n">csv</span>
 </code></pre></div>
 
 <h2>Automatic python virtual environments</h2>
@@ -405,15 +405,15 @@ you'll appreciate these recipes to automate creating them and updating
 packages.</p>
 <p>If you don't use python/pip, these recipes can be swapped out for other
 sandboxing systems.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">VENV</span> <span class="o">=</span> .venv
-<span class="k">export </span><span class="nv">VIRTUAL_ENV</span> <span class="o">:=</span> <span class="k">$(</span>abspath <span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="k">)</span>
-<span class="k">export </span><span class="nv">PATH</span> <span class="o">:=</span> <span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
+<div class="highlight"><pre><span></span><code><span class="nv">VENV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>.venv
+<span class="k">export </span><span class="nv">VIRTUAL_ENV</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="k">$(</span>abspath<span class="w"> </span><span class="si">${</span><span class="nv">VENV</span><span class="si">}</span><span class="k">)</span>
+<span class="k">export </span><span class="nv">PATH</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="si">${</span><span class="nv">VIRTUAL_ENV</span><span class="si">}</span>/bin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
 
 <span class="nf">${VENV}</span><span class="o">:</span>
-    python3 -m venv <span class="nv">$@</span>
+<span class="w">    </span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span><span class="nv">$@</span>
 
-<span class="nf">python-reqs</span><span class="o">:</span> <span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
-    pip install --upgrade -r requirements.pip
+<span class="nf">python-reqs</span><span class="o">:</span><span class="w"> </span><span class="n">requirements</span>.<span class="n">pip</span> <span class="p">|</span> ${<span class="n">VENV</span>}
+<span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>-r<span class="w"> </span>requirements.pip
 </code></pre></div>
 
 <p>In the top block, we first set a variable <code>VENV</code> to be the location of our
@@ -439,15 +439,15 @@ And, if you discipline yourself to make all changes to your execution
 environment in this way, you'll have a permanently up-to-date record of your
 system requirements.</p>
 <h2>Single-command project setup</h2>
-<div class="highlight"><pre><span></span><code><span class="nf">setup</span><span class="o">:</span> ${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
+<div class="highlight"><pre><span></span><code><span class="nf">setup</span><span class="o">:</span><span class="w"> </span>${<span class="n">VENV</span>} <span class="n">python</span>-<span class="n">reqs</span> <span class="n">git</span>-<span class="n">config</span> <span class="p">|</span> .<span class="n">git</span>
 </code></pre></div>
 
 <p>With this meta-target a simple <code>make setup</code> will have our new project
 configured and ready to go.
 This is particularly useful if you work on multiple machines:</p>
-<div class="highlight"><pre><span></span><code>git clone git@github.com:username/project.git
-<span class="nb">cd</span> project
-make setup
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:username/project.git
+<span class="nb">cd</span><span class="w"> </span>project
+make<span class="w"> </span>setup
 </code></pre></div>
 
 <p>is all it takes to get up and running.</p>
@@ -457,13 +457,13 @@ With this recipe (and the <code>PATH</code> we export above) I don't have to rem
 to activate my virtual environment or invoke specific configuration files
 when I launch a server.</p>
 <div class="highlight"><pre><span></span><code><span class="nf">start-jupyter</span><span class="o">:</span>
-    jupyter notebook --config<span class="o">=</span>jupyter_notebook_config.py
+<span class="w">    </span>jupyter<span class="w"> </span>notebook<span class="w"> </span>--config<span class="o">=</span>jupyter_notebook_config.py
 </code></pre></div>
 
 <p>Put whatever you'd like into the <a href="http://jupyter-notebook.readthedocs.io/en/latest/config.html">config file</a>.
 I like to keep my notebooks in a subdirectory, so my invocation is a little different:</p>
-<div class="highlight"><pre><span></span><code>jupyter notebook --config<span class="o">=</span>ipynb/jupyter_notebook_config.py <span class="se">\</span>
-    --notebook-dir<span class="o">=</span>ipynb/
+<div class="highlight"><pre><span></span><code>jupyter<span class="w"> </span>notebook<span class="w"> </span>--config<span class="o">=</span>ipynb/jupyter_notebook_config.py<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--notebook-dir<span class="o">=</span>ipynb/
 </code></pre></div>
 
 <p>And my configuration automatically changes the working directory to
@@ -472,10 +472,10 @@ the project root when launching a new notebook.</p>
 The same general idea works for any other software you can start from the shell.
 No need to remember any of the obnoxious command-line flags.</p>
 <h2>Quick cleanup</h2>
-<div class="highlight"><pre><span></span><code><span class="nv">CLEANUP</span> <span class="o">=</span> *.pyc
+<div class="highlight"><pre><span></span><code><span class="nv">CLEANUP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>*.pyc
 
 <span class="nf">clean</span><span class="o">:</span>
-    rm -rf <span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
+<span class="w">    </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="si">${</span><span class="nv">CLEANUP</span><span class="si">}</span>
 </code></pre></div>
 
 <p>A ubiquitous target for <em>Make</em> is <code>clean</code> to tidy up the repository.

@@ -181,7 +181,7 @@ high-performance compute cluster at The University of Michigan.</p>
 (if you know, please tell me), <code>SciPy</code> has <em>always</em> given me a
 "BlasNotFoundError" when installing on the Red Hat Enterprise Linux distros
 commonly used on academic clusters.</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;</span> pip install scipy
+<div class="highlight"><pre><span></span><code><span class="go">&gt; pip install scipy</span>
 <span class="go">Downloading/unpacking scipy</span>
 <span class="go">  Downloading scipy-0.12.0.zip (10.2MB): 100% 10.2MB downloaded</span>
 <span class="go">...</span>
@@ -203,34 +203,34 @@ same error.</p>
 just in case it helps someone else.  My solution was found on Stack Overflow
 (surprise, surprise): The accepted answer to
 <a href="http://stackoverflow.com/q/7496547/848121">this</a> question.</p>
-<div class="highlight"><pre><span></span><code>mkdir -p ~/.local/src/
-<span class="nb">cd</span> ~/.local/src/
-wget -O BLAS.tgz http://www.netlib.org/blas/blas.tgz
-tar -xzf BLAS.tgz
-<span class="nb">cd</span> BLAS
-gfortran -O3 -std<span class="o">=</span>legacy -m64 -fno-second-underscore -fPIC -c *.f
-ar r libfblas.a *.o
-ranlib libfblas.a
-<span class="nb">export</span> <span class="nv">BLAS</span><span class="o">=</span><span class="nv">$PWD</span>/libfblas.a
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.local/src/
+<span class="nb">cd</span><span class="w"> </span>~/.local/src/
+wget<span class="w"> </span>-O<span class="w"> </span>BLAS.tgz<span class="w"> </span>http://www.netlib.org/blas/blas.tgz
+tar<span class="w"> </span>-xzf<span class="w"> </span>BLAS.tgz
+<span class="nb">cd</span><span class="w"> </span>BLAS
+gfortran<span class="w"> </span>-O3<span class="w"> </span>-std<span class="o">=</span>legacy<span class="w"> </span>-m64<span class="w"> </span>-fno-second-underscore<span class="w"> </span>-fPIC<span class="w"> </span>-c<span class="w"> </span>*.f
+ar<span class="w"> </span>r<span class="w"> </span>libfblas.a<span class="w"> </span>*.o
+ranlib<span class="w"> </span>libfblas.a
+<span class="nb">export</span><span class="w"> </span><span class="nv">BLAS</span><span class="o">=</span><span class="nv">$PWD</span>/libfblas.a
 
-<span class="nb">cd</span> ~/.local/src/
-wget -O LAPACK.tgz http://www.netlib.org/lapack/lapack.tgz
-tar -xzf LAPACK.tgz
+<span class="nb">cd</span><span class="w"> </span>~/.local/src/
+wget<span class="w"> </span>-O<span class="w"> </span>LAPACK.tgz<span class="w"> </span>http://www.netlib.org/lapack/lapack.tgz
+tar<span class="w"> </span>-xzf<span class="w"> </span>LAPACK.tgz
 <span class="c1"># The resulting directory may be named lapack-&lt;version&gt;/</span>
 <span class="c1"># the following assumes that it&#39;s named LAPACK/</span>
-<span class="nb">cd</span> LAPACK
-cp INSTALL/make.inc.gfortran make.inc
-vim make.inc
+<span class="nb">cd</span><span class="w"> </span>LAPACK
+cp<span class="w"> </span>INSTALL/make.inc.gfortran<span class="w"> </span>make.inc
+vim<span class="w"> </span>make.inc
 <span class="c1"># Change OPTS = -O2 to OPTS = -O2 -fPIC</span>
 <span class="c1"># Change NOOPT = -O0 to NOOPT = -O0 -fPIC</span>
-make lapacklib
-<span class="nb">export</span> <span class="nv">LAPACK</span><span class="o">=</span><span class="nv">$PWD</span>/libflapack.a
+make<span class="w"> </span>lapacklib
+<span class="nb">export</span><span class="w"> </span><span class="nv">LAPACK</span><span class="o">=</span><span class="nv">$PWD</span>/libflapack.a
 
-<span class="nb">cd</span> ~/.local/src/
-git clone https://github.com/scipy/scipy.git
-<span class="nb">cd</span> scipy
-python setup.py build --fcompiler gnu95
-python setup.py install
+<span class="nb">cd</span><span class="w"> </span>~/.local/src/
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/scipy/scipy.git
+<span class="nb">cd</span><span class="w"> </span>scipy
+python<span class="w"> </span>setup.py<span class="w"> </span>build<span class="w"> </span>--fcompiler<span class="w"> </span>gnu95
+python<span class="w"> </span>setup.py<span class="w"> </span>install
 <span class="c1"># Assuming you&#39;re already in the virtualenv you want to install to.</span>
 </code></pre></div>
 
